@@ -1,0 +1,709 @@
+DIGEST 7a321bdecd8ba571feae7726c3a2313b
+FActionCodes.ACUtil
+R15:24 Coq.Lists.List <> <> lib
+R42:60 Coq.Logic.Decidable <> <> lib
+R71:83 Coq.Lists.List ListNotations <> mod
+R1498:1502 Coq.Init.Specif <> exist constr
+def 1575:1579 <> graph
+binder 1582:1582 <> X:1
+binder 1584:1584 <> Y:2
+R1598:1601 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1597:1597 ActionCodes.ACUtil <> X:1 var
+R1602:1602 ActionCodes.ACUtil <> Y:2 var
+binder 1594:1594 <> f:3
+R1608:1611 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1607:1607 ActionCodes.ACUtil <> X:1 var
+R1613:1616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1612:1612 ActionCodes.ACUtil <> Y:2 var
+binder 1631:1631 <> x:4
+binder 1633:1633 <> y:5
+R1641:1643 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1638:1638 ActionCodes.ACUtil <> f:3 var
+R1640:1640 ActionCodes.ACUtil <> x:4 var
+R1644:1644 ActionCodes.ACUtil <> y:5 var
+prf 1654:1660 <> ex_elim
+binder 1663:1663 <> E:6
+R1680:1683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1679:1679 ActionCodes.ACUtil <> E:6 var
+binder 1673:1676 <> Pred:7
+binder 1691:1694 <> Cons:8
+R1707:1707 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1738:1746 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1774:1774 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1708:1708 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1729:1733 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1709:1715 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1721:1722 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1720:1720 ActionCodes.ACUtil <> E:6 var
+binder 1716:1716 <> x:9
+R1723:1726 ActionCodes.ACUtil <> Pred:7 var
+R1728:1728 ActionCodes.ACUtil <> x:9 var
+R1734:1737 ActionCodes.ACUtil <> Cons:8 var
+R1757:1757 ActionCodes.ACUtil <> E:6 var
+binder 1754:1754 <> x:10
+R1766:1769 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1760:1763 ActionCodes.ACUtil <> Pred:7 var
+R1765:1765 ActionCodes.ACUtil <> x:10 var
+R1770:1773 ActionCodes.ACUtil <> Cons:8 var
+prf 1904:1926 <> app_strip_common_prefix
+binder 1929:1929 <> A:11
+R1952:1955 Coq.Init.Datatypes <> list ind
+R1957:1957 ActionCodes.ACUtil <> A:11 var
+binder 1940:1943 <> pref:12
+binder 1945:1946 <> l1:13
+binder 1948:1949 <> l2:14
+R1987:1990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1974:1976 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1968:1971 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1964:1967 ActionCodes.ACUtil <> pref:12 var
+R1972:1973 ActionCodes.ACUtil <> l1:13 var
+R1981:1984 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1977:1980 ActionCodes.ACUtil <> pref:12 var
+R1985:1986 ActionCodes.ACUtil <> l2:14 var
+R1993:1995 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1991:1992 ActionCodes.ACUtil <> l1:13 var
+R1996:1997 ActionCodes.ACUtil <> l2:14 var
+prf 2186:2202 <> app_yields_prefix
+binder 2205:2205 <> A:15
+R2224:2227 Coq.Init.Datatypes <> list ind
+R2229:2229 ActionCodes.ACUtil <> A:15 var
+binder 2216:2219 <> pref:16
+binder 2221:2221 <> l:17
+R2252:2255 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2240:2242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2236:2239 ActionCodes.ACUtil <> pref:16 var
+R2247:2250 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2243:2246 ActionCodes.ACUtil <> pref:16 var
+R2251:2251 ActionCodes.ACUtil <> l:17 var
+R2257:2259 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2256:2256 ActionCodes.ACUtil <> l:17 var
+R2260:2262 Coq.Init.Datatypes <> nil constr
+R2284:2306 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R2315:2317 Coq.Init.Datatypes <> nil constr
+R2284:2306 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R2315:2317 Coq.Init.Datatypes <> nil constr
+R2331:2339 Coq.Lists.List <> app_nil_r thm
+R2331:2339 Coq.Lists.List <> app_nil_r thm
+R2331:2339 Coq.Lists.List <> app_nil_r thm
+R2471:2474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2464:2467 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2461:2463 Coq.Init.Datatypes <> nil constr
+R2468:2470 Coq.Init.Datatypes <> nil constr
+R2471:2474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2464:2467 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2461:2463 Coq.Init.Datatypes <> nil constr
+R2468:2470 Coq.Init.Datatypes <> nil constr
+R2512:2515 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2507:2509 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2512:2515 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2507:2509 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2585:2588 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2585:2588 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2642:2646 Coq.Init.Logic <> False ind
+R2642:2646 Coq.Init.Logic <> False ind
+R2684:2687 Coq.Init.Logic <> True ind
+R2684:2687 Coq.Init.Logic <> True ind
+R2718:2718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2738:2742 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2731:2734 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2719:2722 Coq.Init.Datatypes <> cons constr
+R2735:2737 Coq.Init.Datatypes <> nil constr
+R2718:2718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2738:2742 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2731:2734 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2719:2722 Coq.Init.Datatypes <> cons constr
+R2735:2737 Coq.Init.Datatypes <> nil constr
+binder 2809:2809 <> b:18
+binder 2811:2811 <> f:19
+R2816:2816 ActionCodes.ACUtil <> f:19 var
+R2818:2818 ActionCodes.ACUtil <> b:18 var
+binder 2539:2539 <> b:20
+binder 2541:2541 <> f:21
+R2546:2546 ActionCodes.ACUtil <> f:21 var
+R2548:2548 ActionCodes.ACUtil <> b:20 var
+def 2941:2950 <> isNonEmpty
+binder 2953:2953 <> A:22
+R2966:2969 Coq.Init.Datatypes <> list ind
+R2971:2971 ActionCodes.ACUtil <> A:22 var
+binder 2963:2963 <> l:23
+R2992:2992 ActionCodes.ACUtil <> l:23 var
+R3006:3008 Coq.Init.Datatypes <> nil constr
+R3013:3017 Coq.Init.Logic <> False ind
+R3031:3034 Coq.Init.Logic <> True ind
+prf 3055:3071 <> list_empty_or_not
+binder 3074:3074 <> A:25
+R3087:3090 Coq.Init.Datatypes <> list ind
+R3092:3092 ActionCodes.ACUtil <> A:25 var
+binder 3084:3084 <> l:26
+R3106:3109 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3100:3102 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3099:3099 ActionCodes.ACUtil <> l:26 var
+R3103:3105 Coq.Init.Datatypes <> nil constr
+R3110:3119 ActionCodes.ACUtil <> isNonEmpty def
+R3121:3121 ActionCodes.ACUtil <> l:26 var
+prf 3184:3200 <> app_cons_nonempty
+binder 3203:3203 <> A:27
+R3219:3222 Coq.Init.Datatypes <> list ind
+R3224:3224 ActionCodes.ACUtil <> A:27 var
+binder 3213:3213 <> l:28
+binder 3215:3216 <> l':29
+R3231:3231 ActionCodes.ACUtil <> A:27 var
+binder 3228:3228 <> a:30
+R3238:3247 ActionCodes.ACUtil <> isNonEmpty def
+R3251:3254 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3250:3250 ActionCodes.ACUtil <> l:28 var
+R3258:3261 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3255:3255 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3257:3257 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3256:3256 ActionCodes.ACUtil <> a:30 var
+R3262:3263 ActionCodes.ACUtil <> l':29 var
+R3287:3290 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3294:3297 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3291:3291 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3293:3293 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3287:3290 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3294:3297 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3291:3291 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3293:3293 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R3320:3335 Coq.Lists.List <> app_cons_not_nil thm
+R3320:3335 Coq.Lists.List <> app_cons_not_nil thm
+prf 3375:3389 <> list_eq_nil_tnd
+binder 3392:3392 <> A:31
+R3405:3408 Coq.Init.Datatypes <> list ind
+R3410:3410 ActionCodes.ACUtil <> A:31 var
+binder 3402:3402 <> l:32
+R3424:3427 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3418:3420 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3417:3417 ActionCodes.ACUtil <> l:32 var
+R3421:3423 Coq.Init.Datatypes <> nil constr
+R3429:3432 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3428:3428 ActionCodes.ACUtil <> l:32 var
+R3433:3435 Coq.Init.Datatypes <> nil constr
+def 3512:3518 <> ne_list
+binder 3521:3521 <> A:33
+R3535:3536 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3538:3539 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3546:3548 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3561:3562 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3540:3543 Coq.Init.Datatypes <> list ind
+R3545:3545 ActionCodes.ACUtil <> A:33 var
+binder 3537:3537 <> l:34
+R3549:3558 ActionCodes.ACUtil <> isNonEmpty def
+R3560:3560 ActionCodes.ACUtil <> l:34 var
+def 3577:3589 <> proj_nonempty
+binder 3592:3592 <> A:35
+R3612:3615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3603:3609 ActionCodes.ACUtil <> ne_list def
+R3611:3611 ActionCodes.ACUtil <> A:35 var
+R3616:3619 Coq.Init.Datatypes <> list ind
+R3621:3621 ActionCodes.ACUtil <> A:35 var
+binder 3632:3632 <> l:36
+R3637:3645 Coq.Init.Specif <> proj1_sig def
+R3647:3647 ActionCodes.ACUtil <> l:36 var
+prf 3657:3666 <> eq_ne_list
+binder 3669:3669 <> A:37
+R3686:3692 ActionCodes.ACUtil <> ne_list def
+R3694:3694 ActionCodes.ACUtil <> A:37 var
+binder 3679:3680 <> l1:38
+binder 3682:3683 <> l2:39
+R3735:3738 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3716:3718 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3700:3712 ActionCodes.ACUtil <> proj_nonempty def
+R3714:3715 ActionCodes.ACUtil <> l1:38 var
+R3719:3731 ActionCodes.ACUtil <> proj_nonempty def
+R3733:3734 ActionCodes.ACUtil <> l2:39 var
+R3741:3743 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3739:3740 ActionCodes.ACUtil <> l1:38 var
+R3744:3745 ActionCodes.ACUtil <> l2:39 var
+R3826:3835 ActionCodes.ACUtil <> isNonEmpty def
+def 3952:3962 <> if_is_empty
+binder 3965:3965 <> A:40
+R3976:3976 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3983:3987 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3977:3980 Coq.Init.Datatypes <> list ind
+R3982:3982 ActionCodes.ACUtil <> A:40 var
+R3988:3993 Coq.Init.Datatypes <> option ind
+R3996:4002 ActionCodes.ACUtil <> ne_list def
+R4004:4004 ActionCodes.ACUtil <> A:40 var
+R4050:4053 Coq.Init.Datatypes <> None constr
+R4050:4053 Coq.Init.Datatypes <> None constr
+R4066:4069 Coq.Init.Datatypes <> Some constr
+R4066:4069 Coq.Init.Datatypes <> Some constr
+R4084:4087 Coq.Init.Datatypes <> cons constr
+R4084:4087 Coq.Init.Datatypes <> cons constr
+prf 4124:4143 <> exists_nonempty_list
+binder 4146:4146 <> A:41
+R4165:4168 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4159:4162 Coq.Init.Datatypes <> list ind
+R4164:4164 ActionCodes.ACUtil <> A:41 var
+binder 4156:4156 <> P:42
+R4179:4179 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4220:4227 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4180:4186 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4199:4200 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4190:4196 ActionCodes.ACUtil <> ne_list def
+R4198:4198 ActionCodes.ACUtil <> A:41 var
+binder 4187:4187 <> l:43
+R4201:4201 ActionCodes.ACUtil <> P:42 var
+R4204:4216 ActionCodes.ACUtil <> proj_nonempty def
+R4218:4218 ActionCodes.ACUtil <> l:43 var
+R4228:4234 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4239:4240 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4238:4238 ActionCodes.ACUtil <> A:41 var
+binder 4235:4235 <> a:44
+R4241:4247 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4257:4258 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4251:4254 Coq.Init.Datatypes <> list ind
+R4256:4256 ActionCodes.ACUtil <> A:41 var
+binder 4248:4248 <> u:45
+R4259:4259 ActionCodes.ACUtil <> P:42 var
+R4262:4265 Coq.Init.Datatypes <> cons constr
+R4269:4269 ActionCodes.ACUtil <> u:45 var
+R4267:4267 ActionCodes.ACUtil <> a:44 var
+R4473:4477 Coq.Init.Specif <> exist constr
+R4483:4486 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4473:4477 Coq.Init.Specif <> exist constr
+R4483:4486 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+prf 4521:4528 <> lazy_and
+binder 4531:4531 <> P:46
+binder 4533:4533 <> Q:47
+R4546:4546 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4553:4559 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4573:4573 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4548:4551 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4547:4547 ActionCodes.ACUtil <> P:46 var
+R4552:4552 ActionCodes.ACUtil <> Q:47 var
+R4561:4565 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4572:4572 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4560:4560 ActionCodes.ACUtil <> P:46 var
+R4567:4570 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4566:4566 ActionCodes.ACUtil <> P:46 var
+R4571:4571 ActionCodes.ACUtil <> Q:47 var
+binder 4694:4694 <> b:48
+binder 4696:4696 <> f:49
+R4701:4701 ActionCodes.ACUtil <> f:49 var
+R4703:4703 ActionCodes.ACUtil <> b:48 var
+R4782:4785 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4782:4785 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+prf 4823:4842 <> nonempty_iff_not_nil
+binder 4845:4845 <> A:50
+R4858:4861 Coq.Init.Datatypes <> list ind
+R4863:4863 ActionCodes.ACUtil <> A:50 var
+binder 4855:4855 <> l:51
+R4882:4886 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4870:4879 ActionCodes.ACUtil <> isNonEmpty def
+R4881:4881 ActionCodes.ACUtil <> l:51 var
+R4888:4891 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4887:4887 ActionCodes.ACUtil <> l:51 var
+R4892:4894 Coq.Init.Datatypes <> nil constr
+prf 5019:5035 <> list_extract_last
+binder 5038:5038 <> A:52
+R5064:5067 Coq.Init.Datatypes <> list ind
+R5069:5069 ActionCodes.ACUtil <> A:52 var
+binder 5060:5060 <> l:53
+R5078:5081 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5073:5075 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5072:5072 ActionCodes.ACUtil <> l:53 var
+R5076:5077 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5082:5088 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5098:5099 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5092:5095 Coq.Init.Datatypes <> list ind
+R5097:5097 ActionCodes.ACUtil <> A:52 var
+binder 5089:5089 <> p:54
+R5100:5106 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5111:5112 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5110:5110 ActionCodes.ACUtil <> A:52 var
+binder 5107:5107 <> a:55
+R5114:5116 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5113:5113 ActionCodes.ACUtil <> l:53 var
+R5118:5121 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5117:5117 ActionCodes.ACUtil <> p:54 var
+R5122:5122 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5124:5124 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R5123:5123 ActionCodes.ACUtil <> a:55 var
+R5253:5254 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5253:5254 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5351:5352 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5351:5352 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+prf 5499:5517 <> app_eq_app_disjoint
+binder 5520:5520 <> A:56
+R5543:5546 Coq.Init.Datatypes <> list ind
+R5548:5548 ActionCodes.ACUtil <> A:56 var
+binder 5530:5531 <> x1:57
+binder 5533:5534 <> x2:58
+binder 5536:5537 <> y1:59
+binder 5539:5540 <> y2:60
+R5573:5580 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5564:5566 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5560:5561 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5558:5559 ActionCodes.ACUtil <> x1:57 var
+R5562:5563 ActionCodes.ACUtil <> x2:58 var
+R5569:5570 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5567:5568 ActionCodes.ACUtil <> y1:59 var
+R5571:5572 ActionCodes.ACUtil <> y2:60 var
+R5581:5587 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5589:5590 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5588:5588 <> l:61
+R5591:5591 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5627:5632 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5657:5657 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5599:5602 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5593:5596 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5592:5592 ActionCodes.ACUtil <> l:61 var
+R5597:5598 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5613:5616 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5605:5607 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5603:5604 ActionCodes.ACUtil <> x1:57 var
+R5610:5611 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5608:5609 ActionCodes.ACUtil <> y1:59 var
+R5612:5612 ActionCodes.ACUtil <> l:61 var
+R5619:5621 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5617:5618 ActionCodes.ACUtil <> y2:60 var
+R5623:5624 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5622:5622 ActionCodes.ACUtil <> l:61 var
+R5625:5626 ActionCodes.ACUtil <> x2:58 var
+R5643:5646 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5635:5637 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5633:5634 ActionCodes.ACUtil <> y1:59 var
+R5640:5641 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5638:5639 ActionCodes.ACUtil <> x1:57 var
+R5642:5642 ActionCodes.ACUtil <> l:61 var
+R5649:5651 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5647:5648 ActionCodes.ACUtil <> x2:58 var
+R5653:5654 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5652:5652 ActionCodes.ACUtil <> l:61 var
+R5655:5656 ActionCodes.ACUtil <> y2:60 var
+R5686:5695 Coq.Lists.List <> app_eq_app thm
+R5686:5695 Coq.Lists.List <> app_eq_app thm
+R5750:5766 ActionCodes.ACUtil <> list_empty_or_not thm
+R5750:5766 ActionCodes.ACUtil <> list_empty_or_not thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5873:5881 Coq.Lists.List <> app_nil_r thm
+R5999:6018 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+R5999:6018 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+def 6085:6096 <> FiniteExists
+binder 6099:6099 <> B:62
+R6112:6115 Coq.Init.Datatypes <> list ind
+R6117:6117 ActionCodes.ACUtil <> B:62 var
+binder 6109:6109 <> l:63
+R6125:6128 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6124:6124 ActionCodes.ACUtil <> B:62 var
+binder 6121:6121 <> P:64
+R6155:6155 ActionCodes.ACUtil <> l:63 var
+R6166:6167 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6172:6176 Coq.Init.Logic <> False ind
+R6182:6182 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R6185:6185 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R6190:6190 ActionCodes.ACUtil <> P:64 var
+R6202:6205 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6217:6220 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6213:6213 ActionCodes.ACUtil <> P:64 var
+R6221:6232 ActionCodes.ACUtil <> FiniteExists:65 def
+R6237:6237 ActionCodes.ACUtil <> P:64 var
+def 6256:6268 <> FiniteExists2
+binder 6271:6271 <> B:67
+R6284:6287 Coq.Init.Datatypes <> list ind
+R6289:6289 ActionCodes.ACUtil <> B:67 var
+binder 6281:6281 <> l:68
+R6297:6300 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6296:6296 ActionCodes.ACUtil <> B:67 var
+binder 6293:6293 <> P:69
+R6327:6327 ActionCodes.ACUtil <> l:68 var
+R6338:6339 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R6344:6348 Coq.Init.Logic <> False ind
+R6357:6360 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6372:6375 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R6368:6368 ActionCodes.ACUtil <> P:69 var
+R6376:6388 ActionCodes.ACUtil <> FiniteExists2:70 def
+R6393:6393 ActionCodes.ACUtil <> P:69 var
+prf 6409:6424 <> FiniteExists2_eq
+binder 6428:6428 <> B:72
+R6441:6444 Coq.Init.Datatypes <> list ind
+R6446:6446 ActionCodes.ACUtil <> B:72 var
+binder 6438:6438 <> l:73
+R6454:6457 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6453:6453 ActionCodes.ACUtil <> B:72 var
+binder 6450:6450 <> P:74
+R6484:6488 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6468:6479 ActionCodes.ACUtil <> FiniteExists def
+R6483:6483 ActionCodes.ACUtil <> P:74 var
+R6481:6481 ActionCodes.ACUtil <> l:73 var
+R6489:6501 ActionCodes.ACUtil <> FiniteExists2 def
+R6505:6505 ActionCodes.ACUtil <> P:74 var
+R6503:6503 ActionCodes.ACUtil <> l:73 var
+prf 6861:6881 <> FiniteExistsDecidable
+binder 6884:6884 <> B:75
+R6898:6901 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6897:6897 ActionCodes.ACUtil <> B:75 var
+binder 6894:6894 <> P:76
+R6912:6915 Coq.Init.Datatypes <> list ind
+R6917:6917 ActionCodes.ACUtil <> B:75 var
+binder 6909:6909 <> l:77
+R6923:6923 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6952:6958 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6934:6934 ActionCodes.ACUtil <> B:75 var
+binder 6931:6931 <> b:78
+R6937:6945 Coq.Logic.Decidable <> decidable def
+R6948:6948 ActionCodes.ACUtil <> P:76 var
+R6950:6950 ActionCodes.ACUtil <> b:78 var
+R6959:6959 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6984:6991 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6970:6970 ActionCodes.ACUtil <> B:75 var
+binder 6967:6967 <> b:79
+R6973:6979 Coq.Lists.List <> In def
+R6983:6983 ActionCodes.ACUtil <> l:77 var
+R6981:6981 ActionCodes.ACUtil <> b:79 var
+R6992:7000 Coq.Logic.Decidable <> decidable def
+R7003:7014 ActionCodes.ACUtil <> FiniteExists def
+R7018:7018 ActionCodes.ACUtil <> P:76 var
+R7016:7016 ActionCodes.ACUtil <> l:77 var
+R7071:7074 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7069:7070 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7071:7074 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7069:7070 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7131:7134 Coq.Init.Datatypes <> list ind
+R7127:7128 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7131:7134 Coq.Init.Datatypes <> list ind
+R7127:7128 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7150:7151 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7150:7151 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7360:7368 Coq.Logic.Decidable <> decidable def
+R7371:7382 ActionCodes.ACUtil <> FiniteExists def
+R7360:7368 Coq.Logic.Decidable <> decidable def
+R7371:7382 ActionCodes.ACUtil <> FiniteExists def
+R7426:7429 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7430:7430 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7432:7432 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7426:7429 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7430:7430 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7432:7432 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7456:7464 Coq.Lists.List <> app_assoc thm
+R7456:7464 Coq.Lists.List <> app_assoc thm
+R7456:7464 Coq.Lists.List <> app_assoc thm
+R7645:7660 ActionCodes.ACUtil <> FiniteExists2_eq thm
+R7645:7660 ActionCodes.ACUtil <> FiniteExists2_eq thm
+R7757:7772 ActionCodes.ACUtil <> FiniteExists2_eq thm
+R7757:7772 ActionCodes.ACUtil <> FiniteExists2_eq thm
+def 7819:7840 <> prop_app_eq_fixed_list
+binder 7843:7843 <> A:80
+R7864:7867 Coq.Init.Datatypes <> list ind
+R7869:7869 ActionCodes.ACUtil <> A:80 var
+binder 7853:7854 <> l1:81
+binder 7856:7857 <> l2:82
+binder 7859:7861 <> l12:83
+R8108:8110 Coq.Init.Specif <> ::type_scope:x_'+'_'{'_x_'}' not
+R8130:8130 Coq.Init.Specif <> ::type_scope:x_'+'_'{'_x_'}' not
+R7892:7894 ActionCodes.ACUtil <> l12:83 var
+R7907:7908 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7913:7917 Coq.Init.Logic <> False ind
+R7928:7929 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7943:7944 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7946:7948 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7950:7952 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7959:7961 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R8098:8099 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7949:7949 ActionCodes.ACUtil <> A:80 var
+binder 7945:7945 <> a:86
+R7954:7956 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7953:7953 ActionCodes.ACUtil <> a:86 var
+binder 7945:7945 <> a:87
+R7962:7970 Coq.Init.Logic <> inhabited ind
+R7988:7989 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7993:7994 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R8001:8019 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R8033:8035 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R8080:8097 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'&'_x_'}' not
+R7995:7998 Coq.Init.Datatypes <> list ind
+R8000:8000 ActionCodes.ACUtil <> A:80 var
+binder 7990:7992 <> l1':88
+R8022:8025 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8032:8032 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8020:8021 ActionCodes.ACUtil <> l1:81 var
+R8027:8028 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8026:8026 ActionCodes.ACUtil <> a:87 var
+R8029:8031 ActionCodes.ACUtil <> l1':88 var
+binder 7990:7992 <> l1':89
+R8036:8044 Coq.Init.Logic <> inhabited ind
+R8047:8068 ActionCodes.ACUtil <> prop_app_eq_fixed_list:84 def
+R8074:8075 ActionCodes.ACUtil <> l2:82 var
+R8070:8072 ActionCodes.ACUtil <> l1':89 var
+R8118:8121 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8113:8115 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8111:8112 ActionCodes.ACUtil <> l1:81 var
+R8116:8117 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8124:8126 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8122:8123 ActionCodes.ACUtil <> l2:82 var
+R8127:8129 ActionCodes.ACUtil <> l12:83 var
+prf 8142:8158 <> app_eq_fixed_list
+binder 8161:8161 <> A:90
+R8182:8185 Coq.Init.Datatypes <> list ind
+R8187:8187 ActionCodes.ACUtil <> A:90 var
+binder 8171:8172 <> l1:91
+binder 8174:8175 <> l2:92
+binder 8177:8179 <> l12:93
+R8208:8211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8202:8204 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8196:8199 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8194:8195 ActionCodes.ACUtil <> l1:91 var
+R8200:8201 ActionCodes.ACUtil <> l2:92 var
+R8205:8207 ActionCodes.ACUtil <> l12:93 var
+R8212:8233 ActionCodes.ACUtil <> prop_app_eq_fixed_list def
+R8241:8243 ActionCodes.ACUtil <> l12:93 var
+R8238:8239 ActionCodes.ACUtil <> l2:92 var
+R8235:8236 ActionCodes.ACUtil <> l1:91 var
+R8321:8330 Coq.Lists.List <> app_eq_nil thm
+R8321:8330 Coq.Lists.List <> app_eq_nil thm
+prf 8552:8567 <> ShowFiniteExists
+binder 8570:8570 <> B:94
+R8584:8587 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8583:8583 ActionCodes.ACUtil <> B:94 var
+binder 8580:8580 <> P:95
+R8598:8601 Coq.Init.Datatypes <> list ind
+R8603:8603 ActionCodes.ACUtil <> B:94 var
+binder 8595:8595 <> l:96
+R8609:8609 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8634:8638 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8620:8620 ActionCodes.ACUtil <> B:94 var
+binder 8617:8617 <> b:97
+R8623:8629 Coq.Lists.List <> In def
+R8633:8633 ActionCodes.ACUtil <> l:96 var
+R8631:8631 ActionCodes.ACUtil <> b:97 var
+R8639:8639 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8656:8660 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8640:8646 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8651:8652 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8650:8650 ActionCodes.ACUtil <> B:94 var
+binder 8647:8647 <> b:98
+R8653:8653 ActionCodes.ACUtil <> P:95 var
+R8655:8655 ActionCodes.ACUtil <> b:98 var
+R8661:8672 ActionCodes.ACUtil <> FiniteExists def
+R8676:8676 ActionCodes.ACUtil <> P:95 var
+R8674:8674 ActionCodes.ACUtil <> l:96 var
+R8728:8734 Coq.Lists.List <> In def
+R8728:8734 Coq.Lists.List <> In def
+prf 9002:9016 <> ViaFiniteExists
+binder 9019:9019 <> B:99
+R9033:9036 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9032:9032 ActionCodes.ACUtil <> B:99 var
+binder 9029:9029 <> P:100
+R9047:9050 Coq.Init.Datatypes <> list ind
+R9052:9052 ActionCodes.ACUtil <> B:99 var
+binder 9044:9044 <> l:101
+R9058:9058 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9075:9080 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9097:9097 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9059:9070 ActionCodes.ACUtil <> FiniteExists def
+R9074:9074 ActionCodes.ACUtil <> P:100 var
+R9072:9072 ActionCodes.ACUtil <> l:101 var
+R9081:9087 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9092:9093 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9091:9091 ActionCodes.ACUtil <> B:99 var
+binder 9088:9088 <> b:102
+R9094:9094 ActionCodes.ACUtil <> P:100 var
+R9096:9096 ActionCodes.ACUtil <> b:102 var
+R9332:9340 Coq.Init.Logic <> inhabited ind
+R9332:9340 Coq.Init.Logic <> inhabited ind
+R9374:9375 Coq.Init.Logic <> ex ind
+R9374:9375 Coq.Init.Logic <> ex ind
+R9409:9411 Coq.Init.Specif <> sig ind
+R9409:9411 Coq.Init.Specif <> sig ind
+R9445:9448 Coq.Init.Specif <> sigT ind
+R9445:9448 Coq.Init.Specif <> sigT ind
+R9482:9485 Coq.Init.Specif <> sig2 ind
+R9482:9485 Coq.Init.Specif <> sig2 ind
+R9522:9525 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9522:9525 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9564:9566 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9558:9561 Coq.Init.Datatypes <> Some constr
+R9567:9570 Coq.Init.Datatypes <> Some constr
+R9564:9566 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9558:9561 Coq.Init.Datatypes <> Some constr
+R9567:9570 Coq.Init.Datatypes <> Some constr
+R9610:9610 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9617:9621 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9628:9628 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9613:9614 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9624:9625 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9610:9610 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9617:9621 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9628:9628 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9613:9614 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9624:9625 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9668:9670 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9668:9670 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9703:9705 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9706:9707 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R9703:9705 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9706:9707 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R9738:9740 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9741:9741 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R9744:9744 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R9738:9740 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9741:9741 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R9744:9744 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R9903:9907 Coq.Init.Specif <> sumor ind
+R9903:9907 Coq.Init.Specif <> sumor ind
+prf 9985:10012 <> push_forall_into_conjunction
+binder 10015:10015 <> X:103
+R10031:10034 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10030:10030 ActionCodes.ACUtil <> X:103 var
+binder 10025:10025 <> P:104
+binder 10027:10027 <> Q:105
+R10089:10099 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10123:10123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10049:10049 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10066:10071 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10088:10088 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10060:10060 ActionCodes.ACUtil <> X:103 var
+binder 10057:10057 <> x:106
+R10063:10063 ActionCodes.ACUtil <> P:104 var
+R10065:10065 ActionCodes.ACUtil <> x:106 var
+R10082:10082 ActionCodes.ACUtil <> X:103 var
+binder 10079:10079 <> x:107
+R10085:10085 ActionCodes.ACUtil <> Q:105 var
+R10087:10087 ActionCodes.ACUtil <> x:107 var
+R10110:10110 ActionCodes.ACUtil <> X:103 var
+binder 10107:10107 <> x:108
+R10116:10119 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10113:10113 ActionCodes.ACUtil <> P:104 var
+R10115:10115 ActionCodes.ACUtil <> x:108 var
+R10120:10120 ActionCodes.ACUtil <> Q:105 var
+R10122:10122 ActionCodes.ACUtil <> x:108 var
+prf 10255:10279 <> short_circuit_conjunction
+binder 10282:10282 <> P:109
+binder 10284:10284 <> Q:110
+R10298:10303 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10297:10297 ActionCodes.ACUtil <> P:109 var
+R10304:10304 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10311:10317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10306:10309 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10305:10305 ActionCodes.ACUtil <> P:109 var
+R10310:10310 ActionCodes.ACUtil <> Q:110 var
+R10319:10322 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10318:10318 ActionCodes.ACUtil <> P:109 var
+R10323:10323 ActionCodes.ACUtil <> Q:110 var
+R10445:10448 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10445:10448 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10478:10505 ActionCodes.ACUtil <> push_forall_into_conjunction thm
+R10614:10638 ActionCodes.ACUtil <> short_circuit_conjunction thm
+R10752:10755 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10752:10755 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10878:10881 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10878:10881 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10900:10924 ActionCodes.ACUtil <> short_circuit_conjunction thm
+R10792:10819 ActionCodes.ACUtil <> push_forall_into_conjunction thm
+R11534:11540 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11553:11554 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 11541:11543 <> sub:111
+R11568:11570 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11555:11563 Coq.Init.Specif <> proj1_sig def
+R11565:11567 ActionCodes.ACUtil <> sub:111 var
+R11608:11612 Coq.Init.Specif <> exist constr
+R11931:11940 Coq.Init.Logic <> False_rect scheme
+R11931:11940 Coq.Init.Logic <> False_rect scheme
+R12003:12012 Coq.Init.Logic <> False_rect scheme
+R12003:12012 Coq.Init.Logic <> False_rect scheme

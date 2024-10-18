@@ -38,6 +38,8 @@ Definition ExampleMealy : LTS (I*O) := {|
       transition := Transition;
   |}.
 
+Check gtrans ExampleMealy.
+
 (** * A first Action Code **)
 
 (** In the first code example, we only have output 0,

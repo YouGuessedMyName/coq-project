@@ -1,0 +1,1580 @@
+DIGEST 8ccf836c0801aa9cb28b53b7e5ffe68c
+FActionCodes.LTS
+R15:30 Coq.Logic.FinFun <> <> lib
+R48:57 Coq.Lists.List <> <> lib
+R75:100 Coq.Logic.ProofIrrelevance <> <> lib
+R118:135 Coq.Sets.Ensembles <> <> lib
+R153:186 Coq.Logic.FunctionalExtensionality <> <> lib
+R204:237 Coq.Relations.Relation_Definitions <> <> lib
+R255:260 ActionCodes.ACUtil <> <> lib
+R271:283 Coq.Lists.List ListNotations <> mod
+rec 462:465 <> LTS'
+proj 508:513 <> states
+proj 525:531 <> initial
+proj 545:554 <> transition
+binder 468:475 <> Alphabet:1
+R535:540 ActionCodes.LTS <> states:3 meth
+R564:567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R558:563 ActionCodes.LTS <> states:3 meth
+R576:579 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R568:575 ActionCodes.LTS <> Alphabet:1 var
+R586:589 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R580:585 ActionCodes.LTS <> states:3 meth
+def 734:736 <> LTS
+binder 739:746 <> Alphabet:6
+R766:769 ActionCodes.LTS <> LTS' rec
+R771:778 ActionCodes.LTS <> Alphabet:6 var
+R806:812 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R818:821 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R840:840 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 813:813 <> y:7
+R822:831 ActionCodes.LTS <> transition proj
+R839:839 ActionCodes.LTS <> y:7 var
+not 791:791 <> ::type_scope:x_'↓'_x
+R918:927 ActionCodes.LTS <> transition proj
+not 899:899 <> ::type_scope:x_'--'_x_'-->'_x
+R1018:1027 ActionCodes.LTS <> transition proj
+not 994:994 <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x
+R1117:1126 ActionCodes.LTS <> transition proj
+not 1094:1094 <> ::type_scope:x_'⎯⎯'_x_'-->'_x
+R1225:1234 ActionCodes.LTS <> transition proj
+not 1193:1193 <> ::type_scope:x_'⎯⎯'_x_'-->'_x_'(∈'_x_')'
+def 1304:1318 <> LTS_uses_action
+binder 1321:1321 <> A:8
+R1334:1336 ActionCodes.LTS <> LTS def
+R1338:1338 ActionCodes.LTS <> A:8 var
+binder 1331:1331 <> M:9
+R1344:1347 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1343:1343 ActionCodes.LTS <> A:8 var
+binder 1362:1362 <> a:10
+R1367:1373 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1388:1390 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1404:1404 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1380:1385 ActionCodes.LTS <> states proj
+R1387:1387 ActionCodes.LTS <> M:9 var
+binder 1374:1374 <> q:11
+R1380:1385 ActionCodes.LTS <> states proj
+R1387:1387 ActionCodes.LTS <> M:9 var
+binder 1376:1377 <> q':12
+R1392:1395 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R1397:1401 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R1391:1391 ActionCodes.LTS <> q:11 var
+R1396:1396 ActionCodes.LTS <> a:10 var
+R1402:1403 ActionCodes.LTS <> q':12 var
+ind 1479:1484 <> gtrans
+constr 1555:1561 <> seq_nil
+constr 1606:1613 <> seq_cons
+binder 1487:1487 <> A:13
+R1500:1502 ActionCodes.LTS <> LTS def
+R1504:1504 ActionCodes.LTS <> A:13 var
+binder 1497:1497 <> M:14
+R1517:1520 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1509:1514 ActionCodes.LTS <> states proj
+R1527:1530 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1521:1524 Coq.Init.Datatypes <> list ind
+R1539:1542 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1531:1536 ActionCodes.LTS <> states proj
+R1575:1580 ActionCodes.LTS <> states proj
+R1582:1582 ActionCodes.LTS <> M:14 var
+binder 1572:1572 <> q:17
+R1585:1590 ActionCodes.LTS <> gtrans:15 ind
+R1600:1600 ActionCodes.LTS <> q:17 var
+R1596:1598 Coq.Init.Datatypes <> nil constr
+R1594:1594 ActionCodes.LTS <> q:17 var
+R1592:1592 ActionCodes.LTS <> M:14 var
+R1628:1633 ActionCodes.LTS <> states proj
+R1635:1635 ActionCodes.LTS <> M:14 var
+binder 1625:1625 <> q:18
+R1642:1642 ActionCodes.LTS <> A:13 var
+binder 1639:1639 <> a:19
+R1651:1656 ActionCodes.LTS <> states proj
+R1658:1658 ActionCodes.LTS <> M:14 var
+binder 1646:1648 <> q_a:20
+R1665:1668 Coq.Init.Datatypes <> list ind
+R1670:1670 ActionCodes.LTS <> A:13 var
+binder 1662:1662 <> w:21
+R1680:1685 ActionCodes.LTS <> states proj
+R1687:1687 ActionCodes.LTS <> M:14 var
+binder 1674:1677 <> q_tl:22
+R1697:1697 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1710:1714 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1699:1701 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R1703:1706 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R1698:1698 ActionCodes.LTS <> q:18 var
+R1702:1702 ActionCodes.LTS <> a:19 var
+R1707:1709 ActionCodes.LTS <> q_a:20 var
+R1715:1715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1735:1740 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1763:1763 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1716:1721 ActionCodes.LTS <> gtrans:15 ind
+R1731:1734 ActionCodes.LTS <> q_tl:22 var
+R1729:1729 ActionCodes.LTS <> w:21 var
+R1725:1727 ActionCodes.LTS <> q_a:20 var
+R1723:1723 ActionCodes.LTS <> M:14 var
+R1741:1746 ActionCodes.LTS <> gtrans:15 ind
+R1759:1762 ActionCodes.LTS <> q_tl:22 var
+R1754:1755 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1753:1753 ActionCodes.LTS <> a:19 var
+R1756:1756 ActionCodes.LTS <> w:21 var
+R1750:1750 ActionCodes.LTS <> q:18 var
+R1748:1748 ActionCodes.LTS <> M:14 var
+scheme 1479:1484 <> gtrans_ind
+scheme 1479:1484 <> gtrans_sind
+R1795:1800 ActionCodes.LTS <> gtrans ind
+not 1776:1776 <> ::type_scope:x_'=='_x_'==>'_x
+R1891:1896 ActionCodes.LTS <> gtrans ind
+not 1867:1867 <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x
+R2048:2053 ActionCodes.LTS <> gtrans ind
+not 2025:2025 <> ::type_scope:x_'══'_x_'==>'_x
+R2148:2153 ActionCodes.LTS <> gtrans ind
+not 2120:2120 <> ::type_scope:x_'|-'_x_'══'_x_'==>'_x
+prf 2320:2327 <> path_app
+binder 2330:2330 <> A:23
+R2344:2346 ActionCodes.LTS <> LTS def
+R2348:2348 ActionCodes.LTS <> A:23 var
+binder 2340:2340 <> M:24
+R2359:2364 ActionCodes.LTS <> states proj
+R2366:2366 ActionCodes.LTS <> M:24 var
+binder 2352:2352 <> q:25
+binder 2354:2354 <> p:26
+binder 2356:2356 <> r:27
+R2376:2379 Coq.Init.Datatypes <> list ind
+R2381:2381 ActionCodes.LTS <> A:23 var
+binder 2370:2370 <> w:28
+binder 2372:2372 <> v:29
+R2387:2387 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2405:2409 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2389:2392 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2394:2397 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2399:2403 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2388:2388 ActionCodes.LTS <> M:24 var
+R2393:2393 ActionCodes.LTS <> q:25 var
+R2398:2398 ActionCodes.LTS <> w:28 var
+R2404:2404 ActionCodes.LTS <> p:26 var
+R2410:2410 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2423:2428 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2444:2444 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2412:2415 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2417:2421 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2411:2411 ActionCodes.LTS <> p:26 var
+R2416:2416 ActionCodes.LTS <> v:29 var
+R2422:2422 ActionCodes.LTS <> r:27 var
+R2430:2433 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2438:2442 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2429:2429 ActionCodes.LTS <> q:25 var
+R2435:2436 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2434:2434 ActionCodes.LTS <> w:28 var
+R2437:2437 ActionCodes.LTS <> v:29 var
+R2443:2443 ActionCodes.LTS <> r:27 var
+prf 2596:2611 <> gtrans_singleton
+binder 2614:2614 <> A:30
+R2628:2630 ActionCodes.LTS <> LTS def
+R2632:2632 ActionCodes.LTS <> A:30 var
+binder 2624:2624 <> M:31
+R2641:2646 ActionCodes.LTS <> states proj
+R2648:2648 ActionCodes.LTS <> M:31 var
+binder 2636:2636 <> q:32
+binder 2638:2638 <> p:33
+R2655:2655 ActionCodes.LTS <> A:30 var
+binder 2652:2652 <> a:34
+R2662:2662 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2685:2691 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2707:2707 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2664:2667 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2669:2672 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2679:2683 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R2663:2663 ActionCodes.LTS <> M:31 var
+R2668:2668 ActionCodes.LTS <> q:32 var
+R2674:2675 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2673:2673 ActionCodes.LTS <> a:34 var
+R2676:2678 Coq.Init.Datatypes <> nil constr
+R2684:2684 ActionCodes.LTS <> p:33 var
+R2693:2696 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R2698:2700 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R2702:2705 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R2692:2692 ActionCodes.LTS <> M:31 var
+R2697:2697 ActionCodes.LTS <> q:32 var
+R2701:2701 ActionCodes.LTS <> a:34 var
+R2706:2706 ActionCodes.LTS <> p:33 var
+prf 2909:2920 <> path_app_rev
+binder 2923:2923 <> A:35
+R2937:2939 ActionCodes.LTS <> LTS def
+R2941:2941 ActionCodes.LTS <> A:35 var
+binder 2933:2933 <> M:36
+R2950:2955 ActionCodes.LTS <> states proj
+R2957:2957 ActionCodes.LTS <> M:36 var
+binder 2945:2945 <> q:37
+binder 2947:2947 <> r:38
+R2967:2970 Coq.Init.Datatypes <> list ind
+R2972:2972 ActionCodes.LTS <> A:35 var
+binder 2961:2961 <> w:39
+binder 2963:2963 <> v:40
+R2978:2978 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2996:3006 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2980:2983 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2990:2994 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R2979:2979 ActionCodes.LTS <> q:37 var
+R2985:2988 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2984:2984 ActionCodes.LTS <> w:39 var
+R2989:2989 ActionCodes.LTS <> v:40 var
+R2995:2995 ActionCodes.LTS <> r:38 var
+R3007:3013 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3025:3026 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3017:3022 ActionCodes.LTS <> states proj
+R3024:3024 ActionCodes.LTS <> M:36 var
+binder 3014:3014 <> p:41
+R3027:3027 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3043:3048 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3059:3059 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3029:3032 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R3034:3036 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R3038:3041 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R3028:3028 ActionCodes.LTS <> M:36 var
+R3033:3033 ActionCodes.LTS <> q:37 var
+R3037:3037 ActionCodes.LTS <> w:39 var
+R3042:3042 ActionCodes.LTS <> p:41 var
+R3050:3052 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3054:3057 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3049:3049 ActionCodes.LTS <> p:41 var
+R3053:3053 ActionCodes.LTS <> v:40 var
+R3058:3058 ActionCodes.LTS <> r:38 var
+def 3370:3384 <> relates_initial
+binder 3387:3387 <> A:42
+R3403:3405 ActionCodes.LTS <> LTS def
+R3407:3407 ActionCodes.LTS <> A:42 var
+binder 3397:3397 <> M:43
+binder 3399:3399 <> N:44
+R3428:3431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3420:3425 ActionCodes.LTS <> states proj
+R3427:3427 ActionCodes.LTS <> M:43 var
+R3440:3443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3432:3437 ActionCodes.LTS <> states proj
+R3439:3439 ActionCodes.LTS <> N:44 var
+binder 3415:3417 <> rel:45
+R3466:3468 ActionCodes.LTS <> rel:45 var
+R3483:3489 ActionCodes.LTS <> initial proj
+R3491:3491 ActionCodes.LTS <> N:44 var
+R3471:3477 ActionCodes.LTS <> initial proj
+R3479:3479 ActionCodes.LTS <> M:43 var
+def 3507:3517 <> step_closed
+binder 3520:3520 <> A:46
+R3536:3538 ActionCodes.LTS <> LTS def
+R3540:3540 ActionCodes.LTS <> A:46 var
+binder 3530:3530 <> M:47
+binder 3532:3532 <> N:48
+R3561:3564 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3553:3558 ActionCodes.LTS <> states proj
+R3560:3560 ActionCodes.LTS <> M:47 var
+R3573:3576 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3565:3570 ActionCodes.LTS <> states proj
+R3572:3572 ActionCodes.LTS <> N:48 var
+binder 3548:3550 <> rel:49
+R3613:3618 ActionCodes.LTS <> states proj
+R3620:3620 ActionCodes.LTS <> M:47 var
+binder 3607:3607 <> q:50
+binder 3609:3610 <> q':51
+R3627:3632 ActionCodes.LTS <> states proj
+R3634:3634 ActionCodes.LTS <> N:48 var
+binder 3624:3624 <> p:52
+R3641:3641 ActionCodes.LTS <> A:46 var
+binder 3638:3638 <> a:53
+R3660:3663 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3653:3655 ActionCodes.LTS <> rel:49 var
+R3659:3659 ActionCodes.LTS <> p:52 var
+R3657:3657 ActionCodes.LTS <> q:50 var
+R3664:3664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3676:3690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3666:3668 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R3670:3673 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R3665:3665 ActionCodes.LTS <> q:50 var
+R3669:3669 ActionCodes.LTS <> a:53 var
+R3674:3675 ActionCodes.LTS <> q':51 var
+R3691:3697 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3710:3711 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3702:3707 ActionCodes.LTS <> states proj
+R3709:3709 ActionCodes.LTS <> N:48 var
+binder 3698:3699 <> p':54
+R3712:3712 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3724:3728 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3714:3716 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R3718:3721 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R3713:3713 ActionCodes.LTS <> p:52 var
+R3717:3717 ActionCodes.LTS <> a:53 var
+R3722:3723 ActionCodes.LTS <> p':54 var
+R3729:3731 ActionCodes.LTS <> rel:49 var
+R3736:3737 ActionCodes.LTS <> p':54 var
+R3733:3734 ActionCodes.LTS <> q':51 var
+prf 3747:3766 <> step_closed_sequence
+binder 3769:3769 <> A:55
+R3785:3787 ActionCodes.LTS <> LTS def
+R3789:3789 ActionCodes.LTS <> A:55 var
+binder 3779:3779 <> M:56
+binder 3781:3781 <> N:57
+R3810:3813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3802:3807 ActionCodes.LTS <> states proj
+R3809:3809 ActionCodes.LTS <> M:56 var
+R3822:3825 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3814:3819 ActionCodes.LTS <> states proj
+R3821:3821 ActionCodes.LTS <> N:57 var
+binder 3797:3799 <> rel:58
+R3859:3868 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3840:3850 ActionCodes.LTS <> step_closed def
+R3856:3858 ActionCodes.LTS <> rel:58 var
+R3854:3854 ActionCodes.LTS <> N:57 var
+R3852:3852 ActionCodes.LTS <> M:56 var
+R3883:3888 ActionCodes.LTS <> states proj
+R3890:3890 ActionCodes.LTS <> M:56 var
+binder 3877:3877 <> q:59
+binder 3879:3880 <> q':60
+R3897:3902 ActionCodes.LTS <> states proj
+R3904:3904 ActionCodes.LTS <> N:57 var
+binder 3894:3894 <> p:61
+R3911:3914 Coq.Init.Datatypes <> list ind
+R3916:3916 ActionCodes.LTS <> A:55 var
+binder 3908:3908 <> w:62
+R3935:3938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3928:3930 ActionCodes.LTS <> rel:58 var
+R3934:3934 ActionCodes.LTS <> p:61 var
+R3932:3932 ActionCodes.LTS <> q:59 var
+R3939:3939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3950:3964 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3941:3943 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3945:3947 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3940:3940 ActionCodes.LTS <> q:59 var
+R3944:3944 ActionCodes.LTS <> w:62 var
+R3948:3949 ActionCodes.LTS <> q':60 var
+R3965:3971 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3984:3985 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3976:3981 ActionCodes.LTS <> states proj
+R3983:3983 ActionCodes.LTS <> N:57 var
+binder 3972:3973 <> p':63
+R3986:3986 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3998:4002 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3988:3990 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3992:3995 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R3987:3987 ActionCodes.LTS <> p:61 var
+R3991:3991 ActionCodes.LTS <> w:62 var
+R3996:3997 ActionCodes.LTS <> p':63 var
+R4003:4005 ActionCodes.LTS <> rel:58 var
+R4010:4011 ActionCodes.LTS <> p':63 var
+R4007:4008 ActionCodes.LTS <> q':60 var
+ind 4534:4543 <> Simulation
+constr 4581:4596 <> Build_Simulation
+binder 4546:4546 <> A:64
+R4562:4564 ActionCodes.LTS <> LTS def
+R4566:4566 ActionCodes.LTS <> A:64 var
+binder 4556:4556 <> M:65
+binder 4558:4558 <> N:66
+R4619:4622 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4611:4616 ActionCodes.LTS <> states proj
+R4618:4618 ActionCodes.LTS <> M:65 var
+R4631:4634 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4623:4628 ActionCodes.LTS <> states proj
+R4630:4630 ActionCodes.LTS <> N:66 var
+binder 4606:4608 <> rel:69
+R4668:4671 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4645:4659 ActionCodes.LTS <> relates_initial def
+R4665:4667 ActionCodes.LTS <> rel:69 var
+R4663:4663 ActionCodes.LTS <> N:66 var
+R4661:4661 ActionCodes.LTS <> M:65 var
+R4691:4694 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4672:4682 ActionCodes.LTS <> step_closed def
+R4688:4690 ActionCodes.LTS <> rel:69 var
+R4686:4686 ActionCodes.LTS <> N:66 var
+R4684:4684 ActionCodes.LTS <> M:65 var
+R4695:4704 ActionCodes.LTS <> Simulation:67 ind
+R4708:4708 ActionCodes.LTS <> N:66 var
+R4706:4706 ActionCodes.LTS <> M:65 var
+scheme 4534:4543 <> Simulation_rect
+scheme 4534:4543 <> Simulation_ind
+scheme 4534:4543 <> Simulation_rec
+scheme 4534:4543 <> Simulation_sind
+def 4723:4734 <> proj_sim_rel
+binder 4737:4737 <> A:70
+R4753:4755 ActionCodes.LTS <> LTS def
+R4757:4757 ActionCodes.LTS <> A:70 var
+binder 4747:4747 <> M:71
+binder 4749:4749 <> N:72
+R4776:4780 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4809:4809 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4762:4771 ActionCodes.LTS <> Simulation ind
+R4775:4775 ActionCodes.LTS <> N:72 var
+R4773:4773 ActionCodes.LTS <> M:71 var
+R4789:4792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4781:4786 ActionCodes.LTS <> states proj
+R4788:4788 ActionCodes.LTS <> M:71 var
+R4801:4804 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4793:4798 ActionCodes.LTS <> states proj
+R4800:4800 ActionCodes.LTS <> N:72 var
+R4857:4903 ActionCodes.LTS <> proj_sim_rel def
+def 4918:4933 <> proj_sim_initial
+binder 4936:4936 <> A:73
+R4952:4954 ActionCodes.LTS <> LTS def
+R4956:4956 ActionCodes.LTS <> A:73 var
+binder 4946:4946 <> M:74
+binder 4948:4948 <> N:75
+R4963:4972 ActionCodes.LTS <> Simulation ind
+R4976:4976 ActionCodes.LTS <> N:75 var
+R4974:4974 ActionCodes.LTS <> M:74 var
+binder 4960:4960 <> S:76
+R4982:4996 ActionCodes.LTS <> relates_initial def
+R5002:5002 ActionCodes.LTS <> S:76 var
+R5000:5000 ActionCodes.LTS <> N:75 var
+R4998:4998 ActionCodes.LTS <> M:74 var
+def 5066:5078 <> proj_sim_step
+binder 5081:5081 <> A:77
+R5097:5099 ActionCodes.LTS <> LTS def
+R5101:5101 ActionCodes.LTS <> A:77 var
+binder 5091:5091 <> M:78
+binder 5093:5093 <> N:79
+R5108:5117 ActionCodes.LTS <> Simulation ind
+R5121:5121 ActionCodes.LTS <> N:79 var
+R5119:5119 ActionCodes.LTS <> M:78 var
+binder 5105:5105 <> S:80
+R5127:5137 ActionCodes.LTS <> step_closed def
+R5143:5143 ActionCodes.LTS <> S:80 var
+R5141:5141 ActionCodes.LTS <> N:79 var
+R5139:5139 ActionCodes.LTS <> M:78 var
+prf 5202:5219 <> simulation_compose
+binder 5222:5222 <> A:81
+R5239:5241 ActionCodes.LTS <> LTS def
+R5243:5243 ActionCodes.LTS <> A:81 var
+binder 5232:5232 <> M:82
+binder 5234:5234 <> N:83
+binder 5236:5236 <> K:84
+R5264:5267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5250:5259 ActionCodes.LTS <> Simulation ind
+R5263:5263 ActionCodes.LTS <> N:83 var
+R5261:5261 ActionCodes.LTS <> M:82 var
+R5282:5285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5268:5277 ActionCodes.LTS <> Simulation ind
+R5281:5281 ActionCodes.LTS <> K:84 var
+R5279:5279 ActionCodes.LTS <> N:83 var
+R5286:5295 ActionCodes.LTS <> Simulation ind
+R5299:5299 ActionCodes.LTS <> K:84 var
+R5297:5297 ActionCodes.LTS <> M:82 var
+R5412:5417 ActionCodes.LTS <> states proj
+binder 5410:5410 <> m:85
+R5425:5430 ActionCodes.LTS <> states proj
+binder 5423:5423 <> k:86
+R5445:5451 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5463:5464 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5455:5460 ActionCodes.LTS <> states proj
+binder 5452:5452 <> n:87
+R5470:5473 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5467:5467 ActionCodes.LTS <> m:85 var
+R5469:5469 ActionCodes.LTS <> n:87 var
+R5476:5476 ActionCodes.LTS <> n:87 var
+R5478:5478 ActionCodes.LTS <> k:86 var
+R5412:5417 ActionCodes.LTS <> states proj
+binder 5410:5410 <> m:88
+R5425:5430 ActionCodes.LTS <> states proj
+binder 5423:5423 <> k:89
+R5445:5451 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5463:5464 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5455:5460 ActionCodes.LTS <> states proj
+binder 5452:5452 <> n:90
+R5470:5473 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5467:5467 ActionCodes.LTS <> m:88 var
+R5469:5469 ActionCodes.LTS <> n:90 var
+R5476:5476 ActionCodes.LTS <> n:90 var
+R5478:5478 ActionCodes.LTS <> k:89 var
+R5490:5505 ActionCodes.LTS <> Build_Simulation constr
+R5490:5505 ActionCodes.LTS <> Build_Simulation constr
+R5548:5554 ActionCodes.LTS <> initial proj
+R5548:5554 ActionCodes.LTS <> initial proj
+def 5945:5958 <> step_closed_hd
+binder 5961:5961 <> A:91
+R5976:5978 ActionCodes.LTS <> LTS def
+R5980:5980 ActionCodes.LTS <> A:91 var
+binder 5971:5971 <> M:92
+binder 5973:5973 <> N:93
+R6003:6006 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5995:6000 ActionCodes.LTS <> states proj
+R6002:6002 ActionCodes.LTS <> M:92 var
+R6015:6018 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6007:6012 ActionCodes.LTS <> states proj
+R6014:6014 ActionCodes.LTS <> N:93 var
+binder 5990:5992 <> rel:94
+R6049:6052 Coq.Init.Datatypes <> list ind
+R6054:6054 ActionCodes.LTS <> A:91 var
+binder 6046:6046 <> w:95
+R6064:6069 ActionCodes.LTS <> states proj
+R6071:6071 ActionCodes.LTS <> M:92 var
+binder 6058:6058 <> q:96
+binder 6060:6061 <> q':97
+R6078:6083 ActionCodes.LTS <> states proj
+R6085:6085 ActionCodes.LTS <> N:93 var
+binder 6075:6075 <> p:98
+R6092:6092 ActionCodes.LTS <> A:91 var
+binder 6089:6089 <> a:99
+R6104:6104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6127:6139 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6105:6105 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6115:6119 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6121:6125 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6106:6112 ActionCodes.LTS <> initial proj
+R6114:6114 ActionCodes.LTS <> M:92 var
+R6120:6120 ActionCodes.LTS <> w:95 var
+R6126:6126 ActionCodes.LTS <> q:96 var
+R6140:6140 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6163:6175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6141:6141 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6151:6155 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6157:6161 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6142:6148 ActionCodes.LTS <> initial proj
+R6150:6150 ActionCodes.LTS <> N:93 var
+R6156:6156 ActionCodes.LTS <> w:95 var
+R6162:6162 ActionCodes.LTS <> p:98 var
+R6176:6176 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6184:6196 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6177:6179 ActionCodes.LTS <> rel:94 var
+R6183:6183 ActionCodes.LTS <> p:98 var
+R6181:6181 ActionCodes.LTS <> q:96 var
+R6197:6197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6209:6223 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6199:6201 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R6203:6206 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R6198:6198 ActionCodes.LTS <> q:96 var
+R6202:6202 ActionCodes.LTS <> a:99 var
+R6207:6208 ActionCodes.LTS <> q':97 var
+R6224:6230 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6243:6244 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6235:6240 ActionCodes.LTS <> states proj
+R6242:6242 ActionCodes.LTS <> N:93 var
+binder 6231:6232 <> p':100
+R6245:6245 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6257:6261 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6247:6249 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R6251:6254 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R6246:6246 ActionCodes.LTS <> p:98 var
+R6250:6250 ActionCodes.LTS <> a:99 var
+R6255:6256 ActionCodes.LTS <> p':100 var
+R6262:6264 ActionCodes.LTS <> rel:94 var
+R6269:6270 ActionCodes.LTS <> p':100 var
+R6266:6267 ActionCodes.LTS <> q':97 var
+def 6285:6308 <> history_dependent_subrel
+binder 6311:6311 <> A:101
+R6326:6328 ActionCodes.LTS <> LTS def
+R6330:6330 ActionCodes.LTS <> A:101 var
+binder 6321:6321 <> M:102
+binder 6323:6323 <> N:103
+R6353:6356 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6345:6350 ActionCodes.LTS <> states proj
+R6352:6352 ActionCodes.LTS <> M:102 var
+R6365:6368 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6357:6362 ActionCodes.LTS <> states proj
+R6364:6364 ActionCodes.LTS <> N:103 var
+binder 6340:6342 <> rel:104
+R6385:6388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6377:6382 ActionCodes.LTS <> states proj
+R6384:6384 ActionCodes.LTS <> M:102 var
+R6397:6400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6389:6394 ActionCodes.LTS <> states proj
+R6396:6396 ActionCodes.LTS <> N:103 var
+R6420:6425 ActionCodes.LTS <> states proj
+R6427:6427 ActionCodes.LTS <> M:102 var
+binder 6417:6417 <> q:105
+R6434:6439 ActionCodes.LTS <> states proj
+R6441:6441 ActionCodes.LTS <> N:103 var
+binder 6431:6431 <> p:106
+R6454:6460 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6470:6478 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6464:6467 Coq.Init.Datatypes <> list ind
+R6469:6469 ActionCodes.LTS <> A:101 var
+binder 6461:6461 <> w:107
+R6479:6479 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6502:6513 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6480:6480 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6490:6494 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6496:6500 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6481:6487 ActionCodes.LTS <> initial proj
+R6489:6489 ActionCodes.LTS <> M:102 var
+R6495:6495 ActionCodes.LTS <> w:107 var
+R6501:6501 ActionCodes.LTS <> q:105 var
+R6514:6514 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6537:6558 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6515:6515 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6525:6529 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6531:6535 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R6516:6522 ActionCodes.LTS <> initial proj
+R6524:6524 ActionCodes.LTS <> N:103 var
+R6530:6530 ActionCodes.LTS <> w:107 var
+R6536:6536 ActionCodes.LTS <> p:106 var
+R6559:6561 ActionCodes.LTS <> rel:104 var
+R6565:6565 ActionCodes.LTS <> p:106 var
+R6563:6563 ActionCodes.LTS <> q:105 var
+prf 6575:6606 <> history_dependent_is_step_closed
+binder 6609:6609 <> A:108
+R6624:6626 ActionCodes.LTS <> LTS def
+R6628:6628 ActionCodes.LTS <> A:108 var
+binder 6619:6619 <> M:109
+binder 6621:6621 <> N:110
+R6647:6650 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6639:6644 ActionCodes.LTS <> states proj
+R6646:6646 ActionCodes.LTS <> M:109 var
+R6659:6662 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6651:6656 ActionCodes.LTS <> states proj
+R6658:6658 ActionCodes.LTS <> N:110 var
+binder 6634:6636 <> rel:111
+R6694:6697 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6672:6685 ActionCodes.LTS <> step_closed_hd def
+R6691:6693 ActionCodes.LTS <> rel:111 var
+R6698:6708 ActionCodes.LTS <> step_closed def
+R6715:6738 ActionCodes.LTS <> history_dependent_subrel def
+R6740:6742 ActionCodes.LTS <> rel:111 var
+R6762:6775 ActionCodes.LTS <> step_closed_hd def
+R6787:6797 ActionCodes.LTS <> step_closed def
+R6859:6882 ActionCodes.LTS <> history_dependent_subrel def
+R7003:7006 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7007:7007 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7009:7009 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7003:7006 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7007:7007 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7009:7009 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7042:7049 ActionCodes.LTS <> path_app thm
+R7042:7049 ActionCodes.LTS <> path_app thm
+R7042:7049 ActionCodes.LTS <> path_app thm
+R7042:7049 ActionCodes.LTS <> path_app thm
+R7076:7091 ActionCodes.LTS <> gtrans_singleton thm
+R7076:7091 ActionCodes.LTS <> gtrans_singleton thm
+R7076:7091 ActionCodes.LTS <> gtrans_singleton thm
+prf 7212:7231 <> Build_PathSimulation
+binder 7234:7234 <> A:112
+R7249:7251 ActionCodes.LTS <> LTS def
+R7253:7253 ActionCodes.LTS <> A:112 var
+binder 7244:7244 <> M:113
+binder 7246:7246 <> N:114
+R7272:7275 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7264:7269 ActionCodes.LTS <> states proj
+R7271:7271 ActionCodes.LTS <> M:113 var
+R7284:7287 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7276:7281 ActionCodes.LTS <> states proj
+R7283:7283 ActionCodes.LTS <> N:114 var
+binder 7259:7261 <> rel:115
+R7320:7327 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7297:7311 ActionCodes.LTS <> relates_initial def
+R7317:7319 ActionCodes.LTS <> rel:115 var
+R7350:7357 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7328:7341 ActionCodes.LTS <> step_closed_hd def
+R7347:7349 ActionCodes.LTS <> rel:115 var
+R7358:7367 ActionCodes.LTS <> Simulation ind
+R7371:7371 ActionCodes.LTS <> N:114 var
+R7369:7369 ActionCodes.LTS <> M:113 var
+R7426:7449 ActionCodes.LTS <> history_dependent_subrel def
+R7426:7449 ActionCodes.LTS <> history_dependent_subrel def
+R7466:7481 ActionCodes.LTS <> Build_Simulation constr
+R7466:7481 ActionCodes.LTS <> Build_Simulation constr
+R7512:7514 Coq.Init.Datatypes <> nil constr
+R7512:7514 Coq.Init.Datatypes <> nil constr
+R7546:7577 ActionCodes.LTS <> history_dependent_is_step_closed thm
+R7546:7577 ActionCodes.LTS <> history_dependent_is_step_closed thm
+def 7604:7615 <> traces_state
+binder 7618:7618 <> A:116
+R7631:7633 ActionCodes.LTS <> LTS def
+R7635:7635 ActionCodes.LTS <> A:116 var
+binder 7628:7628 <> M:117
+R7642:7647 ActionCodes.LTS <> states proj
+R7649:7649 ActionCodes.LTS <> M:117 var
+binder 7639:7639 <> q:118
+R7660:7663 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7654:7657 Coq.Init.Datatypes <> list ind
+R7659:7659 ActionCodes.LTS <> A:116 var
+binder 7678:7681 <> word:119
+R7686:7692 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7706:7708 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7723:7723 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7698:7703 ActionCodes.LTS <> states proj
+R7705:7705 ActionCodes.LTS <> M:117 var
+binder 7693:7694 <> q':120
+R7710:7712 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R7717:7720 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R7709:7709 ActionCodes.LTS <> q:118 var
+R7713:7716 ActionCodes.LTS <> word:119 var
+R7721:7722 ActionCodes.LTS <> q':120 var
+def 7738:7743 <> traces
+binder 7746:7746 <> A:121
+R7759:7761 ActionCodes.LTS <> LTS def
+R7763:7763 ActionCodes.LTS <> A:121 var
+binder 7756:7756 <> M:122
+R7774:7777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7768:7771 Coq.Init.Datatypes <> list ind
+R7773:7773 ActionCodes.LTS <> A:121 var
+R7788:7799 ActionCodes.LTS <> traces_state def
+R7802:7808 ActionCodes.LTS <> initial proj
+R7810:7810 ActionCodes.LTS <> M:122 var
+def 7826:7839 <> pred_inclusion
+binder 7842:7842 <> X:123
+R7860:7863 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7859:7859 ActionCodes.LTS <> X:123 var
+binder 7852:7853 <> P1:124
+binder 7855:7856 <> P2:125
+R7883:7883 ActionCodes.LTS <> X:123 var
+binder 7880:7880 <> x:126
+R7890:7893 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7886:7887 ActionCodes.LTS <> P1:124 var
+R7889:7889 ActionCodes.LTS <> x:126 var
+R7894:7895 ActionCodes.LTS <> P2:125 var
+R7897:7897 ActionCodes.LTS <> x:126 var
+prf 7909:7942 <> simulation_implies_trace_inclusion
+binder 7945:7945 <> A:127
+R7960:7962 ActionCodes.LTS <> LTS def
+R7964:7964 ActionCodes.LTS <> A:127 var
+binder 7955:7955 <> M:128
+binder 7957:7957 <> N:129
+R7985:7988 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7971:7980 ActionCodes.LTS <> Simulation ind
+R7984:7984 ActionCodes.LTS <> N:129 var
+R7982:7982 ActionCodes.LTS <> M:128 var
+R7989:8002 ActionCodes.LTS <> pred_inclusion def
+R8016:8021 ActionCodes.LTS <> traces def
+R8023:8023 ActionCodes.LTS <> N:129 var
+R8005:8010 ActionCodes.LTS <> traces def
+R8012:8012 ActionCodes.LTS <> M:128 var
+R8116:8122 ActionCodes.LTS <> initial proj
+R8077:8096 ActionCodes.LTS <> step_closed_sequence thm
+R8147:8159 ActionCodes.LTS <> proj_sim_step def
+R8176:8191 ActionCodes.LTS <> proj_sim_initial def
+R8116:8122 ActionCodes.LTS <> initial proj
+R8077:8096 ActionCodes.LTS <> step_closed_sequence thm
+R8147:8159 ActionCodes.LTS <> proj_sim_step def
+R8147:8159 ActionCodes.LTS <> proj_sim_step def
+R8147:8159 ActionCodes.LTS <> proj_sim_step def
+R8176:8191 ActionCodes.LTS <> proj_sim_initial def
+R8176:8191 ActionCodes.LTS <> proj_sim_initial def
+def 8278:8290 <> deterministic
+binder 8293:8293 <> A:130
+R8313:8316 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8312:8312 ActionCodes.LTS <> A:130 var
+R8318:8321 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8317:8317 ActionCodes.LTS <> A:130 var
+binder 8303:8309 <> related:131
+R8332:8334 ActionCodes.LTS <> LTS def
+R8336:8336 ActionCodes.LTS <> A:130 var
+binder 8329:8329 <> M:132
+R8361:8366 ActionCodes.LTS <> states proj
+R8368:8368 ActionCodes.LTS <> M:132 var
+binder 8352:8352 <> q:133
+binder 8354:8355 <> q1:134
+binder 8357:8358 <> q2:135
+R8379:8379 ActionCodes.LTS <> A:130 var
+binder 8372:8373 <> a1:136
+binder 8375:8376 <> a2:137
+R8387:8387 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8400:8404 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8389:8391 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R8394:8397 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R8388:8388 ActionCodes.LTS <> q:133 var
+R8392:8393 ActionCodes.LTS <> a1:136 var
+R8398:8399 ActionCodes.LTS <> q1:134 var
+R8405:8405 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8418:8422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8407:8409 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R8412:8415 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R8406:8406 ActionCodes.LTS <> q:133 var
+R8410:8411 ActionCodes.LTS <> a2:137 var
+R8416:8417 ActionCodes.LTS <> q2:135 var
+R8423:8423 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8437:8447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8424:8430 ActionCodes.LTS <> related:131 var
+R8435:8436 ActionCodes.LTS <> a2:137 var
+R8432:8433 ActionCodes.LTS <> a1:136 var
+R8455:8458 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8450:8452 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8448:8449 ActionCodes.LTS <> a1:136 var
+R8453:8454 ActionCodes.LTS <> a2:137 var
+R8461:8463 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8459:8460 ActionCodes.LTS <> q1:134 var
+R8464:8465 ActionCodes.LTS <> q2:135 var
+R8507:8519 ActionCodes.LTS <> deterministic def
+binder 8526:8526 <> x:138
+binder 8528:8528 <> y:139
+R8534:8536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8533:8533 ActionCodes.LTS <> x:138 var
+R8537:8537 ActionCodes.LTS <> y:139 var
+not 8478:8478 <> ::type_scope:x_'is'_'deterministic'
+R8613:8625 ActionCodes.LTS <> deterministic def
+not 8580:8580 <> ::type_scope:x_'is'_x_'deterministic'
+ind 8735:8747 <> list_rel_lift
+constr 8822:8833 <> list_rel_nil
+constr 8867:8879 <> list_rel_cons
+binder 8750:8750 <> X:140
+binder 8752:8752 <> Y:141
+R8769:8772 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8768:8768 ActionCodes.LTS <> X:140 var
+R8774:8777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8773:8773 ActionCodes.LTS <> Y:141 var
+binder 8763:8765 <> rel:142
+R8794:8797 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8788:8791 Coq.Init.Datatypes <> list ind
+R8804:8807 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8798:8801 Coq.Init.Datatypes <> list ind
+R8837:8849 ActionCodes.LTS <> list_rel_lift:143 ind
+R8859:8861 Coq.Init.Datatypes <> nil constr
+R8855:8857 Coq.Init.Datatypes <> nil constr
+R8851:8853 ActionCodes.LTS <> rel:142 var
+R8894:8894 ActionCodes.LTS <> X:140 var
+binder 8891:8891 <> x:145
+R8901:8901 ActionCodes.LTS <> Y:141 var
+binder 8898:8898 <> y:146
+R8909:8912 Coq.Init.Datatypes <> list ind
+R8914:8914 ActionCodes.LTS <> X:140 var
+binder 8905:8906 <> lx:147
+R8922:8925 Coq.Init.Datatypes <> list ind
+R8927:8927 ActionCodes.LTS <> Y:141 var
+binder 8918:8919 <> ly:148
+R8944:8947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8937:8939 ActionCodes.LTS <> rel:142 var
+R8943:8943 ActionCodes.LTS <> y:146 var
+R8941:8941 ActionCodes.LTS <> x:145 var
+R8971:8974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8948:8960 ActionCodes.LTS <> list_rel_lift:143 ind
+R8969:8970 ActionCodes.LTS <> ly:148 var
+R8966:8967 ActionCodes.LTS <> lx:147 var
+R8962:8964 ActionCodes.LTS <> rel:142 var
+R8975:8987 ActionCodes.LTS <> list_rel_lift:143 ind
+R9003:9004 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9002:9002 ActionCodes.LTS <> y:146 var
+R9005:9006 ActionCodes.LTS <> ly:148 var
+R8995:8996 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8994:8994 ActionCodes.LTS <> x:145 var
+R8997:8998 ActionCodes.LTS <> lx:147 var
+R8989:8991 ActionCodes.LTS <> rel:142 var
+scheme 8735:8747 <> list_rel_lift_ind
+scheme 8735:8747 <> list_rel_lift_sind
+def 9022:9026 <> idRel
+binder 9029:9029 <> A:149
+R9041:9044 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9040:9040 ActionCodes.LTS <> A:149 var
+R9046:9049 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9045:9045 ActionCodes.LTS <> A:149 var
+binder 9062:9062 <> a:150
+binder 9064:9065 <> a':151
+R9071:9073 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9070:9070 ActionCodes.LTS <> a:150 var
+R9074:9075 ActionCodes.LTS <> a':151 var
+def 9090:9102 <> simulation_id
+binder 9105:9105 <> A:152
+R9118:9120 ActionCodes.LTS <> LTS def
+R9122:9122 ActionCodes.LTS <> A:152 var
+binder 9115:9115 <> M:153
+R9129:9138 ActionCodes.LTS <> Simulation ind
+R9142:9142 ActionCodes.LTS <> M:153 var
+R9140:9140 ActionCodes.LTS <> M:153 var
+R9162:9177 ActionCodes.LTS <> Build_Simulation constr
+R9183:9187 ActionCodes.LTS <> idRel def
+R9162:9177 ActionCodes.LTS <> Build_Simulation constr
+R9183:9187 ActionCodes.LTS <> idRel def
+prf 9315:9329 <> idRel_reflexive
+binder 9332:9332 <> A:154
+R9343:9351 Coq.Relations.Relation_Definitions <> reflexive def
+R9355:9359 ActionCodes.LTS <> idRel def
+R9353:9353 ActionCodes.LTS <> A:154 var
+prf 9403:9425 <> list_rel_lift_reflexive
+binder 9428:9428 <> A:155
+R9444:9447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9443:9443 ActionCodes.LTS <> A:155 var
+R9449:9452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9448:9448 ActionCodes.LTS <> A:155 var
+binder 9438:9440 <> rel:156
+R9477:9480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9462:9470 Coq.Relations.Relation_Definitions <> reflexive def
+R9474:9476 ActionCodes.LTS <> rel:156 var
+R9481:9489 Coq.Relations.Relation_Definitions <> reflexive def
+R9494:9506 ActionCodes.LTS <> list_rel_lift ind
+R9508:9510 ActionCodes.LTS <> rel:156 var
+prf 9598:9613 <> list_rel_lift_id
+binder 9616:9616 <> A:157
+R9629:9641 Coq.Relations.Relation_Definitions <> same_relation def
+R9646:9658 ActionCodes.LTS <> list_rel_lift ind
+R9662:9666 ActionCodes.LTS <> idRel def
+R9668:9668 ActionCodes.LTS <> A:157 var
+R9672:9676 ActionCodes.LTS <> idRel def
+R9844:9866 ActionCodes.LTS <> list_rel_lift_reflexive thm
+R9844:9866 ActionCodes.LTS <> list_rel_lift_reflexive thm
+R9879:9893 ActionCodes.LTS <> idRel_reflexive thm
+R9879:9893 ActionCodes.LTS <> idRel_reflexive thm
+prf 9908:9924 <> list_rel_lift_app
+binder 9927:9927 <> X:158
+binder 9929:9929 <> Y:159
+R9945:9948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9944:9944 ActionCodes.LTS <> X:158 var
+R9950:9953 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9949:9949 ActionCodes.LTS <> Y:159 var
+binder 9939:9941 <> rel:160
+R9972:9975 Coq.Init.Datatypes <> list ind
+R9977:9977 ActionCodes.LTS <> X:158 var
+binder 9963:9965 <> lx1:161
+binder 9967:9969 <> lx2:162
+R9990:9993 Coq.Init.Datatypes <> list ind
+R9995:9995 ActionCodes.LTS <> Y:159 var
+binder 9981:9983 <> ly1:163
+binder 9985:9987 <> ly2:164
+R10026:10031 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10001:10013 ActionCodes.LTS <> list_rel_lift ind
+R10023:10025 ActionCodes.LTS <> ly1:163 var
+R10019:10021 ActionCodes.LTS <> lx1:161 var
+R10015:10017 ActionCodes.LTS <> rel:160 var
+R10057:10062 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10032:10044 ActionCodes.LTS <> list_rel_lift ind
+R10054:10056 ActionCodes.LTS <> ly2:164 var
+R10050:10052 ActionCodes.LTS <> lx2:162 var
+R10046:10048 ActionCodes.LTS <> rel:160 var
+R10063:10075 ActionCodes.LTS <> list_rel_lift ind
+R10098:10101 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10095:10097 ActionCodes.LTS <> ly1:163 var
+R10102:10104 ActionCodes.LTS <> ly2:164 var
+R10085:10088 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10082:10084 ActionCodes.LTS <> lx1:161 var
+R10089:10091 ActionCodes.LTS <> lx2:162 var
+R10077:10079 ActionCodes.LTS <> rel:160 var
+prf 10315:10336 <> deterministic_sequence
+binder 10339:10339 <> A:165
+R10355:10358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10354:10354 ActionCodes.LTS <> A:165 var
+R10360:10363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10359:10359 ActionCodes.LTS <> A:165 var
+binder 10349:10351 <> rel:166
+R10374:10376 ActionCodes.LTS <> LTS def
+R10378:10378 ActionCodes.LTS <> A:165 var
+binder 10371:10371 <> M:167
+R10407:10412 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10386:10389 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R10393:10406 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R10390:10392 ActionCodes.LTS <> rel:166 var
+R10385:10385 ActionCodes.LTS <> M:167 var
+R10430:10435 ActionCodes.LTS <> states proj
+R10437:10437 ActionCodes.LTS <> M:167 var
+binder 10421:10421 <> q:168
+binder 10423:10424 <> q1:169
+binder 10426:10427 <> q2:170
+R10448:10451 Coq.Init.Datatypes <> list ind
+R10453:10453 ActionCodes.LTS <> A:165 var
+binder 10441:10442 <> w1:171
+binder 10444:10445 <> w2:172
+R10461:10461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10474:10478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10463:10465 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R10468:10471 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R10462:10462 ActionCodes.LTS <> q:168 var
+R10466:10467 ActionCodes.LTS <> w1:171 var
+R10472:10473 ActionCodes.LTS <> q1:169 var
+R10479:10479 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10492:10496 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10481:10483 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R10486:10489 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R10480:10480 ActionCodes.LTS <> q:168 var
+R10484:10485 ActionCodes.LTS <> w2:172 var
+R10490:10491 ActionCodes.LTS <> q2:170 var
+R10497:10497 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10521:10531 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10498:10510 ActionCodes.LTS <> list_rel_lift ind
+R10519:10520 ActionCodes.LTS <> w2:172 var
+R10516:10517 ActionCodes.LTS <> w1:171 var
+R10512:10514 ActionCodes.LTS <> rel:166 var
+R10539:10542 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10534:10536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10532:10533 ActionCodes.LTS <> w1:171 var
+R10537:10538 ActionCodes.LTS <> w2:172 var
+R10545:10547 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10543:10544 ActionCodes.LTS <> q1:169 var
+R10548:10549 ActionCodes.LTS <> q2:170 var
+R10760:10763 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10756:10758 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10768:10770 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10760:10763 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10756:10758 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10768:10770 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10865:10868 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10860:10862 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10871:10873 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10865:10868 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10860:10862 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10871:10873 Coq.Init.Logic <> ::type_scope:x_'='_x not
+def 11001:11008 <> converse
+binder 11011:11011 <> X:173
+binder 11013:11013 <> Y:174
+R11029:11032 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11028:11028 ActionCodes.LTS <> X:173 var
+R11034:11037 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11033:11033 ActionCodes.LTS <> Y:174 var
+binder 11023:11025 <> rel:175
+R11048:11051 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11047:11047 ActionCodes.LTS <> Y:174 var
+R11053:11056 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11052:11052 ActionCodes.LTS <> X:173 var
+binder 11074:11074 <> y:176
+binder 11076:11076 <> x:177
+R11081:11083 ActionCodes.LTS <> rel:175 var
+R11087:11087 ActionCodes.LTS <> y:176 var
+R11085:11085 ActionCodes.LTS <> x:177 var
+prf 11097:11119 <> deterministic_symmetric
+binder 11122:11122 <> A:178
+R11139:11146 Coq.Relations.Relation_Definitions <> relation def
+R11148:11148 ActionCodes.LTS <> A:178 var
+binder 11132:11136 <> rel_a:179
+R11155:11157 ActionCodes.LTS <> LTS def
+R11159:11159 ActionCodes.LTS <> A:178 var
+binder 11152:11152 <> M:180
+R11190:11194 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R11167:11170 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R11176:11189 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R11171:11175 ActionCodes.LTS <> rel_a:179 var
+R11166:11166 ActionCodes.LTS <> M:180 var
+R11196:11200 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R11215:11229 ActionCodes.LTS <> ::type_scope:x_'is'_x_'deterministic' not
+R11201:11208 ActionCodes.LTS <> converse def
+R11210:11214 ActionCodes.LTS <> rel_a:179 var
+R11195:11195 ActionCodes.LTS <> M:180 var
+R11299:11306 ActionCodes.LTS <> converse def
+R11331:11334 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R11326:11328 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11337:11339 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11331:11334 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R11326:11328 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11337:11339 Coq.Init.Logic <> ::type_scope:x_'='_x not
+def 11447:11457 <> left_unique
+binder 11460:11460 <> X:181
+binder 11462:11462 <> Y:182
+R11478:11481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11477:11477 ActionCodes.LTS <> X:181 var
+R11483:11486 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11482:11482 ActionCodes.LTS <> Y:182 var
+binder 11472:11474 <> rel:183
+R11518:11518 ActionCodes.LTS <> X:181 var
+binder 11515:11515 <> x:184
+R11529:11529 ActionCodes.LTS <> Y:182 var
+binder 11522:11523 <> y1:185
+binder 11525:11526 <> y2:186
+R11541:11544 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11533:11535 ActionCodes.LTS <> rel:183 var
+R11539:11540 ActionCodes.LTS <> y1:185 var
+R11537:11537 ActionCodes.LTS <> x:184 var
+R11553:11556 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11545:11547 ActionCodes.LTS <> rel:183 var
+R11551:11552 ActionCodes.LTS <> y2:186 var
+R11549:11549 ActionCodes.LTS <> x:184 var
+R11559:11561 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11557:11558 ActionCodes.LTS <> y1:185 var
+R11562:11563 ActionCodes.LTS <> y2:186 var
+def 11577:11588 <> right_unique
+binder 11591:11591 <> X:187
+binder 11593:11593 <> Y:188
+R11609:11612 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11608:11608 ActionCodes.LTS <> X:187 var
+R11614:11617 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11613:11613 ActionCodes.LTS <> Y:188 var
+binder 11603:11605 <> rel:189
+R11638:11648 ActionCodes.LTS <> left_unique def
+R11651:11658 ActionCodes.LTS <> converse def
+R11660:11662 ActionCodes.LTS <> rel:189 var
+ind 11677:11687 <> Isomorphism
+constr 11725:11741 <> Build_Isomorphism
+binder 11690:11690 <> A:190
+R11706:11708 ActionCodes.LTS <> LTS def
+R11710:11710 ActionCodes.LTS <> A:190 var
+binder 11700:11700 <> M:191
+binder 11702:11702 <> N:192
+R11764:11767 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11756:11761 ActionCodes.LTS <> states proj
+R11763:11763 ActionCodes.LTS <> M:191 var
+R11776:11779 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11768:11773 ActionCodes.LTS <> states proj
+R11775:11775 ActionCodes.LTS <> N:192 var
+binder 11751:11753 <> rel:195
+R11813:11820 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11790:11804 ActionCodes.LTS <> relates_initial def
+R11810:11812 ActionCodes.LTS <> rel:195 var
+R11808:11808 ActionCodes.LTS <> N:192 var
+R11806:11806 ActionCodes.LTS <> M:191 var
+R11840:11847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11821:11831 ActionCodes.LTS <> step_closed def
+R11837:11839 ActionCodes.LTS <> rel:195 var
+R11835:11835 ActionCodes.LTS <> N:192 var
+R11833:11833 ActionCodes.LTS <> M:191 var
+R11878:11885 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11848:11858 ActionCodes.LTS <> step_closed def
+R11865:11872 ActionCodes.LTS <> converse def
+R11874:11876 ActionCodes.LTS <> rel:195 var
+R11862:11862 ActionCodes.LTS <> M:191 var
+R11860:11860 ActionCodes.LTS <> N:192 var
+R11901:11908 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11886:11896 ActionCodes.LTS <> left_unique def
+R11898:11900 ActionCodes.LTS <> rel:195 var
+R11925:11932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11909:11920 ActionCodes.LTS <> right_unique def
+R11922:11924 ActionCodes.LTS <> rel:195 var
+R11933:11943 ActionCodes.LTS <> Isomorphism:193 ind
+R11947:11947 ActionCodes.LTS <> N:192 var
+R11945:11945 ActionCodes.LTS <> M:191 var
+scheme 11677:11687 <> Isomorphism_rect
+scheme 11677:11687 <> Isomorphism_ind
+scheme 11677:11687 <> Isomorphism_rec
+scheme 11677:11687 <> Isomorphism_sind
+ind 11961:11969 <> inhabited
+constr 11995:12011 <> witness_inhabited
+binder 11972:11972 <> A:196
+R12025:12025 ActionCodes.LTS <> A:196 var
+binder 12022:12022 <> a:199
+R12029:12037 ActionCodes.LTS <> inhabited:197 ind
+R12039:12039 ActionCodes.LTS <> A:196 var
+scheme 11961:11969 <> inhabited_ind
+scheme 11961:11969 <> inhabited_sind
+R12065:12075 ActionCodes.LTS <> Isomorphism ind
+not 12051:12051 <> ::type_scope:x_'≅'_x
+R12132:12140 ActionCodes.LTS <> inhabited ind
+R12143:12152 ActionCodes.LTS <> Simulation ind
+not 12118:12118 <> ::type_scope:x_'⊑'_x
+def 12200:12211 <> proj_iso_rel
+binder 12214:12214 <> A:200
+R12230:12232 ActionCodes.LTS <> LTS def
+R12234:12234 ActionCodes.LTS <> A:200 var
+binder 12224:12224 <> M:201
+binder 12226:12226 <> N:202
+R12258:12262 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12291:12291 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12243:12253 ActionCodes.LTS <> Isomorphism ind
+R12257:12257 ActionCodes.LTS <> N:202 var
+R12255:12255 ActionCodes.LTS <> M:201 var
+R12271:12274 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12263:12268 ActionCodes.LTS <> states proj
+R12270:12270 ActionCodes.LTS <> M:201 var
+R12283:12286 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12275:12280 ActionCodes.LTS <> states proj
+R12282:12282 ActionCodes.LTS <> N:202 var
+R12350:12397 ActionCodes.LTS <> proj_iso_rel def
+prf 12524:12544 <> Build_PathIsomorphism
+binder 12547:12547 <> A:203
+R12563:12565 ActionCodes.LTS <> LTS def
+R12567:12567 ActionCodes.LTS <> A:203 var
+binder 12557:12557 <> M:204
+binder 12559:12559 <> N:205
+R12594:12597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12586:12591 ActionCodes.LTS <> states proj
+R12593:12593 ActionCodes.LTS <> M:204 var
+R12606:12609 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12598:12603 ActionCodes.LTS <> states proj
+R12605:12605 ActionCodes.LTS <> N:205 var
+binder 12581:12583 <> rel:206
+R12643:12650 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12620:12634 ActionCodes.LTS <> relates_initial def
+R12640:12642 ActionCodes.LTS <> rel:206 var
+R12638:12638 ActionCodes.LTS <> N:205 var
+R12636:12636 ActionCodes.LTS <> M:204 var
+R12673:12680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12651:12664 ActionCodes.LTS <> step_closed_hd def
+R12670:12672 ActionCodes.LTS <> rel:206 var
+R12668:12668 ActionCodes.LTS <> N:205 var
+R12666:12666 ActionCodes.LTS <> M:204 var
+R12714:12721 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12681:12694 ActionCodes.LTS <> step_closed_hd def
+R12701:12708 ActionCodes.LTS <> converse def
+R12710:12712 ActionCodes.LTS <> rel:206 var
+R12698:12698 ActionCodes.LTS <> M:204 var
+R12696:12696 ActionCodes.LTS <> N:205 var
+R12764:12771 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12722:12732 ActionCodes.LTS <> left_unique def
+R12735:12758 ActionCodes.LTS <> history_dependent_subrel def
+R12760:12762 ActionCodes.LTS <> rel:206 var
+R12815:12822 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12772:12783 ActionCodes.LTS <> right_unique def
+R12786:12809 ActionCodes.LTS <> history_dependent_subrel def
+R12811:12813 ActionCodes.LTS <> rel:206 var
+R12823:12833 ActionCodes.LTS <> Isomorphism ind
+R12837:12837 ActionCodes.LTS <> N:205 var
+R12835:12835 ActionCodes.LTS <> M:204 var
+R12942:12965 ActionCodes.LTS <> history_dependent_subrel def
+R12911:12927 ActionCodes.LTS <> Build_Isomorphism constr
+R12942:12965 ActionCodes.LTS <> history_dependent_subrel def
+R12911:12927 ActionCodes.LTS <> Build_Isomorphism constr
+R12984:12986 Coq.Init.Datatypes <> nil constr
+R12984:12986 Coq.Init.Datatypes <> nil constr
+R13023:13054 ActionCodes.LTS <> history_dependent_is_step_closed thm
+R13023:13054 ActionCodes.LTS <> history_dependent_is_step_closed thm
+R13076:13086 ActionCodes.LTS <> step_closed def
+R13093:13116 ActionCodes.LTS <> history_dependent_subrel def
+R13119:13126 ActionCodes.LTS <> converse def
+R13076:13086 ActionCodes.LTS <> step_closed def
+R13093:13116 ActionCodes.LTS <> history_dependent_subrel def
+R13119:13126 ActionCodes.LTS <> converse def
+R13175:13206 ActionCodes.LTS <> history_dependent_is_step_closed thm
+R13175:13206 ActionCodes.LTS <> history_dependent_is_step_closed thm
+R13233:13240 ActionCodes.LTS <> converse def
+R13281:13304 ActionCodes.LTS <> history_dependent_subrel def
+prf 13448:13481 <> trace_inclusion_yields_step_closed
+binder 13484:13484 <> A:207
+R13499:13501 ActionCodes.LTS <> LTS def
+R13503:13503 ActionCodes.LTS <> A:207 var
+binder 13494:13494 <> M:208
+binder 13496:13496 <> N:209
+R13528:13533 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13511:13527 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R13510:13510 ActionCodes.LTS <> N:209 var
+R13570:13575 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13534:13547 ActionCodes.LTS <> pred_inclusion def
+R13561:13566 ActionCodes.LTS <> traces def
+R13568:13568 ActionCodes.LTS <> N:209 var
+R13550:13555 ActionCodes.LTS <> traces def
+R13557:13557 ActionCodes.LTS <> M:208 var
+R13576:13589 ActionCodes.LTS <> step_closed_hd def
+binder 13600:13600 <> q:210
+binder 13602:13602 <> p:211
+R13607:13610 Coq.Init.Logic <> True ind
+R13593:13593 ActionCodes.LTS <> N:209 var
+R13591:13591 ActionCodes.LTS <> M:208 var
+R13680:13691 ActionCodes.LTS <> traces_state def
+R13707:13710 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13711:13711 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13713:13713 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13694:13700 ActionCodes.LTS <> initial proj
+R13680:13691 ActionCodes.LTS <> traces_state def
+R13707:13710 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13711:13711 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13713:13713 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R13694:13700 ActionCodes.LTS <> initial proj
+R13768:13775 ActionCodes.LTS <> path_app thm
+R13768:13775 ActionCodes.LTS <> path_app thm
+R13869:13880 ActionCodes.LTS <> path_app_rev thm
+R13869:13880 ActionCodes.LTS <> path_app_rev thm
+R13936:13951 ActionCodes.LTS <> gtrans_singleton thm
+R13936:13951 ActionCodes.LTS <> gtrans_singleton thm
+R13973:13975 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13973:13975 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13995:14016 ActionCodes.LTS <> deterministic_sequence thm
+R13995:14016 ActionCodes.LTS <> deterministic_sequence thm
+R14038:14053 ActionCodes.LTS <> list_rel_lift_id thm
+R14038:14053 ActionCodes.LTS <> list_rel_lift_id thm
+prf 14136:14183 <> simulation_iff_trace_inclusion_for_deterministic
+binder 14186:14186 <> A:212
+R14201:14203 ActionCodes.LTS <> LTS def
+R14205:14205 ActionCodes.LTS <> A:212 var
+binder 14196:14196 <> M:213
+binder 14198:14198 <> N:214
+R14230:14237 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14288:14288 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14213:14229 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R14212:14212 ActionCodes.LTS <> N:214 var
+R14238:14238 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14246:14251 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14240:14244 ActionCodes.LTS <> ::type_scope:x_'⊑'_x not
+R14239:14239 ActionCodes.LTS <> M:213 var
+R14245:14245 ActionCodes.LTS <> N:214 var
+R14252:14265 ActionCodes.LTS <> pred_inclusion def
+R14279:14284 ActionCodes.LTS <> traces def
+R14286:14286 ActionCodes.LTS <> N:214 var
+R14268:14273 ActionCodes.LTS <> traces def
+R14275:14275 ActionCodes.LTS <> M:213 var
+R14354:14387 ActionCodes.LTS <> simulation_implies_trace_inclusion thm
+R14354:14387 ActionCodes.LTS <> simulation_implies_trace_inclusion thm
+R14552:14557 ActionCodes.LTS <> states proj
+binder 14549:14549 <> q:215
+R14566:14571 ActionCodes.LTS <> states proj
+binder 14563:14563 <> p:216
+R14579:14582 Coq.Init.Logic <> True ind
+R14552:14557 ActionCodes.LTS <> states proj
+binder 14549:14549 <> q:217
+R14566:14571 ActionCodes.LTS <> states proj
+binder 14563:14563 <> p:218
+R14579:14582 Coq.Init.Logic <> True ind
+R14596:14615 ActionCodes.LTS <> Build_PathSimulation thm
+R14596:14615 ActionCodes.LTS <> Build_PathSimulation thm
+R14663:14696 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+R14663:14696 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+def 14791:14798 <> proj_iso
+binder 14802:14802 <> A:219
+R14818:14820 ActionCodes.LTS <> LTS def
+R14822:14822 ActionCodes.LTS <> A:219 var
+binder 14812:14812 <> M:220
+binder 14814:14814 <> N:221
+R14844:14848 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14877:14877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14829:14839 ActionCodes.LTS <> Isomorphism ind
+R14843:14843 ActionCodes.LTS <> N:221 var
+R14841:14841 ActionCodes.LTS <> M:220 var
+R14857:14860 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14849:14854 ActionCodes.LTS <> states proj
+R14856:14856 ActionCodes.LTS <> M:220 var
+R14869:14872 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14861:14866 ActionCodes.LTS <> states proj
+R14868:14868 ActionCodes.LTS <> N:221 var
+def 15083:15091 <> reachable
+binder 15094:15094 <> A:222
+R15107:15109 ActionCodes.LTS <> LTS def
+R15111:15111 ActionCodes.LTS <> A:222 var
+binder 15104:15104 <> M:223
+R15118:15123 ActionCodes.LTS <> states proj
+R15125:15125 ActionCodes.LTS <> M:223 var
+binder 15115:15115 <> q:224
+R15140:15146 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15156:15158 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15177:15177 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15150:15153 Coq.Init.Datatypes <> list ind
+R15155:15155 ActionCodes.LTS <> A:222 var
+binder 15147:15147 <> w:225
+R15168:15170 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R15172:15175 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R15159:15165 ActionCodes.LTS <> initial proj
+R15167:15167 ActionCodes.LTS <> M:223 var
+R15171:15171 ActionCodes.LTS <> w:225 var
+R15176:15176 ActionCodes.LTS <> q:224 var
+prf 15187:15202 <> reachable_closed
+binder 15205:15205 <> A:226
+R15218:15220 ActionCodes.LTS <> LTS def
+R15222:15222 ActionCodes.LTS <> A:226 var
+binder 15215:15215 <> M:227
+R15229:15229 ActionCodes.LTS <> A:226 var
+binder 15226:15226 <> a:228
+R15239:15244 ActionCodes.LTS <> states proj
+R15246:15246 ActionCodes.LTS <> M:227 var
+binder 15233:15233 <> q:229
+binder 15235:15236 <> q':230
+R15264:15267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15253:15261 ActionCodes.LTS <> reachable def
+R15263:15263 ActionCodes.LTS <> q:229 var
+R15268:15268 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15280:15284 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15270:15272 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R15274:15277 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R15269:15269 ActionCodes.LTS <> q:229 var
+R15273:15273 ActionCodes.LTS <> a:228 var
+R15278:15279 ActionCodes.LTS <> q':230 var
+R15285:15293 ActionCodes.LTS <> reachable def
+R15295:15296 ActionCodes.LTS <> q':230 var
+R15353:15356 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15357:15357 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15359:15359 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15353:15356 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15357:15357 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15359:15359 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R15421:15427 ActionCodes.LTS <> initial proj
+R15421:15427 ActionCodes.LTS <> initial proj
+R15501:15516 ActionCodes.LTS <> gtrans_singleton thm
+R15501:15516 ActionCodes.LTS <> gtrans_singleton thm
+def 15620:15635 <> reachable_states
+binder 15638:15638 <> A:231
+R15651:15653 ActionCodes.LTS <> LTS def
+R15655:15655 ActionCodes.LTS <> A:231 var
+binder 15648:15648 <> M:232
+R15670:15670 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R15672:15673 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R15682:15684 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R15696:15696 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R15674:15679 ActionCodes.LTS <> states proj
+R15681:15681 ActionCodes.LTS <> M:232 var
+binder 15671:15671 <> q:233
+R15685:15693 ActionCodes.LTS <> reachable def
+R15695:15695 ActionCodes.LTS <> q:233 var
+def 15711:15724 <> proj_reachable
+binder 15727:15727 <> A:234
+R15740:15742 ActionCodes.LTS <> LTS def
+R15744:15744 ActionCodes.LTS <> A:234 var
+binder 15737:15737 <> M:235
+R15766:15769 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15748:15763 ActionCodes.LTS <> reachable_states def
+R15765:15765 ActionCodes.LTS <> M:235 var
+R15770:15775 ActionCodes.LTS <> states proj
+R15777:15777 ActionCodes.LTS <> M:235 var
+R15795:15803 Coq.Init.Specif <> proj1_sig def
+R15795:15803 Coq.Init.Specif <> proj1_sig def
+prf 15822:15845 <> proj_reachable_injective
+binder 15848:15848 <> A:236
+R15861:15863 ActionCodes.LTS <> LTS def
+R15865:15865 ActionCodes.LTS <> A:236 var
+binder 15858:15858 <> M:237
+R15875:15890 ActionCodes.LTS <> reachable_states def
+R15892:15892 ActionCodes.LTS <> M:237 var
+binder 15869:15869 <> q:238
+binder 15871:15872 <> q':239
+R15934:15937 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15914:15916 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15898:15911 ActionCodes.LTS <> proj_reachable def
+R15913:15913 ActionCodes.LTS <> q:238 var
+R15917:15930 ActionCodes.LTS <> proj_reachable def
+R15932:15933 ActionCodes.LTS <> q':239 var
+R15939:15941 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15938:15938 ActionCodes.LTS <> q:238 var
+R15942:15943 ActionCodes.LTS <> q':239 var
+R16052:16068 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R16052:16068 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+def 16088:16101 <> reachable_part
+binder 16104:16104 <> A:240
+R16117:16119 ActionCodes.LTS <> LTS def
+R16121:16121 ActionCodes.LTS <> A:240 var
+binder 16114:16114 <> M:241
+R16126:16128 ActionCodes.LTS <> LTS def
+R16130:16130 ActionCodes.LTS <> A:240 var
+R16172:16187 ActionCodes.LTS <> reachable_states def
+R16148:16154 ActionCodes.LTS <> new_LTS constr
+R16172:16187 ActionCodes.LTS <> reachable_states def
+R16148:16154 ActionCodes.LTS <> new_LTS constr
+R16205:16209 Coq.Init.Specif <> exist constr
+R16214:16220 ActionCodes.LTS <> initial proj
+R16205:16209 Coq.Init.Specif <> exist constr
+R16214:16220 ActionCodes.LTS <> initial proj
+R16238:16240 Coq.Init.Datatypes <> nil constr
+R16238:16240 Coq.Init.Datatypes <> nil constr
+R16287:16290 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16307:16309 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16311:16314 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16291:16304 ActionCodes.LTS <> proj_reachable def
+R16315:16328 ActionCodes.LTS <> proj_reachable def
+R16287:16290 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16307:16309 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16311:16314 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R16291:16304 ActionCodes.LTS <> proj_reachable def
+R16315:16328 ActionCodes.LTS <> proj_reachable def
+prf 16438:16457 <> reachable_isomorphic
+binder 16460:16460 <> A:242
+R16473:16475 ActionCodes.LTS <> LTS def
+R16477:16477 ActionCodes.LTS <> A:242 var
+binder 16470:16470 <> M:243
+R16485:16489 ActionCodes.LTS <> ::type_scope:x_'≅'_x not
+R16484:16484 ActionCodes.LTS <> M:243 var
+R16490:16503 ActionCodes.LTS <> reachable_part def
+R16505:16505 ActionCodes.LTS <> M:243 var
+binder 16559:16559 <> q:244
+binder 16561:16562 <> q':245
+R16568:16570 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16567:16567 ActionCodes.LTS <> q:244 var
+R16571:16584 ActionCodes.LTS <> proj_reachable def
+R16586:16587 ActionCodes.LTS <> q':245 var
+R16523:16539 ActionCodes.LTS <> Build_Isomorphism constr
+binder 16559:16559 <> q:246
+binder 16561:16562 <> q':247
+R16568:16570 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16567:16567 ActionCodes.LTS <> q:246 var
+R16571:16584 ActionCodes.LTS <> proj_reachable def
+R16586:16587 ActionCodes.LTS <> q':247 var
+R16523:16539 ActionCodes.LTS <> Build_Isomorphism constr
+R16664:16668 Coq.Init.Specif <> exist constr
+R16664:16668 Coq.Init.Specif <> exist constr
+R16706:16721 ActionCodes.LTS <> reachable_closed thm
+R16706:16721 ActionCodes.LTS <> reachable_closed thm
+R16826:16839 ActionCodes.LTS <> proj_reachable def
+R16826:16839 ActionCodes.LTS <> proj_reachable def
+R16977:17000 ActionCodes.LTS <> proj_reachable_injective thm
+R16977:17000 ActionCodes.LTS <> proj_reachable_injective thm
+def 17165:17176 <> SingletonLTS
+binder 17179:17179 <> A:248
+R17190:17192 ActionCodes.LTS <> LTS def
+R17194:17194 ActionCodes.LTS <> A:248 var
+R17204:17209 ActionCodes.LTS <> states proj
+R17204:17209 ActionCodes.LTS <> states proj
+R17204:17209 ActionCodes.LTS <> states proj
+R17225:17231 ActionCodes.LTS <> initial proj
+R17225:17231 ActionCodes.LTS <> initial proj
+R17245:17254 ActionCodes.LTS <> transition proj
+R17245:17254 ActionCodes.LTS <> transition proj
+R17214:17217 Coq.Init.Datatypes <> unit ind
+R17236:17237 Coq.Init.Datatypes <> tt constr
+R17267:17270 Coq.Init.Datatypes <> unit ind
+binder 17264:17264 <> q:249
+R17277:17277 ActionCodes.LTS <> A:248 var
+binder 17274:17274 <> a:250
+R17285:17288 Coq.Init.Datatypes <> unit ind
+binder 17281:17282 <> q':251
+R17294:17298 Coq.Init.Logic <> False ind
+def 17418:17433 <> InfiniteChainLTS
+binder 17436:17436 <> A:252
+R17449:17449 ActionCodes.LTS <> A:252 var
+binder 17446:17446 <> a:253
+R17453:17455 ActionCodes.LTS <> LTS def
+R17457:17457 ActionCodes.LTS <> A:252 var
+R17467:17472 ActionCodes.LTS <> states proj
+R17467:17472 ActionCodes.LTS <> states proj
+R17467:17472 ActionCodes.LTS <> states proj
+R17487:17493 ActionCodes.LTS <> initial proj
+R17487:17493 ActionCodes.LTS <> initial proj
+R17506:17515 ActionCodes.LTS <> transition proj
+R17506:17515 ActionCodes.LTS <> transition proj
+R17477:17479 Coq.Init.Datatypes <> nat ind
+R17528:17530 Coq.Init.Datatypes <> nat ind
+binder 17525:17525 <> q:254
+R17538:17538 ActionCodes.LTS <> A:252 var
+binder 17534:17535 <> a':255
+R17546:17548 Coq.Init.Datatypes <> nat ind
+binder 17542:17543 <> q':256
+R17562:17565 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R17557:17559 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17554:17554 Coq.Init.Datatypes <> S constr
+R17556:17556 ActionCodes.LTS <> q:254 var
+R17560:17561 ActionCodes.LTS <> q':256 var
+R17567:17569 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17566:17566 ActionCodes.LTS <> a:253 var
+R17570:17571 ActionCodes.LTS <> a':255 var
+prf 17586:17621 <> InfiniteChainLTS_has_no_proper_loops
+binder 17624:17624 <> A:257
+R17637:17637 ActionCodes.LTS <> A:257 var
+binder 17634:17634 <> a:258
+R17646:17651 ActionCodes.LTS <> states proj
+R17654:17669 ActionCodes.LTS <> InfiniteChainLTS ex
+R17671:17671 ActionCodes.LTS <> a:258 var
+binder 17643:17643 <> q:259
+R17679:17682 Coq.Init.Datatypes <> list ind
+R17684:17684 ActionCodes.LTS <> A:257 var
+binder 17676:17676 <> w:260
+R17690:17690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17701:17705 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17692:17694 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R17696:17699 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R17691:17691 ActionCodes.LTS <> q:259 var
+R17695:17695 ActionCodes.LTS <> w:260 var
+R17700:17700 ActionCodes.LTS <> q:259 var
+R17707:17709 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17706:17706 ActionCodes.LTS <> w:260 var
+R17710:17711 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R17784:17790 Coq.Lists.List <> rev_ind thm
+R17784:17790 Coq.Lists.List <> rev_ind thm
+R17816:17827 ActionCodes.LTS <> path_app_rev thm
+R17816:17827 ActionCodes.LTS <> path_app_rev thm
+R17877:17892 ActionCodes.LTS <> gtrans_singleton thm
+R17877:17892 ActionCodes.LTS <> gtrans_singleton thm
+R17961:17967 Coq.Lists.List <> rev_ind thm
+R17961:17967 Coq.Lists.List <> rev_ind thm
+R17999:18010 ActionCodes.LTS <> path_app_rev thm
+R17999:18010 ActionCodes.LTS <> path_app_rev thm
+R18060:18075 ActionCodes.LTS <> gtrans_singleton thm
+R18060:18075 ActionCodes.LTS <> gtrans_singleton thm
+R18153:18155 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18148:18151 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R18145:18145 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18147:18147 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18156:18157 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R18153:18155 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18148:18151 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R18145:18145 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18147:18147 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R18156:18157 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R18193:18200 ActionCodes.LTS <> path_app thm
+R18193:18200 ActionCodes.LTS <> path_app thm
+R18215:18230 ActionCodes.LTS <> gtrans_singleton thm
+R18215:18230 ActionCodes.LTS <> gtrans_singleton thm
+prf 18311:18335 <> InfiniteChainLTS_monotone
+binder 18338:18338 <> A:261
+R18351:18351 ActionCodes.LTS <> A:261 var
+binder 18348:18348 <> a:262
+R18362:18367 ActionCodes.LTS <> states proj
+R18370:18385 ActionCodes.LTS <> InfiniteChainLTS ex
+R18387:18387 ActionCodes.LTS <> a:262 var
+binder 18357:18357 <> q:263
+binder 18359:18359 <> p:264
+R18395:18398 Coq.Init.Datatypes <> list ind
+R18400:18400 ActionCodes.LTS <> A:261 var
+binder 18392:18392 <> w:265
+R18406:18406 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18417:18422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18429:18429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18408:18410 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R18412:18415 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R18407:18407 ActionCodes.LTS <> q:263 var
+R18411:18411 ActionCodes.LTS <> w:265 var
+R18416:18416 ActionCodes.LTS <> p:264 var
+R18424:18427 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R18423:18423 ActionCodes.LTS <> q:263 var
+R18428:18428 ActionCodes.LTS <> p:264 var
+R18473:18479 Coq.Lists.List <> rev_ind thm
+R18473:18479 Coq.Lists.List <> rev_ind thm
+R18556:18567 ActionCodes.LTS <> path_app_rev thm
+R18556:18567 ActionCodes.LTS <> path_app_rev thm
+R18620:18635 ActionCodes.LTS <> gtrans_singleton thm
+R18620:18635 ActionCodes.LTS <> gtrans_singleton thm

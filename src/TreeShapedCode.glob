@@ -1,0 +1,1655 @@
+DIGEST 85a56c0b661f921291065807c012f34e
+FActionCodes.TreeShapedCode
+R15:17 ActionCodes.LTS <> <> lib
+R35:44 Coq.Lists.List <> <> lib
+R62:68 ActionCodes.CodeMap <> <> lib
+R86:91 ActionCodes.ACUtil <> <> lib
+R109:124 Coq.Logic.FinFun <> <> lib
+R142:160 Coq.Logic.Decidable <> <> lib
+R178:203 Coq.Logic.ProofIrrelevance <> <> lib
+R214:226 Coq.Lists.List ListNotations <> mod
+ind 565:567 <> Run
+constr 628:633 <> RunNil
+constr 685:691 <> RunSnoc
+binder 570:570 <> A:1
+R583:585 ActionCodes.LTS <> LTS def
+R587:587 ActionCodes.TreeShapedCode <> A:1 var
+binder 580:580 <> M:2
+R600:603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R592:597 ActionCodes.LTS <> states proj
+R612:615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R604:609 ActionCodes.LTS <> states proj
+R650:655 ActionCodes.LTS <> states proj
+R657:657 ActionCodes.TreeShapedCode <> M:2 var
+binder 644:644 <> q:5
+binder 646:647 <> q':6
+R660:660 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R667:671 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R662:664 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R661:661 ActionCodes.TreeShapedCode <> q:5 var
+R665:666 ActionCodes.TreeShapedCode <> q':6 var
+R672:674 ActionCodes.TreeShapedCode <> Run:3 ind
+R678:679 ActionCodes.TreeShapedCode <> q':6 var
+R676:676 ActionCodes.TreeShapedCode <> q:5 var
+R713:718 ActionCodes.LTS <> states proj
+R720:720 ActionCodes.TreeShapedCode <> M:2 var
+binder 703:703 <> q:7
+binder 705:706 <> q':8
+binder 708:710 <> q'':9
+R727:727 ActionCodes.TreeShapedCode <> A:1 var
+binder 724:724 <> a:10
+R745:748 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R737:739 ActionCodes.TreeShapedCode <> Run:3 ind
+R743:744 ActionCodes.TreeShapedCode <> q':8 var
+R741:741 ActionCodes.TreeShapedCode <> q:7 var
+R749:749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R768:772 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R751:754 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R757:759 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R761:764 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R750:750 ActionCodes.TreeShapedCode <> M:2 var
+R755:756 ActionCodes.TreeShapedCode <> q':8 var
+R760:760 ActionCodes.TreeShapedCode <> a:10 var
+R765:767 ActionCodes.TreeShapedCode <> q'':9 var
+R773:775 ActionCodes.TreeShapedCode <> Run:3 ind
+R779:781 ActionCodes.TreeShapedCode <> q'':9 var
+R777:777 ActionCodes.TreeShapedCode <> q:7 var
+scheme 565:567 <> Run_rect
+scheme 565:567 <> Run_ind
+scheme 565:567 <> Run_rec
+scheme 565:567 <> Run_sind
+def 796:802 <> RunNil'
+binder 805:805 <> A:11
+R818:820 ActionCodes.LTS <> LTS def
+R822:822 ActionCodes.TreeShapedCode <> A:11 var
+binder 815:815 <> M:12
+R829:834 ActionCodes.LTS <> states proj
+R836:836 ActionCodes.TreeShapedCode <> M:12 var
+binder 826:826 <> q:13
+R842:844 ActionCodes.TreeShapedCode <> Run ind
+R848:848 ActionCodes.TreeShapedCode <> q:13 var
+R846:846 ActionCodes.TreeShapedCode <> q:13 var
+def 983:998 <> proj_run_actions
+binder 1001:1001 <> A:14
+R1014:1016 ActionCodes.LTS <> LTS def
+R1018:1018 ActionCodes.TreeShapedCode <> A:14 var
+binder 1011:1011 <> M:15
+R1028:1033 ActionCodes.LTS <> states proj
+R1035:1035 ActionCodes.TreeShapedCode <> M:15 var
+binder 1022:1022 <> q:16
+binder 1024:1025 <> q':17
+R1044:1046 ActionCodes.TreeShapedCode <> Run ind
+R1050:1051 ActionCodes.TreeShapedCode <> q':17 var
+R1048:1048 ActionCodes.TreeShapedCode <> q:16 var
+binder 1041:1041 <> r:18
+R1055:1058 Coq.Init.Datatypes <> list ind
+R1060:1060 ActionCodes.TreeShapedCode <> A:14 var
+R1095:1096 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1095:1096 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1113:1116 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1117:1117 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1119:1119 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1113:1116 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1117:1117 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R1119:1119 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+prf 1139:1162 <> proj_run_actions_correct
+binder 1165:1165 <> A:19
+R1178:1180 ActionCodes.LTS <> LTS def
+R1182:1182 ActionCodes.TreeShapedCode <> A:19 var
+binder 1175:1175 <> M:20
+R1192:1197 ActionCodes.LTS <> states proj
+R1199:1199 ActionCodes.TreeShapedCode <> M:20 var
+binder 1186:1186 <> q:21
+binder 1188:1189 <> q':22
+R1206:1208 ActionCodes.TreeShapedCode <> Run ind
+R1212:1213 ActionCodes.TreeShapedCode <> q':22 var
+R1210:1210 ActionCodes.TreeShapedCode <> q:21 var
+binder 1203:1203 <> r:23
+R1221:1224 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1226:1230 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1249:1254 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1220:1220 ActionCodes.TreeShapedCode <> M:20 var
+R1225:1225 ActionCodes.TreeShapedCode <> q:21 var
+R1231:1246 ActionCodes.TreeShapedCode <> proj_run_actions def
+R1248:1248 ActionCodes.TreeShapedCode <> r:23 var
+R1255:1256 ActionCodes.TreeShapedCode <> q':22 var
+R1328:1335 ActionCodes.LTS <> path_app thm
+R1328:1335 ActionCodes.LTS <> path_app thm
+R1351:1366 ActionCodes.LTS <> gtrans_singleton thm
+R1351:1366 ActionCodes.LTS <> gtrans_singleton thm
+prf 1393:1402 <> exists_run
+binder 1405:1405 <> A:24
+R1418:1420 ActionCodes.LTS <> LTS def
+R1422:1422 ActionCodes.TreeShapedCode <> A:24 var
+binder 1415:1415 <> M:25
+R1434:1439 ActionCodes.LTS <> states proj
+R1441:1441 ActionCodes.TreeShapedCode <> M:25 var
+binder 1428:1428 <> q:26
+binder 1430:1431 <> q':27
+R1448:1451 Coq.Init.Datatypes <> list ind
+R1453:1453 ActionCodes.TreeShapedCode <> A:24 var
+binder 1445:1445 <> w:28
+R1459:1459 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1478:1486 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1461:1464 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1466:1469 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1471:1475 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R1460:1460 ActionCodes.TreeShapedCode <> M:25 var
+R1465:1465 ActionCodes.TreeShapedCode <> q:26 var
+R1470:1470 ActionCodes.TreeShapedCode <> w:28 var
+R1476:1477 ActionCodes.TreeShapedCode <> q':27 var
+R1487:1493 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1505:1506 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1497:1499 ActionCodes.TreeShapedCode <> Run ind
+R1503:1504 ActionCodes.TreeShapedCode <> q':27 var
+R1501:1501 ActionCodes.TreeShapedCode <> q:26 var
+binder 1494:1494 <> r:29
+R1525:1527 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1507:1522 ActionCodes.TreeShapedCode <> proj_run_actions def
+R1524:1524 ActionCodes.TreeShapedCode <> r:29 var
+R1528:1528 ActionCodes.TreeShapedCode <> w:28 var
+R1583:1589 Coq.Lists.List <> rev_ind thm
+R1583:1589 Coq.Lists.List <> rev_ind thm
+R1660:1666 ActionCodes.TreeShapedCode <> RunNil' def
+R1660:1666 ActionCodes.TreeShapedCode <> RunNil' def
+R1699:1710 ActionCodes.LTS <> path_app_rev thm
+R1699:1710 ActionCodes.LTS <> path_app_rev thm
+R1765:1780 ActionCodes.LTS <> gtrans_singleton thm
+R1765:1780 ActionCodes.LTS <> gtrans_singleton thm
+R1864:1870 ActionCodes.TreeShapedCode <> RunSnoc constr
+R1864:1870 ActionCodes.TreeShapedCode <> RunSnoc constr
+def 2281:2289 <> Reachable
+binder 2292:2292 <> A:30
+R2305:2307 ActionCodes.LTS <> LTS def
+R2309:2309 ActionCodes.TreeShapedCode <> A:30 var
+binder 2302:2302 <> M:31
+R2335:2340 ActionCodes.LTS <> states proj
+R2342:2342 ActionCodes.TreeShapedCode <> M:31 var
+binder 2332:2332 <> q:32
+R2346:2348 ActionCodes.TreeShapedCode <> Run ind
+R2362:2362 ActionCodes.TreeShapedCode <> q:32 var
+R2351:2357 ActionCodes.LTS <> initial proj
+R2359:2359 ActionCodes.TreeShapedCode <> M:31 var
+def 2377:2393 <> UniquelyReachable
+binder 2396:2396 <> A:33
+R2409:2411 ActionCodes.LTS <> LTS def
+R2413:2413 ActionCodes.TreeShapedCode <> A:33 var
+binder 2406:2406 <> M:34
+R2439:2444 ActionCodes.LTS <> states proj
+R2446:2446 ActionCodes.TreeShapedCode <> M:34 var
+binder 2436:2436 <> q:35
+R2457:2459 ActionCodes.TreeShapedCode <> Run ind
+R2473:2473 ActionCodes.TreeShapedCode <> q:35 var
+R2462:2468 ActionCodes.LTS <> initial proj
+R2470:2470 ActionCodes.TreeShapedCode <> M:34 var
+binder 2450:2451 <> r1:36
+binder 2453:2454 <> r2:37
+R2479:2481 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2477:2478 ActionCodes.TreeShapedCode <> r1:36 var
+R2482:2483 ActionCodes.TreeShapedCode <> r2:37 var
+def 2589:2592 <> Leaf
+binder 2595:2595 <> A:38
+R2608:2610 ActionCodes.LTS <> LTS def
+R2612:2612 ActionCodes.TreeShapedCode <> A:38 var
+binder 2605:2605 <> M:39
+R2619:2624 ActionCodes.LTS <> states proj
+R2626:2626 ActionCodes.TreeShapedCode <> M:39 var
+binder 2616:2616 <> q:40
+R2641:2642 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2643:2649 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2654:2655 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2653:2653 ActionCodes.TreeShapedCode <> A:38 var
+binder 2650:2650 <> a:41
+R2656:2662 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2675:2677 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2691:2691 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2667:2672 ActionCodes.LTS <> states proj
+R2674:2674 ActionCodes.TreeShapedCode <> M:39 var
+binder 2663:2664 <> q':42
+R2679:2682 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R2684:2688 ActionCodes.LTS <> ::type_scope:x_'--'_x_'-->'_x not
+R2678:2678 ActionCodes.TreeShapedCode <> q:40 var
+R2683:2683 ActionCodes.TreeShapedCode <> a:41 var
+R2689:2690 ActionCodes.TreeShapedCode <> q':42 var
+def 2703:2732 <> InfiniteChainLTS_has_no_leaves
+binder 2735:2735 <> A:43
+R2748:2748 ActionCodes.TreeShapedCode <> A:43 var
+binder 2745:2745 <> a:44
+R2764:2769 ActionCodes.LTS <> states proj
+R2772:2787 ActionCodes.LTS <> InfiniteChainLTS ex
+R2789:2789 ActionCodes.TreeShapedCode <> a:44 var
+binder 2761:2761 <> q:45
+R2793:2795 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2802:2802 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2796:2799 ActionCodes.TreeShapedCode <> Leaf def
+R2801:2801 ActionCodes.TreeShapedCode <> q:45 var
+R2867:2867 Coq.Init.Datatypes <> S constr
+R2867:2867 Coq.Init.Datatypes <> S constr
+def 2912:2924 <> NonRootLeaves
+binder 2927:2927 <> A:46
+R2940:2942 ActionCodes.LTS <> LTS def
+R2944:2944 ActionCodes.TreeShapedCode <> A:46 var
+binder 2937:2937 <> M:47
+R2959:2960 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2962:2963 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2972:2974 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2999:3000 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2964:2969 ActionCodes.LTS <> states proj
+R2971:2971 ActionCodes.TreeShapedCode <> M:47 var
+binder 2961:2961 <> q:48
+R2981:2984 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2975:2978 ActionCodes.TreeShapedCode <> Leaf def
+R2980:2980 ActionCodes.TreeShapedCode <> q:48 var
+R2986:2989 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2985:2985 ActionCodes.TreeShapedCode <> q:48 var
+R2990:2996 ActionCodes.LTS <> initial proj
+R2998:2998 ActionCodes.TreeShapedCode <> M:47 var
+def 3015:3032 <> proj_nonrootleaves
+binder 3035:3035 <> A:49
+R3048:3050 ActionCodes.LTS <> LTS def
+R3052:3052 ActionCodes.TreeShapedCode <> A:49 var
+binder 3045:3045 <> M:50
+R3074:3077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3059:3071 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R3073:3073 ActionCodes.TreeShapedCode <> M:50 var
+R3078:3083 ActionCodes.LTS <> states proj
+R3085:3085 ActionCodes.TreeShapedCode <> M:50 var
+R3145:3198 ActionCodes.TreeShapedCode <> proj_nonrootleaves def
+def 3278:3285 <> Grounded
+binder 3288:3288 <> A:51
+R3301:3303 ActionCodes.LTS <> LTS def
+R3305:3305 ActionCodes.TreeShapedCode <> A:51 var
+binder 3298:3298 <> M:52
+R3331:3336 ActionCodes.LTS <> states proj
+R3338:3338 ActionCodes.TreeShapedCode <> M:52 var
+binder 3328:3328 <> q:53
+R3342:3348 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3361:3362 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3353:3358 ActionCodes.LTS <> states proj
+R3360:3360 ActionCodes.TreeShapedCode <> M:52 var
+binder 3349:3350 <> q':54
+R3370:3373 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3363:3366 ActionCodes.TreeShapedCode <> Leaf def
+R3368:3369 ActionCodes.TreeShapedCode <> q':54 var
+R3374:3382 ActionCodes.LTS <> inhabited ind
+R3385:3387 ActionCodes.TreeShapedCode <> Run ind
+R3391:3392 ActionCodes.TreeShapedCode <> q':54 var
+R3389:3389 ActionCodes.TreeShapedCode <> q:53 var
+def 3592:3615 <> SingletonLTS_is_grounded
+binder 3618:3618 <> A:55
+R3631:3638 ActionCodes.TreeShapedCode <> Grounded def
+R3647:3658 ActionCodes.LTS <> SingletonLTS ex
+R3644:3644 ActionCodes.TreeShapedCode <> A:55 var
+def 3860:3891 <> InfiniteChainLTS_is_not_grounded
+binder 3894:3894 <> A:56
+R3907:3907 ActionCodes.TreeShapedCode <> A:56 var
+binder 3904:3904 <> a:57
+R3913:3914 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3915:3922 ActionCodes.TreeShapedCode <> Grounded def
+R3925:3940 ActionCodes.LTS <> InfiniteChainLTS ex
+R3942:3942 ActionCodes.TreeShapedCode <> a:57 var
+R4015:4044 ActionCodes.TreeShapedCode <> InfiniteChainLTS_has_no_leaves ex
+R4015:4044 ActionCodes.TreeShapedCode <> InfiniteChainLTS_has_no_leaves ex
+prf 4068:4094 <> hd_rel_left_unique_on_trees
+binder 4098:4098 <> A:58
+R4113:4115 ActionCodes.LTS <> LTS def
+R4117:4117 ActionCodes.TreeShapedCode <> A:58 var
+binder 4108:4108 <> M:59
+binder 4110:4110 <> N:60
+R4142:4147 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4125:4141 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R4124:4124 ActionCodes.TreeShapedCode <> N:60 var
+R4167:4172 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4148:4164 ActionCodes.TreeShapedCode <> UniquelyReachable def
+R4166:4166 ActionCodes.TreeShapedCode <> M:59 var
+R4173:4183 ActionCodes.LTS <> left_unique def
+R4186:4209 ActionCodes.LTS <> history_dependent_subrel def
+R4237:4242 ActionCodes.LTS <> states proj
+R4244:4244 ActionCodes.TreeShapedCode <> M:59 var
+binder 4234:4234 <> q:61
+R4251:4256 ActionCodes.LTS <> states proj
+R4258:4258 ActionCodes.TreeShapedCode <> N:60 var
+binder 4248:4248 <> p:62
+R4264:4267 Coq.Init.Logic <> True ind
+R4329:4352 ActionCodes.LTS <> history_dependent_subrel def
+R4451:4453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4451:4453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4471:4480 ActionCodes.TreeShapedCode <> exists_run thm
+R4471:4480 ActionCodes.TreeShapedCode <> exists_run thm
+R4500:4509 ActionCodes.TreeShapedCode <> exists_run thm
+R4500:4509 ActionCodes.TreeShapedCode <> exists_run thm
+R4587:4589 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4587:4589 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4693:4714 ActionCodes.LTS <> deterministic_sequence thm
+R4693:4714 ActionCodes.LTS <> deterministic_sequence thm
+R4732:4747 ActionCodes.LTS <> list_rel_lift_id thm
+R4732:4747 ActionCodes.LTS <> list_rel_lift_id thm
+prf 4777:4807 <> tree_isomorphism_if_same_traces
+binder 4810:4810 <> A:63
+R4825:4827 ActionCodes.LTS <> LTS def
+R4829:4829 ActionCodes.TreeShapedCode <> A:63 var
+binder 4820:4820 <> M:64
+binder 4822:4822 <> N:65
+R4854:4859 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4837:4853 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R4836:4836 ActionCodes.TreeShapedCode <> M:64 var
+R4878:4883 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4861:4877 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R4860:4860 ActionCodes.TreeShapedCode <> N:65 var
+R4903:4908 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4884:4900 ActionCodes.TreeShapedCode <> UniquelyReachable def
+R4902:4902 ActionCodes.TreeShapedCode <> M:64 var
+R4928:4933 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4909:4925 ActionCodes.TreeShapedCode <> UniquelyReachable def
+R4927:4927 ActionCodes.TreeShapedCode <> N:65 var
+R4966:4971 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4934:4941 Coq.Sets.Ensembles <> Same_set def
+R4946:4951 ActionCodes.LTS <> traces def
+R4953:4953 ActionCodes.TreeShapedCode <> M:64 var
+R4957:4962 ActionCodes.LTS <> traces def
+R4964:4964 ActionCodes.TreeShapedCode <> N:65 var
+R4973:4977 ActionCodes.LTS <> ::type_scope:x_'≅'_x not
+R4972:4972 ActionCodes.TreeShapedCode <> M:64 var
+R4978:4978 ActionCodes.TreeShapedCode <> N:65 var
+R5056:5061 ActionCodes.LTS <> states proj
+binder 5053:5053 <> q:66
+R5070:5075 ActionCodes.LTS <> states proj
+binder 5067:5067 <> p:67
+R5083:5086 Coq.Init.Logic <> True ind
+R5056:5061 ActionCodes.LTS <> states proj
+binder 5053:5053 <> q:68
+R5070:5075 ActionCodes.LTS <> states proj
+binder 5067:5067 <> p:69
+R5083:5086 Coq.Init.Logic <> True ind
+R5098:5118 ActionCodes.LTS <> Build_PathIsomorphism thm
+R5098:5118 ActionCodes.LTS <> Build_PathIsomorphism thm
+R5218:5251 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+R5218:5251 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+R5295:5328 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+R5295:5328 ActionCodes.LTS <> trace_inclusion_yields_step_closed thm
+R5347:5373 ActionCodes.TreeShapedCode <> hd_rel_left_unique_on_trees thm
+R5347:5373 ActionCodes.TreeShapedCode <> hd_rel_left_unique_on_trees thm
+R5393:5404 ActionCodes.LTS <> right_unique def
+R5414:5421 ActionCodes.LTS <> converse def
+R5447:5452 ActionCodes.LTS <> states proj
+binder 5444:5444 <> q:70
+R5461:5466 ActionCodes.LTS <> states proj
+binder 5458:5458 <> p:71
+R5474:5477 Coq.Init.Logic <> True ind
+R5447:5452 ActionCodes.LTS <> states proj
+binder 5444:5444 <> q:72
+R5461:5466 ActionCodes.LTS <> states proj
+binder 5458:5458 <> p:73
+R5474:5477 Coq.Init.Logic <> True ind
+R5493:5503 ActionCodes.LTS <> left_unique def
+R5506:5529 ActionCodes.LTS <> history_dependent_subrel def
+R5493:5503 ActionCodes.LTS <> left_unique def
+R5506:5529 ActionCodes.LTS <> history_dependent_subrel def
+R5561:5587 ActionCodes.TreeShapedCode <> hd_rel_left_unique_on_trees thm
+R5561:5587 ActionCodes.TreeShapedCode <> hd_rel_left_unique_on_trees thm
+R5613:5623 ActionCodes.LTS <> left_unique def
+R5675:5698 ActionCodes.LTS <> history_dependent_subrel def
+rec 5921:5935 <> TreeShapedCode'
+proj 5958:5964 <> tsc_lts
+proj 5993:5999 <> tsc_det
+proj 6167:6173 <> tsc_run
+proj 6200:6211 <> tsc_uniq_run
+proj 6246:6254 <> tsc_label
+proj 6290:6308 <> tsc_injective_label
+binder 5938:5938 <> A:74
+binder 5940:5940 <> B:75
+R5969:5972 ActionCodes.LTS <> LTS' rec
+R5985:5985 ActionCodes.TreeShapedCode <> A:74 var
+R6011:6027 ActionCodes.LTS <> ::type_scope:x_'is'_'deterministic' not
+R6004:6010 ActionCodes.TreeShapedCode <> tsc_lts:77 meth
+R6177:6185 ActionCodes.TreeShapedCode <> Reachable def
+R6187:6193 ActionCodes.TreeShapedCode <> tsc_lts:77 meth
+R6215:6231 ActionCodes.TreeShapedCode <> UniquelyReachable def
+R6233:6239 ActionCodes.TreeShapedCode <> tsc_lts:77 meth
+R6279:6282 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6258:6270 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R6272:6278 ActionCodes.TreeShapedCode <> tsc_lts:77 meth
+R6283:6283 ActionCodes.TreeShapedCode <> B:75 var
+R6312:6320 Coq.Logic.FinFun <> Injective def
+R6322:6330 ActionCodes.TreeShapedCode <> tsc_label:81 meth
+def 6409:6422 <> TreeShapedCode
+binder 6425:6425 <> A:83
+binder 6427:6427 <> B:84
+R6441:6455 ActionCodes.TreeShapedCode <> TreeShapedCode' rec
+R6468:6468 ActionCodes.TreeShapedCode <> B:84 var
+R6461:6461 ActionCodes.TreeShapedCode <> A:83 var
+def 6484:6500 <> TreeRepresentsMap
+binder 6503:6503 <> A:85
+binder 6505:6505 <> B:86
+R6521:6534 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R6536:6536 ActionCodes.TreeShapedCode <> A:85 var
+R6538:6538 ActionCodes.TreeShapedCode <> B:86 var
+binder 6518:6518 <> M:87
+R6546:6549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6545:6545 ActionCodes.TreeShapedCode <> B:86 var
+R6550:6555 Coq.Init.Datatypes <> option ind
+R6558:6561 Coq.Init.Datatypes <> list ind
+R6563:6563 ActionCodes.TreeShapedCode <> A:85 var
+binder 6542:6542 <> f:88
+R6591:6591 ActionCodes.TreeShapedCode <> B:86 var
+binder 6588:6588 <> b:89
+R6598:6601 Coq.Init.Datatypes <> list ind
+R6603:6603 ActionCodes.TreeShapedCode <> A:85 var
+binder 6595:6595 <> w:90
+R6626:6650 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6755:6755 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6617:6619 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6614:6614 ActionCodes.TreeShapedCode <> f:88 var
+R6616:6616 ActionCodes.TreeShapedCode <> b:89 var
+R6620:6623 Coq.Init.Datatypes <> Some constr
+R6625:6625 ActionCodes.TreeShapedCode <> w:90 var
+R6651:6657 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6676:6677 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6661:6673 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R6675:6675 ActionCodes.TreeShapedCode <> M:87 var
+binder 6658:6658 <> q:91
+R6678:6678 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6704:6737 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6680:6683 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R6693:6696 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R6698:6702 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R6679:6679 ActionCodes.TreeShapedCode <> M:87 var
+R6684:6690 ActionCodes.LTS <> initial proj
+R6692:6692 ActionCodes.TreeShapedCode <> M:87 var
+R6697:6697 ActionCodes.TreeShapedCode <> w:90 var
+R6703:6703 ActionCodes.TreeShapedCode <> q:91 var
+R6751:6753 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6738:6746 ActionCodes.TreeShapedCode <> tsc_label proj
+R6750:6750 ActionCodes.TreeShapedCode <> q:91 var
+R6748:6748 ActionCodes.TreeShapedCode <> M:87 var
+R6754:6754 ActionCodes.TreeShapedCode <> b:89 var
+prf 7001:7022 <> TreeDefinesMapUniquely
+binder 7027:7027 <> A:92
+binder 7029:7029 <> B:93
+R7042:7055 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R7057:7057 ActionCodes.TreeShapedCode <> A:92 var
+R7059:7059 ActionCodes.TreeShapedCode <> B:93 var
+binder 7039:7039 <> M:94
+R7071:7077 ActionCodes.CodeMap <> CodeMap def
+R7079:7079 ActionCodes.TreeShapedCode <> A:92 var
+R7081:7081 ActionCodes.TreeShapedCode <> B:93 var
+binder 7065:7065 <> f:95
+binder 7067:7067 <> g:96
+R7112:7121 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7091:7107 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R7111:7111 ActionCodes.TreeShapedCode <> f:95 var
+R7109:7109 ActionCodes.TreeShapedCode <> M:94 var
+R7143:7153 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7176:7176 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7122:7138 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R7142:7142 ActionCodes.TreeShapedCode <> g:96 var
+R7140:7140 ActionCodes.TreeShapedCode <> M:94 var
+R7164:7164 ActionCodes.TreeShapedCode <> B:93 var
+binder 7161:7161 <> b:97
+R7170:7172 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7167:7167 ActionCodes.TreeShapedCode <> f:95 var
+R7169:7169 ActionCodes.TreeShapedCode <> b:97 var
+R7173:7173 ActionCodes.TreeShapedCode <> g:96 var
+R7175:7175 ActionCodes.TreeShapedCode <> b:97 var
+def 7843:7854 <> DecisionProc
+binder 7857:7857 <> P:98
+R7869:7873 Coq.Init.Specif <> sumor ind
+R7879:7882 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7878:7878 ActionCodes.TreeShapedCode <> P:98 var
+R7883:7887 Coq.Init.Logic <> False ind
+R7875:7875 ActionCodes.TreeShapedCode <> P:98 var
+def 7902:7913 <> TreeShapeTND
+binder 7916:7916 <> A:99
+binder 7918:7918 <> B:100
+R7931:7944 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R7946:7946 ActionCodes.TreeShapedCode <> A:99 var
+R7948:7948 ActionCodes.TreeShapedCode <> B:100 var
+binder 7928:7928 <> M:101
+R7966:7966 ActionCodes.TreeShapedCode <> B:100 var
+binder 7963:7963 <> b:102
+R7969:7980 ActionCodes.TreeShapedCode <> DecisionProc def
+R7983:7984 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R7986:7987 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R8003:8005 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R8023:8023 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R7988:8000 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R8002:8002 ActionCodes.TreeShapedCode <> M:101 var
+binder 7985:7985 <> l:103
+R8019:8021 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8006:8014 ActionCodes.TreeShapedCode <> tsc_label proj
+R8018:8018 ActionCodes.TreeShapedCode <> l:103 var
+R8016:8016 ActionCodes.TreeShapedCode <> M:101 var
+R8022:8022 ActionCodes.TreeShapedCode <> b:102 var
+def 8038:8044 <> RunTree
+binder 8047:8047 <> A:104
+binder 8049:8049 <> B:105
+R8062:8075 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R8077:8077 ActionCodes.TreeShapedCode <> A:104 var
+R8079:8079 ActionCodes.TreeShapedCode <> B:105 var
+binder 8059:8059 <> M:106
+R8100:8104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8125:8125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8086:8097 ActionCodes.TreeShapedCode <> TreeShapeTND def
+R8099:8099 ActionCodes.TreeShapedCode <> M:106 var
+R8106:8109 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8105:8105 ActionCodes.TreeShapedCode <> B:105 var
+R8110:8115 Coq.Init.Datatypes <> option ind
+R8118:8121 Coq.Init.Datatypes <> list ind
+R8123:8123 ActionCodes.TreeShapedCode <> A:104 var
+R8181:8184 Coq.Init.Datatypes <> Some constr
+R8181:8184 Coq.Init.Datatypes <> Some constr
+R8223:8238 ActionCodes.TreeShapedCode <> proj_run_actions def
+R8241:8247 ActionCodes.TreeShapedCode <> tsc_run proj
+R8223:8238 ActionCodes.TreeShapedCode <> proj_run_actions def
+R8241:8247 ActionCodes.TreeShapedCode <> tsc_run proj
+R8266:8269 Coq.Init.Datatypes <> None constr
+R8266:8269 Coq.Init.Datatypes <> None constr
+prf 8294:8311 <> RunTree_is_ne_word
+binder 8314:8314 <> A:107
+binder 8316:8316 <> B:108
+R8329:8342 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R8344:8344 ActionCodes.TreeShapedCode <> A:107 var
+R8346:8346 ActionCodes.TreeShapedCode <> B:108 var
+binder 8326:8326 <> M:109
+R8357:8368 ActionCodes.TreeShapedCode <> TreeShapeTND def
+R8370:8370 ActionCodes.TreeShapedCode <> M:109 var
+binder 8352:8354 <> tnd:110
+R8376:8387 ActionCodes.CodeMap <> code_ne_word def
+R8390:8396 ActionCodes.TreeShapedCode <> RunTree def
+R8400:8402 ActionCodes.TreeShapedCode <> tnd:110 var
+R8398:8398 ActionCodes.TreeShapedCode <> M:109 var
+R8440:8446 ActionCodes.TreeShapedCode <> RunTree def
+R8566:8569 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R8572:8576 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R8557:8563 ActionCodes.LTS <> initial proj
+R8570:8571 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8566:8569 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R8572:8576 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R8557:8563 ActionCodes.LTS <> initial proj
+R8570:8571 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8622:8645 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R8622:8645 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+prf 8738:8746 <> TreeToMap
+binder 8749:8749 <> A:111
+binder 8751:8751 <> B:112
+R8764:8777 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R8779:8779 ActionCodes.TreeShapedCode <> A:111 var
+R8781:8781 ActionCodes.TreeShapedCode <> B:112 var
+binder 8761:8761 <> M:113
+R8792:8803 ActionCodes.TreeShapedCode <> TreeShapeTND def
+R8805:8805 ActionCodes.TreeShapedCode <> M:113 var
+binder 8787:8789 <> tnd:114
+R8812:8828 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R8833:8839 ActionCodes.TreeShapedCode <> RunTree def
+R8843:8845 ActionCodes.TreeShapedCode <> tnd:114 var
+R8841:8841 ActionCodes.TreeShapedCode <> M:113 var
+R8830:8830 ActionCodes.TreeShapedCode <> M:113 var
+R8911:8917 ActionCodes.TreeShapedCode <> RunTree def
+R9068:9091 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R9068:9091 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R9184:9190 ActionCodes.TreeShapedCode <> RunTree def
+R9288:9290 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9288:9290 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9312:9330 ActionCodes.TreeShapedCode <> tsc_injective_label proj
+R9312:9330 ActionCodes.TreeShapedCode <> tsc_injective_label proj
+R9394:9403 ActionCodes.TreeShapedCode <> exists_run thm
+R9394:9403 ActionCodes.TreeShapedCode <> exists_run thm
+R9464:9466 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9467:9473 ActionCodes.TreeShapedCode <> tsc_run proj
+R9464:9466 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9467:9473 ActionCodes.TreeShapedCode <> tsc_run proj
+R9497:9508 ActionCodes.TreeShapedCode <> tsc_uniq_run proj
+R9497:9508 ActionCodes.TreeShapedCode <> tsc_uniq_run proj
+prf 9633:9653 <> sig_proof_irrelevance
+binder 9656:9656 <> X:115
+R9668:9671 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9667:9667 ActionCodes.TreeShapedCode <> X:115 var
+binder 9665:9665 <> P:116
+R9688:9688 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9690:9691 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9693:9693 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9697:9697 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9692:9692 ActionCodes.TreeShapedCode <> X:115 var
+binder 9689:9689 <> x:117
+R9694:9694 ActionCodes.TreeShapedCode <> P:116 var
+R9696:9696 ActionCodes.TreeShapedCode <> x:117 var
+binder 9681:9682 <> x1:118
+binder 9684:9685 <> x2:119
+R9730:9733 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9715:9717 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9703:9711 Coq.Init.Specif <> proj1_sig def
+R9713:9714 ActionCodes.TreeShapedCode <> x1:118 var
+R9718:9726 Coq.Init.Specif <> proj1_sig def
+R9728:9729 ActionCodes.TreeShapedCode <> x2:119 var
+R9736:9738 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9734:9735 ActionCodes.TreeShapedCode <> x1:118 var
+R9739:9740 ActionCodes.TreeShapedCode <> x2:119 var
+R9829:9845 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R9829:9845 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+prf 9866:9887 <> RunTree_is_prefix_free
+binder 9890:9890 <> A:120
+binder 9892:9892 <> B:121
+R9905:9918 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R9920:9920 ActionCodes.TreeShapedCode <> A:120 var
+R9922:9922 ActionCodes.TreeShapedCode <> B:121 var
+binder 9902:9902 <> M:122
+R9933:9944 ActionCodes.TreeShapedCode <> TreeShapeTND def
+R9946:9946 ActionCodes.TreeShapedCode <> M:122 var
+binder 9928:9930 <> tnd:123
+R9952:9962 ActionCodes.CodeMap <> prefix_free def
+R9965:9971 ActionCodes.TreeShapedCode <> RunTree def
+R9975:9977 ActionCodes.TreeShapedCode <> tnd:123 var
+R9973:9973 ActionCodes.TreeShapedCode <> M:122 var
+R10000:10006 ActionCodes.TreeShapedCode <> RunTree def
+R10000:10006 ActionCodes.TreeShapedCode <> RunTree def
+R10027:10033 ActionCodes.TreeShapedCode <> RunTree def
+R10027:10033 ActionCodes.TreeShapedCode <> RunTree def
+R10103:10115 ActionCodes.CodeMap <> prefix_of_app thm
+R10103:10115 ActionCodes.CodeMap <> prefix_of_app thm
+R10174:10182 ActionCodes.TreeShapedCode <> TreeToMap thm
+R10174:10182 ActionCodes.TreeShapedCode <> TreeToMap thm
+R10255:10263 ActionCodes.TreeShapedCode <> TreeToMap thm
+R10255:10263 ActionCodes.TreeShapedCode <> TreeToMap thm
+R10330:10341 ActionCodes.LTS <> path_app_rev thm
+R10330:10341 ActionCodes.LTS <> path_app_rev thm
+R10414:10417 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10410:10412 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10421:10423 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10414:10417 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10410:10412 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10421:10423 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10442:10463 ActionCodes.LTS <> deterministic_sequence thm
+R10442:10463 ActionCodes.LTS <> deterministic_sequence thm
+R10484:10490 ActionCodes.TreeShapedCode <> tsc_det proj
+R10484:10490 ActionCodes.TreeShapedCode <> tsc_det proj
+R10506:10521 ActionCodes.LTS <> list_rel_lift_id thm
+R10506:10521 ActionCodes.LTS <> list_rel_lift_id thm
+R10553:10557 Coq.Init.Logic <> proj2 thm
+R10553:10557 Coq.Init.Logic <> proj2 thm
+R10681:10683 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10681:10683 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10743:10763 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R10743:10763 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+prf 11212:11253 <> EveryTreeShapedCodeInducesSomeMapBasedCode
+binder 11258:11258 <> A:124
+binder 11260:11260 <> B:125
+R11273:11286 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R11288:11288 ActionCodes.TreeShapedCode <> A:124 var
+R11290:11290 ActionCodes.TreeShapedCode <> B:125 var
+binder 11270:11270 <> M:126
+R11311:11317 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11359:11359 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11297:11308 ActionCodes.TreeShapedCode <> TreeShapeTND def
+R11310:11310 ActionCodes.TreeShapedCode <> M:126 var
+R11318:11324 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11336:11337 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11328:11331 ActionCodes.CodeMap <> Code ind
+R11333:11333 ActionCodes.TreeShapedCode <> A:124 var
+R11335:11335 ActionCodes.TreeShapedCode <> B:125 var
+binder 11325:11325 <> f:127
+R11338:11354 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R11358:11358 ActionCodes.TreeShapedCode <> f:127 var
+R11356:11356 ActionCodes.TreeShapedCode <> M:126 var
+R11402:11411 ActionCodes.CodeMap <> Build_Code constr
+R11418:11424 ActionCodes.TreeShapedCode <> RunTree def
+R11402:11411 ActionCodes.CodeMap <> Build_Code constr
+R11418:11424 ActionCodes.TreeShapedCode <> RunTree def
+R11449:11466 ActionCodes.TreeShapedCode <> RunTree_is_ne_word thm
+R11449:11466 ActionCodes.TreeShapedCode <> RunTree_is_ne_word thm
+R11479:11500 ActionCodes.TreeShapedCode <> RunTree_is_prefix_free thm
+R11479:11500 ActionCodes.TreeShapedCode <> RunTree_is_prefix_free thm
+R11513:11521 ActionCodes.TreeShapedCode <> TreeToMap thm
+R11513:11521 ActionCodes.TreeShapedCode <> TreeToMap thm
+prf 11614:11635 <> MapDefinesTreeUniquely
+binder 11640:11640 <> A:128
+binder 11642:11642 <> B:129
+R11656:11662 ActionCodes.CodeMap <> CodeMap def
+R11664:11664 ActionCodes.TreeShapedCode <> A:128 var
+R11666:11666 ActionCodes.TreeShapedCode <> B:129 var
+binder 11652:11652 <> f:130
+R11677:11690 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R11692:11692 ActionCodes.TreeShapedCode <> A:128 var
+R11694:11694 ActionCodes.TreeShapedCode <> B:129 var
+binder 11672:11672 <> M:131
+binder 11674:11674 <> N:132
+R11715:11724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11705:11712 ActionCodes.TreeShapedCode <> Grounded def
+R11714:11714 ActionCodes.TreeShapedCode <> M:131 var
+R11735:11744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11725:11732 ActionCodes.TreeShapedCode <> Grounded def
+R11734:11734 ActionCodes.TreeShapedCode <> N:132 var
+R11766:11775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11745:11761 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R11765:11765 ActionCodes.TreeShapedCode <> f:130 var
+R11763:11763 ActionCodes.TreeShapedCode <> M:131 var
+R11797:11806 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11776:11792 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R11796:11796 ActionCodes.TreeShapedCode <> f:130 var
+R11794:11794 ActionCodes.TreeShapedCode <> N:132 var
+R11808:11812 ActionCodes.LTS <> ::type_scope:x_'≅'_x not
+R11807:11807 ActionCodes.TreeShapedCode <> M:131 var
+R11813:11813 ActionCodes.TreeShapedCode <> N:132 var
+R11858:11888 ActionCodes.TreeShapedCode <> tree_isomorphism_if_same_traces thm
+R11858:11888 ActionCodes.TreeShapedCode <> tree_isomorphism_if_same_traces thm
+R12127:12142 ActionCodes.TreeShapedCode <> proj_run_actions def
+R12127:12142 ActionCodes.TreeShapedCode <> proj_run_actions def
+R12159:12162 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12172:12175 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12182:12186 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12163:12169 ActionCodes.LTS <> initial proj
+R12177:12180 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12159:12162 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12172:12175 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12182:12186 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'=='_x_'==>'_x not
+R12163:12169 ActionCodes.LTS <> initial proj
+R12177:12180 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12216:12223 ActionCodes.LTS <> path_app thm
+R12216:12223 ActionCodes.LTS <> path_app thm
+R12243:12266 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R12243:12266 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R12331:12345 ActionCodes.ACUtil <> list_eq_nil_tnd thm
+R12349:12352 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12331:12345 ActionCodes.ACUtil <> list_eq_nil_tnd thm
+R12349:12352 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12463:12472 Coq.Lists.List <> app_eq_nil thm
+R12463:12472 Coq.Lists.List <> app_eq_nil thm
+R12523:12529 ActionCodes.LTS <> initial proj
+R12523:12529 ActionCodes.LTS <> initial proj
+R12635:12647 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R12635:12647 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R12726:12735 ActionCodes.TreeShapedCode <> exists_run thm
+R12726:12735 ActionCodes.TreeShapedCode <> exists_run thm
+R12801:12804 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12843:12843 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12805:12810 ActionCodes.TreeShapedCode <> RunNil constr
+R12836:12842 Coq.Init.Logic <> eq_refl constr
+R12825:12831 ActionCodes.LTS <> initial proj
+R12813:12819 ActionCodes.LTS <> initial proj
+R12801:12804 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12843:12843 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12805:12810 ActionCodes.TreeShapedCode <> RunNil constr
+R12836:12842 Coq.Init.Logic <> eq_refl constr
+R12825:12831 ActionCodes.LTS <> initial proj
+R12813:12819 ActionCodes.LTS <> initial proj
+R12861:12872 ActionCodes.TreeShapedCode <> tsc_uniq_run proj
+R12861:12872 ActionCodes.TreeShapedCode <> tsc_uniq_run proj
+R12950:12958 ActionCodes.TreeShapedCode <> tsc_label proj
+R12950:12958 ActionCodes.TreeShapedCode <> tsc_label proj
+R12979:12981 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12982:12985 Coq.Init.Datatypes <> Some constr
+R12989:12992 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12979:12981 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12982:12985 Coq.Init.Datatypes <> Some constr
+R12989:12992 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13111:13122 ActionCodes.LTS <> path_app_rev thm
+R13111:13122 ActionCodes.LTS <> path_app_rev thm
+def 13387:13412 <> SingletonLTS_has_no_leaves
+binder 13415:13415 <> A:133
+R13458:13461 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13427:13439 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R13443:13454 ActionCodes.LTS <> SingletonLTS ex
+R13456:13456 ActionCodes.TreeShapedCode <> A:133 var
+R13462:13466 Coq.Init.Logic <> False ind
+def 13559:13575 <> SingletonLTS_tree
+binder 13578:13578 <> A:134
+binder 13580:13580 <> B:135
+R13590:13603 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R13605:13605 ActionCodes.TreeShapedCode <> A:134 var
+R13607:13607 ActionCodes.TreeShapedCode <> B:135 var
+R13654:13665 ActionCodes.LTS <> SingletonLTS ex
+binder 13690:13690 <> r:136
+R13695:13704 Coq.Init.Logic <> False_rect scheme
+R13709:13734 ActionCodes.TreeShapedCode <> SingletonLTS_has_no_leaves ex
+R13736:13736 ActionCodes.TreeShapedCode <> r:136 var
+R13654:13665 ActionCodes.LTS <> SingletonLTS ex
+binder 13690:13690 <> r:137
+R13695:13704 Coq.Init.Logic <> False_rect scheme
+R13709:13734 ActionCodes.TreeShapedCode <> SingletonLTS_has_no_leaves ex
+R13736:13736 ActionCodes.TreeShapedCode <> r:137 var
+R13889:13905 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R13889:13905 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+def 14067:14087 <> InfiniteChainLTS_tree
+binder 14090:14090 <> A:138
+binder 14092:14092 <> B:139
+R14105:14105 ActionCodes.TreeShapedCode <> A:138 var
+binder 14102:14102 <> a:140
+R14109:14122 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R14124:14124 ActionCodes.TreeShapedCode <> A:138 var
+R14126:14126 ActionCodes.TreeShapedCode <> B:139 var
+R14180:14183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14146:14158 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R14161:14176 ActionCodes.LTS <> InfiniteChainLTS ex
+R14184:14188 Coq.Init.Logic <> False ind
+R14180:14183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14146:14158 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R14161:14176 ActionCodes.LTS <> InfiniteChainLTS ex
+R14184:14188 Coq.Init.Logic <> False ind
+R14254:14283 ActionCodes.TreeShapedCode <> InfiniteChainLTS_has_no_leaves ex
+R14254:14283 ActionCodes.TreeShapedCode <> InfiniteChainLTS_has_no_leaves ex
+R14344:14359 ActionCodes.LTS <> InfiniteChainLTS ex
+binder 14386:14386 <> r:141
+R14391:14400 Coq.Init.Logic <> False_rect scheme
+R14412:14412 ActionCodes.TreeShapedCode <> r:141 var
+R14344:14359 ActionCodes.LTS <> InfiniteChainLTS ex
+binder 14386:14386 <> r:142
+R14391:14400 Coq.Init.Logic <> False_rect scheme
+R14412:14412 ActionCodes.TreeShapedCode <> r:142 var
+R14697:14713 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R14697:14713 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R14772:14795 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R14772:14795 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R14821:14845 ActionCodes.LTS <> InfiniteChainLTS_monotone thm
+R14821:14845 ActionCodes.LTS <> InfiniteChainLTS_monotone thm
+R14900:14927 Coq.Arith.PeanoNat Nat nle_succ_diag_l thm
+R14900:14927 Coq.Arith.PeanoNat Nat nle_succ_diag_l thm
+R15041:15064 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R15041:15064 ActionCodes.TreeShapedCode <> proj_run_actions_correct thm
+R15090:15114 ActionCodes.LTS <> InfiniteChainLTS_monotone thm
+R15090:15114 ActionCodes.LTS <> InfiniteChainLTS_monotone thm
+R15140:15167 Coq.Arith.PeanoNat Nat nle_succ_diag_l thm
+R15140:15167 Coq.Arith.PeanoNat Nat nle_succ_diag_l thm
+R15328:15344 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R15328:15344 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+def 15489:15525 <> groundedness_is_needed_for_uniqueness
+binder 15528:15528 <> A:143
+binder 15530:15530 <> B:144
+R15542:15542 ActionCodes.TreeShapedCode <> A:143 var
+binder 15540:15540 <> a:145
+R15557:15573 ActionCodes.TreeShapedCode <> SingletonLTS_tree ex
+binder 15552:15552 <> M:146
+R15589:15609 ActionCodes.TreeShapedCode <> InfiniteChainLTS_tree ex
+R15611:15611 ActionCodes.TreeShapedCode <> a:145 var
+binder 15584:15584 <> N:147
+R15699:15704 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15664:15680 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R15685:15693 ActionCodes.CodeMap <> EmptyCode ex
+R15695:15695 ActionCodes.TreeShapedCode <> A:143 var
+R15697:15697 ActionCodes.TreeShapedCode <> B:144 var
+R15682:15682 ActionCodes.TreeShapedCode <> M:146 var
+R15740:15782 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15705:15721 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R15726:15734 ActionCodes.CodeMap <> EmptyCode ex
+R15736:15736 ActionCodes.TreeShapedCode <> A:143 var
+R15738:15738 ActionCodes.TreeShapedCode <> B:144 var
+R15723:15723 ActionCodes.TreeShapedCode <> N:147 var
+R15783:15783 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15798:15865 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15789:15792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15785:15787 ActionCodes.LTS <> ::type_scope:x_'≅'_x not
+R15784:15784 ActionCodes.TreeShapedCode <> M:146 var
+R15788:15788 ActionCodes.TreeShapedCode <> N:147 var
+R15793:15797 Coq.Init.Logic <> False ind
+R15876:15882 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15897:15897 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R15866:15873 ActionCodes.TreeShapedCode <> Grounded def
+R15875:15875 ActionCodes.TreeShapedCode <> M:146 var
+R15883:15885 Coq.Init.Logic <> ::type_scope:'~'_x not
+R15896:15896 Coq.Init.Logic <> ::type_scope:'~'_x not
+R15886:15893 ActionCodes.TreeShapedCode <> Grounded def
+R15895:15895 ActionCodes.TreeShapedCode <> N:147 var
+R16388:16411 ActionCodes.TreeShapedCode <> SingletonLTS_is_grounded ex
+R16388:16411 ActionCodes.TreeShapedCode <> SingletonLTS_is_grounded ex
+R16424:16455 ActionCodes.TreeShapedCode <> InfiniteChainLTS_is_not_grounded ex
+R16424:16455 ActionCodes.TreeShapedCode <> InfiniteChainLTS_is_not_grounded ex
+def 16667:16678 <> PrefixStates
+binder 16681:16681 <> A:148
+binder 16683:16683 <> B:149
+R16697:16700 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16696:16696 ActionCodes.TreeShapedCode <> B:149 var
+R16701:16706 Coq.Init.Datatypes <> option ind
+R16709:16712 Coq.Init.Datatypes <> list ind
+R16714:16714 ActionCodes.TreeShapedCode <> A:148 var
+binder 16693:16693 <> f:150
+R16723:16725 Coq.Init.Datatypes <> sum ind
+R16774:16775 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16777:16778 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16785:16787 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16829:16830 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16779:16782 Coq.Init.Datatypes <> list ind
+R16784:16784 ActionCodes.TreeShapedCode <> A:148 var
+binder 16776:16776 <> w:151
+R16794:16797 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R16789:16791 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16788:16788 ActionCodes.TreeShapedCode <> w:151 var
+R16792:16793 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R16798:16804 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16809:16810 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16808:16808 ActionCodes.TreeShapedCode <> B:149 var
+binder 16805:16805 <> b:152
+R16811:16820 ActionCodes.CodeMap <> below_code def
+R16825:16825 ActionCodes.TreeShapedCode <> f:150 var
+R16827:16827 ActionCodes.TreeShapedCode <> b:152 var
+R16822:16822 ActionCodes.TreeShapedCode <> w:151 var
+R16727:16728 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R16730:16731 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R16738:16740 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R16762:16763 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R16732:16735 Coq.Init.Datatypes <> list ind
+R16737:16737 ActionCodes.TreeShapedCode <> A:148 var
+binder 16729:16729 <> w:153
+R16741:16741 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16743:16744 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16746:16748 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16761:16761 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R16745:16745 ActionCodes.TreeShapedCode <> B:149 var
+binder 16742:16742 <> b:154
+R16752:16754 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16749:16749 ActionCodes.TreeShapedCode <> f:150 var
+R16751:16751 ActionCodes.TreeShapedCode <> b:154 var
+R16755:16758 Coq.Init.Datatypes <> Some constr
+R16760:16760 ActionCodes.TreeShapedCode <> w:153 var
+def 16845:16860 <> proj_prefixstate
+binder 16863:16863 <> A:155
+binder 16865:16865 <> B:156
+R16879:16882 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16878:16878 ActionCodes.TreeShapedCode <> B:156 var
+R16883:16888 Coq.Init.Datatypes <> option ind
+R16891:16894 Coq.Init.Datatypes <> list ind
+R16896:16896 ActionCodes.TreeShapedCode <> A:155 var
+binder 16875:16875 <> f:157
+R16917:16920 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16903:16914 ActionCodes.TreeShapedCode <> PrefixStates def
+R16916:16916 ActionCodes.TreeShapedCode <> f:157 var
+R16921:16924 Coq.Init.Datatypes <> list ind
+R16926:16926 ActionCodes.TreeShapedCode <> A:155 var
+R16972:16977 Coq.Init.Specif <> projT1 def
+R16972:16977 Coq.Init.Specif <> projT1 def
+R16994:17002 Coq.Init.Specif <> proj1_sig def
+R16994:17002 Coq.Init.Specif <> proj1_sig def
+prf 17200:17214 <> ps_equal_helper
+binder 17217:17217 <> A:158
+binder 17219:17219 <> B:159
+R17232:17235 ActionCodes.CodeMap <> Code ind
+R17237:17237 ActionCodes.TreeShapedCode <> A:158 var
+R17239:17239 ActionCodes.TreeShapedCode <> B:159 var
+binder 17229:17229 <> f:160
+R17246:17257 ActionCodes.TreeShapedCode <> PrefixStates def
+R17259:17259 ActionCodes.TreeShapedCode <> f:160 var
+binder 17243:17243 <> w:161
+R17266:17266 ActionCodes.TreeShapedCode <> B:159 var
+binder 17263:17263 <> b:162
+R17303:17308 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17275:17277 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17272:17272 ActionCodes.TreeShapedCode <> f:160 var
+R17274:17274 ActionCodes.TreeShapedCode <> b:162 var
+R17278:17281 Coq.Init.Datatypes <> Some constr
+R17284:17299 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R17301:17301 ActionCodes.TreeShapedCode <> w:161 var
+R17309:17315 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17320:17321 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 17316:17316 <> x:163
+R17323:17325 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17322:17322 ActionCodes.TreeShapedCode <> w:161 var
+R17326:17328 Coq.Init.Datatypes <> inl constr
+R17330:17330 ActionCodes.TreeShapedCode <> x:163 var
+R17502:17518 ActionCodes.CodeMap <> proj_code_ne_word def
+R17502:17518 ActionCodes.CodeMap <> proj_code_ne_word def
+R17607:17616 ActionCodes.CodeMap <> below_code def
+R17710:17712 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17710:17712 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17735:17755 ActionCodes.CodeMap <> proj_code_prefix_free def
+R17735:17755 ActionCodes.CodeMap <> proj_code_prefix_free def
+prf 17938:17945 <> ps_equal
+binder 17948:17948 <> A:164
+binder 17950:17950 <> B:165
+R17963:17966 ActionCodes.CodeMap <> Code ind
+R17968:17968 ActionCodes.TreeShapedCode <> A:164 var
+R17970:17970 ActionCodes.TreeShapedCode <> B:165 var
+binder 17960:17960 <> f:166
+R17981:17992 ActionCodes.TreeShapedCode <> PrefixStates def
+R17994:17994 ActionCodes.TreeShapedCode <> f:166 var
+binder 17974:17975 <> w1:167
+binder 17977:17978 <> w2:168
+R18041:18044 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18019:18021 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18000:18015 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R18017:18018 ActionCodes.TreeShapedCode <> w1:167 var
+R18022:18037 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R18039:18040 ActionCodes.TreeShapedCode <> w2:168 var
+R18047:18049 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18045:18046 ActionCodes.TreeShapedCode <> w1:167 var
+R18050:18051 ActionCodes.TreeShapedCode <> w2:168 var
+R18220:18240 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R18220:18240 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R18313:18333 ActionCodes.CodeMap <> proj_code_prefix_free def
+R18313:18333 ActionCodes.CodeMap <> proj_code_prefix_free def
+R18397:18415 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R18397:18415 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R18526:18540 ActionCodes.TreeShapedCode <> ps_equal_helper thm
+R18526:18540 ActionCodes.TreeShapedCode <> ps_equal_helper thm
+R18690:18704 ActionCodes.TreeShapedCode <> ps_equal_helper thm
+R18690:18704 ActionCodes.TreeShapedCode <> ps_equal_helper thm
+R18786:18806 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R18786:18806 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+def 18987:19005 <> InitialPrefixStates
+binder 19008:19008 <> A:169
+binder 19010:19010 <> B:170
+R19024:19027 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19023:19023 ActionCodes.TreeShapedCode <> B:170 var
+R19028:19033 Coq.Init.Datatypes <> option ind
+R19036:19039 Coq.Init.Datatypes <> list ind
+R19041:19041 ActionCodes.TreeShapedCode <> A:169 var
+binder 19020:19020 <> f:171
+R19049:19060 ActionCodes.TreeShapedCode <> PrefixStates def
+R19062:19062 ActionCodes.TreeShapedCode <> f:171 var
+R19091:19093 Coq.Init.Datatypes <> inr constr
+R19096:19100 Coq.Init.Specif <> exist constr
+R19104:19105 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R19091:19093 Coq.Init.Datatypes <> inr constr
+R19096:19100 Coq.Init.Specif <> exist constr
+R19104:19105 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+def 19161:19173 <> PrefixTreeLTS
+binder 19176:19176 <> A:172
+binder 19178:19178 <> B:173
+R19192:19195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19191:19191 ActionCodes.TreeShapedCode <> B:173 var
+R19196:19201 Coq.Init.Datatypes <> option ind
+R19204:19207 Coq.Init.Datatypes <> list ind
+R19209:19209 ActionCodes.TreeShapedCode <> A:172 var
+binder 19188:19188 <> f:174
+R19214:19216 ActionCodes.LTS <> LTS def
+R19218:19218 ActionCodes.TreeShapedCode <> A:172 var
+R19232:19237 ActionCodes.LTS <> states proj
+R19232:19237 ActionCodes.LTS <> states proj
+R19232:19237 ActionCodes.LTS <> states proj
+R19262:19268 ActionCodes.LTS <> initial proj
+R19262:19268 ActionCodes.LTS <> initial proj
+R19300:19309 ActionCodes.LTS <> transition proj
+R19300:19309 ActionCodes.LTS <> transition proj
+R19242:19253 ActionCodes.TreeShapedCode <> PrefixStates def
+R19255:19255 ActionCodes.TreeShapedCode <> f:174 var
+R19273:19291 ActionCodes.TreeShapedCode <> InitialPrefixStates def
+R19293:19293 ActionCodes.TreeShapedCode <> f:174 var
+binder 19319:19319 <> w:175
+binder 19321:19321 <> a:176
+binder 19323:19324 <> w':177
+R19354:19356 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19347:19350 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R19329:19344 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R19346:19346 ActionCodes.TreeShapedCode <> w:175 var
+R19351:19351 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R19353:19353 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R19352:19352 ActionCodes.TreeShapedCode <> a:176 var
+R19357:19372 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R19374:19375 ActionCodes.TreeShapedCode <> w':177 var
+prf 19392:19413 <> PrefixTreeLTS_mk_state
+binder 19416:19416 <> A:178
+binder 19418:19418 <> B:179
+R19431:19434 ActionCodes.CodeMap <> Code ind
+R19436:19436 ActionCodes.TreeShapedCode <> A:178 var
+R19438:19438 ActionCodes.TreeShapedCode <> B:179 var
+binder 19428:19428 <> f:180
+R19447:19450 Coq.Init.Datatypes <> list ind
+R19452:19452 ActionCodes.TreeShapedCode <> A:178 var
+binder 19444:19444 <> w:181
+R19459:19459 ActionCodes.TreeShapedCode <> B:179 var
+binder 19456:19456 <> b:182
+R19505:19510 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19465:19479 ActionCodes.CodeMap <> option_rel_lift ind
+R19501:19501 ActionCodes.TreeShapedCode <> f:180 var
+R19503:19503 ActionCodes.TreeShapedCode <> b:182 var
+R19492:19495 Coq.Init.Datatypes <> Some constr
+R19497:19497 ActionCodes.TreeShapedCode <> w:181 var
+R19481:19489 ActionCodes.CodeMap <> prefix_of ind
+R19511:19518 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19536:19538 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19522:19533 ActionCodes.TreeShapedCode <> PrefixStates def
+R19535:19535 ActionCodes.TreeShapedCode <> f:180 var
+binder 19519:19519 <> q:183
+R19557:19559 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19539:19554 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R19556:19556 ActionCodes.TreeShapedCode <> q:183 var
+R19560:19560 ActionCodes.TreeShapedCode <> w:181 var
+R19672:19684 ActionCodes.CodeMap <> prefix_of_app thm
+R19672:19684 ActionCodes.CodeMap <> prefix_of_app thm
+R19727:19741 ActionCodes.ACUtil <> list_eq_nil_tnd thm
+R19727:19741 ActionCodes.ACUtil <> list_eq_nil_tnd thm
+R19772:19780 Coq.Lists.List <> app_nil_r thm
+R19772:19780 Coq.Lists.List <> app_nil_r thm
+R19772:19780 Coq.Lists.List <> app_nil_r thm
+R19810:19812 Coq.Init.Datatypes <> inl constr
+R19815:19820 Coq.Init.Specif <> existT constr
+R19810:19812 Coq.Init.Datatypes <> inl constr
+R19815:19820 Coq.Init.Specif <> existT constr
+R19941:19943 Coq.Init.Datatypes <> inr constr
+R19946:19950 Coq.Init.Specif <> exist constr
+R19941:19943 Coq.Init.Datatypes <> inr constr
+R19946:19950 Coq.Init.Specif <> exist constr
+R20018:20027 ActionCodes.CodeMap <> below_code def
+R20107:20123 ActionCodes.ACUtil <> app_yields_prefix thm
+R20107:20123 ActionCodes.ACUtil <> app_yields_prefix thm
+R20172:20184 ActionCodes.CodeMap <> prefix_of_app thm
+R20172:20184 ActionCodes.CodeMap <> prefix_of_app thm
+prf 20265:20286 <> PrefixTreeLTS_progress
+binder 20289:20289 <> A:184
+binder 20291:20291 <> B:185
+R20304:20307 ActionCodes.CodeMap <> Code ind
+R20309:20309 ActionCodes.TreeShapedCode <> A:184 var
+R20311:20311 ActionCodes.TreeShapedCode <> B:185 var
+binder 20301:20301 <> f:186
+R20320:20325 ActionCodes.LTS <> states proj
+R20328:20340 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R20342:20342 ActionCodes.TreeShapedCode <> f:186 var
+binder 20317:20317 <> w:187
+R20350:20350 ActionCodes.TreeShapedCode <> B:185 var
+binder 20347:20347 <> b:188
+R20393:20396 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20356:20365 ActionCodes.CodeMap <> below_code def
+R20389:20389 ActionCodes.TreeShapedCode <> f:186 var
+R20391:20391 ActionCodes.TreeShapedCode <> b:188 var
+R20368:20383 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R20385:20385 ActionCodes.TreeShapedCode <> w:187 var
+R20397:20404 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20409:20411 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20408:20408 ActionCodes.TreeShapedCode <> A:184 var
+binder 20405:20405 <> a:189
+R20412:20419 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20438:20447 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20478:20478 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20424:20435 ActionCodes.TreeShapedCode <> PrefixStates def
+R20437:20437 ActionCodes.TreeShapedCode <> f:186 var
+binder 20420:20421 <> w':190
+R20463:20466 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R20468:20470 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R20472:20475 ActionCodes.LTS <> ::type_scope:x_'|-'_x_'--'_x_'-->'_x not
+R20448:20460 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R20462:20462 ActionCodes.TreeShapedCode <> f:186 var
+R20467:20467 ActionCodes.TreeShapedCode <> w:187 var
+R20471:20471 ActionCodes.TreeShapedCode <> a:189 var
+R20476:20477 ActionCodes.TreeShapedCode <> w':190 var
+R20511:20520 ActionCodes.CodeMap <> below_code def
+R20671:20673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20671:20673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20693:20713 ActionCodes.CodeMap <> proj_code_prefix_free def
+R20693:20713 ActionCodes.CodeMap <> proj_code_prefix_free def
+R20967:20979 ActionCodes.CodeMap <> prefix_of_app thm
+R20967:20979 ActionCodes.CodeMap <> prefix_of_app thm
+R21072:21080 Coq.Lists.List <> app_nil_r thm
+R21072:21080 Coq.Lists.List <> app_nil_r thm
+R21072:21080 Coq.Lists.List <> app_nil_r thm
+R21139:21153 ActionCodes.CodeMap <> option_rel_lift ind
+R21166:21169 Coq.Init.Datatypes <> Some constr
+R21196:21199 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R21172:21187 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R21190:21192 Coq.Init.Datatypes <> inr constr
+R21200:21200 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21202:21202 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21155:21163 ActionCodes.CodeMap <> prefix_of ind
+R21139:21153 ActionCodes.CodeMap <> option_rel_lift ind
+R21166:21169 Coq.Init.Datatypes <> Some constr
+R21196:21199 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R21172:21187 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R21190:21192 Coq.Init.Datatypes <> inr constr
+R21200:21200 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21202:21202 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R21155:21163 ActionCodes.CodeMap <> prefix_of ind
+R21281:21293 ActionCodes.CodeMap <> prefix_of_app thm
+R21281:21293 ActionCodes.CodeMap <> prefix_of_app thm
+R21333:21341 Coq.Lists.List <> app_assoc thm
+R21333:21341 Coq.Lists.List <> app_assoc thm
+R21333:21341 Coq.Lists.List <> app_assoc thm
+R21378:21399 ActionCodes.TreeShapedCode <> PrefixTreeLTS_mk_state thm
+R21378:21399 ActionCodes.TreeShapedCode <> PrefixTreeLTS_mk_state thm
+prf 21514:21528 <> PrefixTree_leaf
+binder 21531:21531 <> A:191
+binder 21533:21533 <> B:192
+R21546:21549 ActionCodes.CodeMap <> Code ind
+R21551:21551 ActionCodes.TreeShapedCode <> A:191 var
+R21553:21553 ActionCodes.TreeShapedCode <> B:192 var
+binder 21543:21543 <> f:193
+R21562:21567 ActionCodes.LTS <> states proj
+R21570:21582 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R21584:21584 ActionCodes.TreeShapedCode <> f:193 var
+binder 21559:21559 <> q:194
+R21591:21591 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21636:21642 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21592:21598 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21603:21604 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21602:21602 ActionCodes.TreeShapedCode <> B:192 var
+binder 21599:21599 <> b:195
+R21608:21610 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21605:21605 ActionCodes.TreeShapedCode <> f:193 var
+R21607:21607 ActionCodes.TreeShapedCode <> b:195 var
+R21611:21614 Coq.Init.Datatypes <> Some constr
+R21617:21632 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R21634:21634 ActionCodes.TreeShapedCode <> q:194 var
+R21643:21646 ActionCodes.TreeShapedCode <> Leaf def
+R21648:21648 ActionCodes.TreeShapedCode <> q:194 var
+R21832:21834 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21832:21834 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21855:21875 ActionCodes.CodeMap <> proj_code_prefix_free def
+R21855:21875 ActionCodes.CodeMap <> proj_code_prefix_free def
+R21949:21961 ActionCodes.CodeMap <> prefix_of_app thm
+R21949:21961 ActionCodes.CodeMap <> prefix_of_app thm
+R22072:22088 ActionCodes.ACUtil <> app_yields_prefix thm
+R22072:22088 ActionCodes.ACUtil <> app_yields_prefix thm
+R22191:22206 Coq.Lists.List <> app_cons_not_nil thm
+R22191:22206 Coq.Lists.List <> app_cons_not_nil thm
+R22348:22360 ActionCodes.CodeMap <> prefix_of_app thm
+R22348:22360 ActionCodes.CodeMap <> prefix_of_app thm
+R22415:22423 Coq.Lists.List <> app_assoc thm
+R22415:22423 Coq.Lists.List <> app_assoc thm
+R22415:22423 Coq.Lists.List <> app_assoc thm
+R22447:22449 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22447:22449 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R22472:22492 ActionCodes.CodeMap <> proj_code_prefix_free def
+R22472:22492 ActionCodes.CodeMap <> proj_code_prefix_free def
+R22574:22586 ActionCodes.CodeMap <> prefix_of_app thm
+R22574:22586 ActionCodes.CodeMap <> prefix_of_app thm
+R22606:22609 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R22606:22609 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R22766:22782 ActionCodes.ACUtil <> app_yields_prefix thm
+R22766:22782 ActionCodes.ACUtil <> app_yields_prefix thm
+def 22829:22846 <> LabelPrefixTreeLTS
+binder 22849:22849 <> A:196
+binder 22851:22851 <> B:197
+R22864:22867 ActionCodes.CodeMap <> Code ind
+R22869:22869 ActionCodes.TreeShapedCode <> A:196 var
+R22871:22871 ActionCodes.TreeShapedCode <> B:197 var
+binder 22861:22861 <> f:198
+R22908:22911 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22877:22889 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R22892:22904 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R22906:22906 ActionCodes.TreeShapedCode <> f:198 var
+R22912:22912 ActionCodes.TreeShapedCode <> B:197 var
+R23179:23186 ActionCodes.TreeShapedCode <> ps_equal thm
+R23179:23186 ActionCodes.TreeShapedCode <> ps_equal thm
+R23344:23353 ActionCodes.CodeMap <> below_code def
+R23344:23353 ActionCodes.CodeMap <> below_code def
+R23401:23403 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23404:23419 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R23401:23403 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23404:23419 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R23517:23538 ActionCodes.TreeShapedCode <> PrefixTreeLTS_progress thm
+R23517:23538 ActionCodes.TreeShapedCode <> PrefixTreeLTS_progress thm
+prf 23665:23687 <> LabelPrefixTree_correct
+binder 23690:23690 <> A:199
+binder 23692:23692 <> B:200
+R23705:23708 ActionCodes.CodeMap <> Code ind
+R23710:23710 ActionCodes.TreeShapedCode <> A:199 var
+R23712:23712 ActionCodes.TreeShapedCode <> B:200 var
+binder 23702:23702 <> f:201
+R23721:23733 ActionCodes.TreeShapedCode <> NonRootLeaves def
+R23736:23748 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R23750:23750 ActionCodes.TreeShapedCode <> f:201 var
+binder 23718:23718 <> q:202
+R23781:23783 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23757:23757 ActionCodes.TreeShapedCode <> f:201 var
+R23760:23777 ActionCodes.TreeShapedCode <> LabelPrefixTreeLTS def
+R23779:23779 ActionCodes.TreeShapedCode <> q:202 var
+R23784:23787 Coq.Init.Datatypes <> Some constr
+R23790:23805 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R23808:23816 Coq.Init.Specif <> proj1_sig def
+R23818:23818 ActionCodes.TreeShapedCode <> q:202 var
+def 23989:24020 <> PrefixStates_closed_under_prefix
+binder 24023:24023 <> A:203
+binder 24025:24025 <> B:204
+R24038:24044 ActionCodes.CodeMap <> CodeMap def
+R24046:24046 ActionCodes.TreeShapedCode <> A:203 var
+R24048:24048 ActionCodes.TreeShapedCode <> B:204 var
+binder 24035:24035 <> f:205
+R24057:24060 Coq.Init.Datatypes <> list ind
+R24062:24062 ActionCodes.TreeShapedCode <> A:203 var
+binder 24054:24054 <> w:206
+R24073:24076 Coq.Init.Datatypes <> list ind
+R24078:24078 ActionCodes.TreeShapedCode <> A:203 var
+binder 24066:24070 <> delta:207
+R24085:24096 ActionCodes.TreeShapedCode <> PrefixStates def
+R24098:24098 ActionCodes.TreeShapedCode <> f:205 var
+binder 24082:24082 <> q:208
+R24137:24142 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24114:24117 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24136:24136 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24105:24108 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R24104:24104 ActionCodes.TreeShapedCode <> w:206 var
+R24109:24113 ActionCodes.TreeShapedCode <> delta:207 var
+R24118:24133 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R24135:24135 ActionCodes.TreeShapedCode <> q:208 var
+R24143:24143 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R24146:24147 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R24162:24163 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R24187:24187 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R24148:24159 ActionCodes.TreeShapedCode <> PrefixStates def
+R24161:24161 ActionCodes.TreeShapedCode <> f:205 var
+binder 24144:24145 <> qw:209
+R24183:24185 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24164:24179 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R24181:24182 ActionCodes.TreeShapedCode <> qw:209 var
+R24186:24186 ActionCodes.TreeShapedCode <> w:206 var
+R24254:24258 Coq.Init.Specif <> exist constr
+R24254:24258 Coq.Init.Specif <> exist constr
+R24273:24281 Coq.Lists.List <> app_nil_r thm
+R24273:24281 Coq.Lists.List <> app_nil_r thm
+R24273:24281 Coq.Lists.List <> app_nil_r thm
+R24342:24346 Coq.Init.Specif <> exist constr
+R24342:24346 Coq.Init.Specif <> exist constr
+R24361:24363 Coq.Init.Datatypes <> inr constr
+R24361:24363 Coq.Init.Datatypes <> inr constr
+R24380:24384 Coq.Init.Specif <> exist constr
+R24380:24384 Coq.Init.Specif <> exist constr
+R24598:24614 ActionCodes.ACUtil <> app_yields_prefix thm
+R24598:24614 ActionCodes.ACUtil <> app_yields_prefix thm
+R24658:24670 ActionCodes.CodeMap <> prefix_of_app thm
+R24658:24670 ActionCodes.CodeMap <> prefix_of_app thm
+R24690:24691 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R24690:24691 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R24839:24854 Coq.Lists.List <> app_cons_not_nil thm
+R24839:24854 Coq.Lists.List <> app_cons_not_nil thm
+R24966:24979 ActionCodes.CodeMap <> below_code_app thm
+R24966:24979 ActionCodes.CodeMap <> below_code_app thm
+R25024:25037 ActionCodes.CodeMap <> below_code_app thm
+R25024:25037 ActionCodes.CodeMap <> below_code_app thm
+R25084:25092 Coq.Lists.List <> app_assoc thm
+R25084:25092 Coq.Lists.List <> app_assoc thm
+R25084:25092 Coq.Lists.List <> app_assoc thm
+R25084:25092 Coq.Lists.List <> app_assoc thm
+prf 25212:25228 <> PrefixTree_gtrans
+binder 25231:25231 <> A:210
+binder 25233:25233 <> B:211
+R25246:25249 ActionCodes.CodeMap <> Code ind
+R25251:25251 ActionCodes.TreeShapedCode <> A:210 var
+R25253:25253 ActionCodes.TreeShapedCode <> B:211 var
+binder 25243:25243 <> f:212
+R25267:25272 ActionCodes.LTS <> states proj
+R25275:25287 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R25289:25289 ActionCodes.TreeShapedCode <> f:212 var
+binder 25261:25261 <> q:213
+binder 25263:25264 <> q':214
+R25297:25300 Coq.Init.Datatypes <> list ind
+R25302:25302 ActionCodes.TreeShapedCode <> A:210 var
+binder 25294:25294 <> w:215
+R25353:25366 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R25380:25380 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R25331:25333 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25326:25329 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25308:25323 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R25325:25325 ActionCodes.TreeShapedCode <> q:213 var
+R25330:25330 ActionCodes.TreeShapedCode <> w:215 var
+R25334:25349 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R25351:25352 ActionCodes.TreeShapedCode <> q':214 var
+R25368:25371 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R25373:25377 ActionCodes.LTS <> ::type_scope:x_'=='_x_'==>'_x not
+R25367:25367 ActionCodes.TreeShapedCode <> q:213 var
+R25372:25372 ActionCodes.TreeShapedCode <> w:215 var
+R25378:25379 ActionCodes.TreeShapedCode <> q':214 var
+R25458:25466 Coq.Lists.List <> app_nil_r thm
+R25458:25466 Coq.Lists.List <> app_nil_r thm
+R25458:25466 Coq.Lists.List <> app_nil_r thm
+R25530:25537 ActionCodes.TreeShapedCode <> ps_equal thm
+R25530:25537 ActionCodes.TreeShapedCode <> ps_equal thm
+R25572:25603 ActionCodes.TreeShapedCode <> PrefixStates_closed_under_prefix def
+R25630:25633 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25612:25627 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R25634:25634 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R25636:25636 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R25572:25603 ActionCodes.TreeShapedCode <> PrefixStates_closed_under_prefix def
+R25630:25633 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R25612:25627 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R25634:25634 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R25636:25636 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R25663:25671 Coq.Lists.List <> app_assoc thm
+R25663:25671 Coq.Lists.List <> app_assoc thm
+R25663:25671 Coq.Lists.List <> app_assoc thm
+R25842:25850 Coq.Lists.List <> app_assoc thm
+R25842:25850 Coq.Lists.List <> app_assoc thm
+R25842:25850 Coq.Lists.List <> app_assoc thm
+R25903:25911 Coq.Lists.List <> app_nil_r thm
+R25903:25911 Coq.Lists.List <> app_nil_r thm
+R25903:25911 Coq.Lists.List <> app_nil_r thm
+R25998:26006 Coq.Lists.List <> app_assoc thm
+R25998:26006 Coq.Lists.List <> app_assoc thm
+R25998:26006 Coq.Lists.List <> app_assoc thm
+prf 26037:26050 <> PrefixTree_run
+binder 26053:26053 <> A:216
+binder 26055:26055 <> B:217
+R26068:26074 ActionCodes.CodeMap <> CodeMap def
+R26076:26076 ActionCodes.TreeShapedCode <> A:216 var
+R26078:26078 ActionCodes.TreeShapedCode <> B:217 var
+binder 26065:26065 <> f:218
+R26092:26097 ActionCodes.LTS <> states proj
+R26100:26112 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R26114:26114 ActionCodes.TreeShapedCode <> f:218 var
+binder 26086:26086 <> q:219
+binder 26088:26089 <> q':220
+R26122:26124 ActionCodes.TreeShapedCode <> Run ind
+R26128:26129 ActionCodes.TreeShapedCode <> q':220 var
+R26126:26126 ActionCodes.TreeShapedCode <> q:219 var
+binder 26119:26119 <> r:221
+R26175:26177 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26153:26156 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R26135:26150 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R26152:26152 ActionCodes.TreeShapedCode <> q:219 var
+R26157:26172 ActionCodes.TreeShapedCode <> proj_run_actions def
+R26174:26174 ActionCodes.TreeShapedCode <> r:221 var
+R26178:26193 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R26195:26196 ActionCodes.TreeShapedCode <> q':220 var
+R26233:26241 Coq.Lists.List <> app_nil_r thm
+R26233:26241 Coq.Lists.List <> app_nil_r thm
+R26233:26241 Coq.Lists.List <> app_nil_r thm
+R26295:26303 Coq.Lists.List <> app_assoc thm
+R26295:26303 Coq.Lists.List <> app_assoc thm
+R26295:26303 Coq.Lists.List <> app_assoc thm
+prf 26356:26373 <> PrefixTreeLoopFree
+binder 26376:26376 <> A:222
+binder 26378:26378 <> B:223
+R26391:26397 ActionCodes.CodeMap <> CodeMap def
+R26399:26399 ActionCodes.TreeShapedCode <> A:222 var
+R26401:26401 ActionCodes.TreeShapedCode <> B:223 var
+binder 26388:26388 <> f:224
+R26412:26417 ActionCodes.LTS <> states proj
+R26420:26432 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R26434:26434 ActionCodes.TreeShapedCode <> f:224 var
+binder 26409:26409 <> q:225
+R26442:26444 ActionCodes.TreeShapedCode <> Run ind
+R26448:26448 ActionCodes.TreeShapedCode <> q:225 var
+R26446:26446 ActionCodes.TreeShapedCode <> q:225 var
+binder 26439:26439 <> r:226
+R26472:26474 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26454:26459 ActionCodes.TreeShapedCode <> RunNil constr
+R26465:26471 Coq.Init.Logic <> eq_refl constr
+R26463:26463 ActionCodes.TreeShapedCode <> q:225 var
+R26461:26461 ActionCodes.TreeShapedCode <> q:225 var
+R26475:26475 ActionCodes.TreeShapedCode <> r:226 var
+R26513:26515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26495:26510 ActionCodes.TreeShapedCode <> proj_run_actions def
+R26516:26517 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R26513:26515 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26495:26510 ActionCodes.TreeShapedCode <> proj_run_actions def
+R26516:26517 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R26538:26551 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R26538:26551 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R26586:26602 ActionCodes.ACUtil <> app_yields_prefix thm
+R26586:26602 ActionCodes.ACUtil <> app_yields_prefix thm
+R26651:26656 ActionCodes.LTS <> states proj
+R26659:26671 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+binder 26643:26644 <> q':227
+binder 26646:26648 <> q'':228
+R26682:26684 ActionCodes.TreeShapedCode <> Run ind
+R26689:26691 ActionCodes.TreeShapedCode <> q'':228 var
+R26686:26687 ActionCodes.TreeShapedCode <> q':227 var
+binder 26678:26679 <> r':229
+R26732:26735 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26727:26729 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26708:26723 ActionCodes.TreeShapedCode <> proj_run_actions def
+R26725:26726 ActionCodes.TreeShapedCode <> r':229 var
+R26730:26731 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R26736:26742 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R26747:26748 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 26743:26743 <> P:230
+R26751:26753 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26749:26750 ActionCodes.TreeShapedCode <> r':229 var
+R26754:26759 ActionCodes.TreeShapedCode <> RunNil constr
+R26768:26768 ActionCodes.TreeShapedCode <> P:230 var
+R26764:26766 ActionCodes.TreeShapedCode <> q'':228 var
+R26761:26762 ActionCodes.TreeShapedCode <> q':227 var
+R26651:26656 ActionCodes.LTS <> states proj
+R26659:26671 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+binder 26643:26644 <> q':231
+binder 26646:26648 <> q'':232
+R26682:26684 ActionCodes.TreeShapedCode <> Run ind
+R26689:26691 ActionCodes.TreeShapedCode <> q'':232 var
+R26686:26687 ActionCodes.TreeShapedCode <> q':231 var
+binder 26678:26679 <> r':233
+R26732:26735 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26727:26729 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26708:26723 ActionCodes.TreeShapedCode <> proj_run_actions def
+R26725:26726 ActionCodes.TreeShapedCode <> r':233 var
+R26730:26731 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R26736:26742 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R26747:26748 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 26743:26743 <> P:234
+R26751:26753 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26749:26750 ActionCodes.TreeShapedCode <> r':233 var
+R26754:26759 ActionCodes.TreeShapedCode <> RunNil constr
+R26768:26768 ActionCodes.TreeShapedCode <> P:234 var
+R26764:26766 ActionCodes.TreeShapedCode <> q'':232 var
+R26761:26762 ActionCodes.TreeShapedCode <> q':231 var
+R26835:26841 Coq.Init.Logic <> eq_refl constr
+R26835:26841 Coq.Init.Logic <> eq_refl constr
+R26914:26929 Coq.Lists.List <> app_cons_not_nil thm
+R26914:26929 Coq.Lists.List <> app_cons_not_nil thm
+R27018:27034 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R27018:27034 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+def 27054:27067 <> PrefixTreeCode
+binder 27070:27070 <> A:235
+binder 27072:27072 <> B:236
+R27085:27088 ActionCodes.CodeMap <> Code ind
+R27090:27090 ActionCodes.TreeShapedCode <> A:235 var
+R27092:27092 ActionCodes.TreeShapedCode <> B:236 var
+binder 27082:27082 <> f:237
+R27098:27111 ActionCodes.TreeShapedCode <> TreeShapedCode def
+R27113:27113 ActionCodes.TreeShapedCode <> A:235 var
+R27115:27115 ActionCodes.TreeShapedCode <> B:236 var
+R27163:27175 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R27198:27215 ActionCodes.TreeShapedCode <> LabelPrefixTreeLTS def
+R27163:27175 ActionCodes.TreeShapedCode <> PrefixTreeLTS def
+R27198:27215 ActionCodes.TreeShapedCode <> LabelPrefixTreeLTS def
+R27362:27369 ActionCodes.TreeShapedCode <> ps_equal thm
+R27362:27369 ActionCodes.TreeShapedCode <> ps_equal thm
+R27410:27412 Coq.Lists.List <> rev def
+R27415:27430 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R27410:27412 Coq.Lists.List <> rev def
+R27415:27430 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R27454:27457 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27476:27476 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27449:27451 Coq.Lists.List <> rev def
+R27458:27473 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R27454:27457 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27476:27476 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27449:27451 Coq.Lists.List <> rev def
+R27458:27473 ActionCodes.TreeShapedCode <> proj_prefixstate def
+R27499:27512 Coq.Lists.List <> rev_involutive thm
+R27499:27512 Coq.Lists.List <> rev_involutive thm
+R27499:27512 Coq.Lists.List <> rev_involutive thm
+R27693:27695 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27696:27702 ActionCodes.LTS <> initial proj
+R27693:27695 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27696:27702 ActionCodes.LTS <> initial proj
+R27724:27731 ActionCodes.TreeShapedCode <> ps_equal thm
+R27724:27731 ActionCodes.TreeShapedCode <> ps_equal thm
+R27881:27912 ActionCodes.TreeShapedCode <> PrefixStates_closed_under_prefix def
+R27881:27912 ActionCodes.TreeShapedCode <> PrefixStates_closed_under_prefix def
+R28137:28154 ActionCodes.TreeShapedCode <> PrefixTreeLoopFree thm
+R28137:28154 ActionCodes.TreeShapedCode <> PrefixTreeLoopFree thm
+R28233:28246 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R28233:28246 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R28233:28246 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R28278:28286 Coq.Lists.List <> app_assoc thm
+R28278:28286 Coq.Lists.List <> app_assoc thm
+R28278:28286 Coq.Lists.List <> app_assoc thm
+R28346:28362 ActionCodes.ACUtil <> app_yields_prefix thm
+R28346:28362 ActionCodes.ACUtil <> app_yields_prefix thm
+R28385:28400 Coq.Lists.List <> app_cons_not_nil thm
+R28385:28400 Coq.Lists.List <> app_cons_not_nil thm
+R28440:28443 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R28436:28438 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28446:28448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28440:28443 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R28436:28438 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28446:28448 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28548:28559 Coq.Lists.List <> app_inj_tail thm
+R28548:28559 Coq.Lists.List <> app_inj_tail thm
+R28646:28653 ActionCodes.TreeShapedCode <> ps_equal thm
+R28646:28653 ActionCodes.TreeShapedCode <> ps_equal thm
+R28782:28798 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R28782:28798 Coq.Logic.ProofIrrelevance <> proof_irrelevance prfax
+R28832:28852 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R28832:28852 ActionCodes.TreeShapedCode <> sig_proof_irrelevance thm
+R28865:28872 ActionCodes.TreeShapedCode <> ps_equal thm
+R28865:28872 ActionCodes.TreeShapedCode <> ps_equal thm
+binder 28895:28895 <> T:238
+R28910:28910 ActionCodes.TreeShapedCode <> T:238 var
+binder 28905:28905 <> x:239
+binder 28907:28907 <> y:240
+R28929:28932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28920:28922 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28914:28917 Coq.Init.Datatypes <> Some constr
+R28919:28919 ActionCodes.TreeShapedCode <> x:239 var
+R28923:28926 Coq.Init.Datatypes <> Some constr
+R28928:28928 ActionCodes.TreeShapedCode <> y:240 var
+R28934:28936 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28933:28933 ActionCodes.TreeShapedCode <> x:239 var
+R28937:28937 ActionCodes.TreeShapedCode <> y:240 var
+binder 28895:28895 <> T:241
+R28910:28910 ActionCodes.TreeShapedCode <> T:241 var
+binder 28905:28905 <> x:242
+binder 28907:28907 <> y:243
+R28929:28932 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28920:28922 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28914:28917 Coq.Init.Datatypes <> Some constr
+R28919:28919 ActionCodes.TreeShapedCode <> x:242 var
+R28923:28926 Coq.Init.Datatypes <> Some constr
+R28928:28928 ActionCodes.TreeShapedCode <> y:243 var
+R28934:28936 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28933:28933 ActionCodes.TreeShapedCode <> x:242 var
+R28937:28937 ActionCodes.TreeShapedCode <> y:243 var
+R29037:29059 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R29037:29059 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R29037:29059 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R29076:29098 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R29076:29098 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R29076:29098 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+prf 29328:29336 <> MapToTree
+binder 29339:29339 <> A:244
+binder 29341:29341 <> B:245
+R29354:29357 ActionCodes.CodeMap <> Code ind
+R29359:29359 ActionCodes.TreeShapedCode <> A:244 var
+R29361:29361 ActionCodes.TreeShapedCode <> B:245 var
+binder 29351:29351 <> f:246
+R29368:29384 ActionCodes.TreeShapedCode <> TreeRepresentsMap def
+R29405:29405 ActionCodes.TreeShapedCode <> f:246 var
+R29387:29400 ActionCodes.TreeShapedCode <> PrefixTreeCode def
+R29402:29402 ActionCodes.TreeShapedCode <> f:246 var
+R29449:29463 ActionCodes.CodeMap <> option_rel_lift ind
+R29476:29479 Coq.Init.Datatypes <> Some constr
+R29465:29473 ActionCodes.CodeMap <> prefix_of ind
+R29449:29463 ActionCodes.CodeMap <> option_rel_lift ind
+R29476:29479 Coq.Init.Datatypes <> Some constr
+R29465:29473 ActionCodes.CodeMap <> prefix_of ind
+R29547:29565 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R29547:29565 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R29585:29606 ActionCodes.TreeShapedCode <> PrefixTreeLTS_mk_state thm
+R29585:29606 ActionCodes.TreeShapedCode <> PrefixTreeLTS_mk_state thm
+R29687:29701 ActionCodes.TreeShapedCode <> PrefixTree_leaf thm
+R29687:29701 ActionCodes.TreeShapedCode <> PrefixTree_leaf thm
+R29819:29835 ActionCodes.CodeMap <> proj_code_ne_word def
+R29819:29835 ActionCodes.CodeMap <> proj_code_ne_word def
+R29913:29929 ActionCodes.TreeShapedCode <> PrefixTree_gtrans thm
+R29913:29929 ActionCodes.TreeShapedCode <> PrefixTree_gtrans thm
+R30113:30133 ActionCodes.CodeMap <> proj_code_prefix_free def
+R30113:30133 ActionCodes.CodeMap <> proj_code_prefix_free def
+R30212:30230 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R30212:30230 ActionCodes.CodeMap <> prefix_of_reflexive thm
+R30368:30384 ActionCodes.CodeMap <> proj_code_ne_word def
+R30368:30384 ActionCodes.CodeMap <> proj_code_ne_word def
+R30624:30626 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30624:30626 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30655:30675 ActionCodes.CodeMap <> proj_code_prefix_free def
+R30655:30675 ActionCodes.CodeMap <> proj_code_prefix_free def
+R31012:31034 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R31012:31034 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R31012:31034 ActionCodes.TreeShapedCode <> LabelPrefixTree_correct thm
+R31047:31056 ActionCodes.TreeShapedCode <> exists_run thm
+R31047:31056 ActionCodes.TreeShapedCode <> exists_run thm
+R31104:31117 ActionCodes.TreeShapedCode <> PrefixTree_run thm
+R31104:31117 ActionCodes.TreeShapedCode <> PrefixTree_run thm

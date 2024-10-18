@@ -1,0 +1,7 @@
+DIGEST bab1d3767ee51033c38efdd599306faf
+FActionCodes.ConformanceTestingApartness
+R15:17 ActionCodes.LTS <> <> lib
+R35:44 Coq.Lists.List <> <> lib
+R62:68 ActionCodes.CodeMap <> <> lib
+R86:96 ActionCodes.Contraction <> <> lib
+R114:127 ActionCodes.Concretization <> <> lib

@@ -9,3 +9,4 @@ src/MealyExample.v
 src/RefinementCodeComposition.v
 src/Refinement.v
 src/TreeShapedCode.v
+src/ConformanceTestingApartness.v

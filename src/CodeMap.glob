@@ -1,0 +1,1225 @@
+DIGEST e83d3e6fee31951a40d56cb212736506
+FActionCodes.CodeMap
+R15:23 Coq.Relations.Relations <> <> lib
+R41:50 Coq.Lists.List <> <> lib
+R68:83 Coq.Logic.FinFun <> <> lib
+R101:106 ActionCodes.ACUtil <> <> lib
+R124:142 Coq.Logic.Decidable <> <> lib
+R153:165 Coq.Lists.List ListNotations <> mod
+ind 287:295 <> prefix_of
+constr 343:355 <> prefix_of_nil
+constr 399:412 <> prefix_of_cons
+binder 298:298 <> A:1
+R317:320 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R311:314 Coq.Init.Datatypes <> list ind
+R327:330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R321:324 Coq.Init.Datatypes <> list ind
+R370:373 Coq.Init.Datatypes <> list ind
+R375:375 ActionCodes.CodeMap <> A:1 var
+binder 367:367 <> x:4
+R379:387 ActionCodes.CodeMap <> prefix_of:2 ind
+R393:393 ActionCodes.CodeMap <> x:4 var
+R389:391 Coq.Init.Datatypes <> nil constr
+R428:428 ActionCodes.CodeMap <> A:1 var
+binder 424:424 <> a:5
+R435:438 Coq.Init.Datatypes <> list ind
+R440:440 ActionCodes.CodeMap <> A:1 var
+binder 432:432 <> x:6
+R447:450 Coq.Init.Datatypes <> list ind
+R452:452 ActionCodes.CodeMap <> A:1 var
+binder 444:444 <> y:7
+R475:478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R462:470 ActionCodes.CodeMap <> prefix_of:2 ind
+R474:474 ActionCodes.CodeMap <> y:7 var
+R472:472 ActionCodes.CodeMap <> x:6 var
+R479:487 ActionCodes.CodeMap <> prefix_of:2 ind
+R501:504 Coq.Init.Datatypes <> cons constr
+R508:508 ActionCodes.CodeMap <> y:7 var
+R506:506 ActionCodes.CodeMap <> a:5 var
+R490:493 Coq.Init.Datatypes <> cons constr
+R497:497 ActionCodes.CodeMap <> x:6 var
+R495:495 ActionCodes.CodeMap <> a:5 var
+scheme 287:295 <> prefix_of_ind
+scheme 287:295 <> prefix_of_sind
+prf 621:633 <> prefix_of_app
+binder 636:636 <> A:8
+R651:654 Coq.Init.Datatypes <> list ind
+R656:656 ActionCodes.CodeMap <> A:8 var
+binder 646:646 <> s:9
+binder 648:648 <> l:10
+R676:680 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R663:671 ActionCodes.CodeMap <> prefix_of ind
+R675:675 ActionCodes.CodeMap <> l:10 var
+R673:673 ActionCodes.CodeMap <> s:9 var
+R681:687 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R697:698 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R691:694 Coq.Init.Datatypes <> list ind
+R696:696 ActionCodes.CodeMap <> A:8 var
+binder 688:688 <> u:11
+R699:699 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R706:709 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R701:704 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R700:700 ActionCodes.CodeMap <> s:9 var
+R705:705 ActionCodes.CodeMap <> u:11 var
+R710:710 ActionCodes.CodeMap <> l:10 var
+R950:956 ActionCodes.ACUtil <> ex_elim thm
+R950:956 ActionCodes.ACUtil <> ex_elim thm
+prf 1199:1217 <> prefix_of_reflexive
+binder 1220:1220 <> A:12
+R1233:1236 Coq.Init.Datatypes <> list ind
+R1238:1238 ActionCodes.CodeMap <> A:12 var
+binder 1230:1230 <> l:13
+R1245:1253 ActionCodes.CodeMap <> prefix_of ind
+R1257:1257 ActionCodes.CodeMap <> l:13 var
+R1255:1255 ActionCodes.CodeMap <> l:13 var
+R1276:1288 ActionCodes.CodeMap <> prefix_of_app thm
+R1276:1288 ActionCodes.CodeMap <> prefix_of_app thm
+R1300:1302 Coq.Init.Datatypes <> nil constr
+R1300:1302 Coq.Init.Datatypes <> nil constr
+R1317:1325 Coq.Lists.List <> app_nil_r thm
+R1317:1325 Coq.Lists.List <> app_nil_r thm
+R1317:1325 Coq.Lists.List <> app_nil_r thm
+prf 1359:1378 <> prefix_of_transitive
+binder 1381:1381 <> A:14
+R1401:1404 Coq.Init.Datatypes <> list ind
+R1406:1406 ActionCodes.CodeMap <> A:14 var
+binder 1391:1392 <> l1:15
+binder 1394:1395 <> l2:16
+binder 1397:1398 <> l3:17
+R1428:1431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1413:1421 ActionCodes.CodeMap <> prefix_of ind
+R1426:1427 ActionCodes.CodeMap <> l2:16 var
+R1423:1424 ActionCodes.CodeMap <> l1:15 var
+R1447:1450 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1432:1440 ActionCodes.CodeMap <> prefix_of ind
+R1445:1446 ActionCodes.CodeMap <> l3:17 var
+R1442:1443 ActionCodes.CodeMap <> l2:16 var
+R1451:1459 ActionCodes.CodeMap <> prefix_of ind
+R1464:1465 ActionCodes.CodeMap <> l3:17 var
+R1461:1462 ActionCodes.CodeMap <> l1:15 var
+R1499:1511 ActionCodes.CodeMap <> prefix_of_app thm
+R1499:1511 ActionCodes.CodeMap <> prefix_of_app thm
+R1549:1561 ActionCodes.CodeMap <> prefix_of_app thm
+R1549:1561 ActionCodes.CodeMap <> prefix_of_app thm
+R1600:1612 ActionCodes.CodeMap <> prefix_of_app thm
+R1600:1612 ActionCodes.CodeMap <> prefix_of_app thm
+R1627:1630 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1627:1630 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1648:1656 Coq.Lists.List <> app_assoc thm
+R1648:1656 Coq.Lists.List <> app_assoc thm
+R1648:1656 Coq.Lists.List <> app_assoc thm
+prf 1715:1737 <> prefix_of_antisymmetric
+binder 1740:1740 <> A:18
+R1757:1760 Coq.Init.Datatypes <> list ind
+R1762:1762 ActionCodes.CodeMap <> A:18 var
+binder 1750:1751 <> l1:19
+binder 1753:1754 <> l2:20
+R1784:1787 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1769:1777 ActionCodes.CodeMap <> prefix_of ind
+R1782:1783 ActionCodes.CodeMap <> l2:20 var
+R1779:1780 ActionCodes.CodeMap <> l1:19 var
+R1803:1806 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1788:1796 ActionCodes.CodeMap <> prefix_of ind
+R1801:1802 ActionCodes.CodeMap <> l1:19 var
+R1798:1799 ActionCodes.CodeMap <> l2:20 var
+R1809:1811 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1807:1808 ActionCodes.CodeMap <> l1:19 var
+R1812:1813 ActionCodes.CodeMap <> l2:20 var
+R1847:1859 ActionCodes.CodeMap <> prefix_of_app thm
+R1847:1859 ActionCodes.CodeMap <> prefix_of_app thm
+R1897:1909 ActionCodes.CodeMap <> prefix_of_app thm
+R1897:1909 ActionCodes.CodeMap <> prefix_of_app thm
+R1960:1963 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1964:1966 Coq.Init.Datatypes <> nil constr
+R1985:1993 Coq.Lists.List <> app_nil_r thm
+R1960:1963 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1964:1966 Coq.Init.Datatypes <> nil constr
+R1985:1993 Coq.Lists.List <> app_nil_r thm
+R1985:1993 Coq.Lists.List <> app_nil_r thm
+R2029:2037 Coq.Lists.List <> app_assoc thm
+R2029:2037 Coq.Lists.List <> app_assoc thm
+R2029:2037 Coq.Lists.List <> app_assoc thm
+R2053:2075 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R2053:2075 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R2091:2100 Coq.Lists.List <> app_eq_nil thm
+R2091:2100 Coq.Lists.List <> app_eq_nil thm
+R2137:2145 Coq.Lists.List <> app_nil_r thm
+R2137:2145 Coq.Lists.List <> app_nil_r thm
+def 2165:2170 <> dec_eq
+binder 2173:2173 <> A:21
+R2206:2206 ActionCodes.CodeMap <> A:21 var
+binder 2199:2200 <> a1:22
+binder 2202:2203 <> a2:23
+R2216:2219 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2211:2213 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2209:2210 ActionCodes.CodeMap <> a1:22 var
+R2214:2215 ActionCodes.CodeMap <> a2:23 var
+R2222:2225 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2220:2221 ActionCodes.CodeMap <> a1:22 var
+R2226:2227 ActionCodes.CodeMap <> a2:23 var
+prf 2243:2261 <> prefix_of_decidable
+binder 2264:2264 <> A:24
+R2279:2282 Coq.Init.Datatypes <> list ind
+R2284:2284 ActionCodes.CodeMap <> A:24 var
+binder 2274:2274 <> s:25
+binder 2276:2276 <> l:26
+R2298:2301 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2290:2295 ActionCodes.CodeMap <> dec_eq def
+R2297:2297 ActionCodes.CodeMap <> A:24 var
+R2302:2310 Coq.Logic.Decidable <> decidable def
+R2313:2321 ActionCodes.CodeMap <> prefix_of ind
+R2325:2325 ActionCodes.CodeMap <> l:26 var
+R2323:2323 ActionCodes.CodeMap <> s:25 var
+ind 3021:3035 <> option_rel_lift
+constr 3110:3124 <> option_rel_some
+binder 3038:3038 <> X:27
+binder 3040:3040 <> Y:28
+R3057:3060 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3056:3056 ActionCodes.CodeMap <> X:27 var
+R3062:3065 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3061:3061 ActionCodes.CodeMap <> Y:28 var
+binder 3051:3053 <> rel:29
+R3084:3087 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3076:3081 Coq.Init.Datatypes <> option ind
+R3096:3099 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3088:3093 Coq.Init.Datatypes <> option ind
+R3139:3139 ActionCodes.CodeMap <> X:27 var
+binder 3135:3135 <> x:32
+R3153:3153 ActionCodes.CodeMap <> Y:28 var
+binder 3149:3149 <> y:33
+R3163:3176 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3156:3158 ActionCodes.CodeMap <> rel:29 var
+R3162:3162 ActionCodes.CodeMap <> y:33 var
+R3160:3160 ActionCodes.CodeMap <> x:32 var
+R3177:3191 ActionCodes.CodeMap <> option_rel_lift:30 ind
+R3207:3210 Coq.Init.Datatypes <> Some constr
+R3212:3212 ActionCodes.CodeMap <> y:33 var
+R3198:3201 Coq.Init.Datatypes <> Some constr
+R3203:3203 ActionCodes.CodeMap <> x:32 var
+R3193:3195 ActionCodes.CodeMap <> rel:29 var
+scheme 3021:3035 <> option_rel_lift_ind
+scheme 3021:3035 <> option_rel_lift_sind
+def 3333:3346 <> some_lift_pred
+binder 3349:3349 <> A:34
+R3360:3360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3370:3374 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3362:3365 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3361:3361 ActionCodes.CodeMap <> A:34 var
+R3383:3386 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3375:3380 Coq.Init.Datatypes <> option ind
+R3382:3382 ActionCodes.CodeMap <> A:34 var
+binder 3403:3406 <> pred:35
+binder 3408:3412 <> maybe:36
+R3430:3434 ActionCodes.CodeMap <> maybe:36 var
+R3450:3453 Coq.Init.Datatypes <> Some constr
+R3460:3463 ActionCodes.CodeMap <> pred:35 var
+R3476:3479 Coq.Init.Datatypes <> None constr
+R3484:3488 Coq.Init.Logic <> False ind
+def 3619:3625 <> CodeMap
+binder 3628:3628 <> A:38
+binder 3638:3638 <> B:39
+R3653:3656 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3652:3652 ActionCodes.CodeMap <> B:39 var
+R3657:3662 Coq.Init.Datatypes <> option ind
+R3665:3668 Coq.Init.Datatypes <> list ind
+R3670:3670 ActionCodes.CodeMap <> A:38 var
+def 3686:3692 <> is_some
+binder 3695:3695 <> A:40
+R3712:3717 Coq.Init.Datatypes <> option ind
+R3719:3719 ActionCodes.CodeMap <> A:40 var
+binder 3705:3709 <> value:41
+R3739:3743 ActionCodes.CodeMap <> value:41 var
+R3757:3760 Coq.Init.Datatypes <> Some constr
+R3767:3770 Coq.Init.Logic <> True ind
+R3779:3782 Coq.Init.Datatypes <> None constr
+R3787:3791 Coq.Init.Logic <> False ind
+def 3815:3826 <> code_has_run
+binder 3829:3829 <> A:43
+binder 3831:3831 <> B:44
+R3844:3850 ActionCodes.CodeMap <> CodeMap def
+R3852:3852 ActionCodes.CodeMap <> A:43 var
+R3854:3854 ActionCodes.CodeMap <> B:44 var
+binder 3841:3841 <> R:45
+R3861:3864 Coq.Init.Datatypes <> list ind
+R3866:3866 ActionCodes.CodeMap <> A:43 var
+binder 3858:3858 <> u:46
+R3880:3886 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3891:3892 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3890:3890 ActionCodes.CodeMap <> B:44 var
+binder 3887:3887 <> b:47
+R3893:3906 ActionCodes.CodeMap <> some_lift_pred def
+R3923:3923 ActionCodes.CodeMap <> R:45 var
+R3925:3925 ActionCodes.CodeMap <> b:47 var
+R3909:3917 ActionCodes.CodeMap <> prefix_of ind
+R3919:3919 ActionCodes.CodeMap <> u:46 var
+def 3941:3946 <> in_dom
+binder 3949:3949 <> A:48
+binder 3959:3959 <> B:49
+R3972:3978 ActionCodes.CodeMap <> CodeMap def
+R3980:3980 ActionCodes.CodeMap <> A:48 var
+R3982:3982 ActionCodes.CodeMap <> B:49 var
+binder 3969:3969 <> R:50
+R3988:3991 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3987:3987 ActionCodes.CodeMap <> B:49 var
+binder 4006:4006 <> b:51
+R4011:4017 ActionCodes.CodeMap <> is_some def
+R4020:4020 ActionCodes.CodeMap <> R:50 var
+R4022:4022 ActionCodes.CodeMap <> b:51 var
+def 4038:4040 <> dom
+binder 4043:4043 <> A:52
+binder 4053:4053 <> B:53
+R4066:4072 ActionCodes.CodeMap <> CodeMap def
+R4074:4074 ActionCodes.CodeMap <> A:52 var
+R4076:4076 ActionCodes.CodeMap <> B:53 var
+binder 4063:4063 <> R:54
+R4091:4092 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4094:4095 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4097:4099 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4113:4114 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4096:4096 ActionCodes.CodeMap <> B:53 var
+binder 4093:4093 <> b:55
+R4100:4106 ActionCodes.CodeMap <> is_some def
+R4109:4109 ActionCodes.CodeMap <> R:54 var
+R4111:4111 ActionCodes.CodeMap <> b:55 var
+def 4129:4136 <> proj_dom
+binder 4139:4139 <> A:56
+binder 4149:4149 <> B:57
+R4162:4168 ActionCodes.CodeMap <> CodeMap def
+R4170:4170 ActionCodes.CodeMap <> A:56 var
+R4172:4172 ActionCodes.CodeMap <> B:57 var
+binder 4159:4159 <> R:58
+R4182:4185 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4177:4179 ActionCodes.CodeMap <> dom def
+R4181:4181 ActionCodes.CodeMap <> R:58 var
+R4186:4186 ActionCodes.CodeMap <> B:57 var
+binder 4197:4197 <> x:59
+R4202:4210 Coq.Init.Specif <> proj1_sig def
+R4212:4212 ActionCodes.CodeMap <> x:59 var
+def 4227:4236 <> total_code
+binder 4239:4239 <> A:60
+binder 4249:4249 <> B:61
+R4262:4268 ActionCodes.CodeMap <> CodeMap def
+R4270:4270 ActionCodes.CodeMap <> A:60 var
+R4272:4272 ActionCodes.CodeMap <> B:61 var
+binder 4259:4259 <> R:62
+R4282:4285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4277:4279 ActionCodes.CodeMap <> dom def
+R4281:4281 ActionCodes.CodeMap <> R:62 var
+R4286:4289 Coq.Init.Datatypes <> list ind
+R4291:4291 ActionCodes.CodeMap <> A:60 var
+def 4485:4494 <> below_code
+binder 4497:4497 <> A:63
+R4510:4513 Coq.Init.Datatypes <> list ind
+R4515:4515 ActionCodes.CodeMap <> A:63 var
+binder 4507:4507 <> w:64
+R4533:4538 Coq.Init.Datatypes <> option ind
+R4541:4544 Coq.Init.Datatypes <> list ind
+R4546:4546 ActionCodes.CodeMap <> A:63 var
+binder 4519:4530 <> maybe_longer:65
+R4579:4590 ActionCodes.CodeMap <> maybe_longer:65 var
+R4612:4615 Coq.Init.Datatypes <> Some constr
+R4628:4631 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4623:4626 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4622:4622 ActionCodes.CodeMap <> w:64 var
+R4632:4640 ActionCodes.CodeMap <> prefix_of ind
+R4642:4642 ActionCodes.CodeMap <> w:64 var
+R4666:4670 Coq.Init.Logic <> False ind
+prf 4697:4710 <> below_code_app
+binder 4713:4713 <> A:67
+binder 4715:4715 <> B:68
+R4728:4731 Coq.Init.Datatypes <> list ind
+R4733:4733 ActionCodes.CodeMap <> A:67 var
+binder 4725:4725 <> w:69
+R4740:4746 ActionCodes.CodeMap <> CodeMap def
+R4748:4748 ActionCodes.CodeMap <> A:67 var
+R4750:4750 ActionCodes.CodeMap <> B:68 var
+binder 4737:4737 <> R:70
+R4757:4757 ActionCodes.CodeMap <> B:68 var
+binder 4754:4754 <> b:71
+R4782:4792 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4764:4773 ActionCodes.CodeMap <> below_code def
+R4778:4778 ActionCodes.CodeMap <> R:70 var
+R4780:4780 ActionCodes.CodeMap <> b:71 var
+R4775:4775 ActionCodes.CodeMap <> w:69 var
+R4793:4799 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4805:4806 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4804:4804 ActionCodes.CodeMap <> A:67 var
+binder 4800:4800 <> a:72
+R4807:4813 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4824:4825 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4818:4821 Coq.Init.Datatypes <> list ind
+R4823:4823 ActionCodes.CodeMap <> A:67 var
+binder 4814:4814 <> u:73
+R4844:4846 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4826:4829 Coq.Init.Datatypes <> Some constr
+R4833:4837 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4842:4842 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4832:4832 ActionCodes.CodeMap <> w:69 var
+R4839:4840 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4838:4838 ActionCodes.CodeMap <> a:72 var
+R4841:4841 ActionCodes.CodeMap <> u:73 var
+R4847:4847 ActionCodes.CodeMap <> R:70 var
+R4849:4849 ActionCodes.CodeMap <> b:71 var
+R4932:4944 ActionCodes.CodeMap <> prefix_of_app thm
+R4932:4944 ActionCodes.CodeMap <> prefix_of_app thm
+R5009:5017 Coq.Lists.List <> app_nil_r thm
+R5009:5017 Coq.Lists.List <> app_nil_r thm
+R5009:5017 Coq.Lists.List <> app_nil_r thm
+R5089:5095 ActionCodes.ACUtil <> ex_elim thm
+R5089:5095 ActionCodes.ACUtil <> ex_elim thm
+R5117:5123 ActionCodes.ACUtil <> ex_elim thm
+R5117:5123 ActionCodes.ACUtil <> ex_elim thm
+R5246:5248 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5240:5243 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5244:5245 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5250:5253 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5255:5258 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5246:5248 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5240:5243 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5244:5245 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R5250:5253 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5255:5258 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5279:5287 Coq.Lists.List <> app_nil_r thm
+R5279:5287 Coq.Lists.List <> app_nil_r thm
+R5279:5287 Coq.Lists.List <> app_nil_r thm
+R5320:5342 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R5320:5342 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R5383:5395 ActionCodes.CodeMap <> prefix_of_app thm
+R5383:5395 ActionCodes.CodeMap <> prefix_of_app thm
+R5413:5414 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5413:5414 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+prf 5450:5472 <> below_code_app_nonempty
+binder 5475:5475 <> A:74
+binder 5477:5477 <> B:75
+R5490:5493 Coq.Init.Datatypes <> list ind
+R5495:5495 ActionCodes.CodeMap <> A:74 var
+binder 5487:5487 <> w:76
+R5502:5508 ActionCodes.CodeMap <> CodeMap def
+R5510:5510 ActionCodes.CodeMap <> A:74 var
+R5512:5512 ActionCodes.CodeMap <> B:75 var
+binder 5499:5499 <> R:77
+R5519:5519 ActionCodes.CodeMap <> B:75 var
+binder 5516:5516 <> b:78
+R5544:5554 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5526:5535 ActionCodes.CodeMap <> below_code def
+R5540:5540 ActionCodes.CodeMap <> R:77 var
+R5542:5542 ActionCodes.CodeMap <> b:78 var
+R5537:5537 ActionCodes.CodeMap <> w:76 var
+R5555:5561 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5574:5575 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5565:5571 ActionCodes.ACUtil <> ne_list def
+R5573:5573 ActionCodes.CodeMap <> A:74 var
+binder 5562:5562 <> l:79
+R5603:5605 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5576:5579 Coq.Init.Datatypes <> Some constr
+R5583:5586 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5582:5582 ActionCodes.CodeMap <> w:76 var
+R5587:5599 ActionCodes.ACUtil <> proj_nonempty def
+R5601:5601 ActionCodes.CodeMap <> l:79 var
+R5606:5606 ActionCodes.CodeMap <> R:77 var
+R5608:5608 ActionCodes.CodeMap <> b:78 var
+R5639:5642 Coq.Init.Datatypes <> list ind
+binder 5636:5636 <> l:80
+R5663:5665 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5650:5653 Coq.Init.Datatypes <> Some constr
+R5657:5660 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5661:5661 ActionCodes.CodeMap <> l:80 var
+R5639:5642 Coq.Init.Datatypes <> list ind
+binder 5636:5636 <> l:81
+R5663:5665 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5650:5653 Coq.Init.Datatypes <> Some constr
+R5657:5660 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R5661:5661 ActionCodes.CodeMap <> l:81 var
+R5702:5721 ActionCodes.ACUtil <> exists_nonempty_list thm
+R5702:5721 ActionCodes.ACUtil <> exists_nonempty_list thm
+R5739:5752 ActionCodes.CodeMap <> below_code_app thm
+R5739:5752 ActionCodes.CodeMap <> below_code_app thm
+R5783:5802 ActionCodes.ACUtil <> exists_nonempty_list thm
+R5783:5802 ActionCodes.ACUtil <> exists_nonempty_list thm
+R5825:5838 ActionCodes.CodeMap <> below_code_app thm
+R5825:5838 ActionCodes.CodeMap <> below_code_app thm
+def 5976:5986 <> prefix_free
+binder 5989:5989 <> A:82
+binder 5999:5999 <> B:83
+R6017:6023 ActionCodes.CodeMap <> CodeMap def
+R6025:6025 ActionCodes.CodeMap <> A:82 var
+R6027:6027 ActionCodes.CodeMap <> B:83 var
+binder 6011:6014 <> code:84
+R6057:6057 ActionCodes.CodeMap <> B:83 var
+binder 6050:6050 <> b:85
+binder 6052:6053 <> b':86
+R6067:6067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6112:6117 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6124:6124 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6068:6082 ActionCodes.CodeMap <> option_rel_lift ind
+R6104:6107 ActionCodes.CodeMap <> code:84 var
+R6109:6110 ActionCodes.CodeMap <> b':86 var
+R6095:6098 ActionCodes.CodeMap <> code:84 var
+R6100:6100 ActionCodes.CodeMap <> b:85 var
+R6084:6092 ActionCodes.CodeMap <> prefix_of ind
+R6119:6121 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6118:6118 ActionCodes.CodeMap <> b:85 var
+R6122:6123 ActionCodes.CodeMap <> b':86 var
+def 6366:6377 <> code_ne_word
+binder 6380:6380 <> A:87
+binder 6390:6390 <> B:88
+R6408:6414 ActionCodes.CodeMap <> CodeMap def
+R6416:6416 ActionCodes.CodeMap <> A:87 var
+R6418:6418 ActionCodes.CodeMap <> B:88 var
+binder 6402:6405 <> code:89
+R6445:6445 ActionCodes.CodeMap <> B:88 var
+binder 6441:6441 <> b:90
+R6455:6458 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6449:6452 ActionCodes.CodeMap <> code:89 var
+R6454:6454 ActionCodes.CodeMap <> b:90 var
+R6459:6462 Coq.Init.Datatypes <> Some constr
+R6464:6466 Coq.Init.Datatypes <> nil constr
+ind 6542:6545 <> Code
+constr 6571:6580 <> Build_Code
+binder 6548:6548 <> A:91
+binder 6550:6550 <> B:92
+R6598:6604 ActionCodes.CodeMap <> CodeMap def
+R6606:6606 ActionCodes.CodeMap <> A:91 var
+R6608:6608 ActionCodes.CodeMap <> B:92 var
+binder 6591:6594 <> code:95
+R6634:6687 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6617:6628 ActionCodes.CodeMap <> code_ne_word def
+R6630:6633 ActionCodes.CodeMap <> code:95 var
+R6704:6713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6688:6698 ActionCodes.CodeMap <> prefix_free def
+R6700:6703 ActionCodes.CodeMap <> code:95 var
+R6714:6717 ActionCodes.CodeMap <> Code:93 ind
+R6721:6721 ActionCodes.CodeMap <> B:92 var
+R6719:6719 ActionCodes.CodeMap <> A:91 var
+scheme 6542:6545 <> Code_rect
+scheme 6542:6545 <> Code_ind
+scheme 6542:6545 <> Code_rec
+scheme 6542:6545 <> Code_sind
+def 6736:6744 <> code_proj
+binder 6747:6747 <> A:96
+binder 6757:6757 <> B:97
+R6770:6773 ActionCodes.CodeMap <> Code ind
+R6775:6775 ActionCodes.CodeMap <> A:96 var
+R6777:6777 ActionCodes.CodeMap <> B:97 var
+binder 6767:6767 <> R:98
+R6783:6786 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6782:6782 ActionCodes.CodeMap <> B:97 var
+R6787:6792 Coq.Init.Datatypes <> option ind
+R6795:6798 Coq.Init.Datatypes <> list ind
+R6800:6800 ActionCodes.CodeMap <> A:96 var
+def 6870:6890 <> proj_code_prefix_free
+binder 6893:6893 <> A:99
+binder 6895:6895 <> B:100
+R6908:6911 ActionCodes.CodeMap <> Code ind
+R6913:6913 ActionCodes.CodeMap <> A:99 var
+R6915:6915 ActionCodes.CodeMap <> B:100 var
+binder 6905:6905 <> R:101
+R6922:6932 ActionCodes.CodeMap <> prefix_free def
+R6935:6943 ActionCodes.CodeMap <> code_proj def
+R6945:6945 ActionCodes.CodeMap <> R:101 var
+def 6998:7014 <> proj_code_ne_word
+binder 7017:7017 <> A:102
+binder 7019:7019 <> B:103
+R7032:7035 ActionCodes.CodeMap <> Code ind
+R7037:7037 ActionCodes.CodeMap <> A:102 var
+R7039:7039 ActionCodes.CodeMap <> B:103 var
+binder 7029:7029 <> R:104
+R7046:7057 ActionCodes.CodeMap <> code_ne_word def
+R7060:7068 ActionCodes.CodeMap <> code_proj def
+R7070:7070 ActionCodes.CodeMap <> R:104 var
+R7112:7149 ActionCodes.CodeMap <> code_proj def
+prf 7159:7174 <> code_delta_empty
+binder 7177:7177 <> A:105
+binder 7179:7179 <> B:106
+R7192:7195 ActionCodes.CodeMap <> Code ind
+R7197:7197 ActionCodes.CodeMap <> A:105 var
+R7199:7199 ActionCodes.CodeMap <> B:106 var
+binder 7189:7189 <> R:107
+R7220:7220 ActionCodes.CodeMap <> B:106 var
+binder 7214:7214 <> b:108
+binder 7216:7217 <> b':109
+R7229:7232 Coq.Init.Datatypes <> list ind
+R7234:7234 ActionCodes.CodeMap <> A:105 var
+binder 7224:7224 <> w:110
+binder 7226:7226 <> v:111
+R7254:7261 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7245:7247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7242:7242 ActionCodes.CodeMap <> R:107 var
+R7244:7244 ActionCodes.CodeMap <> b:108 var
+R7248:7251 Coq.Init.Datatypes <> Some constr
+R7253:7253 ActionCodes.CodeMap <> w:110 var
+R7282:7289 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7266:7268 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7262:7262 ActionCodes.CodeMap <> R:107 var
+R7264:7265 ActionCodes.CodeMap <> b':109 var
+R7269:7272 Coq.Init.Datatypes <> Some constr
+R7276:7279 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7275:7275 ActionCodes.CodeMap <> w:110 var
+R7280:7280 ActionCodes.CodeMap <> v:111 var
+R7291:7293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7290:7290 ActionCodes.CodeMap <> v:111 var
+R7294:7295 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7349:7351 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7349:7351 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7370:7390 ActionCodes.CodeMap <> proj_code_prefix_free def
+R7370:7390 ActionCodes.CodeMap <> proj_code_prefix_free def
+R7457:7469 ActionCodes.CodeMap <> prefix_of_app thm
+R7457:7469 ActionCodes.CodeMap <> prefix_of_app thm
+R7569:7591 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R7569:7591 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R7616:7624 Coq.Lists.List <> app_nil_r thm
+R7616:7624 Coq.Lists.List <> app_nil_r thm
+R7616:7624 Coq.Lists.List <> app_nil_r thm
+def 7702:7710 <> EmptyCode
+binder 7713:7713 <> A:112
+binder 7715:7715 <> B:113
+R7726:7729 ActionCodes.CodeMap <> Code ind
+R7731:7731 ActionCodes.CodeMap <> A:112 var
+R7733:7733 ActionCodes.CodeMap <> B:113 var
+R7753:7762 ActionCodes.CodeMap <> Build_Code constr
+R7778:7781 Coq.Init.Datatypes <> None constr
+R7753:7762 ActionCodes.CodeMap <> Build_Code constr
+R7778:7781 Coq.Init.Datatypes <> None constr
+def 8007:8017 <> kleisli_ext
+binder 8020:8020 <> A:114
+binder 8022:8022 <> B:115
+R8035:8041 ActionCodes.CodeMap <> CodeMap def
+R8043:8043 ActionCodes.CodeMap <> A:114 var
+R8045:8045 ActionCodes.CodeMap <> B:115 var
+binder 8032:8032 <> R:116
+R8057:8060 Coq.Init.Datatypes <> list ind
+R8062:8062 ActionCodes.CodeMap <> B:115 var
+binder 8049:8054 <> b_list:117
+R8072:8077 Coq.Init.Datatypes <> option ind
+R8080:8083 Coq.Init.Datatypes <> list ind
+R8085:8085 ActionCodes.CodeMap <> A:114 var
+R8099:8104 ActionCodes.CodeMap <> b_list:117 var
+R8118:8120 Coq.Init.Datatypes <> nil constr
+R8125:8128 Coq.Init.Datatypes <> Some constr
+R8130:8132 Coq.Init.Datatypes <> nil constr
+R8142:8145 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8171:8171 ActionCodes.CodeMap <> R:116 var
+R8191:8194 Coq.Init.Datatypes <> None constr
+R8199:8202 Coq.Init.Datatypes <> None constr
+R8215:8218 Coq.Init.Datatypes <> Some constr
+R8243:8252 Coq.Init.Datatypes <> option_map def
+R8278:8288 ActionCodes.CodeMap <> kleisli_ext:118 def
+R8290:8290 ActionCodes.CodeMap <> R:116 var
+binder 8259:8259 <> x:120
+R8270:8273 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8274:8274 ActionCodes.CodeMap <> x:120 var
+R8344:8354 ActionCodes.CodeMap <> kleisli_ext def
+not 8333:8333 <> ::type_scope:x_'^*'
+def 8461:8471 <> option_fapp
+binder 8474:8474 <> A:121
+binder 8476:8476 <> B:122
+R8501:8504 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8486:8491 Coq.Init.Datatypes <> option ind
+R8495:8498 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8494:8494 ActionCodes.CodeMap <> A:121 var
+R8499:8499 ActionCodes.CodeMap <> B:122 var
+R8513:8516 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8505:8510 Coq.Init.Datatypes <> option ind
+R8512:8512 ActionCodes.CodeMap <> A:121 var
+R8517:8522 Coq.Init.Datatypes <> option ind
+R8524:8524 ActionCodes.CodeMap <> B:122 var
+binder 8537:8543 <> maybe_f:123
+binder 8545:8551 <> maybe_a:124
+R8571:8571 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8579:8580 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8588:8588 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8572:8578 ActionCodes.CodeMap <> maybe_f:123 var
+R8581:8587 ActionCodes.CodeMap <> maybe_a:124 var
+R8606:8606 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8613:8614 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8621:8621 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8607:8610 Coq.Init.Datatypes <> Some constr
+R8615:8618 Coq.Init.Datatypes <> Some constr
+R8626:8629 Coq.Init.Datatypes <> Some constr
+R8653:8656 Coq.Init.Datatypes <> None constr
+R8772:8782 ActionCodes.CodeMap <> option_fapp def
+not 8758:8758 <> :::x_'<*>'_x
+prf 9095:9109 <> kleisli_ext_app
+binder 9112:9112 <> A:125
+binder 9114:9114 <> B:126
+R9127:9133 ActionCodes.CodeMap <> CodeMap def
+R9135:9135 ActionCodes.CodeMap <> A:125 var
+R9137:9137 ActionCodes.CodeMap <> B:126 var
+binder 9124:9124 <> R:127
+R9148:9151 Coq.Init.Datatypes <> list ind
+R9153:9153 ActionCodes.CodeMap <> B:126 var
+binder 9141:9142 <> l1:128
+binder 9144:9145 <> l2:129
+R9159:9159 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9185:9188 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9160:9170 ActionCodes.CodeMap <> kleisli_ext def
+R9175:9177 Coq.Init.Datatypes <> app def
+R9182:9183 ActionCodes.CodeMap <> l2:129 var
+R9179:9180 ActionCodes.CodeMap <> l1:128 var
+R9172:9172 ActionCodes.CodeMap <> R:127 var
+R9225:9230 ActionCodes.CodeMap <> :::x_'<*>'_x not
+R9247:9247 ActionCodes.CodeMap <> :::x_'<*>'_x not
+R9202:9207 ActionCodes.CodeMap <> :::x_'<*>'_x not
+R9224:9224 ActionCodes.CodeMap <> :::x_'<*>'_x not
+R9189:9192 Coq.Init.Datatypes <> Some constr
+R9196:9198 Coq.Init.Datatypes <> app def
+R9200:9200 ActionCodes.CodeMap <> A:125 var
+R9208:9218 ActionCodes.CodeMap <> kleisli_ext def
+R9222:9223 ActionCodes.CodeMap <> l1:128 var
+R9220:9220 ActionCodes.CodeMap <> R:127 var
+R9231:9241 ActionCodes.CodeMap <> kleisli_ext def
+R9245:9246 ActionCodes.CodeMap <> l2:129 var
+R9243:9243 ActionCodes.CodeMap <> R:127 var
+R9299:9309 ActionCodes.CodeMap <> option_fapp def
+R9334:9338 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9334:9338 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9390:9399 Coq.Init.Datatypes <> option_map def
+R9455:9459 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9455:9459 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9493:9497 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9493:9497 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9527:9537 ActionCodes.CodeMap <> option_fapp def
+R9554:9562 Coq.Lists.List <> app_assoc thm
+R9554:9562 Coq.Lists.List <> app_assoc thm
+R9554:9562 Coq.Lists.List <> app_assoc thm
+def 9670:9701 <> theorem_kleisli_ext_is_a_codemap
+binder 9704:9704 <> A:130
+binder 9706:9706 <> B:131
+R9719:9725 ActionCodes.CodeMap <> CodeMap def
+R9727:9727 ActionCodes.CodeMap <> A:130 var
+R9729:9729 ActionCodes.CodeMap <> B:131 var
+binder 9716:9716 <> R:132
+R9736:9742 ActionCodes.CodeMap <> CodeMap def
+R9744:9744 ActionCodes.CodeMap <> A:130 var
+R9747:9750 Coq.Init.Datatypes <> list ind
+R9752:9752 ActionCodes.CodeMap <> B:131 var
+R9761:9762 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R9760:9760 ActionCodes.CodeMap <> R:132 var
+prf 9987:10004 <> prefix_of_prefixes
+binder 10007:10007 <> A:133
+R10031:10034 Coq.Init.Datatypes <> list ind
+R10036:10036 ActionCodes.CodeMap <> A:133 var
+binder 10018:10019 <> ps:134
+binder 10021:10022 <> ss:135
+binder 10024:10025 <> pl:136
+binder 10027:10028 <> sl:137
+R10074:10079 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10043:10051 ActionCodes.CodeMap <> prefix_of ind
+R10067:10070 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10065:10066 ActionCodes.CodeMap <> pl:136 var
+R10071:10072 ActionCodes.CodeMap <> sl:137 var
+R10056:10059 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10054:10055 ActionCodes.CodeMap <> ps:134 var
+R10060:10061 ActionCodes.CodeMap <> ss:135 var
+R10095:10098 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R10080:10088 ActionCodes.CodeMap <> prefix_of ind
+R10093:10094 ActionCodes.CodeMap <> pl:136 var
+R10090:10091 ActionCodes.CodeMap <> ps:134 var
+R10099:10107 ActionCodes.CodeMap <> prefix_of ind
+R10112:10113 ActionCodes.CodeMap <> ps:134 var
+R10109:10110 ActionCodes.CodeMap <> pl:136 var
+R10316:10328 Coq.Lists.List <> app_comm_cons thm
+R10316:10328 Coq.Lists.List <> app_comm_cons thm
+R10316:10328 Coq.Lists.List <> app_comm_cons thm
+R10353:10365 Coq.Lists.List <> app_comm_cons thm
+R10353:10365 Coq.Lists.List <> app_comm_cons thm
+R10353:10365 Coq.Lists.List <> app_comm_cons thm
+R10443:10456 ActionCodes.CodeMap <> prefix_of_cons constr
+R10443:10456 ActionCodes.CodeMap <> prefix_of_cons constr
+R10443:10456 ActionCodes.CodeMap <> prefix_of_cons constr
+prf 10484:10502 <> strip_common_prefix
+binder 10505:10505 <> A:138
+R10528:10531 Coq.Init.Datatypes <> list ind
+R10533:10533 ActionCodes.CodeMap <> A:138 var
+binder 10516:10519 <> pref:139
+binder 10521:10522 <> l1:140
+binder 10524:10525 <> l2:141
+R10575:10578 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10540:10548 ActionCodes.CodeMap <> prefix_of ind
+R10568:10571 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10564:10567 ActionCodes.CodeMap <> pref:139 var
+R10572:10573 ActionCodes.CodeMap <> l2:141 var
+R10555:10558 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10551:10554 ActionCodes.CodeMap <> pref:139 var
+R10559:10560 ActionCodes.CodeMap <> l1:140 var
+R10579:10587 ActionCodes.CodeMap <> prefix_of ind
+R10592:10593 ActionCodes.CodeMap <> l2:141 var
+R10589:10590 ActionCodes.CodeMap <> l1:140 var
+prf 10971:11004 <> code_kleisli_ext_prefix_reflection
+binder 11007:11007 <> A:142
+binder 11009:11009 <> B:143
+R11023:11029 ActionCodes.CodeMap <> CodeMap def
+R11031:11031 ActionCodes.CodeMap <> A:142 var
+R11033:11033 ActionCodes.CodeMap <> B:143 var
+binder 11020:11020 <> R:144
+R11054:11059 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11040:11051 ActionCodes.CodeMap <> code_ne_word def
+R11053:11053 ActionCodes.CodeMap <> R:144 var
+R11073:11076 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11060:11070 ActionCodes.CodeMap <> prefix_free def
+R11072:11072 ActionCodes.CodeMap <> R:144 var
+R11094:11097 Coq.Init.Datatypes <> list ind
+R11099:11099 ActionCodes.CodeMap <> B:143 var
+binder 11084:11086 <> bs1:145
+binder 11088:11090 <> bs2:146
+R11163:11172 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11108:11122 ActionCodes.CodeMap <> option_rel_lift ind
+R11145:11155 ActionCodes.CodeMap <> kleisli_ext def
+R11159:11161 ActionCodes.CodeMap <> bs2:146 var
+R11157:11157 ActionCodes.CodeMap <> R:144 var
+R11136:11141 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R11135:11135 ActionCodes.CodeMap <> R:144 var
+R11139:11141 ActionCodes.CodeMap <> bs1:145 var
+R11124:11132 ActionCodes.CodeMap <> prefix_of ind
+R11173:11181 ActionCodes.CodeMap <> prefix_of ind
+R11187:11189 ActionCodes.CodeMap <> bs2:146 var
+R11183:11185 ActionCodes.CodeMap <> bs1:145 var
+R11428:11438 ActionCodes.CodeMap <> kleisli_ext def
+R11428:11438 ActionCodes.CodeMap <> kleisli_ext def
+R11771:11783 Coq.Lists.List <> app_comm_cons thm
+R11771:11783 Coq.Lists.List <> app_comm_cons thm
+R11771:11783 Coq.Lists.List <> app_comm_cons thm
+R11959:11969 ActionCodes.CodeMap <> kleisli_ext def
+R11959:11969 ActionCodes.CodeMap <> kleisli_ext def
+R12018:12035 ActionCodes.CodeMap <> prefix_of_prefixes thm
+R12018:12035 ActionCodes.CodeMap <> prefix_of_prefixes thm
+R12087:12100 ActionCodes.CodeMap <> prefix_of_cons constr
+R12087:12100 ActionCodes.CodeMap <> prefix_of_cons constr
+R12310:12328 ActionCodes.CodeMap <> strip_common_prefix thm
+R12310:12328 ActionCodes.CodeMap <> strip_common_prefix thm
+prf 12759:12788 <> kleisli_ext_preserves_nonempty
+binder 12791:12791 <> A:147
+binder 12793:12793 <> B:148
+R12806:12809 ActionCodes.CodeMap <> Code ind
+R12811:12811 ActionCodes.CodeMap <> A:147 var
+R12813:12813 ActionCodes.CodeMap <> B:148 var
+binder 12803:12803 <> R:149
+R12820:12823 Coq.Init.Datatypes <> list ind
+R12825:12825 ActionCodes.CodeMap <> B:148 var
+binder 12817:12817 <> l:150
+R12844:12847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12832:12841 ActionCodes.ACUtil <> isNonEmpty def
+R12843:12843 ActionCodes.CodeMap <> l:150 var
+R12861:12864 Coq.Init.Datatypes <> list ind
+R12866:12866 ActionCodes.CodeMap <> A:147 var
+binder 12855:12857 <> R_l:151
+R12885:12888 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12877:12879 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12869:12872 Coq.Init.Datatypes <> Some constr
+R12874:12876 ActionCodes.CodeMap <> R_l:151 var
+R12881:12884 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R12880:12880 ActionCodes.CodeMap <> R:149 var
+R12884:12884 ActionCodes.CodeMap <> l:150 var
+R12889:12898 ActionCodes.ACUtil <> isNonEmpty def
+R12900:12902 ActionCodes.CodeMap <> R_l:151 var
+R13036:13039 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R13036:13039 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R13036:13039 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+prf 13245:13273 <> kleisli_ext_preserves_neq_nil
+binder 13276:13276 <> A:152
+binder 13278:13278 <> B:153
+R13291:13294 ActionCodes.CodeMap <> Code ind
+R13296:13296 ActionCodes.CodeMap <> A:152 var
+R13298:13298 ActionCodes.CodeMap <> B:153 var
+binder 13288:13288 <> R:154
+R13305:13308 Coq.Init.Datatypes <> list ind
+R13310:13310 ActionCodes.CodeMap <> B:153 var
+binder 13302:13302 <> l:155
+R13325:13328 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13318:13321 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R13317:13317 ActionCodes.CodeMap <> l:155 var
+R13322:13324 Coq.Init.Datatypes <> nil constr
+R13342:13345 Coq.Init.Datatypes <> list ind
+R13347:13347 ActionCodes.CodeMap <> A:152 var
+binder 13336:13338 <> R_l:156
+R13366:13369 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13358:13360 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13350:13353 Coq.Init.Datatypes <> Some constr
+R13355:13357 ActionCodes.CodeMap <> R_l:156 var
+R13362:13365 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R13361:13361 ActionCodes.CodeMap <> R:154 var
+R13365:13365 ActionCodes.CodeMap <> l:155 var
+R13373:13376 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R13370:13372 ActionCodes.CodeMap <> R_l:156 var
+R13377:13379 Coq.Init.Datatypes <> nil constr
+R13414:13433 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+R13414:13433 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+R13445:13474 ActionCodes.CodeMap <> kleisli_ext_preserves_nonempty thm
+R13445:13474 ActionCodes.CodeMap <> kleisli_ext_preserves_nonempty thm
+R13486:13505 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+R13486:13505 ActionCodes.ACUtil <> nonempty_iff_not_nil thm
+prf 13550:13575 <> kleisli_ext_reflects_empty
+binder 13578:13578 <> A:157
+binder 13580:13580 <> B:158
+R13593:13596 ActionCodes.CodeMap <> Code ind
+R13598:13598 ActionCodes.CodeMap <> A:157 var
+R13600:13600 ActionCodes.CodeMap <> B:158 var
+binder 13590:13590 <> R:159
+R13607:13610 Coq.Init.Datatypes <> list ind
+R13612:13612 ActionCodes.CodeMap <> B:158 var
+binder 13604:13604 <> l:160
+R13639:13642 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13619:13619 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13627:13630 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13620:13620 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R13622:13626 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R13621:13621 ActionCodes.CodeMap <> R:159 var
+R13626:13626 ActionCodes.CodeMap <> l:160 var
+R13631:13634 Coq.Init.Datatypes <> Some constr
+R13636:13638 Coq.Init.Datatypes <> nil constr
+R13644:13646 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13643:13643 ActionCodes.CodeMap <> l:160 var
+R13647:13649 Coq.Init.Datatypes <> nil constr
+R13671:13687 ActionCodes.ACUtil <> list_empty_or_not thm
+R13671:13687 ActionCodes.ACUtil <> list_empty_or_not thm
+R13754:13763 ActionCodes.ACUtil <> isNonEmpty def
+R13765:13767 Coq.Init.Datatypes <> nil constr
+R13754:13763 ActionCodes.ACUtil <> isNonEmpty def
+R13765:13767 Coq.Init.Datatypes <> nil constr
+R13786:13815 ActionCodes.CodeMap <> kleisli_ext_preserves_nonempty thm
+R13786:13815 ActionCodes.CodeMap <> kleisli_ext_preserves_nonempty thm
+def 13914:13941 <> does_not_start_with_codeword
+binder 13944:13944 <> A:161
+binder 13946:13946 <> B:162
+R13959:13962 ActionCodes.CodeMap <> Code ind
+R13964:13964 ActionCodes.CodeMap <> A:161 var
+R13966:13966 ActionCodes.CodeMap <> B:162 var
+binder 13956:13956 <> R:163
+R13973:13976 Coq.Init.Datatypes <> list ind
+R13978:13978 ActionCodes.CodeMap <> A:161 var
+binder 13970:13970 <> l:164
+R14006:14006 ActionCodes.CodeMap <> B:162 var
+binder 14003:14003 <> b:165
+R14009:14010 Coq.Init.Logic <> ::type_scope:'~'_x not
+R14051:14051 Coq.Init.Logic <> ::type_scope:'~'_x not
+R14011:14025 ActionCodes.CodeMap <> option_rel_lift ind
+R14044:14047 Coq.Init.Datatypes <> Some constr
+R14049:14049 ActionCodes.CodeMap <> l:164 var
+R14038:14038 ActionCodes.CodeMap <> R:163 var
+R14040:14040 ActionCodes.CodeMap <> b:165 var
+R14027:14035 ActionCodes.CodeMap <> prefix_of ind
+def 14064:14095 <> nil_does_not_start_with_codeword
+binder 14098:14098 <> A:166
+binder 14100:14100 <> B:167
+R14113:14116 ActionCodes.CodeMap <> Code ind
+R14118:14118 ActionCodes.CodeMap <> A:166 var
+R14120:14120 ActionCodes.CodeMap <> B:167 var
+binder 14110:14110 <> R:168
+R14127:14154 ActionCodes.CodeMap <> does_not_start_with_codeword def
+R14163:14165 Coq.Init.Datatypes <> nil constr
+R14160:14160 ActionCodes.CodeMap <> R:168 var
+prf 14354:14375 <> kleisli_ext_not_prefix
+binder 14378:14378 <> A:169
+binder 14380:14380 <> B:170
+R14393:14396 ActionCodes.CodeMap <> Code ind
+R14398:14398 ActionCodes.CodeMap <> A:169 var
+R14400:14400 ActionCodes.CodeMap <> B:170 var
+binder 14390:14390 <> R:171
+R14418:14421 Coq.Init.Datatypes <> list ind
+R14423:14423 ActionCodes.CodeMap <> B:170 var
+binder 14415:14415 <> l:172
+R14437:14440 Coq.Init.Datatypes <> list ind
+R14442:14442 ActionCodes.CodeMap <> A:169 var
+binder 14427:14429 <> R_l:173
+binder 14431:14434 <> suff:174
+R14468:14475 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14450:14450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14456:14459 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14452:14455 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R14451:14451 ActionCodes.CodeMap <> R:171 var
+R14455:14455 ActionCodes.CodeMap <> l:172 var
+R14460:14463 Coq.Init.Datatypes <> Some constr
+R14465:14467 ActionCodes.CodeMap <> R_l:173 var
+R14525:14532 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14476:14503 ActionCodes.CodeMap <> does_not_start_with_codeword def
+R14516:14519 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R14513:14515 ActionCodes.CodeMap <> R_l:173 var
+R14520:14523 ActionCodes.CodeMap <> suff:174 var
+R14509:14509 ActionCodes.CodeMap <> R:171 var
+R14534:14536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14533:14533 ActionCodes.CodeMap <> l:172 var
+R14537:14539 Coq.Init.Datatypes <> nil constr
+R14742:14745 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R14742:14745 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R14823:14831 Coq.Lists.List <> app_assoc thm
+R14823:14831 Coq.Lists.List <> app_assoc thm
+R14823:14831 Coq.Lists.List <> app_assoc thm
+R14842:14854 ActionCodes.CodeMap <> prefix_of_app thm
+R14842:14854 ActionCodes.CodeMap <> prefix_of_app thm
+prf 14888:14920 <> kleisli_ext_injective_with_suffix
+binder 14923:14923 <> A:175
+binder 14925:14925 <> B:176
+R14938:14941 ActionCodes.CodeMap <> Code ind
+R14943:14943 ActionCodes.CodeMap <> A:175 var
+R14945:14945 ActionCodes.CodeMap <> B:176 var
+binder 14935:14935 <> R:177
+R14967:14970 Coq.Init.Datatypes <> list ind
+R14972:14972 ActionCodes.CodeMap <> B:176 var
+binder 14960:14961 <> l1:178
+binder 14963:14964 <> l2:179
+R14997:15000 Coq.Init.Datatypes <> list ind
+R15002:15002 ActionCodes.CodeMap <> A:175 var
+binder 14976:14978 <> Rl1:180
+binder 14980:14982 <> Rl2:181
+binder 14984:14988 <> suff1:182
+binder 14990:14994 <> suff2:183
+R15051:15058 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15010:15037 ActionCodes.CodeMap <> does_not_start_with_codeword def
+R15046:15050 ActionCodes.CodeMap <> suff1:182 var
+R15043:15043 ActionCodes.CodeMap <> R:177 var
+R15100:15107 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15059:15086 ActionCodes.CodeMap <> does_not_start_with_codeword def
+R15095:15099 ActionCodes.CodeMap <> suff2:183 var
+R15092:15092 ActionCodes.CodeMap <> R:177 var
+R15125:15132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15114:15116 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15109:15113 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R15108:15108 ActionCodes.CodeMap <> R:177 var
+R15112:15113 ActionCodes.CodeMap <> l1:178 var
+R15117:15120 Coq.Init.Datatypes <> Some constr
+R15122:15124 ActionCodes.CodeMap <> Rl1:180 var
+R15150:15157 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15139:15141 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15134:15138 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R15133:15133 ActionCodes.CodeMap <> R:177 var
+R15137:15138 ActionCodes.CodeMap <> l2:179 var
+R15142:15145 Coq.Init.Datatypes <> Some constr
+R15147:15149 ActionCodes.CodeMap <> Rl2:181 var
+R15185:15195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15170:15172 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15161:15164 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15158:15160 ActionCodes.CodeMap <> Rl1:180 var
+R15165:15169 ActionCodes.CodeMap <> suff1:182 var
+R15176:15179 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R15173:15175 ActionCodes.CodeMap <> Rl2:181 var
+R15180:15184 ActionCodes.CodeMap <> suff2:183 var
+R15198:15200 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15196:15197 ActionCodes.CodeMap <> l1:178 var
+R15201:15202 ActionCodes.CodeMap <> l2:179 var
+R15410:15431 ActionCodes.CodeMap <> kleisli_ext_not_prefix thm
+R15410:15431 ActionCodes.CodeMap <> kleisli_ext_not_prefix thm
+R15644:15665 ActionCodes.CodeMap <> kleisli_ext_not_prefix thm
+R15644:15665 ActionCodes.CodeMap <> kleisli_ext_not_prefix thm
+R15971:15976 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R15971:15976 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R16051:16056 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R16051:16056 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R16166:16168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16166:16168 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16213:16221 Coq.Lists.List <> app_assoc thm
+R16243:16252 Coq.Lists.List <> app_eq_app thm
+R16243:16252 Coq.Lists.List <> app_eq_app thm
+R16343:16353 ActionCodes.CodeMap <> prefix_free def
+R16567:16579 ActionCodes.CodeMap <> prefix_of_app thm
+R16567:16579 ActionCodes.CodeMap <> prefix_of_app thm
+R16567:16579 ActionCodes.CodeMap <> prefix_of_app thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R16991:16999 Coq.Lists.List <> app_assoc thm
+R17019:17041 ActionCodes.ACUtil <> app_strip_common_prefix thm
+R17019:17041 ActionCodes.ACUtil <> app_strip_common_prefix thm
+prf 17082:17109 <> kleisli_ext_injective_on_dom
+binder 17112:17112 <> A:184
+binder 17114:17114 <> B:185
+R17127:17130 ActionCodes.CodeMap <> Code ind
+R17132:17132 ActionCodes.CodeMap <> A:184 var
+R17134:17134 ActionCodes.CodeMap <> B:185 var
+binder 17124:17124 <> R:186
+R17155:17158 Coq.Init.Datatypes <> list ind
+R17160:17160 ActionCodes.CodeMap <> B:185 var
+binder 17148:17149 <> l1:187
+binder 17151:17152 <> l2:188
+R17177:17197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17169:17172 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R17164:17168 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17163:17163 ActionCodes.CodeMap <> R:186 var
+R17167:17168 ActionCodes.CodeMap <> l1:187 var
+R17173:17176 Coq.Init.Datatypes <> None constr
+R17213:17242 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17204:17206 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17199:17203 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17198:17198 ActionCodes.CodeMap <> R:186 var
+R17202:17203 ActionCodes.CodeMap <> l1:187 var
+R17208:17212 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17207:17207 ActionCodes.CodeMap <> R:186 var
+R17211:17212 ActionCodes.CodeMap <> l2:188 var
+R17245:17247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17243:17244 ActionCodes.CodeMap <> l1:187 var
+R17248:17249 ActionCodes.CodeMap <> l2:188 var
+R17282:17286 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17282:17286 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17332:17336 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17332:17336 ActionCodes.CodeMap <> ::type_scope:x_'^*' not
+R17425:17427 Coq.Init.Datatypes <> nil constr
+R17438:17440 Coq.Init.Datatypes <> nil constr
+R17378:17410 ActionCodes.CodeMap <> kleisli_ext_injective_with_suffix thm
+R17425:17427 Coq.Init.Datatypes <> nil constr
+R17438:17440 Coq.Init.Datatypes <> nil constr
+R17378:17410 ActionCodes.CodeMap <> kleisli_ext_injective_with_suffix thm
+R17461:17492 ActionCodes.CodeMap <> nil_does_not_start_with_codeword ex
+R17461:17492 ActionCodes.CodeMap <> nil_does_not_start_with_codeword ex
+R17505:17536 ActionCodes.CodeMap <> nil_does_not_start_with_codeword ex
+R17505:17536 ActionCodes.CodeMap <> nil_does_not_start_with_codeword ex
+def 17863:17877 <> compose_codemap
+binder 17880:17880 <> A:189
+binder 17882:17882 <> B:190
+binder 17884:17884 <> C:191
+R17901:17907 ActionCodes.CodeMap <> CodeMap def
+R17909:17909 ActionCodes.CodeMap <> A:189 var
+R17911:17911 ActionCodes.CodeMap <> B:190 var
+binder 17894:17898 <> code1:192
+R17922:17928 ActionCodes.CodeMap <> CodeMap def
+R17930:17930 ActionCodes.CodeMap <> B:190 var
+R17932:17932 ActionCodes.CodeMap <> C:191 var
+binder 17915:17919 <> code2:193
+R17937:17943 ActionCodes.CodeMap <> CodeMap def
+R17945:17945 ActionCodes.CodeMap <> A:189 var
+R17947:17947 ActionCodes.CodeMap <> C:191 var
+binder 17958:17958 <> c:194
+R17974:17978 ActionCodes.CodeMap <> code2:193 var
+R17980:17980 ActionCodes.CodeMap <> c:194 var
+R17994:17997 Coq.Init.Datatypes <> None constr
+R18002:18005 Coq.Init.Datatypes <> None constr
+R18013:18016 Coq.Init.Datatypes <> Some constr
+R18024:18034 ActionCodes.CodeMap <> kleisli_ext def
+R18036:18040 ActionCodes.CodeMap <> code1:192 var
+prf 18061:18081 <> composed_code_ne_word
+binder 18084:18084 <> A:195
+binder 18086:18086 <> B:196
+binder 18088:18088 <> C:197
+R18101:18107 ActionCodes.CodeMap <> CodeMap def
+R18109:18109 ActionCodes.CodeMap <> A:195 var
+R18111:18111 ActionCodes.CodeMap <> B:196 var
+binder 18098:18098 <> R:198
+R18118:18124 ActionCodes.CodeMap <> CodeMap def
+R18126:18126 ActionCodes.CodeMap <> B:196 var
+R18128:18128 ActionCodes.CodeMap <> C:197 var
+binder 18115:18115 <> S:199
+R18149:18152 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18135:18146 ActionCodes.CodeMap <> code_ne_word def
+R18148:18148 ActionCodes.CodeMap <> R:198 var
+R18167:18170 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18153:18164 ActionCodes.CodeMap <> code_ne_word def
+R18166:18166 ActionCodes.CodeMap <> S:199 var
+R18171:18182 ActionCodes.CodeMap <> code_ne_word def
+R18185:18199 ActionCodes.CodeMap <> compose_codemap def
+R18203:18203 ActionCodes.CodeMap <> S:199 var
+R18201:18201 ActionCodes.CodeMap <> R:198 var
+R18272:18286 ActionCodes.CodeMap <> compose_codemap def
+R18566:18575 Coq.Init.Datatypes <> option_map def
+R18596:18606 ActionCodes.CodeMap <> kleisli_ext def
+R18596:18606 ActionCodes.CodeMap <> kleisli_ext def
+prf 18701:18725 <> composed_code_prefix_free
+binder 18728:18728 <> A:200
+binder 18730:18730 <> B:201
+binder 18732:18732 <> C:202
+R18745:18751 ActionCodes.CodeMap <> CodeMap def
+R18753:18753 ActionCodes.CodeMap <> A:200 var
+R18755:18755 ActionCodes.CodeMap <> B:201 var
+binder 18742:18742 <> R:203
+R18762:18768 ActionCodes.CodeMap <> CodeMap def
+R18770:18770 ActionCodes.CodeMap <> B:201 var
+R18772:18772 ActionCodes.CodeMap <> C:202 var
+binder 18759:18759 <> S:204
+R18793:18798 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18779:18790 ActionCodes.CodeMap <> code_ne_word def
+R18792:18792 ActionCodes.CodeMap <> R:203 var
+R18812:18815 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18799:18809 ActionCodes.CodeMap <> prefix_free def
+R18811:18811 ActionCodes.CodeMap <> R:203 var
+R18829:18832 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18816:18826 ActionCodes.CodeMap <> prefix_free def
+R18828:18828 ActionCodes.CodeMap <> S:204 var
+R18833:18843 ActionCodes.CodeMap <> prefix_free def
+R18846:18860 ActionCodes.CodeMap <> compose_codemap def
+R18864:18864 ActionCodes.CodeMap <> S:204 var
+R18862:18862 ActionCodes.CodeMap <> R:203 var
+R18945:18955 ActionCodes.CodeMap <> prefix_free def
+R18982:18996 ActionCodes.CodeMap <> compose_codemap def
+R19156:19189 ActionCodes.CodeMap <> code_kleisli_ext_prefix_reflection thm
+R19156:19189 ActionCodes.CodeMap <> code_kleisli_ext_prefix_reflection thm
+prf 19279:19307 <> code_closed_under_composition
+binder 19314:19314 <> A:205
+binder 19316:19316 <> B:206
+binder 19318:19318 <> C:207
+R19331:19334 ActionCodes.CodeMap <> Code ind
+R19336:19336 ActionCodes.CodeMap <> A:205 var
+R19338:19338 ActionCodes.CodeMap <> B:206 var
+binder 19328:19328 <> R:208
+R19345:19348 ActionCodes.CodeMap <> Code ind
+R19350:19350 ActionCodes.CodeMap <> B:206 var
+R19352:19352 ActionCodes.CodeMap <> C:207 var
+binder 19342:19342 <> S:209
+R19359:19365 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19379:19380 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19371:19374 ActionCodes.CodeMap <> Code ind
+R19376:19376 ActionCodes.CodeMap <> A:205 var
+R19378:19378 ActionCodes.CodeMap <> C:207 var
+binder 19366:19367 <> RS:210
+R19393:19395 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19381:19389 ActionCodes.CodeMap <> code_proj def
+R19391:19392 ActionCodes.CodeMap <> RS:210 var
+R19396:19410 ActionCodes.CodeMap <> compose_codemap def
+R19414:19414 ActionCodes.CodeMap <> S:209 var
+R19412:19412 ActionCodes.CodeMap <> R:208 var
+R19432:19446 ActionCodes.CodeMap <> compose_codemap def
+R19432:19446 ActionCodes.CodeMap <> compose_codemap def
+R19492:19495 ActionCodes.CodeMap <> Code ind
+R19492:19495 ActionCodes.CodeMap <> Code ind
+R19512:19521 ActionCodes.CodeMap <> Build_Code constr
+R19512:19521 ActionCodes.CodeMap <> Build_Code constr
+R19546:19566 ActionCodes.CodeMap <> composed_code_ne_word thm
+R19546:19566 ActionCodes.CodeMap <> composed_code_ne_word thm
+R19623:19647 ActionCodes.CodeMap <> composed_code_prefix_free thm
+R19623:19647 ActionCodes.CodeMap <> composed_code_prefix_free thm
+def 19734:19745 <> compose_code
+binder 19748:19748 <> A:211
+binder 19750:19750 <> B:212
+binder 19752:19752 <> C:213
+R19765:19768 ActionCodes.CodeMap <> Code ind
+R19770:19770 ActionCodes.CodeMap <> A:211 var
+R19772:19772 ActionCodes.CodeMap <> B:212 var
+binder 19762:19762 <> R:214
+R19779:19782 ActionCodes.CodeMap <> Code ind
+R19784:19784 ActionCodes.CodeMap <> B:212 var
+R19786:19786 ActionCodes.CodeMap <> C:213 var
+binder 19776:19776 <> S:215
+R19791:19794 ActionCodes.CodeMap <> Code ind
+R19796:19796 ActionCodes.CodeMap <> A:211 var
+R19798:19798 ActionCodes.CodeMap <> C:213 var
+R19891:19905 ActionCodes.CodeMap <> compose_codemap def
+R19866:19875 ActionCodes.CodeMap <> Build_Code constr
+R19891:19905 ActionCodes.CodeMap <> compose_codemap def
+R19866:19875 ActionCodes.CodeMap <> Build_Code constr
+R19929:19949 ActionCodes.CodeMap <> composed_code_ne_word thm
+R19929:19949 ActionCodes.CodeMap <> composed_code_ne_word thm
+R19972:19996 ActionCodes.CodeMap <> composed_code_prefix_free thm
+R19972:19996 ActionCodes.CodeMap <> composed_code_prefix_free thm
+prf 20029:20050 <> compose_code_comm_proj
+binder 20053:20053 <> A:216
+binder 20055:20055 <> B:217
+binder 20057:20057 <> C:218
+R20070:20073 ActionCodes.CodeMap <> Code ind
+R20075:20075 ActionCodes.CodeMap <> A:216 var
+R20077:20077 ActionCodes.CodeMap <> B:217 var
+binder 20067:20067 <> R:219
+R20084:20087 ActionCodes.CodeMap <> Code ind
+R20089:20089 ActionCodes.CodeMap <> B:217 var
+R20091:20091 ActionCodes.CodeMap <> C:218 var
+binder 20081:20081 <> S:220
+R20117:20119 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R20098:20112 ActionCodes.CodeMap <> compose_codemap def
+R20116:20116 ActionCodes.CodeMap <> S:220 var
+R20114:20114 ActionCodes.CodeMap <> R:219 var
+R20120:20131 ActionCodes.CodeMap <> compose_code def
+R20135:20135 ActionCodes.CodeMap <> S:220 var
+R20133:20133 ActionCodes.CodeMap <> R:219 var
+R20154:20165 ActionCodes.CodeMap <> compose_code def
