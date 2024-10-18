@@ -1,6 +1,7 @@
 Require Import Coq.Sets.Constructive_sets.
 (* Conformance Testing Reconsidered *)
 
+(* Enable classical logic *)
 (* Sorry Freek, I know you love propositional logic*)
 Parameter em: forall p:Prop, p \/ ~p.
 
@@ -31,18 +32,53 @@ Parameter lambda_delta1: forall M : Mealy, forall i : I, forall q : Q M,
 Parameter lambda_delta2: forall M : Mealy, forall i : I, forall q : Q M, 
   (delta M q i ↑) <-> (lambda M q i ↑).
 
-Notation "q - i o -> r" := (lambda _ q i = o /\ delta _ q i = r) (at level 303, no associativity) : type_scope.
 Definition complete {M : Mealy} (q : Q M) :=
   forall i : I, ((delta M q i) ↓).
 Definition completeSet {M : Mealy} (W : Q M -> Prop) :=
   forall q : Q M,
     W q -> complete q.
-Fixpoint lambdaS (M : Mealy) (q: Q M) (v : word I) : option (word O) :=
+(* Lift delta and lambda to sequences *)
+Fixpoint deltaS {M : Mealy} (q: Q M) (v : word I) : option (Q M) :=
+match v with
+  | nil => Some q
+  | cons i v' => 
+    match (delta M q i) with
+     | Some r => 
+        match (deltaS r v') with
+          | None => None
+          | Some r' => Some r'
+        end
+     | None => None
+    end
+end.
+Fixpoint lambdaS {M : Mealy} (q: Q M) (v : word I) : option (word O) :=
 match v with
   | nil => Some nil
+  | cons i v' => 
+    match (delta M q i) with
+     | Some r =>
+        match (lambdaS r v') with
+          | None => None
+          | Some w => 
+            match (lambda M q i) with
+              | None => None
+              | Some i => Some (cons i w)
+            end
+          end
+     | None => None
+    end
 end.
+Notation "q - v w -> r" := (lambdaS q v = w /\ deltaS q v = r) (at level 303, no associativity) : type_scope.
+Notation "q = v w => r" := (q - v w -> r /\ length v > 0) (at level 303, no associativity) : type_scope.
 
-
+Definition stateCover (M : Mealy) (A: (word I) -> Prop) : Prop 
+  := forall q : Q M, exists v : (word I), A v /\ deltaS (q0 M) v = Some q.
+Definition minimal (M : Mealy) (A: (word I) -> Prop) : Prop
+  := forall q : Q M, ~ (exists v w : (word I), A v /\ A w /\ v <> w /\ deltaS (q0 M) v = Some q /\ deltaS (q0 M) w = Some q).
+Definition initiallyConnected (M : Mealy) : Prop
+  := exists A : ((word I) -> Prop), stateCover M A.
+(* 'We will only consider Mealy machines that are initially connected.' *)
+Parameter allInitiallyConnected : forall M : Mealy, initiallyConnected M.
 
 
 Definition SI : (I*O) -> (I*O) -> Prop
