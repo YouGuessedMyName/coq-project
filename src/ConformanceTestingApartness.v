@@ -79,10 +79,14 @@ match v with
      | None => None
     end
 end.
-Definition deltaS (M : Mealy) (q: Y) (v : word I) : (option (Y)) := 
-match (transS M q v) with
-  | Some (r, w) => Some r
-  | None => None
+Fixpoint deltaS (M : Mealy) (q: Y) (v : word I) : (option (Y)) := 
+match v with
+  | nil => Some q
+  | i :: v' =>
+    match (delta M q i) with
+      | None => None
+      | Some r => deltaS M r v'
+    end
 end.
 Definition lambdaS (M : Mealy) (q: Y) (v : word I) : (option (word O)) := 
 match (transS M q v) with
@@ -199,6 +203,302 @@ unfold deltaS in H.
 unfold transS in H.
 injection H as H.
 apply H.
+Qed.
+
+Parameter trans_em :
+forall M : Mealy, 
+  forall q : Y, 
+    forall i : I,
+  trans M q i = None \/ exists r : Y, exists o : O, trans M q i = Some (r, o).
+
+Parameter transS_em : 
+forall M : Mealy, 
+  forall q : Y, 
+    forall v : word I,
+  transS M q v = None \/ exists r : Y, exists w : word O, transS M q v = Some (r, w).
+
+Parameter option_em :
+forall A : Type, forall o : option A,
+  o = None \/ exists a : A, o = Some a.
+
+Lemma delta_em :
+forall M : Mealy, 
+  forall q : Y, 
+    forall i : I,
+      delta M q i = None \/ exists r : Y, delta M q i = Some r.
+Proof.
+intros.
+destruct option_em with Y (delta M q i).
+
+
+Parameter deltaS_em :
+forall M : Mealy, 
+  forall q : Y, 
+    forall v : word I,
+      deltaS M q v = None \/ exists r : Y, deltaS M q v = Some r.
+
+(* delta(q, av) = s, and delta(q, a) = r, and delta(r, v) = s' => s = s' *)
+Lemma delta_property1 : 
+forall M : Mealy, 
+  forall a : I,
+    forall v : word I,
+      forall q r s s' : Y,
+          deltaS M q (a :: v) = Some s
+        ->
+            delta M q a = Some r
+          ->
+            deltaS M r v = Some s'
+              -> s = s'
+.
+Proof.
+intros.
+unfold deltaS in H.
+rewrite H0 in H.
+unfold deltaS in H1.
+destruct em with (Some s = Some s').
+injection H2 as H2.
+apply H2.
+elim H2.
+rewrite<- H.
+rewrite<- H1.
+reflexivity.
+Qed.
+
+Lemma delta_undefined_property : 
+forall M : Mealy, 
+  forall q r : Y,
+    forall v : word I,
+      forall a : I,
+        delta M q a = Some r ->
+        deltaS M r v = None -> deltaS M q (a :: v) = None.
+Proof.
+intros.
+unfold deltaS in H0.
+unfold deltaS.
+rewrite H.
+apply H0.
+Qed.
+
+Lemma delta_undefined_contradiction :
+forall M : Mealy, 
+  forall q r : Y,
+    forall v : word I,
+      forall a : I,
+        
+        delta M q a = Some r ->
+        deltaS M r v = None -> (exists s : Y, (deltaS M q (a :: v) = Some s)) -> False.
+Proof.
+intros.
+destruct H1 as [s].
+destruct em with (deltaS M q (a :: v) = None).
+rewrite H2 in H1.
+discriminate H1.
+destruct (delta_undefined_property M q r v a).
+apply H.
+apply H0.
+unfold not in H2.
+apply H2.
+reflexivity.
+Qed.
+
+Lemma helper1 : 
+forall M : Mealy, 
+  forall q r : Y,
+    forall i : I,
+      transS M r (i :: nil) = None -> trans M r i = None.
+Proof.
+(* transS M q (v ++ i :: nil) = None *)
+intros.
+inversion H.
+destruct trans_em with M r i.
+apply H0.
+destruct H0. destruct H0.
+rewrite H0 in H1.
+discriminate H1.
+Qed. 
+
+Lemma lemma_a_1A : 
+forall M : Mealy, 
+    forall i : I, 
+      forall v : word I,
+        forall t : Y,
+        match (deltaS M t v) with
+          | None => True
+          | Some r => (deltaS M t (v ++ i :: nil)) = (deltaS M r (i :: nil))
+        end
+.
+Proof.
+induction v.
+(* Base case *)
+intro q.
+simpl.
+reflexivity.
+
+(* Inductive case *)
+intro q.
+
+destruct deltaS_em with M q (a :: v).
+rewrite H.
+trivial.
+(* q -a/b-> r -> v/w-> s -> i/o -> t*)
+destruct H as [s].
+
+rewrite H.
+simpl.
+
+destruct delta_em with M q a.
+exfalso.
+unfold deltaS in H.
+rewrite H0 in H.
+discriminate H.
+destruct H0 as [r].
+
+rewrite H0.
+specialize IHv with r.
+
+destruct deltaS_em with M r v.
+  exfalso.
+  apply delta_undefined_contradiction with M q r v a.
+  apply H0.
+  apply H1.
+  exists s.
+  apply H.
+
+destruct H1 as [s'].
+
+rewrite H1 in IHv.
+rewrite IHv.
+simpl.
+destruct em with (s = s').
+rewrite H2.
+reflexivity.
+elim H2.
+apply (delta_property1 M a v q r s s').
+apply H.
+apply H0.
+apply H1.
+Qed.
+
+rewrite IHv.
+clear IHv.
+simpl.
+
+destruct delta_em with M s i.
+admit.
+destruct H1 as [t].
+rewrite H1.
+
+
+destruct deltaS_em with M r (v ++ i :: nil)..
+admit.
+destruct H2 as [t].
+rewrite H2 in IHv.
+rewrite H2.
+destruct trans_em with M s i.
+admit.
+destruct H3 as [t']. destruct H3 as [o'].
+rewrite IHv.
+clear IHv.
+simpl.
+destruct em with (s = s').
+rewrite H4.
+reflexivity.
+exfalso.
+clear IHv.
+
+admit.
+unfold transS in H1.
+
+
+destruct H0 as [s_a]. 
+specialize IHv with r.
+rewrite H.
+unfold deltaS.
+destruct transS_em with M q ((a :: v) ++ i :: nil).
+admit.
+destruct H0 as [s]. destruct H0 as [o'].
+rewrite H0.
+simpl.
+destruct trans_em with M q a.
+admit.
+destruct H0 as []
+
+
+specialize IHv with r.
+destruct transS_em with M r v.
+admit.
+destruct H0 as [s]. destruct H0 as [i'].
+rewrite H0 in IHv.
+(* q -v/w-> r -i-> s *)
+(* delta(r, vi) = delta(s, i) *)
+(* TP: delta(q, avi) = delta(r, vi) =(IH)= delta(s, i) *)
+destruct transS_em with M q (a ::v).
+admit.
+destruct H1 as [r']. destruct H1 as
+
+(* intros.
+destruct transS_em with M q v.
+- rewrite H0. trivial.
+- destruct H0. destruct H0.
+  rewrite H0.
+  unfold deltaS.
+  destruct transS_em with M x (i :: nil).
+  * rewrite H1.
+    destruct transS_em with M q (v ++ i :: nil).
+    rewrite H2.
+    trivial.
+    destruct H2. destruct H2.
+    exfalso.
+    admit.
+  * destruct H1. destruct H1.
+    destruct transS_em with M q (v ++ i :: nil).
+    + exfalso.
+      admit.
+    + destruct H2. destruct H2.
+      induction v.
+      simpl.
+      unfold transS in H0.
+      injection H0 as H0.
+      rewrite H0.
+      tauto.
+      
+      clear IHv.
+      destruct trans_em with M q a.
+      simpl.
+      unfold transS in H0.
+      rewrite H3 in H0.
+      discriminate H0.
+
+      destruct H3. destruct H3.
+      simpl.
+      rewrite H3. *)
+       
+          
+
+
+
+Lemma helper2 : 
+forall M : Mealy, 
+  forall q r : Y,
+    forall i : I,
+      forall v : word I,
+      transS M r (i :: nil) = None -> transS M q (v ++ i :: nil)= None.
+Proof.
+(* transS M q (v ++ i :: nil) = None *)
+intros.
+destruct trans_em with M r i.
+destruct transS_em with M q (v ++ i :: nil).
+apply H1.
+destruct H0. destruct H1. destruct H0.
+rewrite H0.
+exfalso.
+
+(* admit. *)
+unfold transS.
+destruct H0. destruct H0.
+unfold transS in H.
+rewrite H0 in H.
+discriminate H.
 Qed.
 
 Lemma lemma_2_9 : forall S TT : Mealy, forall T : word I -> Prop, forall f: Y -> Y,
