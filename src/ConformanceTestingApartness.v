@@ -8,14 +8,28 @@ Require Import Coq.Lists.List.
 (* Sorry Freek, I know you love propositional logic*)
 Parameter em: forall p:Prop, p \/ ~p.
 
-(* Partial functions *)
-Definition def {A : Type} (o : option A) : Prop :=
+(* TODO, ask how to prove this (if it is even possible...*)
+Parameter option_em :
+forall A : Type, forall o : option A,
+  o = None \/ exists a : A, o = Some a.
+
+Definition ol_concat {A} (o o' : option (list A)) : option (list A) :=
   match o with
-  | Some a => True
-  | None => False
-  end.
-Notation "f ↑" := (~ def f) (at level 303, no associativity) : type_scope.
-Notation "f ↓" := (def f) (at level 303, no associativity) : type_scope.
+    | None => None
+    | Some la =>
+    match o' with
+      | None => None
+      | Some la' => Some (la ++ la')
+    end
+end.
+Notation "o +++ o'" := (ol_concat o o') (at level 303, no associativity) : type_scope.
+
+Definition def {A} (o : option A) : Prop := exists a : A, o = Some a.
+Definition undef {A} (o : option A) : Prop := o = None.
+
+(* Partial functions *)
+Notation "f ↑" := (def f) (at level 303, no associativity) : type_scope.
+Notation "f ↓" := (undef f) (at level 303, no associativity) : type_scope.
 
 (* We fix an input and an output set *)
 Inductive I := ia | ib.
@@ -88,10 +102,14 @@ match v with
       | Some r => deltaS M r v'
     end
 end.
-Definition lambdaS (M : Mealy) (q: Y) (v : word I) : (option (word O)) := 
-match (transS M q v) with
-  | Some (r, w) => Some w
-  | None => None
+Fixpoint lambdaS (M : Mealy) (q: Y) (v : word I) : (option (word O)) := 
+match v with
+  | nil => Some nil
+  | i :: v' =>
+  match (trans M q i) with
+    | Some (r, o) => (Some (o :: nil) +++ (lambdaS M r v'))
+    | None => None
+  end
 end.
 
 Notation "q - v w -> r" := (transS q v = (r, w)) (at level 303, no associativity) : type_scope.
@@ -205,38 +223,6 @@ injection H as H.
 apply H.
 Qed.
 
-Parameter trans_em :
-forall M : Mealy, 
-  forall q : Y, 
-    forall i : I,
-  trans M q i = None \/ exists r : Y, exists o : O, trans M q i = Some (r, o).
-
-Parameter transS_em : 
-forall M : Mealy, 
-  forall q : Y, 
-    forall v : word I,
-  transS M q v = None \/ exists r : Y, exists w : word O, transS M q v = Some (r, w).
-
-Parameter option_em :
-forall A : Type, forall o : option A,
-  o = None \/ exists a : A, o = Some a.
-
-Lemma delta_em :
-forall M : Mealy, 
-  forall q : Y, 
-    forall i : I,
-      delta M q i = None \/ exists r : Y, delta M q i = Some r.
-Proof.
-intros.
-destruct option_em with Y (delta M q i).
-
-
-Parameter deltaS_em :
-forall M : Mealy, 
-  forall q : Y, 
-    forall v : word I,
-      deltaS M q v = None \/ exists r : Y, deltaS M q v = Some r.
-
 (* delta(q, av) = s, and delta(q, a) = r, and delta(r, v) = s' => s = s' *)
 Lemma delta_property1 : 
 forall M : Mealy, 
@@ -300,8 +286,7 @@ unfold not in H2.
 apply H2.
 reflexivity.
 Qed.
-
-Lemma helper1 : 
+(* Lemma helper1 : 
 forall M : Mealy, 
   forall q r : Y,
     forall i : I,
@@ -315,57 +300,42 @@ apply H0.
 destruct H0. destruct H0.
 rewrite H0 in H1.
 discriminate H1.
-Qed. 
+Qed.  *)
 
-Lemma lemma_a_1A : 
+(* We split lemma A1 into two parts *)
+Lemma lemma_a_1_part1 : 
 forall M : Mealy, 
     forall i : I, 
       forall v : word I,
-        forall t : Y,
-        match (deltaS M t v) with
+        forall q : Y,
+        match (deltaS M q v) with
           | None => True
-          | Some r => (deltaS M t (v ++ i :: nil)) = (deltaS M r (i :: nil))
+          | Some r => (deltaS M q (v ++ i :: nil)) = (deltaS M r (i :: nil))
         end
 .
 Proof.
 induction v.
 (* Base case *)
-intro q.
-simpl.
-reflexivity.
+intro q. simpl. reflexivity.
 
 (* Inductive case *)
-intro q.
-
-destruct deltaS_em with M q (a :: v).
-rewrite H.
-trivial.
 (* q -a/b-> r -> v/w-> s -> i/o -> t*)
-destruct H as [s].
-
+intro q.
+(* Case delta(q, av) undefined. *)
+  destruct option_em with Y (deltaS M q (a :: v)).
+  rewrite H. trivial. destruct H as [s].
 rewrite H.
 simpl.
-
-destruct delta_em with M q a.
-exfalso.
-unfold deltaS in H.
-rewrite H0 in H.
-discriminate H.
-destruct H0 as [r].
-
+(* Case delta(q, a) undefined. *)
+  destruct option_em with Y (delta M q a).
+  exfalso. unfold deltaS in H. rewrite H0 in H. discriminate H. destruct H0 as [r].
 rewrite H0.
 specialize IHv with r.
-
-destruct deltaS_em with M r v.
-  exfalso.
-  apply delta_undefined_contradiction with M q r v a.
-  apply H0.
-  apply H1.
-  exists s.
-  apply H.
-
-destruct H1 as [s'].
-
+(* Case delta(r, v) undefined. *)
+  destruct option_em with Y (deltaS M r v).
+  exfalso. apply delta_undefined_contradiction with M q r v a. 
+  apply H0. apply H1. exists s. apply H. destruct H1 as [s'].
+(* Finally, everything is defined *)
 rewrite H1 in IHv.
 rewrite IHv.
 simpl.
@@ -379,126 +349,141 @@ apply H0.
 apply H1.
 Qed.
 
-rewrite IHv.
-clear IHv.
-simpl.
 
-destruct delta_em with M s i.
-admit.
-destruct H1 as [t].
-rewrite H1.
-
-
-destruct deltaS_em with M r (v ++ i :: nil)..
-admit.
-destruct H2 as [t].
-rewrite H2 in IHv.
-rewrite H2.
-destruct trans_em with M s i.
-admit.
-destruct H3 as [t']. destruct H3 as [o'].
-rewrite IHv.
-clear IHv.
-simpl.
-destruct em with (s = s').
-rewrite H4.
-reflexivity.
-exfalso.
-clear IHv.
-
-admit.
-unfold transS in H1.
-
-
-destruct H0 as [s_a]. 
-specialize IHv with r.
-rewrite H.
-unfold deltaS.
-destruct transS_em with M q ((a :: v) ++ i :: nil).
-admit.
-destruct H0 as [s]. destruct H0 as [o'].
-rewrite H0.
-simpl.
-destruct trans_em with M q a.
-admit.
-destruct H0 as []
-
-
-specialize IHv with r.
-destruct transS_em with M r v.
-admit.
-destruct H0 as [s]. destruct H0 as [i'].
-rewrite H0 in IHv.
-(* q -v/w-> r -i-> s *)
-(* delta(r, vi) = delta(s, i) *)
-(* TP: delta(q, avi) = delta(r, vi) =(IH)= delta(s, i) *)
-destruct transS_em with M q (a ::v).
-admit.
-destruct H1 as [r']. destruct H1 as
-
-(* intros.
-destruct transS_em with M q v.
-- rewrite H0. trivial.
-- destruct H0. destruct H0.
-  rewrite H0.
-  unfold deltaS.
-  destruct transS_em with M x (i :: nil).
-  * rewrite H1.
-    destruct transS_em with M q (v ++ i :: nil).
-    rewrite H2.
-    trivial.
-    destruct H2. destruct H2.
-    exfalso.
-    admit.
-  * destruct H1. destruct H1.
-    destruct transS_em with M q (v ++ i :: nil).
-    + exfalso.
-      admit.
-    + destruct H2. destruct H2.
-      induction v.
-      simpl.
-      unfold transS in H0.
-      injection H0 as H0.
-      rewrite H0.
-      tauto.
-      
-      clear IHv.
-      destruct trans_em with M q a.
-      simpl.
-      unfold transS in H0.
-      rewrite H3 in H0.
-      discriminate H0.
-
-      destruct H3. destruct H3.
-      simpl.
-      rewrite H3. *)
-       
-          
-
-
-
-Lemma helper2 : 
+Lemma trans_undefined_property : 
 forall M : Mealy, 
   forall q r : Y,
-    forall i : I,
-      forall v : word I,
-      transS M r (i :: nil) = None -> transS M q (v ++ i :: nil)= None.
+    forall v : word I,
+      forall a : I,
+        forall o : O,
+          trans M q a = Some (r, o) ->
+          transS M r v = None -> transS M q (a :: v) = None.
 Proof.
-(* transS M q (v ++ i :: nil) = None *)
 intros.
-destruct trans_em with M r i.
-destruct transS_em with M q (v ++ i :: nil).
-apply H1.
-destruct H0. destruct H1. destruct H0.
-rewrite H0.
-exfalso.
-
-(* admit. *)
+unfold transS in H0.
 unfold transS.
-destruct H0. destruct H0.
-unfold transS in H.
-rewrite H0 in H.
-discriminate H.
+rewrite H.
+rewrite H0.
+trivial.
+Qed.
+
+Lemma trans_undefined_contradiction :
+forall M : Mealy, 
+  forall q r : Y,
+    forall v : word I,
+      forall a : I,
+        forall o : O,
+          trans M q a = Some (r, o) ->
+          transS M r v = None -> (exists s : Y, exists w : word O, (transS M q (a :: v) = Some (s, w))) -> False.
+Proof.
+intros.
+destruct H1 as [s]. destruct H1 as [w].
+destruct em with (transS M q (a :: v) = None).
+rewrite H2 in H1.
+discriminate H1.
+destruct (trans_undefined_property M q r v a o).
+apply H.
+apply H0.
+unfold not in H2.
+apply H2.
+reflexivity.
+Qed.
+
+Parameter delta_lambda_def :
+forall M : Mealy,
+  forall q : Y,
+    forall i : I,
+      forall r : Y, forall o : O,
+        trans M q i = None /\ delta M q i = None /\ lambda M q i = None
+      \/
+         trans M q i = Some (r, o) /\ delta M q i = Some r /\ lambda M q i = Some o.
+Parameter delta_lambdaS_def :
+forall M : Mealy,
+  forall q : Y,
+    forall v : word I,
+      forall r : Y, 
+        forall w : word O,
+        transS M q v = None /\ deltaS M q v = None /\ lambdaS M q v = None
+      \/
+        transS M q v = Some (r, w) /\ deltaS M q v = Some r /\ lambdaS M q v = Some w.
+
+Parameter trans_property1 : 
+forall M : Mealy, 
+  forall a : I,
+    forall b : O,
+    forall v : word I, forall w w' : word O,
+      forall q r s s' : Y,
+          transS M q (a :: v) = Some (s, w)
+        ->
+            trans M q a = Some (r, b)
+          ->
+            transS M r v = Some (s', w')
+              -> s = s' /\ w = w'
+.
+
+(* λ(q, σi) = λ(q, σ) · λ(δ(q, σ), i) *)
+Lemma lemma_a_1_part2 :
+forall M : Mealy, 
+    forall i : I, 
+      forall v : word I,
+        forall q : Y,
+        match (transS M q v) with
+          | None => True
+          | Some (r, w) => lambdaS M q (v ++ i :: nil) = ol_concat (lambdaS M q v) (lambdaS M r (i :: nil))
+        end
+.
+Proof.
+induction v.
+(* Base case *)
+intro q. admit.
+(* Inductive case *)
+(* q -a/b-> r -> v/w-> s -> i/o -> t*)
+intro q.
+(* Case delta(q, av) undefined. *)
+  destruct option_em with (prod Y (word O)) (transS M q (a :: v)).
+  rewrite H. trivial. destruct H as [(s, w)].
+rewrite H.
+(* Case delta(q, a) undefined. *)
+  destruct option_em with (prod Y O) (trans M q a).
+  exfalso. unfold transS in H. rewrite H0 in H. discriminate H. destruct H0 as [(r, b)].
+(* Case delta(r, v) undefined. *)
+  destruct option_em with (prod Y (word O)) (transS M r v).
+  exfalso. apply trans_undefined_contradiction with M q r v a b. 
+  apply H0. apply H1. exists s. exists w. apply H. destruct H1 as [(s', w')].
+(* Finally, everything is defined *)
+specialize IHv with r.
+rewrite H1 in IHv.
+(* But we still have to prove that this also holds for the lambda *)
+(* (* lambda(q, av) *)
+  destruct delta_lambdaS_def with M q (a :: v) r (b :: w).
+  admit. destruct H2. destruct H3.
+  rewrite H4.
+(* lambda(q, a) *)
+  destruct delta_lambda_def with M q a r b.
+  admit. destruct H5. destruct H6.
+(* lambda(r, v) *)
+  destruct delta_lambdaS_def with M r v s w.
+  admit. destruct H8. destruct H9.
+simpl. *)
+simpl.
+rewrite H0.
+simpl.
+rewrite IHv.
+
+  destruct option_em with (word O) (lambdaS M r v).
+  admit. destruct H2 as [wo].
+rewrite H2.
+  destruct option_em with (prod Y O) (trans M s i).
+  admit. destruct H3 as [(t, o)].
+rewrite H3.
+  destruct option_em with (word O) (lambdaS M s' (i :: nil)).
+  admit. destruct H4 as [o'].
+rewrite H4.
+simpl.
+destruct em with (s = s' /\ w = w').
+destruct H5.
+
+
 Qed.
 
 Lemma lemma_2_9 : forall S TT : Mealy, forall T : word I -> Prop, forall f: Y -> Y,
