@@ -108,6 +108,16 @@ forall A : word O,
 ->
   (exists b : O, A = b :: nil /\ trans M q a = Some (r, b)).
 
+Parameter temp3 :
+forall M : Mealy,
+forall q s : Y,
+forall u w : word I,
+forall U : word O,
+  tra M q u = Some (s, U)
+->
+  tra M s w = None
+->
+  tra M q (u ++ w) = None.
 
 Lemma transition_consistency2 :
 forall M : Mealy,
@@ -128,7 +138,11 @@ induction v.
 (* q -a/A-> r -> v/V-> s -> w/W -> t*)
 - intros.
   destruct option_em with (prod Y (word O)) (tra M s w).
-  rewrite H0. rewrite H. unfold ol_concat2. admit.
+  rewrite H0. rewrite H. unfold ol_concat2. rewrite temp3 with M q s (a :: v) w V.
+  trivial. apply H. apply H0.
+
+
+
   destruct H0 as [(t, W)].
 
   destruct option_em with (prod Y (word O)) (tra M q (a :: nil)).
