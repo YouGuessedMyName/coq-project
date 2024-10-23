@@ -79,9 +79,6 @@ match v with
      | None => None
     end
 end.
-(* The empty transition is always defined as the state itself, obtained from domain knowledge *)
-Parameter empty_transition : forall M : Mealy, forall q : Y,
-tra M q nil = Some (q, nil).
 
 Definition del (M : Mealy) (q: Y) (v : word I) : (option (Y)) := 
 match (tra M q v) with
@@ -211,8 +208,7 @@ forall U : word O,
   tra M q (u ++ w) = None.
 induction u.
 (* Base case *)
-- intros w q s U J L. simpl. 
-  rewrite (empty_transition M q) in J.
+- intros w q s U J L. simpl. unfold tra in J.
   injection J as J J'. rewrite J. apply L.
 - intros w q s U J L. simpl.
   destruct option_em with (prod Y O) (trans M q a) as [K | K].
