@@ -32,6 +32,12 @@ Definition ol_concat2 {A B} (o o' : option (prod A (list B))) : option (prod A (
     end
 end.
 
+Definition ol_2nd_tolist {A B} (o : option (prod A B)) : option (prod A (list B)) :=
+match o with
+  | None => None
+  | Some (q, b) => Some (q, b :: nil) 
+end.
+
 Notation "o ++2 o'" := (ol_concat o o') (at level 303, no associativity) : type_scope.
 
 Definition def {A} (o : option A) : Prop := exists a : A, o = Some a.
@@ -68,7 +74,7 @@ match v with
      | Some (r, o) => 
         match (tra M r v') with
           | None => None
-          | Some (r', w) => Some (r', w)
+          | Some (r', w) => Some (r', o :: w)
         end
      | None => None
     end
@@ -84,31 +90,99 @@ match (tra M q v) with
   | Some (_, w) => Some w
 end.
 
+(* Lemmas about partially defined transitions. *)
 
-(* IHv : tra M r v = Some (s, V) -> tra M r (v ++ w) = ol_concat2 (tra M r v) (tra M s w)
-q : Y
-H : tra M q (a :: v) = Some (s, V)*)
-Parameter temp :
+(* A transition with a single letter behaves the same as the basic transition function *)
+(* replaces temp4 *)
+Parameter tra_trans_undef :
+forall M : Mealy,
+forall q : Y,
+forall a : I,
+  tra M q (a :: nil) = None 
+<-> 
+  trans M q a = None.
+
+(* As of yet unused, might come in handy *)
+(* Conversion between tra with a word of one letter and trans with one letter, 
+where you give the LETTER as a parameter *)
+Parameter tra_trans_def1 :
+forall M : Mealy,
+forall q s : Y,
+forall a : I,
+forall a' : O,
+  tra M q (a :: nil) = Some (s, a' :: nil) 
+<-> 
+  trans M q a = Some (s, a').
+
+(* Conversion between tra with a word of one letter and trans with one letter, 
+where you give the WORD (singleton word) as a parameter *)
+Parameter tra_trans_def2 :
+forall M : Mealy,
+forall q s : Y,
+forall v : word I,
+forall a : I,
+forall A : list O,
+  tra M q (a :: v) = Some (s, A) 
+ <-> 
+    exists a' : O, (A = a' :: nil) /\ trans M q a = Some (s, a').
+
+(* q -av/AV-> s, and q -a/A-> r, then r -v/V -> s *)
+(* replaces temp *)
+Lemma tra_insert_letter :
 forall M : Mealy,
 forall q r s : Y,
-forall a : I,
-forall v : word I,
+forall v : word I, forall a : I,
 forall V : word O,
+forall A : word O,
   tra M q (a :: v) = Some (s, V)
 ->
-  tra M r v = Some (s, V).
-
-(* trans M q a *) (* tra M q (a :: nil) = Some (r, A) *)
-Parameter temp2 : 
-forall M : Mealy,
-forall q r s : Y,
-forall a : I,
-forall A : word O,
   tra M q (a :: nil) = Some (r, A)
 ->
-  (exists b : O, A = b :: nil /\ trans M q a = Some (r, b)).
+  tra M r v = Some (s, tl V) /\ 
+    exists a' : O, V = a' :: (tl V) /\ a' :: nil = A /\ trans M q a = Some (r, a').
+Proof.
+intros.
+rewrite (tra_trans_def2 M q r nil a A) in H0.
+destruct option_em with (prod Y (word O)) (tra M r v).
+unfold tra in H.
+destruct H0.
+destruct H0.
+rewrite H2 in H.
+unfold tra in H1.
+rewrite H1 in H.
+discriminate H.
+destruct H0.
+destruct H0.
+destruct H1 as [(s', V')].
+unfold tra in H.
+rewrite H2 in H.
+assert (G := H1).
+unfold tra in H1.
+rewrite H1 in H.
+rewrite G.
+injection H as H.
+symmetry in H2.
+rewrite H.
+simpl.
+split.
+rewrite<- H3.
+simpl.
+reflexivity.
+exists x.
+simpl.
+split.
+rewrite<- H3.
+simpl.
+reflexivity.
+rewrite H0.
+split.
+reflexivity.
+rewrite H2.
+reflexivity.
+Qed.
 
-Parameter temp3 :
+(* If q -u/U-> s, and s -w-> is undef, then q -uw/?-> is undef *)
+Parameter second_half_undefined :
 forall M : Mealy,
 forall q s : Y,
 forall u w : word I,
@@ -137,55 +211,40 @@ induction v.
 (* Inductive case *)
 (* q -a/A-> r -> v/V-> s -> w/W -> t*)
 - intros.
-  destruct option_em with (prod Y (word O)) (tra M s w).
-  rewrite H0. rewrite H. unfold ol_concat2. rewrite temp3 with M q s (a :: v) w V.
-  trivial. apply H. apply H0.
-
-
-
-  destruct H0 as [(t, W)].
-
-  destruct option_em with (prod Y (word O)) (tra M q (a :: nil)).
-  admit.
-
-  destruct H1 as [(r, A)].
-  (* IH forall w' V' q' s': q' -v/V-> s', THEN q' -vw/VW-> t' , where s' -w/W-> t' *)
-  specialize IHv with w V r s.
-  assert (K := H).
-  apply (temp M q r s a v V) in K.
-  assert (IH := K).
-  apply IHv in IH. clear IHv.
-assert (G := H1).
-apply (temp2 M q r s a A) in G.
-destruct G as [a' G].
-destruct G.
-simpl.
-rewrite H3.
-rewrite IH.
-rewrite K.
-destruct option_em with (prod Y (word O)) (ol_concat2 (Some (s, V)) (tra M s w)).
-rewrite H4.
-trivial.
-destruct H4 as [(t', W')].
-rewrite H4.
-
-unfold ol_concat2.
-simpl.
-reflexivity.
+    (* Case where tra(s, w) is undef *)
+    destruct option_em with (prod Y (word O)) (tra M s w) as [G | G].
+    rewrite G. rewrite H. unfold ol_concat2. rewrite second_half_undefined with M q s (a :: v) w V.
+    trivial. apply H. apply G.
+  destruct G as [(t, W) P].
+    (* Case where tra(q a) is undef *)
+    destruct option_em with (prod Y (word O)) (tra M q (a :: nil)) as [Q | Q].
+    simpl. apply (tra_trans_undef M q a) in Q.
+    rewrite Q. unfold ol_concat2. trivial.
+  destruct Q as [(r, A) R].
+  (* Specialize the IH *)
+    (* from: forall w' V' q' s': q' -v/V-> s', THEN q' -vw/VW-> t' , where s' -w/W-> t' 
+    to: r -vw/VW -> t, where s -w/W-> t *)
+    specialize IHv with w (tl V) r s.
+    assert (K := H).    
+    apply (tra_insert_letter M q r s v a V A) in K.
+    destruct K as [K L]. 
+    assert (IH := K).
+    apply IHv in IH. clear IHv.
+  (* Obtain a' *)
+  destruct L as [a' U].
+  simpl.
+  destruct U as [U U'].
+  destruct U' as [U' U''].
+  rewrite U''.
+  rewrite IH.
+  rewrite K.
+  rewrite P.
+  rewrite U.
+  simpl.
+  reflexivity.
+  apply R.
 Qed.
 
-
-inversion H1.
-rewrite H3.
-
-unfold tra in H1.
-  
-destruct H0 as [()]
-simpl.
-specialize IHv with w V r s.
-simpl.
-rewrite H0.
-simpl.
 Parameter transition_consistency :
 forall M : Mealy,
 forall v w : word I,
@@ -216,7 +275,7 @@ forall M : Mealy,
 Proof.
 intros.
 inversion H.
-apply (transition_consistency M v (w) V q s) in H.
+apply (transition_consistency2 M v (w) V q s) in H.
 destruct option_em with (prod Y (word O)) (tra M s (w)).
 (* Case where lam(s, w) is undef *)
 - rewrite H0 in H.
