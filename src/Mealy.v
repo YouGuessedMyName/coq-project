@@ -63,7 +63,7 @@ Structure Mealy : Type := {
   Q : Ensemble Y;
 }.
 
-(* The intial state is always in the states *)
+(* The intial state is always in the states, obtained from domain knowledge. *)
 Parameter initial : forall M : Mealy, Q M (q0 M).
 
 Fixpoint tra (M : Mealy) (q: Y) (v : word I) : (option ((Y) * word O)) :=
@@ -93,39 +93,83 @@ end.
 (* Lemmas about partially defined transitions. *)
 
 (* A transition with a single letter behaves the same as the basic transition function *)
-(* replaces temp4 *)
-Parameter tra_trans_undef :
+Lemma tra_trans_undef :
 forall M : Mealy,
 forall q : Y,
 forall a : I,
   tra M q (a :: nil) = None 
 <-> 
   trans M q a = None.
+Proof.
+intros.
+split.
+ - destruct option_em with (prod Y O) (trans M q a) as [J | J].
+  + intro H.
+    unfold tra in H.
+    apply J.
+  + destruct J as [(r, A) J].
+    intro H.
+    unfold tra in H.
+    rewrite J in H.
+    discriminate H.
+- intro H.
+  unfold tra.
+  rewrite H.
+  trivial.
+Qed.
 
 (* As of yet unused, might come in handy *)
 (* Conversion between tra with a word of one letter and trans with one letter, 
 where you give the LETTER as a parameter *)
-Parameter tra_trans_def1 :
+(* Parameter tra_trans_def1 :
 forall M : Mealy,
 forall q s : Y,
 forall a : I,
 forall a' : O,
   tra M q (a :: nil) = Some (s, a' :: nil) 
 <-> 
-  trans M q a = Some (s, a').
+  trans M q a = Some (s, a'). *)
 
 (* Conversion between tra with a word of one letter and trans with one letter, 
 where you give the WORD (singleton word) as a parameter *)
-Parameter tra_trans_def2 :
+Lemma tra_trans_def2 :
 forall M : Mealy,
 forall q s : Y,
-forall v : word I,
-forall a : I,
+forall i : I,
 forall A : list O,
-  tra M q (a :: v) = Some (s, A) 
+  tra M q (i :: nil) = Some (s, A) 
  <-> 
-    exists a' : O, (A = a' :: nil) /\ trans M q a = Some (s, a').
+    exists o : O, (A = o :: nil) /\ trans M q i = Some (s, o).
+Proof.
+intros.
+split.
+* intro H.
+  destruct option_em with (prod Y O) (trans M q i) as [J | J].
+  - apply tra_trans_undef in J.
+    rewrite J in H.
+    discriminate H.
+  - destruct J as [(s', o) J].
+    exists o.
+    assert (G := H).
+    unfold tra in G.
+    rewrite J in G.
+    injection G as G K.
+    split.
+    + rewrite<- K.
+      reflexivity.
+    + rewrite J.
+      rewrite G.
+      reflexivity.
+* intro H.
+  destruct H as [o' H].
+  destruct H as [H J].
+  rewrite H.
+  unfold tra.
+  rewrite J.
+  reflexivity.
+Qed.
 
+(* TODO, it might be better to make a' an argument? *)
 (* q -av/AV-> s, and q -a/A-> r, then r -v/V -> s *)
 (* replaces temp *)
 Lemma tra_insert_letter :
@@ -142,7 +186,7 @@ forall A : word O,
     exists a' : O, V = a' :: (tl V) /\ a' :: nil = A /\ trans M q a = Some (r, a').
 Proof.
 intros.
-rewrite (tra_trans_def2 M q r nil a A) in H0.
+rewrite (tra_trans_def2 M q r a A) in H0.
 destruct option_em with (prod Y (word O)) (tra M r v).
 unfold tra in H.
 destruct H0.
@@ -193,7 +237,7 @@ forall U : word O,
 ->
   tra M q (u ++ w) = None.
 
-Lemma transition_consistency2 :
+Lemma transition_consistency :
 forall M : Mealy,
 forall v w : word I,
 forall V : word O,
@@ -245,15 +289,6 @@ induction v.
   apply R.
 Qed.
 
-Parameter transition_consistency :
-forall M : Mealy,
-forall v w : word I,
-forall V : word O,
-forall q s : Y,
-  tra M q v = Some (s, V)
--> 
-  tra M q (v ++ w) = ol_concat2 (tra M q v) (tra M s w).
-
 (* Lemma A.1. Let M be a Mealy machine, q ∈ Q, i ∈ I and σ ∈ I∗. Then
 δ(q, σi) = δ(δ(q, σ), i) and λ(q, σi) = λ(q, σ) · λ(δ(q, σ), i). 
 
@@ -275,7 +310,7 @@ forall M : Mealy,
 Proof.
 intros.
 inversion H.
-apply (transition_consistency2 M v (w) V q s) in H.
+apply (transition_consistency M v (w) V q s) in H.
 destruct option_em with (prod Y (word O)) (tra M s (w)).
 (* Case where lam(s, w) is undef *)
 - rewrite H0 in H.
