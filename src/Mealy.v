@@ -10,6 +10,7 @@ Parameter option_em :
 forall A : Type, forall o : option A,
   o = None \/ exists a : A, o = Some a.
 
+
 Definition ol_concat {A} (o o' : option (list A)) : option (list A) :=
   match o with
     | None => None
