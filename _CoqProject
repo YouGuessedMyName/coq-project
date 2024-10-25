@@ -1,12 +1,4 @@
 -R src ActionCodes
-src/ACUtil.v
-src/Adaptor.v
-src/CodeMap.v
-src/Concretization.v
-src/Contraction.v
-src/LTS.v
-src/MealyExample.v
-src/RefinementCodeComposition.v
-src/Refinement.v
-src/TreeShapedCode.v
-src/ConformanceTestingApartness.v
+src/Mealy.v
+src/FunctionalSimulation.v
+src/ObservationTree.v
