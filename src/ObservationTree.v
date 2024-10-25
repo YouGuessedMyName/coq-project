@@ -162,4 +162,28 @@ split.
 Qed.
     
 
+Lemma lemma_2_10 :
+forall S M TT : Mealy,
+forall T : word I -> Prop,
+forall f : Y -> Y,
+forall r v : Y, 
+  testingTree TT S T
+->
+  del TT (q0 TT) v = Some r -> del S (q0 S) v = Some (f r)
+->
+  (funcSim TT M f
+<->
+  passes2 M TT T).
+Proof.
+intros.
+split.
+intro J.
+unfold passes2.
+unfold passes1.
+intro u.
+intro T_u.
+
+Abort.
+(* TODO definition of funcSim needs to be changed 
+to only be relevant to actual states, not the whole type... *)
  
