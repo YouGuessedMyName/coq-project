@@ -8,26 +8,29 @@ Definition funcSim (M N : Mealy) (f: Y -> Y) : Prop :=
   f(q0 M) = q0 N 
 /\
   forall q r : Y, forall i : I, forall o : O,
+      Q M q
+    ->
       trans M q i = Some (r, o)
     ->
         Some (f(r), o) = trans N (f q) i
 .
 
 (* Lemma A.4. *)
-Lemma lemma_a4 : 
+Lemma lemma_a_4 : 
 forall M N : Mealy,
 forall f : Y -> Y, 
 forall v : word I,
 forall V : word O,
 forall q q' : Y,
 funcSim M N f 
+-> Q M q
 -> tra M q v = Some (q', V)
 -> tra N (f q) v = Some ((f q'), V).
 Proof.
 induction v.
-- intros V q q' H J. simpl. unfold tra in J. 
-  injection J as J J'. rewrite J. rewrite J'. trivial.
-- intros V q q' H J. assert (K := J). apply first_letter_exi in K.
+- intros V q q' H J P. simpl. unfold tra in P. 
+  injection P as P P'. rewrite P. rewrite P'. trivial.
+- intros V q q' H J P. assert (K := P). apply first_letter_exi in K.
   destruct K as [r K]. destruct K as [o K]. destruct K as [K K']. destruct K' as [K' K''].
   specialize IHv with (tl V) r q'. assert (IH := H). apply IHv in IH. clear IHv.
 
@@ -40,5 +43,19 @@ induction v.
   rewrite K''.
   simpl.
   reflexivity.
+  apply J.
+  
+  unfold Q in J.
+  destruct J as [aq J].
+    
+  unfold Q.
+  
+  exists (aq ++ a :: nil).
+    destruct option_em with (prod Y (word O)) (tra M (q0 M) aq) as [C | C].
+    unfold del in J. rewrite C in J. discriminate J.
+  destruct C as [(qq, AQ)]. 
+  destruct lemma_a_1 with M aq (a :: nil) AQ (q0 M) q.
+  unfold del in J. rewrite H0 in J. injection J as J. rewrite<- J. apply H0.
+  rewrite H1. unfold del. unfold tra. rewrite K. trivial.
   apply K'.
 Qed.

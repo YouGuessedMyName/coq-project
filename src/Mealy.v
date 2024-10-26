@@ -67,11 +67,7 @@ Definition Y := word I.
 Structure Mealy : Type := {
   q0 : Y;
   trans : Y -> I -> option (Y * O);
-  Q : Ensemble Y;
 }.
-
-(* The intial state is always in the states, obtained from domain knowledge. *)
-Parameter initial : forall M : Mealy, Q M (q0 M).
 
 Fixpoint tra (M : Mealy) (q: Y) (v : word I) : (option ((Y) * word O)) :=
 match v with
@@ -97,6 +93,12 @@ match (tra M q v) with
   | None => None
   | Some (_, w) => Some w
 end.
+
+Definition Q (M : Mealy) (q : Y) :=
+exists v : word I, del M (q0 M) v = Some q.
+
+(* The intial state is always in the states, obtained from domain knowledge. *)
+Parameter initial : forall M : Mealy, Q M (q0 M).
 
 Definition complete (M : Mealy) (q : Y) :=
   forall i : I, ((trans M q i) ↓).
