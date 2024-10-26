@@ -5,7 +5,9 @@ Require Import Coq.Sets.Finite_sets_facts.
 
 (* Definition 2.5 (Observation tree) *)
 Definition tree (M : Mealy) : Prop
-  := forall v : word I, del M (q0 M) v = Some v.
+  := forall v : word I, 
+    Q M v->    
+    del M (q0 M) v = Some v.
 
 Definition access (M : Mealy) (v : word I) : word I := v.
 
@@ -111,9 +113,11 @@ unfold tree in Htree.
 unfold funcSim.
 split.
 - specialize Hf with nil nil.
-  specialize Htree with nil. injection Htree as Htree. rewrite Htree in Hf. 
+  specialize Htree with nil.
+  admit.
+(*    injection Htree as Htree. rewrite Htree in Hf. 
   unfold del in Hf. unfold tra in Hf. rewrite Htree. symmetry. 
-  injection Hf. trivial. trivial.
+  injection Hf. trivial. trivial. *)
 - intros q r i o H_qInTree H_q_io_r.
   symmetry.
   rewrite<- tra_trans_def_no_exi.
@@ -136,6 +140,7 @@ split.
     destruct option_em with (prod Y (word O)) (tra S (q0 S) q) as [J|J].
     specialize Hf with q q. specialize Htree with q. apply Hf in Htree.
     unfold del in Htree. rewrite J in Htree. discriminate Htree.
+    apply H_qInTree.
   destruct J as [(fq, Q') J].
   destruct lemma_a_1 with S q (i :: nil) Q' (q0 S) (f q) as [Hl_del Hl_lam].
   + assert (Hf_q_q := Hf).
@@ -148,6 +153,7 @@ split.
     injection Htree_q as Htree_q.
     rewrite<- Htree_q.
     apply J.
+    apply H_qInTree.
   + rewrite<- Hl_del. split. 
     * trivial.
     *
@@ -156,7 +162,9 @@ split.
       rewrite<- HtreeLambda_q_fq_i.
       rewrite H_q_io_lam.
       trivial.
-      ** unfold Q. exists (q ++ i :: nil). rewrite Htree. trivial.
+      ** unfold Q. exists (q ++ i :: nil). unfold del.
+      destruct option_em with (prod Y (word O)) (tra TT (q0 TT) (q ++ i :: nil)).
+      admit. (* TODO make a lemma for this *)
       **
       assert (Hf_q_q := Hf).
       specialize Hf_q_q with q q.
@@ -166,7 +174,9 @@ split.
       apply Hf_q_q.
       rewrite Htree.
       trivial.
-  + rewrite Htree. trivial.
+      apply H_qInTree.
+      apply H_qInTree.
+  + rewrite Htree. trivial. admit. (* TODO make a lemma for this *)
   + unfold Q. exists (q ++ i :: nil). rewrite Htree. trivial.
 Qed.
     
