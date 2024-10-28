@@ -10,7 +10,6 @@ Parameter option_em :
 forall A : Type, forall o : option A,
   o = None \/ exists a : A, o = Some a.
 
-
 Definition ol_concat {A} (o o' : option (list A)) : option (list A) :=
   match o with
     | None => None
@@ -108,6 +107,46 @@ Definition completeSet {M : Mealy} (W : Y -> Prop) :=
 Definition completeM (M : Mealy) : Prop
   := forall q : Y, Q M q -> complete M q.
 
+Lemma del_lam_tra_undef :
+forall M : Mealy,
+forall q s : Y,
+forall v : word I,
+forall V : word O,
+  del M q v = None /\ lam M q v = None
+<->
+  tra M q v = None.
+Proof.
+intros.
+split.
+- intro H. destruct H as [H H'].
+  destruct option_em with (prod Y (word O)) (tra M q v) as [J|J].
+  * apply J.
+  * destruct J as [(s', V') J].
+    unfold lam in H'. rewrite J in H'. discriminate H'.
+- intro H. unfold del. unfold lam. rewrite H. split. trivial. trivial.
+Qed.
+
+Lemma del_lam_tra_def :
+forall M : Mealy,
+forall q s : Y,
+forall v : word I,
+forall V : word O,
+  del M q v = Some s /\ lam M q v = Some V
+<->
+  tra M q v = Some (s, V).
+Proof.
+intros.
+split.
+- intro H. destruct H as [H H'].
+  destruct option_em with (prod Y (word O)) (tra M q v) as [J|J].
+  * unfold del in H. rewrite J in H. discriminate H.
+  * destruct J as [(s', V') J].
+    unfold lam in H'. rewrite J in H'. injection H' as H'.
+    unfold del in H. rewrite J in H. injection H as H.
+  rewrite<- H. rewrite<- H'. apply J.
+- intro H. unfold del. unfold lam. rewrite H. split. trivial. trivial.
+Qed.
+
 (* Lemmas about transitions. *)
 (* A transition with a single letter behaves the same as the basic transition function *)
 Lemma tra_trans_undef :
@@ -129,7 +168,7 @@ Qed.
 
 (* Conversion between tra with a word of one letter and trans with one letter, 
 where you give the WORD (singleton word) as a parameter *)
-Lemma tra_trans_def :
+Lemma tra_trans_def_unknown :
 forall M : Mealy,
 forall q s : Y,
 forall i : I,
@@ -166,50 +205,48 @@ split.
   reflexivity.
 Qed.
 
-(* Basically the same as first_letter, except it has an exists attached. *)
-Lemma first_letter_exi :
+Lemma tra_trans_def_known : 
 forall M : Mealy,
-forall q q' : Y,
-forall a : I,
-forall v : word I,
-forall V : word O,
-  tra M q (a :: v) = Some (q', V)
-->
-  exists r : Y, exists o : O, 
-    trans M q a = Some (r, o)
-  /\
-    tra M r v = Some (q', tl V)
-  /\
-    V = o :: tl V.
+forall q s : Y,
+forall i : I,
+forall o : O,
+  tra M q (i :: nil) = Some (s, o :: nil) 
+ <-> 
+  trans M q i = Some (s, o).
 Proof.
 intros.
-destruct option_em with (prod Y O) (trans M q a) as [J|J].
-- unfold tra in H. rewrite J in H. discriminate H.
-- destruct J as [(r, o) J]. exists r. exists o. split. apply J.
-  destruct option_em with (prod Y (list O)) (tra M r v) as [K|K].
-  + unfold tra in H. rewrite J in H. unfold tra in K. rewrite K in H. discriminate H.
-  + destruct K as [(q'', V') K]. unfold tra in H. rewrite J in H. unfold tra in K. rewrite K in H.
-  unfold tra. rewrite K. injection H as H H'. rewrite H. rewrite<- H'. split. trivial. trivial.
+split.
+* intro H.
+  destruct option_em with (prod Y O) (trans M q i) as [J | J].
+  - apply tra_trans_undef in J.
+    rewrite J in H.
+    discriminate H.
+  - destruct J as [(s', o') J].
+    unfold tra in H. rewrite J in H. injection H as H H'.
+    rewrite J. rewrite H. rewrite H'. trivial.
+* intro H.
+  apply tra_trans_def_unknown.
+  exists o. split. trivial. apply H.
 Qed.
 
 Lemma first_letter :
 forall M : Mealy,
-forall q r s : Y,
+forall q q' r : Y,
+forall i : I,
 forall v : word I, 
-forall a : I,
 forall V : word O,
-forall a' : O,
-  tra M q (a :: v) = Some (s, V)
+forall o : O,
+  tra M q (i :: v) = Some (q', V)
 ->
-  tra M q (a :: nil) = Some (r, a' :: nil)
+  tra M q (i :: nil) = Some (r, o :: nil)
 ->
-  tra M r v = Some (s, tl V) 
-  /\ V = a' :: (tl V) 
-  /\ trans M q a = Some (r, a').
+  tra M r v = Some (q', tl V) 
+  /\ V = o :: tl V 
+  /\ tra M q (i :: nil) = Some (r, o :: nil).
 Proof.
-intros M q r s v a V a' H J.
+intros M q q' r i v V o H J.
 (* Apply tra_trans_def *)
-rewrite (tra_trans_def M q r a (a' :: nil)) in J.
+rewrite (tra_trans_def_unknown M q r i (o :: nil)) in J.
 destruct J as [x J]. destruct J as [J J'].
 injection J as J.
   (* Case where tra M r v undef *)
@@ -230,8 +267,30 @@ split.
   + rewrite J'. rewrite<- J. reflexivity.
 Qed.
 
+(* Basically the same as first_letter, except it has an exists attached. *)
+Lemma first_letter_exi :
+forall M : Mealy,
+forall q q' : Y,
+forall i : I,
+forall v : word I,
+forall V : word O,
+  tra M q (i :: v) = Some (q', V)
+->
+  exists r : Y, exists o : O, 
+    tra M r v = Some (q', tl V)
+    /\ V = o :: tl V
+    /\ tra M q (i :: nil) = Some (r, o :: nil).
+Proof.
+intros.
+destruct option_em with (prod Y O) (trans M q i) as [J|J].
+- unfold tra in H. rewrite J in H. discriminate H.
+- destruct J as [(r, o) J]. exists r. exists o.
+  apply first_letter. apply H. rewrite<- tra_trans_def_known in J. apply J.
+Qed.
+
+
 (* If q -u/U-> s, and s -w-> is undef, then q -uw/?-> is undef *)
-Lemma second_half_undefined2 :
+Lemma second_half_undefined :
 forall M : Mealy,
 forall u w : word I,
 forall q s : Y,
@@ -241,6 +300,7 @@ forall U : word O,
   tra M s w = None
 ->
   tra M q (u ++ w) = None.
+Proof.
 induction u.
 (* Base case *)
 - intros w q s U J L. simpl. unfold tra in J.
@@ -251,15 +311,12 @@ induction u.
 destruct K as [(r, a') K].
 rewrite K.
 specialize IHu with w r s (tl U).
-apply (first_letter M q r s u a U a') in J.
+apply (first_letter M q s r a u U a') in J.
 rewrite IHu.
 reflexivity.
 apply J.
 apply L.
-apply tra_trans_def.
-exists a'.
-split.
-reflexivity.
+apply tra_trans_def_known.
 apply K.
 Qed.
 
@@ -283,7 +340,7 @@ induction v.
 - intros.
     (* Case where tra(s, w) is undef *)
     destruct option_em with (prod Y (word O)) (tra M s w) as [G | G].
-    rewrite G. rewrite H. unfold ol_concat2. rewrite second_half_undefined2 with M (a :: v) w q s V.
+    rewrite G. rewrite H. unfold ol_concat2. rewrite second_half_undefined with M (a :: v) w q s V.
     trivial. apply H. apply G.
   destruct G as [(t, W) P].
     (* Case where tra(q a) is undef *)
@@ -293,7 +350,7 @@ induction v.
   destruct Q as [(r, A) R].
   (* Obtain a', where a' :: nil = A *)
   assert (R' := R).
-  apply (tra_trans_def M q r a A) in R'.
+  apply (tra_trans_def_unknown M q r a A) in R'.
   destruct R' as [a' R'].
   destruct R' as [R' R''].
   (* Specialize the IH *)
@@ -301,12 +358,13 @@ induction v.
     to: r -vw/VW -> t, where s -w/W-> t *)
     specialize IHv with w (tl V) r s.
     assert (K := H).
-    apply (first_letter M q r s v a V a') in K.
+    apply (first_letter M q s r a v V a') in K.
     destruct K as [K L]. 
     assert (IH := K).
     apply IHv in IH. clear IHv.
   destruct L as [L L'].
   simpl.
+  rewrite tra_trans_def_known in L'.
   rewrite L'.
   rewrite IH.
   rewrite K.
@@ -328,14 +386,14 @@ which can be any word (not just a single letter). Also, s = δ(δ(q, σ)
 The proof is basically an application of lemma transition_consistency *)
 Lemma lemma_a_1 : 
 forall M : Mealy, 
-    forall v w : word I,
-      forall V : word O,
-        forall q s : Y,
-          tra M q v = Some (s, V) 
-      ->
-            (del M q (v ++ w)) = (del M s w)
-        /\
-            (lam M q (v ++ w) = ol_concat (lam M q v) (lam M s w))
+forall v w : word I,
+forall V : word O,
+forall q s : Y,
+      tra M q v = Some (s, V) 
+  ->
+        (del M q (v ++ w)) = (del M s w)
+    /\
+        (lam M q (v ++ w) = ol_concat (lam M q v) (lam M s w))
 .
 Proof.
 intros.
@@ -347,31 +405,31 @@ destruct option_em with (prod Y (word O)) (tra M s (w)).
   rewrite H1 in H.
   unfold ol_concat2 in H.
   split.
-  + unfold del.
-    rewrite H.
-    rewrite H0.
-    trivial.
-  + unfold lam.
-    rewrite H.
-    rewrite H0.
-    rewrite H1.
-    simpl.
-    reflexivity.
+  + unfold del. rewrite H. rewrite H0. trivial.
+  + unfold lam. rewrite H. rewrite H0. rewrite H1. simpl. reflexivity.
 (* Case where lam(s, w) is def *)
-- destruct H0 as [(t, O)].
-  rewrite H0 in H.
-  rewrite H1 in H.
-  unfold ol_concat2 in H.
+- destruct H0 as [(t, O)]. rewrite H0 in H.
+  rewrite H1 in H. unfold ol_concat2 in H.
   split.
-  + unfold del.
-    rewrite H.
-    rewrite H0.
-    reflexivity.
-  + unfold lam. 
-    rewrite H.
-    rewrite H0.
-    rewrite H1.
-    simpl.
-    reflexivity.
+  + unfold del. rewrite H. rewrite H0. reflexivity.
+  + unfold lam. rewrite H. rewrite H0. rewrite H1. simpl. reflexivity.
 Qed.
+
+Lemma lemma_a_1_delta :
+forall M : Mealy, 
+forall v w : word I,
+forall q s : Y,
+      del M q v = Some s
+  ->
+        (del M q (v ++ w)) = (del M s w)
+.
+Proof.
+intros.
+destruct option_em with (prod Y (word O)) (tra M q v) as [J | J].
+- unfold del in H. rewrite J in H. discriminate H.
+- destruct J as [(s', V) J]. unfold del in H. rewrite J in H. injection H as H.
+  rewrite H in J. apply (lemma_a_1 M v w V q s) in J. apply J.
+Qed.
+
+
 

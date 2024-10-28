@@ -1,4 +1,4 @@
-Require Import Mealy.
+(* Require Import Mealy.
 Require Import FunctionalSimulation.
 Require Import Coq.Lists.List.
 Require Import Coq.Sets.Finite_sets_facts.
@@ -55,26 +55,7 @@ tree TT /\
       lam TT v (i :: nil) = lam S q (i :: nil)
 ).
 
-Lemma del_lam_tra :
-forall M : Mealy,
-forall q s : Y,
-forall v : word I,
-forall V : word O,
-  del M q v = Some s /\ lam M q v = Some V
-<->
-  tra M q v = Some (s, V).
-Proof.
-intros.
-split.
-- intro H. destruct H as [H H'].
-  destruct option_em with (prod Y (word O)) (tra M q v) as [J|J].
-  * unfold del in H. rewrite J in H. discriminate H.
-  * destruct J as [(s', V') J].
-    unfold lam in H'. rewrite J in H'. injection H' as H'.
-    unfold del in H. rewrite J in H. injection H as H.
-  rewrite<- H. rewrite<- H'. apply J.
-- intro H. unfold del. unfold lam. rewrite H. split. trivial. trivial.
-Qed.
+
 
 Lemma tra_trans_def_no_exi :
 forall M : Mealy,
@@ -206,3 +187,4 @@ Abort.
 (* TODO definition of funcSim needs to be changed 
 to only be relevant to actual states, not the whole type... *) *)
  
+ *)

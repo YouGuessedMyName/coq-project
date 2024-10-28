@@ -1,4 +1,4 @@
-Require Import Mealy.
+(* Require Import Mealy.
 Require Import Coq.Lists.List.
 
 (* Definition 2.4 (Simulation) *)
@@ -58,4 +58,4 @@ induction v.
   unfold del in J. rewrite H0 in J. injection J as J. rewrite<- J. apply H0.
   rewrite H1. unfold del. unfold tra. rewrite K. trivial.
   apply K'.
-Qed.
+Qed. *)
