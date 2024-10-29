@@ -183,6 +183,132 @@ apply temp in H_r_is_qi. clear temp.
 + unfold del. unfold tra. rewrite H_q_io_r. discriminate.
 Qed.
 
+Lemma list_tl_property :
+forall A : Set,
+forall o : A,
+forall la lb : list A,
+la <> nil ->
+(tl la) ++ lb = tl (la ++ lb).
+Proof.
+intros.
+induction la.
+elim H. trivial.
+simpl. trivial.
+Qed.
+
+Lemma lemma_q_1_lambda_part :
+forall M : Mealy, 
+forall v w : word I,
+forall V W : word O,
+forall q s : Y,
+      tra M q v = Some (s, V)
+  ->
+        lam M q (v ++ w) = Some (V ++ W)
+    ->
+        lam M s w = Some W
+.
+Proof.
+induction v.
+- intros. unfold tra in H. injection H as H H'. rewrite<- H' in H0.
+  simpl (nil ++ w) in H0. simpl (nil ++ W) in H0. rewrite H in H0. apply H0.
+- intros.
+  destruct option_em with (prod Y O) (trans M q a).
+  unfold tra in H. rewrite H1 in H. discriminate H.
+  destruct H1 as [(r, o) H1].
+
+  destruct option_em with (prod Y (word O)) (tra M r v) as [J | J].
+  unfold tra in H. rewrite H1 in H. 
+  unfold tra in J. rewrite J in H. discriminate H.
+  
+  destruct J as [(t, tlV') J].
+  
+  specialize IHv with w (tl V) W r s.
+  unfold tra in H. rewrite H1 in H.
+  assert (J' := J).
+  unfold tra in J. rewrite J in H.
+  injection H as H H'.
+  apply IHv.
+  
+  
+  unfold tra.
+  rewrite J.
+  
+  rewrite H.
+  rewrite<- H'.
+  simpl.
+  trivial.
+
+  simpl ((a :: v) ++ w) in H0.
+
+  destruct option_em with (prod Y (word O)) (tra M r (v ++ w)).
+  unfold lam in H0.
+  unfold tra in H0.
+  rewrite H1 in H0.
+
+  assert (H2' := H2).
+  unfold tra in H2.
+  rewrite H2 in H0.
+  discriminate H0.  
+
+  destruct H2 as [(t', VW') H2].
+  unfold lam in H0.
+  unfold tra in H0.
+  rewrite H1 in H0.
+  assert (H2' := H2).
+  unfold tra in H2.
+  rewrite H2 in H0.
+  
+  injection H0 as H0.
+  unfold lam.
+  rewrite H2'.
+  rewrite list_tl_property.
+  rewrite<- H0.
+  simpl. trivial.
+  apply o.
+  rewrite<- H'.
+  discriminate.
+Qed.
+
+Lemma lemma_a_1_lambda :
+forall M : Mealy, 
+forall v w : word I,
+forall V W : word O,
+forall q s : Y,
+      tra M q v = Some (s, V)
+  ->
+        (lam M s w = Some W
+    <->
+        (lam M q (v ++ w) = Some (V ++ W)))
+.
+Proof.
+intros.
+split.
+intro J.
+destruct (lemma_a_1 M v w V q s). apply H.
+rewrite H1.
+unfold ol_concat.
+unfold lam. rewrite H.
+destruct option_em with (prod Y (word O)) (tra M s w).
+unfold lam in J. rewrite H2 in J. discriminate J. 
+destruct H2 as [(q', W') H2].
+rewrite H2.
+assert (W = W').
+unfold lam in J.
+rewrite H2 in J.
+injection J as J.
+symmetry. apply J.
+rewrite H3.
+trivial.
+
+intro J.
+destruct em with (lam M s w = Some W).
+apply H0.
+
+apply (lemma_q_1_lambda_part M v w V W q s).
+apply H.
+apply J.
+Qed.
+
 Lemma lemma_2_10 :
 forall S M TT : Mealy,
 forall T : word I -> Prop,
@@ -214,6 +340,8 @@ symmetry. split.
     (* Obtain qi = r using the lemma *)
     assert (r = q ++ i :: nil) as H_qi_is_r. 
       apply (r_is_qi TT q r i o). apply H_QTTq. apply H_treeDelta. apply H_q_io_r.
+    (* Obtain the fact that q0 -q-> q*)
+    
     (* Split the trans into delta and lambda, like in the paper *)
     rewrite <- del_lam_tra_def. split.
     * (* 2. Assume δT (σ, i)↓, for some σ ∈ QT and i ∈ I. Then by Lemma A.1:
@@ -235,7 +363,6 @@ symmetry. split.
         ++  apply H_tree. apply H_QTTq.
     * (* 3. As M passes T , for all σ ∈ T , λM(qM0 , σ) = λS (qS0 , σ). 
       This implies that, for all σi ∈ Pref (T ), λM(qM0 , σi) = λS (qS0 , σi).*)
-      symmetry.
       assert (forall v : word I, Q TT v -> (lam M (q0 M) v = lam S (q0 S) v)) as H_M_S_same_output.
       ++  (* Follows easily from prefix and passes*)
           intros v H_QTTv. unfold passes2 in H_passes2. unfold passes1 in H_passes2.
@@ -250,34 +377,40 @@ symmetry. split.
       ++  (* Split H_q_io_r in order to rewrite later *)
           assert (temp := H_q_io_r). rewrite<- tra_trans_def_known in temp.
           rewrite<- del_lam_tra_def in temp. destruct temp as [H_q_i_r H_q_io].
-          (* Now rewrite *)
-          rewrite<- H_q_io.
-          (* Step 3 (Using Lemma) *)
-            (* Case where tra S (q0 S) q undef *)
-      
           destruct option_em with (prod Y (word O)) (tra S (q0 S) q) as [J|J].
-            --  admit. (* Contradiction because None *)
-            --  destruct J as [(sq, Q') J].
-                destruct lemma_a_1 with S q (i :: nil) Q' (q0 S) sq as [Hl_del Hl_lam].
-                ** apply J.
-                **
-                    destruct lemma_a_1 with M q (i :: nil) Q' (q0 M) (f q) as [Hl_del2 Hl_lam2].
-                    --- (* Split into lambda and delta, then prove delta with 
-                        Hf and lambda with H_M_S_same_output *) admit.
-                    --- rewrite (H_treeLambda q sq (i :: nil)).
-                        +++ rewrite (H_M_S_same_output (q ++ i :: nil)) in Hl_lam2.
-                            *** 
-                              rewrite Hl_lam in Hl_lam2.
-                              rewrite (H_M_S_same_output (q)) in Hl_lam2. admit.
-                              (* Make a Lemma for this, which uses Hl_del and Hl_del2 *)
-                            apply H_QTTq. 
-                            *** rewrite<- H_qi_is_r. apply (next_state TT q r i). apply H_QTTq.
-                            unfold del. unfold tra. rewrite H_q_io_r. trivial.
-                            
-                        +++ rewrite<- H_qi_is_r. apply (next_state TT q r i).
-                            *** apply H_QTTq.
-                            *** unfold del. unfold tra. rewrite H_q_io_r. trivial.
-                        +++ unfold del. rewrite J. trivial.
+          *** (* Case where (tra S (q0 S) q) undef (proof by contradiction) *)
+              exfalso.
+              assert (lam S (q0 S) q = None) as J'.
+              unfold lam. rewrite J. trivial.
+              rewrite<- H_M_S_same_output in J'.
+              assert (tra M (q0 M) q = None).
+              destruct option_em with (prod Y (word O)) (tra M (q0 M) q).
+              apply H.
+              destruct H as [(mq, Qout)].
+              unfold lam in J'. rewrite H in J'. discriminate J'.
+              assert (Hf_q_q := Hf).
+              specialize Hf_q_q with q q.
+              assert (H_tree_q := H_tree).
+              specialize H_tree_q with q.
+              apply Hf_q_q in H_tree_q.
+              unfold del in H_tree_q.
+              rewrite H in H_tree_q.
+              discriminate H_tree_q.
+              apply H_QTTq.
+              apply H_QTTq.
+          *** destruct J as [(sq, Qout) J].
+              rewrite (lemma_a_1_lambda M q (i :: nil) Qout (o :: nil) (q0 M) (f q)).
+              ---- rewrite H_M_S_same_output.
+                   ++++ rewrite<- (lemma_a_1_lambda S q (i :: nil) Qout (o :: nil) (q0 S) sq).
+                        ****  rewrite<- (H_treeLambda q sq (i :: nil)).
+                              apply H_q_io. rewrite<- H_qi_is_r. 
+                              apply (next_state TT q r i).  apply H_QTTq. apply H_q_i_r.
+                              unfold del. rewrite J. trivial.
+                        **** apply J.
+                   ++++ rewrite<- H_qi_is_r. apply (next_state TT q r i).  apply H_QTTq. apply H_q_i_r.
+              ---- rewrite <- del_lam_tra_def.
+                   split.
+                   rewrite (Hf q q). trivial. apply H_tree. apply H_QTTq. 
+                   rewrite H_M_S_same_output. unfold lam. rewrite J. trivial. apply H_QTTq.
+- 
 Abort.
-(* TODO definition of funcSim needs to be changed 
-to only be relevant to actual states, not the whole type... *) *)

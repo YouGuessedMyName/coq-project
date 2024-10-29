@@ -431,5 +431,3 @@ destruct option_em with (prod Y (word O)) (tra M q v) as [J | J].
   rewrite H in J. apply (lemma_a_1 M v w V q s) in J. apply J.
 Qed.
 
-
-
