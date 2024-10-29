@@ -1,4 +1,4 @@
-DIGEST 2b866a6eaf5f3d9d837506a846454847
+DIGEST 1d9ead116cd85aef3cc21e653c35558d
 FActionCodes.FunctionalSimulation
 R15:19 ActionCodes.Mealy <> <> lib
 R37:50 Coq.Lists.List <> <> lib
@@ -107,6 +107,43 @@ R597:597 ActionCodes.FunctionalSimulation <> V:12 var
 R658:660 ActionCodes.Mealy <> tra def
 R770:785 ActionCodes.Mealy <> first_letter_exi thm
 R770:785 ActionCodes.Mealy <> first_letter_exi thm
-R907:908 Coq.Lists.List <> tl def
-R907:908 Coq.Lists.List <> tl def
-R975:981 ActionCodes.FunctionalSimulation <> funcSim def
+R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
+R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
+R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
+R945:946 Coq.Lists.List <> tl def
+R945:946 Coq.Lists.List <> tl def
+R1013:1019 ActionCodes.FunctionalSimulation <> funcSim def
+R1217:1217 ActionCodes.Mealy <> Q def
+R1263:1263 ActionCodes.Mealy <> Q def
+R1281:1284 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1286:1289 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1290:1292 Coq.Init.Datatypes <> nil constr
+R1281:1284 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1286:1289 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1290:1292 Coq.Init.Datatypes <> nil constr
+R1325:1328 Coq.Init.Datatypes <> prod ind
+R1333:1336 ActionCodes.Mealy <> word def
+R1338:1338 ActionCodes.Mealy <> O indrec
+R1330:1330 ActionCodes.Mealy <> Y def
+R1343:1345 ActionCodes.Mealy <> tra def
+R1350:1351 ActionCodes.Mealy <> q0 proj
+R1309:1317 ActionCodes.Mealy <> option_em defax
+R1325:1328 Coq.Init.Datatypes <> prod ind
+R1333:1336 ActionCodes.Mealy <> word def
+R1338:1338 ActionCodes.Mealy <> O indrec
+R1330:1330 ActionCodes.Mealy <> Y def
+R1343:1345 ActionCodes.Mealy <> tra def
+R1350:1351 ActionCodes.Mealy <> q0 proj
+R1309:1317 ActionCodes.Mealy <> option_em defax
+R1383:1385 ActionCodes.Mealy <> del def
+R1487:1490 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1491:1493 Coq.Init.Datatypes <> nil constr
+R1500:1501 ActionCodes.Mealy <> q0 proj
+R1465:1473 ActionCodes.Mealy <> lemma_a_1 thm
+R1487:1490 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1491:1493 Coq.Init.Datatypes <> nil constr
+R1500:1501 ActionCodes.Mealy <> q0 proj
+R1465:1473 ActionCodes.Mealy <> lemma_a_1 thm
+R1518:1520 ActionCodes.Mealy <> del def
+R1607:1609 ActionCodes.Mealy <> del def
+R1619:1621 ActionCodes.Mealy <> tra def
