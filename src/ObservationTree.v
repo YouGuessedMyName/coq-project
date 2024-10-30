@@ -324,6 +324,7 @@ forall f : Y -> Y,
 Proof.
 intros S M TT T f H_tt Hf.
 (* Unfold testingTree *)
+assert (H_tt' := H_tt).
 unfold testingTree in H_tt.
 destruct H_tt as [H_tree H_pref].
 destruct H_pref as [H_pref H_treeDelta].
@@ -412,5 +413,32 @@ symmetry. split.
                    split.
                    rewrite (Hf q q). trivial. apply H_tree. apply H_QTTq. 
                    rewrite H_M_S_same_output. unfold lam. rewrite J. trivial. apply H_QTTq.
-- 
-Abort.
+- intro H_funcSim. unfold passes2. unfold passes1.
+  intros q H_Qttq.
+  rewrite<- H_tree_states in H_Qttq.
+  (* Instantiate the output for TT *)
+  destruct option_em with (prod Y (word O)) (tra TT (q0 TT) q) as [H_q0_io_q | H_q0_io_q].
+  + (* Show the contradiction *)
+    assert (contra := H_tree).
+    specialize contra with q.
+    unfold del in contra. rewrite H_q0_io_q in contra.
+    discriminate contra. apply H_Qttq.
+  + destruct H_q0_io_q as [(q', Qout) H_q0_io_q].
+    (* Strengthen goal for Lemma *)
+    assert (tra M (q0 M) q = Some (f q', Qout)) as H_strong.
+    * (* Rewrite q0M to f(q0TT) *)
+      assert (H_funcSimRoot := H_funcSim).
+      unfold funcSim in H_funcSimRoot.
+      destruct H_funcSimRoot as [H_funcSimRoot temp]. clear temp.
+      rewrite<- H_funcSimRoot.
+      (* Finally apply the Lemma *)
+      apply (lemma_a_4 TT M f).
+      apply H_funcSim.
+      apply initial.
+      apply H_q0_io_q.
+    * (* Now apply what we just learned *)
+      unfold lam.
+      rewrite H_strong.
+      rewrite H_q0_io_q.
+      trivial.
+Qed.
