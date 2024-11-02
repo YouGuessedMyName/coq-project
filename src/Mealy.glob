@@ -1,1082 +1,1297 @@
-DIGEST 9ba47131dea56ce4962bfd2be3071d6d
+DIGEST 2719bbfbf6ba23d3e4c4a885fb979820
 FActionCodes.Mealy
 R15:28 Coq.Lists.List <> <> lib
 R46:71 Coq.Sets.Finite_sets_facts <> <> lib
-ax 168:169 <> em
-binder 179:179 <> p:1
-R188:191 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
-R187:187 ActionCodes.Mealy <> p:1 var
-R192:192 Coq.Init.Logic <> ::type_scope:'~'_x not
-R193:193 ActionCodes.Mealy <> p:1 var
-ax 267:275 <> option_em
-binder 286:286 <> A:3
-R307:312 Coq.Init.Datatypes <> option ind
-R314:314 ActionCodes.Mealy <> A:3 var
-binder 303:303 <> o:4
-R327:330 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
-R320:322 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R319:319 ActionCodes.Mealy <> o:4 var
-R323:326 Coq.Init.Datatypes <> None constr
-R331:337 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R343:344 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R342:342 ActionCodes.Mealy <> A:3 var
-binder 338:338 <> a:5
-R346:348 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R345:345 ActionCodes.Mealy <> o:4 var
-R349:352 Coq.Init.Datatypes <> Some constr
-R354:354 ActionCodes.Mealy <> a:5 var
-def 369:377 <> ol_concat
-binder 380:380 <> A:7
-R391:396 Coq.Init.Datatypes <> option ind
-R399:402 Coq.Init.Datatypes <> list ind
-R404:404 ActionCodes.Mealy <> A:7 var
-binder 384:384 <> o:8
-binder 386:387 <> o':9
-R410:415 Coq.Init.Datatypes <> option ind
-R418:421 Coq.Init.Datatypes <> list ind
-R423:423 ActionCodes.Mealy <> A:7 var
-R437:437 ActionCodes.Mealy <> o:8 var
-R450:453 Coq.Init.Datatypes <> None constr
-R458:461 Coq.Init.Datatypes <> None constr
-R469:472 Coq.Init.Datatypes <> Some constr
-R490:491 ActionCodes.Mealy <> o':9 var
-R506:509 Coq.Init.Datatypes <> None constr
-R514:517 Coq.Init.Datatypes <> None constr
-R527:530 Coq.Init.Datatypes <> Some constr
-R539:542 Coq.Init.Datatypes <> Some constr
-R547:550 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R593:601 ActionCodes.Mealy <> ol_concat def
-not 578:578 <> ::type_scope:x_'+++'_x
-def 754:763 <> ol_concat2
-binder 766:766 <> A:12
-binder 768:768 <> B:13
-R779:784 Coq.Init.Datatypes <> option ind
-R787:790 Coq.Init.Datatypes <> prod ind
-R795:798 Coq.Init.Datatypes <> list ind
-R800:800 ActionCodes.Mealy <> B:13 var
-R792:792 ActionCodes.Mealy <> A:12 var
-binder 772:772 <> o:14
-binder 774:775 <> o':15
-R807:812 Coq.Init.Datatypes <> option ind
-R815:818 Coq.Init.Datatypes <> prod ind
-R823:826 Coq.Init.Datatypes <> list ind
-R828:828 ActionCodes.Mealy <> B:13 var
-R820:820 ActionCodes.Mealy <> A:12 var
-R843:843 ActionCodes.Mealy <> o:14 var
-R856:859 Coq.Init.Datatypes <> None constr
-R864:867 Coq.Init.Datatypes <> None constr
-R875:878 Coq.Init.Datatypes <> Some constr
-R880:880 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R882:883 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R885:885 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R900:901 ActionCodes.Mealy <> o':15 var
-R916:919 Coq.Init.Datatypes <> None constr
-R924:927 Coq.Init.Datatypes <> None constr
-R937:940 Coq.Init.Datatypes <> Some constr
-R942:942 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R944:945 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R947:947 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R952:955 Coq.Init.Datatypes <> Some constr
-R957:957 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R959:960 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R967:967 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R962:965 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-def 994:1006 <> ol_2nd_tolist
-binder 1009:1009 <> A:18
-binder 1011:1011 <> B:19
-R1019:1024 Coq.Init.Datatypes <> option ind
-R1027:1030 Coq.Init.Datatypes <> prod ind
-R1034:1034 ActionCodes.Mealy <> B:19 var
-R1032:1032 ActionCodes.Mealy <> A:18 var
-binder 1015:1015 <> o:20
-R1040:1045 Coq.Init.Datatypes <> option ind
-R1048:1051 Coq.Init.Datatypes <> prod ind
-R1056:1059 Coq.Init.Datatypes <> list ind
-R1061:1061 ActionCodes.Mealy <> B:19 var
-R1053:1053 ActionCodes.Mealy <> A:18 var
-R1074:1074 ActionCodes.Mealy <> o:20 var
-R1085:1088 Coq.Init.Datatypes <> None constr
-R1093:1096 Coq.Init.Datatypes <> None constr
-R1102:1105 Coq.Init.Datatypes <> Some constr
-R1107:1107 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1109:1110 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1112:1112 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1117:1120 Coq.Init.Datatypes <> Some constr
-R1122:1122 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1124:1125 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1134:1134 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R1127:1130 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R1131:1133 Coq.Init.Datatypes <> nil constr
-R1167:1175 ActionCodes.Mealy <> ol_concat def
-not 1152:1152 <> ::type_scope:x_'++2'_x
-def 1242:1244 <> def
-binder 1247:1247 <> A:22
-R1255:1260 Coq.Init.Datatypes <> option ind
-R1262:1262 ActionCodes.Mealy <> A:22 var
-binder 1251:1251 <> o:23
-R1275:1281 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R1287:1288 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R1286:1286 ActionCodes.Mealy <> A:22 var
-binder 1282:1282 <> a:24
-R1290:1292 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R1289:1289 ActionCodes.Mealy <> o:23 var
-R1293:1296 Coq.Init.Datatypes <> Some constr
-R1298:1298 ActionCodes.Mealy <> a:24 var
-def 1312:1316 <> undef
-binder 1319:1319 <> A:25
-R1327:1332 Coq.Init.Datatypes <> option ind
-R1334:1334 ActionCodes.Mealy <> A:25 var
-binder 1323:1323 <> o:26
-R1348:1350 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R1347:1347 ActionCodes.Mealy <> o:26 var
-R1351:1354 Coq.Init.Datatypes <> None constr
-R1403:1407 ActionCodes.Mealy <> undef def
-not 1391:1391 <> ::type_scope:x_'↑'
-R1480:1482 ActionCodes.Mealy <> def def
-not 1468:1468 <> ::type_scope:x_'↓'
-rec 1585:1585 <> I
-scheme 1585:1585 <> I_rect
-scheme 1585:1585 <> I_ind
-scheme 1585:1585 <> I_rec
-scheme 1585:1585 <> I_sind
-rec 1604:1604 <> O
-scheme 1604:1604 <> O_rect
-scheme 1604:1604 <> O_ind
-scheme 1604:1604 <> O_rec
-scheme 1604:1604 <> O_sind
-def 1625:1628 <> word
-R1633:1636 Coq.Init.Datatypes <> list ind
-def 1676:1679 <> pref
-R1688:1691 ActionCodes.Mealy <> word def
-R1693:1693 ActionCodes.Mealy <> I indrec
-binder 1682:1682 <> v:29
-binder 1684:1684 <> w:30
-R1706:1712 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R1724:1725 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R1718:1721 ActionCodes.Mealy <> word def
-R1723:1723 ActionCodes.Mealy <> I indrec
-binder 1713:1714 <> v':31
-R1733:1735 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R1727:1730 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R1726:1726 ActionCodes.Mealy <> v:29 var
-R1731:1732 ActionCodes.Mealy <> v':31 var
-R1736:1736 ActionCodes.Mealy <> w:30 var
-def 1790:1793 <> Pref
-R1808:1811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1802:1805 ActionCodes.Mealy <> word def
-R1807:1807 ActionCodes.Mealy <> I indrec
-binder 1796:1796 <> A:32
-binder 1798:1798 <> B:33
-R1835:1838 ActionCodes.Mealy <> word def
-R1840:1840 ActionCodes.Mealy <> I indrec
-binder 1829:1829 <> a:34
-binder 1831:1831 <> b:35
-R1853:1857 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R1846:1849 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R1843:1843 ActionCodes.Mealy <> A:32 var
-R1845:1845 ActionCodes.Mealy <> a:34 var
-R1850:1850 ActionCodes.Mealy <> B:33 var
-R1852:1852 ActionCodes.Mealy <> b:35 var
-R1858:1861 ActionCodes.Mealy <> pref def
-R1863:1863 ActionCodes.Mealy <> a:34 var
-R1865:1865 ActionCodes.Mealy <> b:35 var
-def 2049:2049 <> Y
-R2054:2057 ActionCodes.Mealy <> word def
-R2059:2059 ActionCodes.Mealy <> I indrec
-rec 2072:2076 <> Mealy
-proj 2092:2093 <> q0
-proj 2102:2106 <> trans
-R2097:2097 ActionCodes.Mealy <> Y def
-R2111:2114 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2110:2110 ActionCodes.Mealy <> Y def
-R2116:2119 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2115:2115 ActionCodes.Mealy <> I indrec
-R2120:2125 Coq.Init.Datatypes <> option ind
-R2129:2131 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
-R2128:2128 ActionCodes.Mealy <> Y def
-R2132:2132 ActionCodes.Mealy <> O indrec
-def 2149:2151 <> tra
-R2158:2162 ActionCodes.Mealy <> Mealy rec
-binder 2154:2154 <> M:39
-R2169:2169 ActionCodes.Mealy <> Y def
-binder 2166:2166 <> q:40
-R2177:2180 ActionCodes.Mealy <> word def
-R2182:2182 ActionCodes.Mealy <> I indrec
-binder 2173:2173 <> v:41
-R2188:2193 Coq.Init.Datatypes <> option ind
-R2196:2196 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
-R2198:2201 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
-R2197:2197 ActionCodes.Mealy <> Y def
-R2202:2205 ActionCodes.Mealy <> word def
-R2207:2207 ActionCodes.Mealy <> O indrec
-R2220:2220 ActionCodes.Mealy <> v:41 var
-R2231:2233 Coq.Init.Datatypes <> nil constr
-R2238:2241 Coq.Init.Datatypes <> Some constr
-R2243:2243 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2245:2246 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2250:2250 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2244:2244 ActionCodes.Mealy <> q:40 var
-R2247:2249 Coq.Init.Datatypes <> nil constr
-R2256:2259 Coq.Init.Datatypes <> cons constr
-R2281:2285 ActionCodes.Mealy <> trans proj
-R2287:2287 ActionCodes.Mealy <> M:39 var
-R2289:2289 ActionCodes.Mealy <> q:40 var
-R2306:2309 Coq.Init.Datatypes <> Some constr
-R2311:2311 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2313:2314 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2316:2316 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2337:2339 ActionCodes.Mealy <> tra:42 def
-R2341:2341 ActionCodes.Mealy <> M:39 var
-R2366:2369 Coq.Init.Datatypes <> None constr
-R2374:2377 Coq.Init.Datatypes <> None constr
-R2391:2394 Coq.Init.Datatypes <> Some constr
-R2396:2396 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2399:2400 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2402:2402 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2407:2410 Coq.Init.Datatypes <> Some constr
-R2412:2412 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2415:2416 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2423:2423 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2418:2421 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R2444:2447 Coq.Init.Datatypes <> None constr
-R2452:2455 Coq.Init.Datatypes <> None constr
-def 2482:2484 <> del
-R2491:2495 ActionCodes.Mealy <> Mealy rec
-binder 2487:2487 <> M:44
-R2502:2502 ActionCodes.Mealy <> Y def
-binder 2499:2499 <> q:45
-R2510:2513 ActionCodes.Mealy <> word def
-R2515:2515 ActionCodes.Mealy <> I indrec
-binder 2506:2506 <> v:46
-R2521:2526 Coq.Init.Datatypes <> option ind
-R2529:2529 ActionCodes.Mealy <> Y def
-R2544:2546 ActionCodes.Mealy <> tra def
-R2548:2548 ActionCodes.Mealy <> M:44 var
-R2550:2550 ActionCodes.Mealy <> q:45 var
-R2552:2552 ActionCodes.Mealy <> v:46 var
-R2564:2567 Coq.Init.Datatypes <> None constr
-R2572:2575 Coq.Init.Datatypes <> None constr
-R2581:2584 Coq.Init.Datatypes <> Some constr
-R2586:2586 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2588:2589 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2591:2591 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2596:2599 Coq.Init.Datatypes <> Some constr
-def 2619:2621 <> lam
-R2628:2632 ActionCodes.Mealy <> Mealy rec
-binder 2624:2624 <> M:47
-R2639:2639 ActionCodes.Mealy <> Y def
-binder 2636:2636 <> q:48
-R2647:2650 ActionCodes.Mealy <> word def
-R2652:2652 ActionCodes.Mealy <> I indrec
-binder 2643:2643 <> v:49
-R2658:2663 Coq.Init.Datatypes <> option ind
-R2666:2669 ActionCodes.Mealy <> word def
-R2671:2671 ActionCodes.Mealy <> O indrec
-R2686:2688 ActionCodes.Mealy <> tra def
-R2690:2690 ActionCodes.Mealy <> M:47 var
-R2692:2692 ActionCodes.Mealy <> q:48 var
-R2694:2694 ActionCodes.Mealy <> v:49 var
-R2706:2709 Coq.Init.Datatypes <> None constr
-R2714:2717 Coq.Init.Datatypes <> None constr
-R2723:2726 Coq.Init.Datatypes <> Some constr
-R2728:2728 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2730:2731 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2733:2733 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R2738:2741 Coq.Init.Datatypes <> Some constr
-def 2762:2762 <> Q
-R2769:2773 ActionCodes.Mealy <> Mealy rec
-binder 2765:2765 <> M:50
-R2781:2781 ActionCodes.Mealy <> Y def
-binder 2777:2777 <> q:51
-R2787:2793 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R2804:2805 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R2798:2801 ActionCodes.Mealy <> word def
-R2803:2803 ActionCodes.Mealy <> I indrec
-binder 2794:2794 <> v:52
-R2820:2822 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R2806:2808 ActionCodes.Mealy <> del def
-R2810:2810 ActionCodes.Mealy <> M:50 var
-R2813:2814 ActionCodes.Mealy <> q0 proj
-R2816:2816 ActionCodes.Mealy <> M:50 var
-R2819:2819 ActionCodes.Mealy <> v:52 var
-R2823:2826 Coq.Init.Datatypes <> Some constr
-R2828:2828 ActionCodes.Mealy <> q:51 var
-ax 2922:2928 <> initial
-R2943:2947 ActionCodes.Mealy <> Mealy rec
-binder 2939:2939 <> M:53
-R2950:2950 ActionCodes.Mealy <> Q def
-R2952:2952 ActionCodes.Mealy <> M:53 var
-R2955:2956 ActionCodes.Mealy <> q0 proj
-R2958:2958 ActionCodes.Mealy <> M:53 var
-def 2974:2981 <> complete
-R2988:2992 ActionCodes.Mealy <> Mealy rec
-binder 2984:2984 <> M:55
-R3000:3000 ActionCodes.Mealy <> Y def
-binder 2996:2996 <> q:56
-R3019:3019 ActionCodes.Mealy <> I indrec
-binder 3015:3015 <> i:57
-R3023:3023 ActionCodes.Mealy <> ::type_scope:x_'↓' not
-R3035:3039 ActionCodes.Mealy <> ::type_scope:x_'↓' not
-R3024:3028 ActionCodes.Mealy <> trans proj
-R3030:3030 ActionCodes.Mealy <> M:55 var
-R3032:3032 ActionCodes.Mealy <> q:56 var
-R3034:3034 ActionCodes.Mealy <> i:57 var
-def 3054:3064 <> completeSet
-R3071:3075 ActionCodes.Mealy <> Mealy rec
-binder 3067:3067 <> M:58
-R3084:3087 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3083:3083 ActionCodes.Mealy <> Y def
-binder 3079:3079 <> W:59
-R3110:3110 ActionCodes.Mealy <> Y def
-binder 3106:3106 <> q:60
-R3118:3125 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3113:3113 ActionCodes.Mealy <> Q def
-R3115:3115 ActionCodes.Mealy <> M:58 var
-R3117:3117 ActionCodes.Mealy <> q:60 var
-R3129:3132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3126:3126 ActionCodes.Mealy <> W:59 var
-R3128:3128 ActionCodes.Mealy <> q:60 var
-R3133:3140 ActionCodes.Mealy <> complete def
-R3142:3142 ActionCodes.Mealy <> M:58 var
-R3144:3144 ActionCodes.Mealy <> q:60 var
-def 3158:3166 <> completeM
-R3173:3177 ActionCodes.Mealy <> Mealy rec
-binder 3169:3169 <> M:61
-R3203:3203 ActionCodes.Mealy <> Y def
-binder 3199:3199 <> q:62
-R3211:3214 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3206:3206 ActionCodes.Mealy <> Q def
-R3208:3208 ActionCodes.Mealy <> M:61 var
-R3210:3210 ActionCodes.Mealy <> q:62 var
-R3215:3222 ActionCodes.Mealy <> complete def
-R3224:3224 ActionCodes.Mealy <> M:61 var
-R3226:3226 ActionCodes.Mealy <> q:62 var
-prf 3236:3252 <> del_lam_tra_undef
-R3267:3271 ActionCodes.Mealy <> Mealy rec
-binder 3263:3263 <> M:63
-R3287:3287 ActionCodes.Mealy <> Y def
-binder 3281:3281 <> q:64
-binder 3283:3283 <> s:65
-R3301:3304 ActionCodes.Mealy <> word def
-R3306:3306 ActionCodes.Mealy <> I indrec
-binder 3297:3297 <> v:66
-R3320:3323 ActionCodes.Mealy <> word def
-R3325:3325 ActionCodes.Mealy <> O indrec
-binder 3316:3316 <> V:67
-R3366:3372 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R3346:3349 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R3339:3341 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3330:3332 ActionCodes.Mealy <> del def
-R3334:3334 ActionCodes.Mealy <> M:63 var
-R3336:3336 ActionCodes.Mealy <> q:64 var
-R3338:3338 ActionCodes.Mealy <> v:66 var
-R3342:3345 Coq.Init.Datatypes <> None constr
-R3359:3361 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3350:3352 ActionCodes.Mealy <> lam def
-R3354:3354 ActionCodes.Mealy <> M:63 var
-R3356:3356 ActionCodes.Mealy <> q:64 var
-R3358:3358 ActionCodes.Mealy <> v:66 var
-R3362:3365 Coq.Init.Datatypes <> None constr
-R3382:3384 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3373:3375 ActionCodes.Mealy <> tra def
-R3377:3377 ActionCodes.Mealy <> M:63 var
-R3379:3379 ActionCodes.Mealy <> q:64 var
-R3381:3381 ActionCodes.Mealy <> v:66 var
-R3385:3388 Coq.Init.Datatypes <> None constr
-R3473:3476 Coq.Init.Datatypes <> prod ind
-R3481:3484 ActionCodes.Mealy <> word def
-R3486:3486 ActionCodes.Mealy <> O indrec
-R3478:3478 ActionCodes.Mealy <> Y def
-R3491:3493 ActionCodes.Mealy <> tra def
-R3457:3465 ActionCodes.Mealy <> option_em defax
-R3473:3476 Coq.Init.Datatypes <> prod ind
-R3481:3484 ActionCodes.Mealy <> word def
-R3486:3486 ActionCodes.Mealy <> O indrec
-R3478:3478 ActionCodes.Mealy <> Y def
-R3491:3493 ActionCodes.Mealy <> tra def
-R3457:3465 ActionCodes.Mealy <> option_em defax
-R3568:3570 ActionCodes.Mealy <> lam def
-R3631:3633 ActionCodes.Mealy <> del def
-R3643:3645 ActionCodes.Mealy <> lam def
-prf 3696:3710 <> del_lam_tra_def
-R3725:3729 ActionCodes.Mealy <> Mealy rec
-binder 3721:3721 <> M:68
-R3745:3745 ActionCodes.Mealy <> Y def
-binder 3739:3739 <> q:69
-binder 3741:3741 <> s:70
-R3759:3762 ActionCodes.Mealy <> word def
-R3764:3764 ActionCodes.Mealy <> I indrec
-binder 3755:3755 <> v:71
-R3778:3781 ActionCodes.Mealy <> word def
-R3783:3783 ActionCodes.Mealy <> O indrec
-binder 3774:3774 <> V:72
-R3828:3834 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R3806:3809 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R3797:3799 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3788:3790 ActionCodes.Mealy <> del def
-R3792:3792 ActionCodes.Mealy <> M:68 var
-R3794:3794 ActionCodes.Mealy <> q:69 var
-R3796:3796 ActionCodes.Mealy <> v:71 var
-R3800:3803 Coq.Init.Datatypes <> Some constr
-R3805:3805 ActionCodes.Mealy <> s:70 var
-R3819:3821 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3810:3812 ActionCodes.Mealy <> lam def
-R3814:3814 ActionCodes.Mealy <> M:68 var
-R3816:3816 ActionCodes.Mealy <> q:69 var
-R3818:3818 ActionCodes.Mealy <> v:71 var
-R3822:3825 Coq.Init.Datatypes <> Some constr
-R3827:3827 ActionCodes.Mealy <> V:72 var
-R3844:3846 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3835:3837 ActionCodes.Mealy <> tra def
-R3839:3839 ActionCodes.Mealy <> M:68 var
-R3841:3841 ActionCodes.Mealy <> q:69 var
-R3843:3843 ActionCodes.Mealy <> v:71 var
-R3847:3850 Coq.Init.Datatypes <> Some constr
-R3852:3852 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R3854:3855 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R3857:3857 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R3853:3853 ActionCodes.Mealy <> s:70 var
-R3856:3856 ActionCodes.Mealy <> V:72 var
-R3942:3945 Coq.Init.Datatypes <> prod ind
-R3950:3953 ActionCodes.Mealy <> word def
-R3955:3955 ActionCodes.Mealy <> O indrec
-R3947:3947 ActionCodes.Mealy <> Y def
-R3960:3962 ActionCodes.Mealy <> tra def
-R3926:3934 ActionCodes.Mealy <> option_em defax
-R3942:3945 Coq.Init.Datatypes <> prod ind
-R3950:3953 ActionCodes.Mealy <> word def
-R3955:3955 ActionCodes.Mealy <> O indrec
-R3947:3947 ActionCodes.Mealy <> Y def
-R3960:3962 ActionCodes.Mealy <> tra def
-R3926:3934 ActionCodes.Mealy <> option_em defax
-R3992:3994 ActionCodes.Mealy <> del def
-R4077:4079 ActionCodes.Mealy <> lam def
-R4136:4138 ActionCodes.Mealy <> del def
-R4236:4238 ActionCodes.Mealy <> del def
-R4248:4250 ActionCodes.Mealy <> lam def
-prf 4423:4437 <> tra_trans_undef
-R4452:4456 ActionCodes.Mealy <> Mealy rec
-binder 4448:4448 <> M:73
-R4470:4470 ActionCodes.Mealy <> Y def
-binder 4466:4466 <> q:74
-R4484:4484 ActionCodes.Mealy <> I indrec
-binder 4480:4480 <> a:75
-R4514:4522 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R4507:4509 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4489:4491 ActionCodes.Mealy <> tra def
-R4493:4493 ActionCodes.Mealy <> M:73 var
-R4495:4495 ActionCodes.Mealy <> q:74 var
-R4499:4502 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R4498:4498 ActionCodes.Mealy <> a:75 var
-R4503:4505 Coq.Init.Datatypes <> nil constr
-R4510:4513 Coq.Init.Datatypes <> None constr
-R4534:4536 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4523:4527 ActionCodes.Mealy <> trans proj
-R4529:4529 ActionCodes.Mealy <> M:73 var
-R4531:4531 ActionCodes.Mealy <> q:74 var
-R4533:4533 ActionCodes.Mealy <> a:75 var
-R4537:4540 Coq.Init.Datatypes <> None constr
-R4593:4596 Coq.Init.Datatypes <> prod ind
-R4600:4600 ActionCodes.Mealy <> O indrec
-R4598:4598 ActionCodes.Mealy <> Y def
-R4604:4608 ActionCodes.Mealy <> trans proj
-R4577:4585 ActionCodes.Mealy <> option_em defax
-R4593:4596 Coq.Init.Datatypes <> prod ind
-R4600:4600 ActionCodes.Mealy <> O indrec
-R4598:4598 ActionCodes.Mealy <> Y def
-R4604:4608 ActionCodes.Mealy <> trans proj
-R4577:4585 ActionCodes.Mealy <> option_em defax
-R4649:4651 ActionCodes.Mealy <> tra def
-R4718:4720 ActionCodes.Mealy <> tra def
-R4778:4780 ActionCodes.Mealy <> tra def
-prf 4954:4974 <> tra_trans_def_unknown
-R4989:4993 ActionCodes.Mealy <> Mealy rec
-binder 4985:4985 <> M:76
-R5009:5009 ActionCodes.Mealy <> Y def
-binder 5003:5003 <> q:77
-binder 5005:5005 <> s:78
-R5023:5023 ActionCodes.Mealy <> I indrec
-binder 5019:5019 <> i:79
-R5037:5040 Coq.Init.Datatypes <> list ind
-R5042:5042 ActionCodes.Mealy <> O indrec
-binder 5033:5033 <> A:80
-R5079:5090 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R5065:5067 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5047:5049 ActionCodes.Mealy <> tra def
-R5051:5051 ActionCodes.Mealy <> M:76 var
-R5053:5053 ActionCodes.Mealy <> q:77 var
-R5057:5060 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R5056:5056 ActionCodes.Mealy <> i:79 var
-R5061:5063 Coq.Init.Datatypes <> nil constr
-R5068:5071 Coq.Init.Datatypes <> Some constr
-R5073:5073 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5075:5076 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5078:5078 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5074:5074 ActionCodes.Mealy <> s:78 var
-R5077:5077 ActionCodes.Mealy <> A:80 var
-R5091:5097 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R5103:5104 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R5102:5102 ActionCodes.Mealy <> O indrec
-binder 5098:5098 <> o:81
-R5105:5105 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R5118:5122 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R5107:5109 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5106:5106 ActionCodes.Mealy <> A:80 var
-R5111:5114 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R5110:5110 ActionCodes.Mealy <> o:81 var
-R5115:5117 Coq.Init.Datatypes <> nil constr
-R5134:5136 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5123:5127 ActionCodes.Mealy <> trans proj
-R5129:5129 ActionCodes.Mealy <> M:76 var
-R5131:5131 ActionCodes.Mealy <> q:77 var
-R5133:5133 ActionCodes.Mealy <> i:79 var
-R5137:5140 Coq.Init.Datatypes <> Some constr
-R5142:5142 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5144:5145 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5147:5147 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5143:5143 ActionCodes.Mealy <> s:78 var
-R5146:5146 ActionCodes.Mealy <> o:81 var
-R5210:5213 Coq.Init.Datatypes <> prod ind
-R5217:5217 ActionCodes.Mealy <> O indrec
-R5215:5215 ActionCodes.Mealy <> Y def
-R5221:5225 ActionCodes.Mealy <> trans proj
-R5194:5202 ActionCodes.Mealy <> option_em defax
-R5210:5213 Coq.Init.Datatypes <> prod ind
-R5217:5217 ActionCodes.Mealy <> O indrec
-R5215:5215 ActionCodes.Mealy <> Y def
-R5221:5225 ActionCodes.Mealy <> trans proj
-R5194:5202 ActionCodes.Mealy <> option_em defax
-R5256:5270 ActionCodes.Mealy <> tra_trans_undef thm
-R5256:5270 ActionCodes.Mealy <> tra_trans_undef thm
-R5395:5397 ActionCodes.Mealy <> tra def
-R5631:5633 ActionCodes.Mealy <> tra def
-prf 5676:5694 <> tra_trans_def_known
-R5710:5714 ActionCodes.Mealy <> Mealy rec
-binder 5706:5706 <> M:82
-R5730:5730 ActionCodes.Mealy <> Y def
-binder 5724:5724 <> q:83
-binder 5726:5726 <> s:84
-R5744:5744 ActionCodes.Mealy <> I indrec
-binder 5740:5740 <> i:85
-R5758:5758 ActionCodes.Mealy <> O indrec
-binder 5754:5754 <> o:86
-R5802:5811 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R5781:5783 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5763:5765 ActionCodes.Mealy <> tra def
-R5767:5767 ActionCodes.Mealy <> M:82 var
-R5769:5769 ActionCodes.Mealy <> q:83 var
-R5773:5776 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R5772:5772 ActionCodes.Mealy <> i:85 var
-R5777:5779 Coq.Init.Datatypes <> nil constr
-R5784:5787 Coq.Init.Datatypes <> Some constr
-R5789:5789 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5791:5792 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5801:5801 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5790:5790 ActionCodes.Mealy <> s:84 var
-R5794:5797 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R5793:5793 ActionCodes.Mealy <> o:86 var
-R5798:5800 Coq.Init.Datatypes <> nil constr
-R5823:5825 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5812:5816 ActionCodes.Mealy <> trans proj
-R5818:5818 ActionCodes.Mealy <> M:82 var
-R5820:5820 ActionCodes.Mealy <> q:83 var
-R5822:5822 ActionCodes.Mealy <> i:85 var
-R5826:5829 Coq.Init.Datatypes <> Some constr
-R5831:5831 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5833:5834 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5836:5836 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5832:5832 ActionCodes.Mealy <> s:84 var
-R5835:5835 ActionCodes.Mealy <> o:86 var
-R5899:5902 Coq.Init.Datatypes <> prod ind
-R5906:5906 ActionCodes.Mealy <> O indrec
-R5904:5904 ActionCodes.Mealy <> Y def
-R5910:5914 ActionCodes.Mealy <> trans proj
-R5883:5891 ActionCodes.Mealy <> option_em defax
-R5899:5902 Coq.Init.Datatypes <> prod ind
-R5906:5906 ActionCodes.Mealy <> O indrec
-R5904:5904 ActionCodes.Mealy <> Y def
-R5910:5914 ActionCodes.Mealy <> trans proj
-R5883:5891 ActionCodes.Mealy <> option_em defax
-R5945:5959 ActionCodes.Mealy <> tra_trans_undef thm
-R5945:5959 ActionCodes.Mealy <> tra_trans_undef thm
-R6050:6052 ActionCodes.Mealy <> tra def
-R6163:6183 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R6163:6183 ActionCodes.Mealy <> tra_trans_def_unknown thm
-prf 6235:6246 <> first_letter
-R6261:6265 ActionCodes.Mealy <> Mealy rec
-binder 6257:6257 <> M:87
-R6284:6284 ActionCodes.Mealy <> Y def
-binder 6275:6275 <> q:88
-binder 6277:6278 <> q':89
-binder 6280:6280 <> r:90
-R6298:6298 ActionCodes.Mealy <> I indrec
-binder 6294:6294 <> i:91
-R6312:6315 ActionCodes.Mealy <> word def
-R6317:6317 ActionCodes.Mealy <> I indrec
-binder 6308:6308 <> v:92
-R6332:6335 ActionCodes.Mealy <> word def
-R6337:6337 ActionCodes.Mealy <> O indrec
-binder 6328:6328 <> V:93
-R6351:6351 ActionCodes.Mealy <> O indrec
-binder 6347:6347 <> o:94
-R6387:6392 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6372:6374 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6356:6358 ActionCodes.Mealy <> tra def
-R6360:6360 ActionCodes.Mealy <> M:87 var
-R6362:6362 ActionCodes.Mealy <> q:88 var
-R6366:6369 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6365:6365 ActionCodes.Mealy <> i:91 var
-R6370:6370 ActionCodes.Mealy <> v:92 var
-R6375:6378 Coq.Init.Datatypes <> Some constr
-R6380:6380 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6383:6384 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6386:6386 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6381:6382 ActionCodes.Mealy <> q':89 var
-R6385:6385 ActionCodes.Mealy <> V:93 var
-R6432:6437 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6411:6413 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6393:6395 ActionCodes.Mealy <> tra def
-R6397:6397 ActionCodes.Mealy <> M:87 var
-R6399:6399 ActionCodes.Mealy <> q:88 var
-R6403:6406 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6402:6402 ActionCodes.Mealy <> i:91 var
-R6407:6409 Coq.Init.Datatypes <> nil constr
-R6414:6417 Coq.Init.Datatypes <> Some constr
-R6419:6419 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6421:6422 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6431:6431 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6420:6420 ActionCodes.Mealy <> r:90 var
-R6424:6427 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6423:6423 ActionCodes.Mealy <> o:94 var
-R6428:6430 Coq.Init.Datatypes <> nil constr
-R6465:6471 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R6447:6449 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6438:6440 ActionCodes.Mealy <> tra def
-R6442:6442 ActionCodes.Mealy <> M:87 var
-R6444:6444 ActionCodes.Mealy <> r:90 var
-R6446:6446 ActionCodes.Mealy <> v:92 var
-R6450:6453 Coq.Init.Datatypes <> Some constr
-R6455:6455 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6458:6459 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6464:6464 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6456:6457 ActionCodes.Mealy <> q':89 var
-R6460:6461 Coq.Lists.List <> tl def
-R6463:6463 ActionCodes.Mealy <> V:93 var
-R6485:6491 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R6473:6475 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6472:6472 ActionCodes.Mealy <> V:93 var
-R6477:6480 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6476:6476 ActionCodes.Mealy <> o:94 var
-R6481:6482 Coq.Lists.List <> tl def
-R6484:6484 ActionCodes.Mealy <> V:93 var
-R6510:6512 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6492:6494 ActionCodes.Mealy <> tra def
-R6496:6496 ActionCodes.Mealy <> M:87 var
-R6498:6498 ActionCodes.Mealy <> q:88 var
-R6502:6505 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6501:6501 ActionCodes.Mealy <> i:91 var
-R6506:6508 Coq.Init.Datatypes <> nil constr
-R6513:6516 Coq.Init.Datatypes <> Some constr
-R6518:6518 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6520:6521 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6530:6530 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R6519:6519 ActionCodes.Mealy <> r:90 var
-R6523:6526 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6522:6522 ActionCodes.Mealy <> o:94 var
-R6527:6529 Coq.Init.Datatypes <> nil constr
-R6604:6624 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R6636:6639 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6640:6642 Coq.Init.Datatypes <> nil constr
-R6604:6624 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R6636:6639 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6640:6642 Coq.Init.Datatypes <> nil constr
-R6604:6624 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R6636:6639 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R6640:6642 Coq.Init.Datatypes <> nil constr
-R6775:6778 Coq.Init.Datatypes <> prod ind
-R6783:6786 ActionCodes.Mealy <> word def
-R6788:6788 ActionCodes.Mealy <> O indrec
-R6780:6780 ActionCodes.Mealy <> Y def
-R6793:6795 ActionCodes.Mealy <> tra def
-R6759:6767 ActionCodes.Mealy <> option_em defax
-R6775:6778 Coq.Init.Datatypes <> prod ind
-R6783:6786 ActionCodes.Mealy <> word def
-R6788:6788 ActionCodes.Mealy <> O indrec
-R6780:6780 ActionCodes.Mealy <> Y def
-R6793:6795 ActionCodes.Mealy <> tra def
-R6759:6767 ActionCodes.Mealy <> option_em defax
-R6825:6827 ActionCodes.Mealy <> tra def
-R6859:6861 ActionCodes.Mealy <> tra def
-R6912:6914 ActionCodes.Mealy <> tra def
-R6991:6993 ActionCodes.Mealy <> tra def
-prf 7299:7314 <> first_letter_exi
-R7329:7333 ActionCodes.Mealy <> Mealy rec
-binder 7325:7325 <> M:95
-R7350:7350 ActionCodes.Mealy <> Y def
-binder 7343:7343 <> q:96
-binder 7345:7346 <> q':97
-R7364:7364 ActionCodes.Mealy <> I indrec
-binder 7360:7360 <> i:98
-R7378:7381 ActionCodes.Mealy <> word def
-R7383:7383 ActionCodes.Mealy <> I indrec
-binder 7374:7374 <> v:99
-R7397:7400 ActionCodes.Mealy <> word def
-R7402:7402 ActionCodes.Mealy <> O indrec
-binder 7393:7393 <> V:100
-R7438:7443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R7423:7425 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7407:7409 ActionCodes.Mealy <> tra def
-R7411:7411 ActionCodes.Mealy <> M:95 var
-R7413:7413 ActionCodes.Mealy <> q:96 var
-R7417:7420 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R7416:7416 ActionCodes.Mealy <> i:98 var
-R7421:7421 ActionCodes.Mealy <> v:99 var
-R7426:7429 Coq.Init.Datatypes <> Some constr
-R7431:7431 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7434:7435 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7437:7437 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7432:7433 ActionCodes.Mealy <> q':97 var
-R7436:7436 ActionCodes.Mealy <> V:100 var
-R7444:7450 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R7456:7457 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R7455:7455 ActionCodes.Mealy <> Y def
-binder 7451:7451 <> r:101
-R7458:7464 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R7470:7476 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R7469:7469 ActionCodes.Mealy <> O indrec
-binder 7465:7465 <> o:102
-R7504:7511 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R7486:7488 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7477:7479 ActionCodes.Mealy <> tra def
-R7481:7481 ActionCodes.Mealy <> M:95 var
-R7483:7483 ActionCodes.Mealy <> r:101 var
-R7485:7485 ActionCodes.Mealy <> v:99 var
-R7489:7492 Coq.Init.Datatypes <> Some constr
-R7494:7494 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7497:7498 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7503:7503 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7495:7496 ActionCodes.Mealy <> q':97 var
-R7499:7500 Coq.Lists.List <> tl def
-R7502:7502 ActionCodes.Mealy <> V:100 var
-R7525:7532 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R7513:7515 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7512:7512 ActionCodes.Mealy <> V:100 var
-R7517:7520 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R7516:7516 ActionCodes.Mealy <> o:102 var
-R7521:7522 Coq.Lists.List <> tl def
-R7524:7524 ActionCodes.Mealy <> V:100 var
-R7551:7553 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7533:7535 ActionCodes.Mealy <> tra def
-R7537:7537 ActionCodes.Mealy <> M:95 var
-R7539:7539 ActionCodes.Mealy <> q:96 var
-R7543:7546 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R7542:7542 ActionCodes.Mealy <> i:98 var
-R7547:7549 Coq.Init.Datatypes <> nil constr
-R7554:7557 Coq.Init.Datatypes <> Some constr
-R7559:7559 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7561:7562 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7571:7571 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R7560:7560 ActionCodes.Mealy <> r:101 var
-R7564:7567 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R7563:7563 ActionCodes.Mealy <> o:102 var
-R7568:7570 Coq.Init.Datatypes <> nil constr
-R7614:7617 Coq.Init.Datatypes <> prod ind
-R7621:7621 ActionCodes.Mealy <> O indrec
-R7619:7619 ActionCodes.Mealy <> Y def
-R7625:7629 ActionCodes.Mealy <> trans proj
-R7598:7606 ActionCodes.Mealy <> option_em defax
-R7614:7617 Coq.Init.Datatypes <> prod ind
-R7621:7621 ActionCodes.Mealy <> O indrec
-R7619:7619 ActionCodes.Mealy <> Y def
-R7625:7629 ActionCodes.Mealy <> trans proj
-R7598:7606 ActionCodes.Mealy <> option_em defax
-R7657:7659 ActionCodes.Mealy <> tra def
-R7755:7766 ActionCodes.Mealy <> first_letter thm
-R7755:7766 ActionCodes.Mealy <> first_letter thm
-R7788:7806 ActionCodes.Mealy <> tra_trans_def_known thm
-R7788:7806 ActionCodes.Mealy <> tra_trans_def_known thm
-R7788:7806 ActionCodes.Mealy <> tra_trans_def_known thm
-prf 7902:7922 <> second_half_undefined
-R7937:7941 ActionCodes.Mealy <> Mealy rec
-binder 7933:7933 <> M:103
-R7957:7960 ActionCodes.Mealy <> word def
-R7962:7962 ActionCodes.Mealy <> I indrec
-binder 7951:7951 <> u:104
-binder 7953:7953 <> w:105
-R7978:7978 ActionCodes.Mealy <> Y def
-binder 7972:7972 <> q:106
-binder 7974:7974 <> s:107
-R7992:7995 ActionCodes.Mealy <> word def
-R7997:7997 ActionCodes.Mealy <> O indrec
-binder 7988:7988 <> U:108
-R8025:8030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8011:8013 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8002:8004 ActionCodes.Mealy <> tra def
-R8006:8006 ActionCodes.Mealy <> M:103 var
-R8008:8008 ActionCodes.Mealy <> q:106 var
-R8010:8010 ActionCodes.Mealy <> u:104 var
-R8014:8017 Coq.Init.Datatypes <> Some constr
-R8019:8019 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8021:8022 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8024:8024 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8020:8020 ActionCodes.Mealy <> s:107 var
-R8023:8023 ActionCodes.Mealy <> U:108 var
-R8047:8052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8040:8042 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8031:8033 ActionCodes.Mealy <> tra def
-R8035:8035 ActionCodes.Mealy <> M:103 var
-R8037:8037 ActionCodes.Mealy <> s:107 var
-R8039:8039 ActionCodes.Mealy <> w:105 var
-R8043:8046 Coq.Init.Datatypes <> None constr
-R8069:8071 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8053:8055 ActionCodes.Mealy <> tra def
-R8057:8057 ActionCodes.Mealy <> M:103 var
-R8059:8059 ActionCodes.Mealy <> q:106 var
-R8063:8066 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R8062:8062 ActionCodes.Mealy <> u:104 var
-R8067:8067 ActionCodes.Mealy <> w:105 var
-R8072:8075 Coq.Init.Datatypes <> None constr
-R8150:8152 ActionCodes.Mealy <> tra def
-R8259:8262 Coq.Init.Datatypes <> prod ind
-R8266:8266 ActionCodes.Mealy <> O indrec
-R8264:8264 ActionCodes.Mealy <> Y def
-R8270:8274 ActionCodes.Mealy <> trans proj
-R8243:8251 ActionCodes.Mealy <> option_em defax
-R8259:8262 Coq.Init.Datatypes <> prod ind
-R8266:8266 ActionCodes.Mealy <> O indrec
-R8264:8264 ActionCodes.Mealy <> Y def
-R8270:8274 ActionCodes.Mealy <> trans proj
-R8243:8251 ActionCodes.Mealy <> option_em defax
-R8386:8387 Coq.Lists.List <> tl def
-R8386:8387 Coq.Lists.List <> tl def
-R8400:8411 ActionCodes.Mealy <> first_letter thm
-R8400:8411 ActionCodes.Mealy <> first_letter thm
-R8487:8505 ActionCodes.Mealy <> tra_trans_def_known thm
-R8487:8505 ActionCodes.Mealy <> tra_trans_def_known thm
-prf 8529:8550 <> transition_consistency
-R8565:8569 ActionCodes.Mealy <> Mealy rec
-binder 8561:8561 <> M:109
-R8585:8588 ActionCodes.Mealy <> word def
-R8590:8590 ActionCodes.Mealy <> I indrec
-binder 8579:8579 <> v:110
-binder 8581:8581 <> w:111
-R8604:8607 ActionCodes.Mealy <> word def
-R8609:8609 ActionCodes.Mealy <> O indrec
-binder 8600:8600 <> V:112
-R8625:8625 ActionCodes.Mealy <> Y def
-binder 8619:8619 <> q:113
-binder 8621:8621 <> s:114
-R8653:8659 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8639:8641 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8630:8632 ActionCodes.Mealy <> tra def
-R8634:8634 ActionCodes.Mealy <> M:109 var
-R8636:8636 ActionCodes.Mealy <> q:113 var
-R8638:8638 ActionCodes.Mealy <> v:110 var
-R8642:8645 Coq.Init.Datatypes <> Some constr
-R8647:8647 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8649:8650 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8652:8652 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R8648:8648 ActionCodes.Mealy <> s:114 var
-R8651:8651 ActionCodes.Mealy <> V:112 var
-R8676:8678 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8660:8662 ActionCodes.Mealy <> tra def
-R8664:8664 ActionCodes.Mealy <> M:109 var
-R8666:8666 ActionCodes.Mealy <> q:113 var
-R8670:8673 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R8669:8669 ActionCodes.Mealy <> v:110 var
-R8674:8674 ActionCodes.Mealy <> w:111 var
-R8679:8688 ActionCodes.Mealy <> ol_concat2 def
-R8703:8705 ActionCodes.Mealy <> tra def
-R8707:8707 ActionCodes.Mealy <> M:109 var
-R8709:8709 ActionCodes.Mealy <> s:114 var
-R8711:8711 ActionCodes.Mealy <> w:111 var
-R8691:8693 ActionCodes.Mealy <> tra def
-R8695:8695 ActionCodes.Mealy <> M:109 var
-R8697:8697 ActionCodes.Mealy <> q:113 var
-R8699:8699 ActionCodes.Mealy <> v:110 var
-R8808:8811 Coq.Init.Datatypes <> prod ind
-R8816:8819 ActionCodes.Mealy <> word def
-R8821:8821 ActionCodes.Mealy <> O indrec
-R8813:8813 ActionCodes.Mealy <> Y def
-R8826:8828 ActionCodes.Mealy <> tra def
-R8792:8800 ActionCodes.Mealy <> option_em defax
-R8808:8811 Coq.Init.Datatypes <> prod ind
-R8816:8819 ActionCodes.Mealy <> word def
-R8821:8821 ActionCodes.Mealy <> O indrec
-R8813:8813 ActionCodes.Mealy <> Y def
-R8826:8828 ActionCodes.Mealy <> tra def
-R8792:8800 ActionCodes.Mealy <> option_em defax
-R9052:9055 Coq.Init.Datatypes <> prod ind
-R9060:9063 ActionCodes.Mealy <> word def
-R9065:9065 ActionCodes.Mealy <> O indrec
-R9057:9057 ActionCodes.Mealy <> Y def
-R9070:9072 ActionCodes.Mealy <> tra def
-R9036:9044 ActionCodes.Mealy <> option_em defax
-R9052:9055 Coq.Init.Datatypes <> prod ind
-R9060:9063 ActionCodes.Mealy <> word def
-R9065:9065 ActionCodes.Mealy <> O indrec
-R9057:9057 ActionCodes.Mealy <> Y def
-R9070:9072 ActionCodes.Mealy <> tra def
-R9036:9044 ActionCodes.Mealy <> option_em defax
-R9126:9135 ActionCodes.Mealy <> ol_concat2 def
-R9177:9180 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9146:9166 ActionCodes.Mealy <> second_half_undefined thm
-R9177:9180 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9146:9166 ActionCodes.Mealy <> second_half_undefined thm
-R9177:9180 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9146:9166 ActionCodes.Mealy <> second_half_undefined thm
-R9177:9180 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9146:9166 ActionCodes.Mealy <> second_half_undefined thm
-R9177:9180 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9146:9166 ActionCodes.Mealy <> second_half_undefined thm
-R9320:9323 Coq.Init.Datatypes <> prod ind
-R9328:9331 ActionCodes.Mealy <> word def
-R9333:9333 ActionCodes.Mealy <> O indrec
-R9325:9325 ActionCodes.Mealy <> Y def
-R9338:9340 ActionCodes.Mealy <> tra def
-R9348:9351 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9352:9354 Coq.Init.Datatypes <> nil constr
-R9304:9312 ActionCodes.Mealy <> option_em defax
-R9320:9323 Coq.Init.Datatypes <> prod ind
-R9328:9331 ActionCodes.Mealy <> word def
-R9333:9333 ActionCodes.Mealy <> O indrec
-R9325:9325 ActionCodes.Mealy <> Y def
-R9338:9340 ActionCodes.Mealy <> tra def
-R9348:9351 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R9352:9354 Coq.Init.Datatypes <> nil constr
-R9304:9312 ActionCodes.Mealy <> option_em defax
-R9388:9402 ActionCodes.Mealy <> tra_trans_undef thm
-R9388:9402 ActionCodes.Mealy <> tra_trans_undef thm
-R9439:9448 ActionCodes.Mealy <> ol_concat2 def
-R9556:9576 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R9556:9576 ActionCodes.Mealy <> tra_trans_def_unknown thm
-R9834:9835 Coq.Lists.List <> tl def
-R9834:9835 Coq.Lists.List <> tl def
-R9877:9888 ActionCodes.Mealy <> first_letter thm
-R9877:9888 ActionCodes.Mealy <> first_letter thm
-R10037:10055 ActionCodes.Mealy <> tra_trans_def_known thm
-R10037:10055 ActionCodes.Mealy <> tra_trans_def_known thm
-R10037:10055 ActionCodes.Mealy <> tra_trans_def_known thm
-prf 10584:10592 <> lemma_a_1
-R10608:10612 ActionCodes.Mealy <> Mealy rec
-binder 10604:10604 <> M:115
-R10629:10632 ActionCodes.Mealy <> word def
-R10634:10634 ActionCodes.Mealy <> I indrec
-binder 10623:10623 <> v:116
-binder 10625:10625 <> w:117
-R10648:10651 ActionCodes.Mealy <> word def
-R10653:10653 ActionCodes.Mealy <> O indrec
-binder 10644:10644 <> V:118
-R10669:10669 ActionCodes.Mealy <> Y def
-binder 10663:10663 <> q:119
-binder 10665:10665 <> s:120
-R10701:10715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10687:10689 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10678:10680 ActionCodes.Mealy <> tra def
-R10682:10682 ActionCodes.Mealy <> M:115 var
-R10684:10684 ActionCodes.Mealy <> q:119 var
-R10686:10686 ActionCodes.Mealy <> v:116 var
-R10690:10693 Coq.Init.Datatypes <> Some constr
-R10695:10695 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R10697:10698 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R10700:10700 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R10696:10696 ActionCodes.Mealy <> s:120 var
-R10699:10699 ActionCodes.Mealy <> V:118 var
-R10748:10764 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R10817:10817 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R10716:10716 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10733:10737 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10747:10747 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10717:10719 ActionCodes.Mealy <> del def
-R10721:10721 ActionCodes.Mealy <> M:115 var
-R10723:10723 ActionCodes.Mealy <> q:119 var
-R10727:10730 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R10726:10726 ActionCodes.Mealy <> v:116 var
-R10731:10731 ActionCodes.Mealy <> w:117 var
-R10738:10740 ActionCodes.Mealy <> del def
-R10742:10742 ActionCodes.Mealy <> M:115 var
-R10744:10744 ActionCodes.Mealy <> s:120 var
-R10746:10746 ActionCodes.Mealy <> w:117 var
-R10781:10783 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10765:10767 ActionCodes.Mealy <> lam def
-R10769:10769 ActionCodes.Mealy <> M:115 var
-R10771:10771 ActionCodes.Mealy <> q:119 var
-R10775:10778 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R10774:10774 ActionCodes.Mealy <> v:116 var
-R10779:10779 ActionCodes.Mealy <> w:117 var
-R10784:10792 ActionCodes.Mealy <> ol_concat def
-R10807:10809 ActionCodes.Mealy <> lam def
-R10811:10811 ActionCodes.Mealy <> M:115 var
-R10813:10813 ActionCodes.Mealy <> s:120 var
-R10815:10815 ActionCodes.Mealy <> w:117 var
-R10795:10797 ActionCodes.Mealy <> lam def
-R10799:10799 ActionCodes.Mealy <> M:115 var
-R10801:10801 ActionCodes.Mealy <> q:119 var
-R10803:10803 ActionCodes.Mealy <> v:116 var
-R10856:10877 ActionCodes.Mealy <> transition_consistency thm
-R10856:10877 ActionCodes.Mealy <> transition_consistency thm
-R10925:10928 Coq.Init.Datatypes <> prod ind
-R10933:10936 ActionCodes.Mealy <> word def
-R10938:10938 ActionCodes.Mealy <> O indrec
-R10930:10930 ActionCodes.Mealy <> Y def
-R10943:10945 ActionCodes.Mealy <> tra def
-R10909:10917 ActionCodes.Mealy <> option_em defax
-R10925:10928 Coq.Init.Datatypes <> prod ind
-R10933:10936 ActionCodes.Mealy <> word def
-R10938:10938 ActionCodes.Mealy <> O indrec
-R10930:10930 ActionCodes.Mealy <> Y def
-R10943:10945 ActionCodes.Mealy <> tra def
-R10909:10917 ActionCodes.Mealy <> option_em defax
-R11040:11049 ActionCodes.Mealy <> ol_concat2 def
-R11077:11079 ActionCodes.Mealy <> del def
-R11125:11127 ActionCodes.Mealy <> lam def
-R11289:11298 ActionCodes.Mealy <> ol_concat2 def
-R11326:11328 ActionCodes.Mealy <> del def
-R11378:11380 ActionCodes.Mealy <> lam def
-prf 11450:11464 <> lemma_a_1_delta
-R11479:11483 ActionCodes.Mealy <> Mealy rec
-binder 11475:11475 <> M:121
-R11500:11503 ActionCodes.Mealy <> word def
-R11505:11505 ActionCodes.Mealy <> I indrec
-binder 11494:11494 <> v:122
-binder 11496:11496 <> w:123
-R11521:11521 ActionCodes.Mealy <> Y def
-binder 11515:11515 <> q:124
-binder 11517:11517 <> s:125
-R11548:11561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R11539:11541 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11530:11532 ActionCodes.Mealy <> del def
-R11534:11534 ActionCodes.Mealy <> M:121 var
-R11536:11536 ActionCodes.Mealy <> q:124 var
-R11538:11538 ActionCodes.Mealy <> v:122 var
-R11542:11545 Coq.Init.Datatypes <> Some constr
-R11547:11547 ActionCodes.Mealy <> s:125 var
-R11562:11562 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11579:11583 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11593:11593 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11563:11565 ActionCodes.Mealy <> del def
-R11567:11567 ActionCodes.Mealy <> M:121 var
-R11569:11569 ActionCodes.Mealy <> q:124 var
-R11573:11576 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R11572:11572 ActionCodes.Mealy <> v:122 var
-R11577:11577 ActionCodes.Mealy <> w:123 var
-R11584:11586 ActionCodes.Mealy <> del def
-R11588:11588 ActionCodes.Mealy <> M:121 var
-R11590:11590 ActionCodes.Mealy <> s:125 var
-R11592:11592 ActionCodes.Mealy <> w:123 var
-R11637:11640 Coq.Init.Datatypes <> prod ind
-R11645:11648 ActionCodes.Mealy <> word def
-R11650:11650 ActionCodes.Mealy <> O indrec
-R11642:11642 ActionCodes.Mealy <> Y def
-R11655:11657 ActionCodes.Mealy <> tra def
-R11621:11629 ActionCodes.Mealy <> option_em defax
-R11637:11640 Coq.Init.Datatypes <> prod ind
-R11645:11648 ActionCodes.Mealy <> word def
-R11650:11650 ActionCodes.Mealy <> O indrec
-R11642:11642 ActionCodes.Mealy <> Y def
-R11655:11657 ActionCodes.Mealy <> tra def
-R11621:11629 ActionCodes.Mealy <> option_em defax
-R11687:11689 ActionCodes.Mealy <> del def
-R11765:11767 ActionCodes.Mealy <> del def
-R11834:11842 ActionCodes.Mealy <> lemma_a_1 thm
-R11834:11842 ActionCodes.Mealy <> lemma_a_1 thm
+ax 169:170 <> em
+binder 180:180 <> p:1
+R189:192 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R188:188 ActionCodes.Mealy <> p:1 var
+R193:193 Coq.Init.Logic <> ::type_scope:'~'_x not
+R194:194 ActionCodes.Mealy <> p:1 var
+ax 268:276 <> option_em
+binder 287:287 <> A:3
+R308:313 Coq.Init.Datatypes <> option ind
+R315:315 ActionCodes.Mealy <> A:3 var
+binder 304:304 <> o:4
+R328:331 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R321:323 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R320:320 ActionCodes.Mealy <> o:4 var
+R324:327 Coq.Init.Datatypes <> None constr
+R332:338 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R344:345 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R343:343 ActionCodes.Mealy <> A:3 var
+binder 339:339 <> a:5
+R347:349 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R346:346 ActionCodes.Mealy <> o:4 var
+R350:353 Coq.Init.Datatypes <> Some constr
+R355:355 ActionCodes.Mealy <> a:5 var
+def 370:378 <> ol_concat
+binder 381:381 <> A:7
+R392:397 Coq.Init.Datatypes <> option ind
+R400:403 Coq.Init.Datatypes <> list ind
+R405:405 ActionCodes.Mealy <> A:7 var
+binder 385:385 <> o:8
+binder 387:388 <> o':9
+R411:416 Coq.Init.Datatypes <> option ind
+R419:422 Coq.Init.Datatypes <> list ind
+R424:424 ActionCodes.Mealy <> A:7 var
+R438:438 ActionCodes.Mealy <> o:8 var
+R451:454 Coq.Init.Datatypes <> None constr
+R459:462 Coq.Init.Datatypes <> None constr
+R470:473 Coq.Init.Datatypes <> Some constr
+R491:492 ActionCodes.Mealy <> o':9 var
+R507:510 Coq.Init.Datatypes <> None constr
+R515:518 Coq.Init.Datatypes <> None constr
+R528:531 Coq.Init.Datatypes <> Some constr
+R540:543 Coq.Init.Datatypes <> Some constr
+R548:551 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R594:602 ActionCodes.Mealy <> ol_concat def
+not 579:579 <> ::type_scope:x_'+++'_x
+def 755:764 <> ol_concat2
+binder 767:767 <> A:12
+binder 769:769 <> B:13
+R780:785 Coq.Init.Datatypes <> option ind
+R788:791 Coq.Init.Datatypes <> prod ind
+R796:799 Coq.Init.Datatypes <> list ind
+R801:801 ActionCodes.Mealy <> B:13 var
+R793:793 ActionCodes.Mealy <> A:12 var
+binder 773:773 <> o:14
+binder 775:776 <> o':15
+R808:813 Coq.Init.Datatypes <> option ind
+R816:819 Coq.Init.Datatypes <> prod ind
+R824:827 Coq.Init.Datatypes <> list ind
+R829:829 ActionCodes.Mealy <> B:13 var
+R821:821 ActionCodes.Mealy <> A:12 var
+R844:844 ActionCodes.Mealy <> o:14 var
+R857:860 Coq.Init.Datatypes <> None constr
+R865:868 Coq.Init.Datatypes <> None constr
+R876:879 Coq.Init.Datatypes <> Some constr
+R881:881 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R883:884 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R886:886 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R901:902 ActionCodes.Mealy <> o':15 var
+R917:920 Coq.Init.Datatypes <> None constr
+R925:928 Coq.Init.Datatypes <> None constr
+R938:941 Coq.Init.Datatypes <> Some constr
+R943:943 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R945:946 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R948:948 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R953:956 Coq.Init.Datatypes <> Some constr
+R958:958 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R960:961 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R968:968 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R963:966 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+def 995:1007 <> ol_2nd_tolist
+binder 1010:1010 <> A:18
+binder 1012:1012 <> B:19
+R1020:1025 Coq.Init.Datatypes <> option ind
+R1028:1031 Coq.Init.Datatypes <> prod ind
+R1035:1035 ActionCodes.Mealy <> B:19 var
+R1033:1033 ActionCodes.Mealy <> A:18 var
+binder 1016:1016 <> o:20
+R1041:1046 Coq.Init.Datatypes <> option ind
+R1049:1052 Coq.Init.Datatypes <> prod ind
+R1057:1060 Coq.Init.Datatypes <> list ind
+R1062:1062 ActionCodes.Mealy <> B:19 var
+R1054:1054 ActionCodes.Mealy <> A:18 var
+R1075:1075 ActionCodes.Mealy <> o:20 var
+R1086:1089 Coq.Init.Datatypes <> None constr
+R1094:1097 Coq.Init.Datatypes <> None constr
+R1103:1106 Coq.Init.Datatypes <> Some constr
+R1108:1108 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1110:1111 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1113:1113 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1118:1121 Coq.Init.Datatypes <> Some constr
+R1123:1123 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1125:1126 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1135:1135 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1128:1131 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1132:1134 Coq.Init.Datatypes <> nil constr
+R1168:1176 ActionCodes.Mealy <> ol_concat def
+not 1153:1153 <> ::type_scope:x_'++2'_x
+def 1243:1245 <> def
+binder 1248:1248 <> A:22
+R1256:1261 Coq.Init.Datatypes <> option ind
+R1263:1263 ActionCodes.Mealy <> A:22 var
+binder 1252:1252 <> o:23
+R1276:1282 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1288:1289 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1287:1287 ActionCodes.Mealy <> A:22 var
+binder 1283:1283 <> a:24
+R1291:1293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1290:1290 ActionCodes.Mealy <> o:23 var
+R1294:1297 Coq.Init.Datatypes <> Some constr
+R1299:1299 ActionCodes.Mealy <> a:24 var
+def 1313:1317 <> undef
+binder 1320:1320 <> A:25
+R1328:1333 Coq.Init.Datatypes <> option ind
+R1335:1335 ActionCodes.Mealy <> A:25 var
+binder 1324:1324 <> o:26
+R1349:1351 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1348:1348 ActionCodes.Mealy <> o:26 var
+R1352:1355 Coq.Init.Datatypes <> None constr
+R1404:1408 ActionCodes.Mealy <> undef def
+not 1392:1392 <> ::type_scope:x_'↑'
+R1481:1483 ActionCodes.Mealy <> def def
+not 1469:1469 <> ::type_scope:x_'↓'
+rec 1586:1586 <> I
+scheme 1586:1586 <> I_rect
+scheme 1586:1586 <> I_ind
+scheme 1586:1586 <> I_rec
+scheme 1586:1586 <> I_sind
+rec 1605:1605 <> O
+scheme 1605:1605 <> O_rect
+scheme 1605:1605 <> O_ind
+scheme 1605:1605 <> O_rec
+scheme 1605:1605 <> O_sind
+def 1626:1629 <> word
+R1634:1637 Coq.Init.Datatypes <> list ind
+def 1677:1680 <> pref
+R1689:1692 ActionCodes.Mealy <> word def
+R1694:1694 ActionCodes.Mealy <> I indrec
+binder 1683:1683 <> v:29
+binder 1685:1685 <> w:30
+R1707:1713 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1725:1726 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1719:1722 ActionCodes.Mealy <> word def
+R1724:1724 ActionCodes.Mealy <> I indrec
+binder 1714:1715 <> v':31
+R1734:1736 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1728:1731 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1727:1727 ActionCodes.Mealy <> v:29 var
+R1732:1733 ActionCodes.Mealy <> v':31 var
+R1737:1737 ActionCodes.Mealy <> w:30 var
+def 1791:1794 <> Pref
+R1809:1812 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1803:1806 ActionCodes.Mealy <> word def
+R1808:1808 ActionCodes.Mealy <> I indrec
+binder 1797:1797 <> A:32
+binder 1799:1799 <> B:33
+R1836:1839 ActionCodes.Mealy <> word def
+R1841:1841 ActionCodes.Mealy <> I indrec
+binder 1830:1830 <> a:34
+binder 1832:1832 <> b:35
+R1854:1858 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1847:1850 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1844:1844 ActionCodes.Mealy <> A:32 var
+R1846:1846 ActionCodes.Mealy <> a:34 var
+R1851:1851 ActionCodes.Mealy <> B:33 var
+R1853:1853 ActionCodes.Mealy <> b:35 var
+R1859:1862 ActionCodes.Mealy <> pref def
+R1864:1864 ActionCodes.Mealy <> a:34 var
+R1866:1866 ActionCodes.Mealy <> b:35 var
+def 2050:2050 <> Y
+R2055:2058 ActionCodes.Mealy <> word def
+R2060:2060 ActionCodes.Mealy <> I indrec
+rec 2073:2077 <> Mealy
+proj 2093:2094 <> q0
+proj 2103:2107 <> trans
+R2098:2098 ActionCodes.Mealy <> Y def
+R2112:2115 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2111:2111 ActionCodes.Mealy <> Y def
+R2117:2120 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2116:2116 ActionCodes.Mealy <> I indrec
+R2121:2126 Coq.Init.Datatypes <> option ind
+R2130:2132 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2129:2129 ActionCodes.Mealy <> Y def
+R2133:2133 ActionCodes.Mealy <> O indrec
+def 2150:2152 <> tra
+R2159:2163 ActionCodes.Mealy <> Mealy rec
+binder 2155:2155 <> M:39
+R2170:2170 ActionCodes.Mealy <> Y def
+binder 2167:2167 <> q:40
+R2178:2181 ActionCodes.Mealy <> word def
+R2183:2183 ActionCodes.Mealy <> I indrec
+binder 2174:2174 <> v:41
+R2189:2194 Coq.Init.Datatypes <> option ind
+R2197:2197 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2199:2202 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2198:2198 ActionCodes.Mealy <> Y def
+R2203:2206 ActionCodes.Mealy <> word def
+R2208:2208 ActionCodes.Mealy <> O indrec
+R2221:2221 ActionCodes.Mealy <> v:41 var
+R2232:2234 Coq.Init.Datatypes <> nil constr
+R2239:2242 Coq.Init.Datatypes <> Some constr
+R2244:2244 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2246:2247 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2251:2251 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2245:2245 ActionCodes.Mealy <> q:40 var
+R2248:2250 Coq.Init.Datatypes <> nil constr
+R2257:2260 Coq.Init.Datatypes <> cons constr
+R2282:2286 ActionCodes.Mealy <> trans proj
+R2288:2288 ActionCodes.Mealy <> M:39 var
+R2290:2290 ActionCodes.Mealy <> q:40 var
+R2307:2310 Coq.Init.Datatypes <> Some constr
+R2312:2312 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2314:2315 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2317:2317 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2338:2340 ActionCodes.Mealy <> tra:42 def
+R2342:2342 ActionCodes.Mealy <> M:39 var
+R2367:2370 Coq.Init.Datatypes <> None constr
+R2375:2378 Coq.Init.Datatypes <> None constr
+R2392:2395 Coq.Init.Datatypes <> Some constr
+R2397:2397 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2400:2401 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2403:2403 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2408:2411 Coq.Init.Datatypes <> Some constr
+R2413:2413 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2416:2417 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2424:2424 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2419:2422 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2445:2448 Coq.Init.Datatypes <> None constr
+R2453:2456 Coq.Init.Datatypes <> None constr
+def 2483:2485 <> del
+R2492:2496 ActionCodes.Mealy <> Mealy rec
+binder 2488:2488 <> M:44
+R2503:2503 ActionCodes.Mealy <> Y def
+binder 2500:2500 <> q:45
+R2511:2514 ActionCodes.Mealy <> word def
+R2516:2516 ActionCodes.Mealy <> I indrec
+binder 2507:2507 <> v:46
+R2522:2527 Coq.Init.Datatypes <> option ind
+R2530:2530 ActionCodes.Mealy <> Y def
+R2545:2547 ActionCodes.Mealy <> tra def
+R2549:2549 ActionCodes.Mealy <> M:44 var
+R2551:2551 ActionCodes.Mealy <> q:45 var
+R2553:2553 ActionCodes.Mealy <> v:46 var
+R2565:2568 Coq.Init.Datatypes <> None constr
+R2573:2576 Coq.Init.Datatypes <> None constr
+R2582:2585 Coq.Init.Datatypes <> Some constr
+R2587:2587 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2589:2590 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2592:2592 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2597:2600 Coq.Init.Datatypes <> Some constr
+def 2620:2622 <> lam
+R2629:2633 ActionCodes.Mealy <> Mealy rec
+binder 2625:2625 <> M:47
+R2640:2640 ActionCodes.Mealy <> Y def
+binder 2637:2637 <> q:48
+R2648:2651 ActionCodes.Mealy <> word def
+R2653:2653 ActionCodes.Mealy <> I indrec
+binder 2644:2644 <> v:49
+R2659:2664 Coq.Init.Datatypes <> option ind
+R2667:2670 ActionCodes.Mealy <> word def
+R2672:2672 ActionCodes.Mealy <> O indrec
+R2687:2689 ActionCodes.Mealy <> tra def
+R2691:2691 ActionCodes.Mealy <> M:47 var
+R2693:2693 ActionCodes.Mealy <> q:48 var
+R2695:2695 ActionCodes.Mealy <> v:49 var
+R2707:2710 Coq.Init.Datatypes <> None constr
+R2715:2718 Coq.Init.Datatypes <> None constr
+R2724:2727 Coq.Init.Datatypes <> Some constr
+R2729:2729 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2731:2732 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2734:2734 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2739:2742 Coq.Init.Datatypes <> Some constr
+def 2763:2763 <> Q
+R2770:2774 ActionCodes.Mealy <> Mealy rec
+binder 2766:2766 <> M:50
+R2782:2782 ActionCodes.Mealy <> Y def
+binder 2778:2778 <> q:51
+R2788:2794 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2805:2806 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2799:2802 ActionCodes.Mealy <> word def
+R2804:2804 ActionCodes.Mealy <> I indrec
+binder 2795:2795 <> v:52
+R2821:2823 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2807:2809 ActionCodes.Mealy <> del def
+R2811:2811 ActionCodes.Mealy <> M:50 var
+R2814:2815 ActionCodes.Mealy <> q0 proj
+R2817:2817 ActionCodes.Mealy <> M:50 var
+R2820:2820 ActionCodes.Mealy <> v:52 var
+R2824:2827 Coq.Init.Datatypes <> Some constr
+R2829:2829 ActionCodes.Mealy <> q:51 var
+ax 2923:2929 <> initial
+R2944:2948 ActionCodes.Mealy <> Mealy rec
+binder 2940:2940 <> M:53
+R2951:2951 ActionCodes.Mealy <> Q def
+R2953:2953 ActionCodes.Mealy <> M:53 var
+R2956:2957 ActionCodes.Mealy <> q0 proj
+R2959:2959 ActionCodes.Mealy <> M:53 var
+def 2975:2982 <> complete
+R2989:2993 ActionCodes.Mealy <> Mealy rec
+binder 2985:2985 <> M:55
+R3001:3001 ActionCodes.Mealy <> Y def
+binder 2997:2997 <> q:56
+R3020:3020 ActionCodes.Mealy <> I indrec
+binder 3016:3016 <> i:57
+R3024:3024 ActionCodes.Mealy <> ::type_scope:x_'↓' not
+R3036:3040 ActionCodes.Mealy <> ::type_scope:x_'↓' not
+R3025:3029 ActionCodes.Mealy <> trans proj
+R3031:3031 ActionCodes.Mealy <> M:55 var
+R3033:3033 ActionCodes.Mealy <> q:56 var
+R3035:3035 ActionCodes.Mealy <> i:57 var
+def 3055:3065 <> completeSet
+R3072:3076 ActionCodes.Mealy <> Mealy rec
+binder 3068:3068 <> M:58
+R3085:3088 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3084:3084 ActionCodes.Mealy <> Y def
+binder 3080:3080 <> W:59
+R3111:3111 ActionCodes.Mealy <> Y def
+binder 3107:3107 <> q:60
+R3119:3126 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3114:3114 ActionCodes.Mealy <> Q def
+R3116:3116 ActionCodes.Mealy <> M:58 var
+R3118:3118 ActionCodes.Mealy <> q:60 var
+R3130:3133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3127:3127 ActionCodes.Mealy <> W:59 var
+R3129:3129 ActionCodes.Mealy <> q:60 var
+R3134:3141 ActionCodes.Mealy <> complete def
+R3143:3143 ActionCodes.Mealy <> M:58 var
+R3145:3145 ActionCodes.Mealy <> q:60 var
+def 3159:3167 <> completeM
+R3174:3178 ActionCodes.Mealy <> Mealy rec
+binder 3170:3170 <> M:61
+R3204:3204 ActionCodes.Mealy <> Y def
+binder 3200:3200 <> q:62
+R3212:3215 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3207:3207 ActionCodes.Mealy <> Q def
+R3209:3209 ActionCodes.Mealy <> M:61 var
+R3211:3211 ActionCodes.Mealy <> q:62 var
+R3216:3223 ActionCodes.Mealy <> complete def
+R3225:3225 ActionCodes.Mealy <> M:61 var
+R3227:3227 ActionCodes.Mealy <> q:62 var
+prf 3237:3253 <> del_lam_tra_undef
+R3268:3272 ActionCodes.Mealy <> Mealy rec
+binder 3264:3264 <> M:63
+R3288:3288 ActionCodes.Mealy <> Y def
+binder 3282:3282 <> q:64
+binder 3284:3284 <> s:65
+R3302:3305 ActionCodes.Mealy <> word def
+R3307:3307 ActionCodes.Mealy <> I indrec
+binder 3298:3298 <> v:66
+R3321:3324 ActionCodes.Mealy <> word def
+R3326:3326 ActionCodes.Mealy <> O indrec
+binder 3317:3317 <> V:67
+R3367:3373 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3347:3350 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3340:3342 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3331:3333 ActionCodes.Mealy <> del def
+R3335:3335 ActionCodes.Mealy <> M:63 var
+R3337:3337 ActionCodes.Mealy <> q:64 var
+R3339:3339 ActionCodes.Mealy <> v:66 var
+R3343:3346 Coq.Init.Datatypes <> None constr
+R3360:3362 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3351:3353 ActionCodes.Mealy <> lam def
+R3355:3355 ActionCodes.Mealy <> M:63 var
+R3357:3357 ActionCodes.Mealy <> q:64 var
+R3359:3359 ActionCodes.Mealy <> v:66 var
+R3363:3366 Coq.Init.Datatypes <> None constr
+R3383:3385 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3374:3376 ActionCodes.Mealy <> tra def
+R3378:3378 ActionCodes.Mealy <> M:63 var
+R3380:3380 ActionCodes.Mealy <> q:64 var
+R3382:3382 ActionCodes.Mealy <> v:66 var
+R3386:3389 Coq.Init.Datatypes <> None constr
+R3474:3477 Coq.Init.Datatypes <> prod ind
+R3482:3485 ActionCodes.Mealy <> word def
+R3487:3487 ActionCodes.Mealy <> O indrec
+R3479:3479 ActionCodes.Mealy <> Y def
+R3492:3494 ActionCodes.Mealy <> tra def
+R3458:3466 ActionCodes.Mealy <> option_em defax
+R3474:3477 Coq.Init.Datatypes <> prod ind
+R3482:3485 ActionCodes.Mealy <> word def
+R3487:3487 ActionCodes.Mealy <> O indrec
+R3479:3479 ActionCodes.Mealy <> Y def
+R3492:3494 ActionCodes.Mealy <> tra def
+R3458:3466 ActionCodes.Mealy <> option_em defax
+R3569:3571 ActionCodes.Mealy <> lam def
+R3632:3634 ActionCodes.Mealy <> del def
+R3644:3646 ActionCodes.Mealy <> lam def
+prf 3697:3711 <> del_lam_tra_def
+R3726:3730 ActionCodes.Mealy <> Mealy rec
+binder 3722:3722 <> M:68
+R3746:3746 ActionCodes.Mealy <> Y def
+binder 3740:3740 <> q:69
+binder 3742:3742 <> s:70
+R3760:3763 ActionCodes.Mealy <> word def
+R3765:3765 ActionCodes.Mealy <> I indrec
+binder 3756:3756 <> v:71
+R3779:3782 ActionCodes.Mealy <> word def
+R3784:3784 ActionCodes.Mealy <> O indrec
+binder 3775:3775 <> V:72
+R3829:3835 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3807:3810 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3798:3800 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3789:3791 ActionCodes.Mealy <> del def
+R3793:3793 ActionCodes.Mealy <> M:68 var
+R3795:3795 ActionCodes.Mealy <> q:69 var
+R3797:3797 ActionCodes.Mealy <> v:71 var
+R3801:3804 Coq.Init.Datatypes <> Some constr
+R3806:3806 ActionCodes.Mealy <> s:70 var
+R3820:3822 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3811:3813 ActionCodes.Mealy <> lam def
+R3815:3815 ActionCodes.Mealy <> M:68 var
+R3817:3817 ActionCodes.Mealy <> q:69 var
+R3819:3819 ActionCodes.Mealy <> v:71 var
+R3823:3826 Coq.Init.Datatypes <> Some constr
+R3828:3828 ActionCodes.Mealy <> V:72 var
+R3845:3847 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3836:3838 ActionCodes.Mealy <> tra def
+R3840:3840 ActionCodes.Mealy <> M:68 var
+R3842:3842 ActionCodes.Mealy <> q:69 var
+R3844:3844 ActionCodes.Mealy <> v:71 var
+R3848:3851 Coq.Init.Datatypes <> Some constr
+R3853:3853 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3855:3856 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3858:3858 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R3854:3854 ActionCodes.Mealy <> s:70 var
+R3857:3857 ActionCodes.Mealy <> V:72 var
+R3943:3946 Coq.Init.Datatypes <> prod ind
+R3951:3954 ActionCodes.Mealy <> word def
+R3956:3956 ActionCodes.Mealy <> O indrec
+R3948:3948 ActionCodes.Mealy <> Y def
+R3961:3963 ActionCodes.Mealy <> tra def
+R3927:3935 ActionCodes.Mealy <> option_em defax
+R3943:3946 Coq.Init.Datatypes <> prod ind
+R3951:3954 ActionCodes.Mealy <> word def
+R3956:3956 ActionCodes.Mealy <> O indrec
+R3948:3948 ActionCodes.Mealy <> Y def
+R3961:3963 ActionCodes.Mealy <> tra def
+R3927:3935 ActionCodes.Mealy <> option_em defax
+R3993:3995 ActionCodes.Mealy <> del def
+R4078:4080 ActionCodes.Mealy <> lam def
+R4137:4139 ActionCodes.Mealy <> del def
+R4237:4239 ActionCodes.Mealy <> del def
+R4249:4251 ActionCodes.Mealy <> lam def
+prf 4424:4438 <> tra_trans_undef
+R4453:4457 ActionCodes.Mealy <> Mealy rec
+binder 4449:4449 <> M:73
+R4471:4471 ActionCodes.Mealy <> Y def
+binder 4467:4467 <> q:74
+R4485:4485 ActionCodes.Mealy <> I indrec
+binder 4481:4481 <> a:75
+R4515:4523 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4508:4510 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4490:4492 ActionCodes.Mealy <> tra def
+R4494:4494 ActionCodes.Mealy <> M:73 var
+R4496:4496 ActionCodes.Mealy <> q:74 var
+R4500:4503 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4499:4499 ActionCodes.Mealy <> a:75 var
+R4504:4506 Coq.Init.Datatypes <> nil constr
+R4511:4514 Coq.Init.Datatypes <> None constr
+R4535:4537 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4524:4528 ActionCodes.Mealy <> trans proj
+R4530:4530 ActionCodes.Mealy <> M:73 var
+R4532:4532 ActionCodes.Mealy <> q:74 var
+R4534:4534 ActionCodes.Mealy <> a:75 var
+R4538:4541 Coq.Init.Datatypes <> None constr
+R4594:4597 Coq.Init.Datatypes <> prod ind
+R4601:4601 ActionCodes.Mealy <> O indrec
+R4599:4599 ActionCodes.Mealy <> Y def
+R4605:4609 ActionCodes.Mealy <> trans proj
+R4578:4586 ActionCodes.Mealy <> option_em defax
+R4594:4597 Coq.Init.Datatypes <> prod ind
+R4601:4601 ActionCodes.Mealy <> O indrec
+R4599:4599 ActionCodes.Mealy <> Y def
+R4605:4609 ActionCodes.Mealy <> trans proj
+R4578:4586 ActionCodes.Mealy <> option_em defax
+R4650:4652 ActionCodes.Mealy <> tra def
+R4719:4721 ActionCodes.Mealy <> tra def
+R4779:4781 ActionCodes.Mealy <> tra def
+prf 4955:4975 <> tra_trans_def_unknown
+R4990:4994 ActionCodes.Mealy <> Mealy rec
+binder 4986:4986 <> M:76
+R5010:5010 ActionCodes.Mealy <> Y def
+binder 5004:5004 <> q:77
+binder 5006:5006 <> s:78
+R5024:5024 ActionCodes.Mealy <> I indrec
+binder 5020:5020 <> i:79
+R5038:5041 Coq.Init.Datatypes <> list ind
+R5043:5043 ActionCodes.Mealy <> O indrec
+binder 5034:5034 <> A:80
+R5080:5091 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5066:5068 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5048:5050 ActionCodes.Mealy <> tra def
+R5052:5052 ActionCodes.Mealy <> M:76 var
+R5054:5054 ActionCodes.Mealy <> q:77 var
+R5058:5061 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5057:5057 ActionCodes.Mealy <> i:79 var
+R5062:5064 Coq.Init.Datatypes <> nil constr
+R5069:5072 Coq.Init.Datatypes <> Some constr
+R5074:5074 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5076:5077 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5079:5079 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5075:5075 ActionCodes.Mealy <> s:78 var
+R5078:5078 ActionCodes.Mealy <> A:80 var
+R5092:5098 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5104:5105 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5103:5103 ActionCodes.Mealy <> O indrec
+binder 5099:5099 <> o:81
+R5106:5106 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5119:5123 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5108:5110 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5107:5107 ActionCodes.Mealy <> A:80 var
+R5112:5115 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5111:5111 ActionCodes.Mealy <> o:81 var
+R5116:5118 Coq.Init.Datatypes <> nil constr
+R5135:5137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5124:5128 ActionCodes.Mealy <> trans proj
+R5130:5130 ActionCodes.Mealy <> M:76 var
+R5132:5132 ActionCodes.Mealy <> q:77 var
+R5134:5134 ActionCodes.Mealy <> i:79 var
+R5138:5141 Coq.Init.Datatypes <> Some constr
+R5143:5143 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5145:5146 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5148:5148 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5144:5144 ActionCodes.Mealy <> s:78 var
+R5147:5147 ActionCodes.Mealy <> o:81 var
+R5211:5214 Coq.Init.Datatypes <> prod ind
+R5218:5218 ActionCodes.Mealy <> O indrec
+R5216:5216 ActionCodes.Mealy <> Y def
+R5222:5226 ActionCodes.Mealy <> trans proj
+R5195:5203 ActionCodes.Mealy <> option_em defax
+R5211:5214 Coq.Init.Datatypes <> prod ind
+R5218:5218 ActionCodes.Mealy <> O indrec
+R5216:5216 ActionCodes.Mealy <> Y def
+R5222:5226 ActionCodes.Mealy <> trans proj
+R5195:5203 ActionCodes.Mealy <> option_em defax
+R5257:5271 ActionCodes.Mealy <> tra_trans_undef thm
+R5257:5271 ActionCodes.Mealy <> tra_trans_undef thm
+R5396:5398 ActionCodes.Mealy <> tra def
+R5632:5634 ActionCodes.Mealy <> tra def
+prf 5677:5695 <> tra_trans_def_known
+R5711:5715 ActionCodes.Mealy <> Mealy rec
+binder 5707:5707 <> M:82
+R5731:5731 ActionCodes.Mealy <> Y def
+binder 5725:5725 <> q:83
+binder 5727:5727 <> s:84
+R5745:5745 ActionCodes.Mealy <> I indrec
+binder 5741:5741 <> i:85
+R5759:5759 ActionCodes.Mealy <> O indrec
+binder 5755:5755 <> o:86
+R5803:5812 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5782:5784 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5764:5766 ActionCodes.Mealy <> tra def
+R5768:5768 ActionCodes.Mealy <> M:82 var
+R5770:5770 ActionCodes.Mealy <> q:83 var
+R5774:5777 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5773:5773 ActionCodes.Mealy <> i:85 var
+R5778:5780 Coq.Init.Datatypes <> nil constr
+R5785:5788 Coq.Init.Datatypes <> Some constr
+R5790:5790 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5792:5793 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5802:5802 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5791:5791 ActionCodes.Mealy <> s:84 var
+R5795:5798 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5794:5794 ActionCodes.Mealy <> o:86 var
+R5799:5801 Coq.Init.Datatypes <> nil constr
+R5824:5826 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5813:5817 ActionCodes.Mealy <> trans proj
+R5819:5819 ActionCodes.Mealy <> M:82 var
+R5821:5821 ActionCodes.Mealy <> q:83 var
+R5823:5823 ActionCodes.Mealy <> i:85 var
+R5827:5830 Coq.Init.Datatypes <> Some constr
+R5832:5832 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5834:5835 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5837:5837 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5833:5833 ActionCodes.Mealy <> s:84 var
+R5836:5836 ActionCodes.Mealy <> o:86 var
+R5900:5903 Coq.Init.Datatypes <> prod ind
+R5907:5907 ActionCodes.Mealy <> O indrec
+R5905:5905 ActionCodes.Mealy <> Y def
+R5911:5915 ActionCodes.Mealy <> trans proj
+R5884:5892 ActionCodes.Mealy <> option_em defax
+R5900:5903 Coq.Init.Datatypes <> prod ind
+R5907:5907 ActionCodes.Mealy <> O indrec
+R5905:5905 ActionCodes.Mealy <> Y def
+R5911:5915 ActionCodes.Mealy <> trans proj
+R5884:5892 ActionCodes.Mealy <> option_em defax
+R5946:5960 ActionCodes.Mealy <> tra_trans_undef thm
+R5946:5960 ActionCodes.Mealy <> tra_trans_undef thm
+R6051:6053 ActionCodes.Mealy <> tra def
+R6164:6184 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R6164:6184 ActionCodes.Mealy <> tra_trans_def_unknown thm
+prf 6236:6247 <> first_letter
+R6262:6266 ActionCodes.Mealy <> Mealy rec
+binder 6258:6258 <> M:87
+R6285:6285 ActionCodes.Mealy <> Y def
+binder 6276:6276 <> q:88
+binder 6278:6279 <> q':89
+binder 6281:6281 <> r:90
+R6299:6299 ActionCodes.Mealy <> I indrec
+binder 6295:6295 <> i:91
+R6313:6316 ActionCodes.Mealy <> word def
+R6318:6318 ActionCodes.Mealy <> I indrec
+binder 6309:6309 <> v:92
+R6333:6336 ActionCodes.Mealy <> word def
+R6338:6338 ActionCodes.Mealy <> O indrec
+binder 6329:6329 <> V:93
+R6352:6352 ActionCodes.Mealy <> O indrec
+binder 6348:6348 <> o:94
+R6388:6393 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6373:6375 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6357:6359 ActionCodes.Mealy <> tra def
+R6361:6361 ActionCodes.Mealy <> M:87 var
+R6363:6363 ActionCodes.Mealy <> q:88 var
+R6367:6370 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6366:6366 ActionCodes.Mealy <> i:91 var
+R6371:6371 ActionCodes.Mealy <> v:92 var
+R6376:6379 Coq.Init.Datatypes <> Some constr
+R6381:6381 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6384:6385 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6387:6387 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6382:6383 ActionCodes.Mealy <> q':89 var
+R6386:6386 ActionCodes.Mealy <> V:93 var
+R6433:6438 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6412:6414 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6394:6396 ActionCodes.Mealy <> tra def
+R6398:6398 ActionCodes.Mealy <> M:87 var
+R6400:6400 ActionCodes.Mealy <> q:88 var
+R6404:6407 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6403:6403 ActionCodes.Mealy <> i:91 var
+R6408:6410 Coq.Init.Datatypes <> nil constr
+R6415:6418 Coq.Init.Datatypes <> Some constr
+R6420:6420 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6422:6423 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6432:6432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6421:6421 ActionCodes.Mealy <> r:90 var
+R6425:6428 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6424:6424 ActionCodes.Mealy <> o:94 var
+R6429:6431 Coq.Init.Datatypes <> nil constr
+R6466:6472 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6448:6450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6439:6441 ActionCodes.Mealy <> tra def
+R6443:6443 ActionCodes.Mealy <> M:87 var
+R6445:6445 ActionCodes.Mealy <> r:90 var
+R6447:6447 ActionCodes.Mealy <> v:92 var
+R6451:6454 Coq.Init.Datatypes <> Some constr
+R6456:6456 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6459:6460 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6465:6465 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6457:6458 ActionCodes.Mealy <> q':89 var
+R6461:6462 Coq.Lists.List <> tl def
+R6464:6464 ActionCodes.Mealy <> V:93 var
+R6486:6492 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6474:6476 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6473:6473 ActionCodes.Mealy <> V:93 var
+R6478:6481 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6477:6477 ActionCodes.Mealy <> o:94 var
+R6482:6483 Coq.Lists.List <> tl def
+R6485:6485 ActionCodes.Mealy <> V:93 var
+R6511:6513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6493:6495 ActionCodes.Mealy <> tra def
+R6497:6497 ActionCodes.Mealy <> M:87 var
+R6499:6499 ActionCodes.Mealy <> q:88 var
+R6503:6506 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6502:6502 ActionCodes.Mealy <> i:91 var
+R6507:6509 Coq.Init.Datatypes <> nil constr
+R6514:6517 Coq.Init.Datatypes <> Some constr
+R6519:6519 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6521:6522 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6531:6531 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6520:6520 ActionCodes.Mealy <> r:90 var
+R6524:6527 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6523:6523 ActionCodes.Mealy <> o:94 var
+R6528:6530 Coq.Init.Datatypes <> nil constr
+R6605:6625 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R6637:6640 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6641:6643 Coq.Init.Datatypes <> nil constr
+R6605:6625 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R6637:6640 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6641:6643 Coq.Init.Datatypes <> nil constr
+R6605:6625 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R6637:6640 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6641:6643 Coq.Init.Datatypes <> nil constr
+R6776:6779 Coq.Init.Datatypes <> prod ind
+R6784:6787 ActionCodes.Mealy <> word def
+R6789:6789 ActionCodes.Mealy <> O indrec
+R6781:6781 ActionCodes.Mealy <> Y def
+R6794:6796 ActionCodes.Mealy <> tra def
+R6760:6768 ActionCodes.Mealy <> option_em defax
+R6776:6779 Coq.Init.Datatypes <> prod ind
+R6784:6787 ActionCodes.Mealy <> word def
+R6789:6789 ActionCodes.Mealy <> O indrec
+R6781:6781 ActionCodes.Mealy <> Y def
+R6794:6796 ActionCodes.Mealy <> tra def
+R6760:6768 ActionCodes.Mealy <> option_em defax
+R6826:6828 ActionCodes.Mealy <> tra def
+R6860:6862 ActionCodes.Mealy <> tra def
+R6913:6915 ActionCodes.Mealy <> tra def
+R6992:6994 ActionCodes.Mealy <> tra def
+prf 7300:7315 <> first_letter_exi
+R7330:7334 ActionCodes.Mealy <> Mealy rec
+binder 7326:7326 <> M:95
+R7351:7351 ActionCodes.Mealy <> Y def
+binder 7344:7344 <> q:96
+binder 7346:7347 <> q':97
+R7365:7365 ActionCodes.Mealy <> I indrec
+binder 7361:7361 <> i:98
+R7379:7382 ActionCodes.Mealy <> word def
+R7384:7384 ActionCodes.Mealy <> I indrec
+binder 7375:7375 <> v:99
+R7398:7401 ActionCodes.Mealy <> word def
+R7403:7403 ActionCodes.Mealy <> O indrec
+binder 7394:7394 <> V:100
+R7439:7444 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7424:7426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7408:7410 ActionCodes.Mealy <> tra def
+R7412:7412 ActionCodes.Mealy <> M:95 var
+R7414:7414 ActionCodes.Mealy <> q:96 var
+R7418:7421 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7417:7417 ActionCodes.Mealy <> i:98 var
+R7422:7422 ActionCodes.Mealy <> v:99 var
+R7427:7430 Coq.Init.Datatypes <> Some constr
+R7432:7432 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7435:7436 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7438:7438 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7433:7434 ActionCodes.Mealy <> q':97 var
+R7437:7437 ActionCodes.Mealy <> V:100 var
+R7445:7451 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7457:7458 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7456:7456 ActionCodes.Mealy <> Y def
+binder 7452:7452 <> r:101
+R7459:7465 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7471:7477 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7470:7470 ActionCodes.Mealy <> O indrec
+binder 7466:7466 <> o:102
+R7505:7512 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7487:7489 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7478:7480 ActionCodes.Mealy <> tra def
+R7482:7482 ActionCodes.Mealy <> M:95 var
+R7484:7484 ActionCodes.Mealy <> r:101 var
+R7486:7486 ActionCodes.Mealy <> v:99 var
+R7490:7493 Coq.Init.Datatypes <> Some constr
+R7495:7495 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7498:7499 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7504:7504 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7496:7497 ActionCodes.Mealy <> q':97 var
+R7500:7501 Coq.Lists.List <> tl def
+R7503:7503 ActionCodes.Mealy <> V:100 var
+R7526:7533 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7514:7516 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7513:7513 ActionCodes.Mealy <> V:100 var
+R7518:7521 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7517:7517 ActionCodes.Mealy <> o:102 var
+R7522:7523 Coq.Lists.List <> tl def
+R7525:7525 ActionCodes.Mealy <> V:100 var
+R7552:7554 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7534:7536 ActionCodes.Mealy <> tra def
+R7538:7538 ActionCodes.Mealy <> M:95 var
+R7540:7540 ActionCodes.Mealy <> q:96 var
+R7544:7547 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7543:7543 ActionCodes.Mealy <> i:98 var
+R7548:7550 Coq.Init.Datatypes <> nil constr
+R7555:7558 Coq.Init.Datatypes <> Some constr
+R7560:7560 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7562:7563 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7572:7572 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7561:7561 ActionCodes.Mealy <> r:101 var
+R7565:7568 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7564:7564 ActionCodes.Mealy <> o:102 var
+R7569:7571 Coq.Init.Datatypes <> nil constr
+R7615:7618 Coq.Init.Datatypes <> prod ind
+R7622:7622 ActionCodes.Mealy <> O indrec
+R7620:7620 ActionCodes.Mealy <> Y def
+R7626:7630 ActionCodes.Mealy <> trans proj
+R7599:7607 ActionCodes.Mealy <> option_em defax
+R7615:7618 Coq.Init.Datatypes <> prod ind
+R7622:7622 ActionCodes.Mealy <> O indrec
+R7620:7620 ActionCodes.Mealy <> Y def
+R7626:7630 ActionCodes.Mealy <> trans proj
+R7599:7607 ActionCodes.Mealy <> option_em defax
+R7658:7660 ActionCodes.Mealy <> tra def
+R7756:7767 ActionCodes.Mealy <> first_letter thm
+R7756:7767 ActionCodes.Mealy <> first_letter thm
+R7789:7807 ActionCodes.Mealy <> tra_trans_def_known thm
+R7789:7807 ActionCodes.Mealy <> tra_trans_def_known thm
+R7789:7807 ActionCodes.Mealy <> tra_trans_def_known thm
+prf 7903:7923 <> second_half_undefined
+R7938:7942 ActionCodes.Mealy <> Mealy rec
+binder 7934:7934 <> M:103
+R7958:7961 ActionCodes.Mealy <> word def
+R7963:7963 ActionCodes.Mealy <> I indrec
+binder 7952:7952 <> u:104
+binder 7954:7954 <> w:105
+R7979:7979 ActionCodes.Mealy <> Y def
+binder 7973:7973 <> q:106
+binder 7975:7975 <> s:107
+R7993:7996 ActionCodes.Mealy <> word def
+R7998:7998 ActionCodes.Mealy <> O indrec
+binder 7989:7989 <> U:108
+R8026:8031 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8012:8014 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8003:8005 ActionCodes.Mealy <> tra def
+R8007:8007 ActionCodes.Mealy <> M:103 var
+R8009:8009 ActionCodes.Mealy <> q:106 var
+R8011:8011 ActionCodes.Mealy <> u:104 var
+R8015:8018 Coq.Init.Datatypes <> Some constr
+R8020:8020 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8022:8023 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8025:8025 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8021:8021 ActionCodes.Mealy <> s:107 var
+R8024:8024 ActionCodes.Mealy <> U:108 var
+R8048:8053 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8041:8043 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8032:8034 ActionCodes.Mealy <> tra def
+R8036:8036 ActionCodes.Mealy <> M:103 var
+R8038:8038 ActionCodes.Mealy <> s:107 var
+R8040:8040 ActionCodes.Mealy <> w:105 var
+R8044:8047 Coq.Init.Datatypes <> None constr
+R8070:8072 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8054:8056 ActionCodes.Mealy <> tra def
+R8058:8058 ActionCodes.Mealy <> M:103 var
+R8060:8060 ActionCodes.Mealy <> q:106 var
+R8064:8067 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8063:8063 ActionCodes.Mealy <> u:104 var
+R8068:8068 ActionCodes.Mealy <> w:105 var
+R8073:8076 Coq.Init.Datatypes <> None constr
+R8151:8153 ActionCodes.Mealy <> tra def
+R8260:8263 Coq.Init.Datatypes <> prod ind
+R8267:8267 ActionCodes.Mealy <> O indrec
+R8265:8265 ActionCodes.Mealy <> Y def
+R8271:8275 ActionCodes.Mealy <> trans proj
+R8244:8252 ActionCodes.Mealy <> option_em defax
+R8260:8263 Coq.Init.Datatypes <> prod ind
+R8267:8267 ActionCodes.Mealy <> O indrec
+R8265:8265 ActionCodes.Mealy <> Y def
+R8271:8275 ActionCodes.Mealy <> trans proj
+R8244:8252 ActionCodes.Mealy <> option_em defax
+R8387:8388 Coq.Lists.List <> tl def
+R8387:8388 Coq.Lists.List <> tl def
+R8401:8412 ActionCodes.Mealy <> first_letter thm
+R8401:8412 ActionCodes.Mealy <> first_letter thm
+R8488:8506 ActionCodes.Mealy <> tra_trans_def_known thm
+R8488:8506 ActionCodes.Mealy <> tra_trans_def_known thm
+prf 8530:8551 <> transition_consistency
+R8566:8570 ActionCodes.Mealy <> Mealy rec
+binder 8562:8562 <> M:109
+R8586:8589 ActionCodes.Mealy <> word def
+R8591:8591 ActionCodes.Mealy <> I indrec
+binder 8580:8580 <> v:110
+binder 8582:8582 <> w:111
+R8605:8608 ActionCodes.Mealy <> word def
+R8610:8610 ActionCodes.Mealy <> O indrec
+binder 8601:8601 <> V:112
+R8626:8626 ActionCodes.Mealy <> Y def
+binder 8620:8620 <> q:113
+binder 8622:8622 <> s:114
+R8654:8660 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8640:8642 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8631:8633 ActionCodes.Mealy <> tra def
+R8635:8635 ActionCodes.Mealy <> M:109 var
+R8637:8637 ActionCodes.Mealy <> q:113 var
+R8639:8639 ActionCodes.Mealy <> v:110 var
+R8643:8646 Coq.Init.Datatypes <> Some constr
+R8648:8648 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8650:8651 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8653:8653 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8649:8649 ActionCodes.Mealy <> s:114 var
+R8652:8652 ActionCodes.Mealy <> V:112 var
+R8677:8679 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8661:8663 ActionCodes.Mealy <> tra def
+R8665:8665 ActionCodes.Mealy <> M:109 var
+R8667:8667 ActionCodes.Mealy <> q:113 var
+R8671:8674 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8670:8670 ActionCodes.Mealy <> v:110 var
+R8675:8675 ActionCodes.Mealy <> w:111 var
+R8680:8689 ActionCodes.Mealy <> ol_concat2 def
+R8704:8706 ActionCodes.Mealy <> tra def
+R8708:8708 ActionCodes.Mealy <> M:109 var
+R8710:8710 ActionCodes.Mealy <> s:114 var
+R8712:8712 ActionCodes.Mealy <> w:111 var
+R8692:8694 ActionCodes.Mealy <> tra def
+R8696:8696 ActionCodes.Mealy <> M:109 var
+R8698:8698 ActionCodes.Mealy <> q:113 var
+R8700:8700 ActionCodes.Mealy <> v:110 var
+R8809:8812 Coq.Init.Datatypes <> prod ind
+R8817:8820 ActionCodes.Mealy <> word def
+R8822:8822 ActionCodes.Mealy <> O indrec
+R8814:8814 ActionCodes.Mealy <> Y def
+R8827:8829 ActionCodes.Mealy <> tra def
+R8793:8801 ActionCodes.Mealy <> option_em defax
+R8809:8812 Coq.Init.Datatypes <> prod ind
+R8817:8820 ActionCodes.Mealy <> word def
+R8822:8822 ActionCodes.Mealy <> O indrec
+R8814:8814 ActionCodes.Mealy <> Y def
+R8827:8829 ActionCodes.Mealy <> tra def
+R8793:8801 ActionCodes.Mealy <> option_em defax
+R9053:9056 Coq.Init.Datatypes <> prod ind
+R9061:9064 ActionCodes.Mealy <> word def
+R9066:9066 ActionCodes.Mealy <> O indrec
+R9058:9058 ActionCodes.Mealy <> Y def
+R9071:9073 ActionCodes.Mealy <> tra def
+R9037:9045 ActionCodes.Mealy <> option_em defax
+R9053:9056 Coq.Init.Datatypes <> prod ind
+R9061:9064 ActionCodes.Mealy <> word def
+R9066:9066 ActionCodes.Mealy <> O indrec
+R9058:9058 ActionCodes.Mealy <> Y def
+R9071:9073 ActionCodes.Mealy <> tra def
+R9037:9045 ActionCodes.Mealy <> option_em defax
+R9127:9136 ActionCodes.Mealy <> ol_concat2 def
+R9178:9181 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9147:9167 ActionCodes.Mealy <> second_half_undefined thm
+R9178:9181 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9147:9167 ActionCodes.Mealy <> second_half_undefined thm
+R9178:9181 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9147:9167 ActionCodes.Mealy <> second_half_undefined thm
+R9178:9181 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9147:9167 ActionCodes.Mealy <> second_half_undefined thm
+R9178:9181 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9147:9167 ActionCodes.Mealy <> second_half_undefined thm
+R9321:9324 Coq.Init.Datatypes <> prod ind
+R9329:9332 ActionCodes.Mealy <> word def
+R9334:9334 ActionCodes.Mealy <> O indrec
+R9326:9326 ActionCodes.Mealy <> Y def
+R9339:9341 ActionCodes.Mealy <> tra def
+R9349:9352 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9353:9355 Coq.Init.Datatypes <> nil constr
+R9305:9313 ActionCodes.Mealy <> option_em defax
+R9321:9324 Coq.Init.Datatypes <> prod ind
+R9329:9332 ActionCodes.Mealy <> word def
+R9334:9334 ActionCodes.Mealy <> O indrec
+R9326:9326 ActionCodes.Mealy <> Y def
+R9339:9341 ActionCodes.Mealy <> tra def
+R9349:9352 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9353:9355 Coq.Init.Datatypes <> nil constr
+R9305:9313 ActionCodes.Mealy <> option_em defax
+R9389:9403 ActionCodes.Mealy <> tra_trans_undef thm
+R9389:9403 ActionCodes.Mealy <> tra_trans_undef thm
+R9440:9449 ActionCodes.Mealy <> ol_concat2 def
+R9557:9577 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R9557:9577 ActionCodes.Mealy <> tra_trans_def_unknown thm
+R9835:9836 Coq.Lists.List <> tl def
+R9835:9836 Coq.Lists.List <> tl def
+R9878:9889 ActionCodes.Mealy <> first_letter thm
+R9878:9889 ActionCodes.Mealy <> first_letter thm
+R10038:10056 ActionCodes.Mealy <> tra_trans_def_known thm
+R10038:10056 ActionCodes.Mealy <> tra_trans_def_known thm
+R10038:10056 ActionCodes.Mealy <> tra_trans_def_known thm
+prf 10585:10593 <> lemma_a_1
+R10609:10613 ActionCodes.Mealy <> Mealy rec
+binder 10605:10605 <> M:115
+R10630:10633 ActionCodes.Mealy <> word def
+R10635:10635 ActionCodes.Mealy <> I indrec
+binder 10624:10624 <> v:116
+binder 10626:10626 <> w:117
+R10649:10652 ActionCodes.Mealy <> word def
+R10654:10654 ActionCodes.Mealy <> O indrec
+binder 10645:10645 <> V:118
+R10670:10670 ActionCodes.Mealy <> Y def
+binder 10664:10664 <> q:119
+binder 10666:10666 <> s:120
+R10702:10716 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10688:10690 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10679:10681 ActionCodes.Mealy <> tra def
+R10683:10683 ActionCodes.Mealy <> M:115 var
+R10685:10685 ActionCodes.Mealy <> q:119 var
+R10687:10687 ActionCodes.Mealy <> v:116 var
+R10691:10694 Coq.Init.Datatypes <> Some constr
+R10696:10696 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10698:10699 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10701:10701 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10697:10697 ActionCodes.Mealy <> s:120 var
+R10700:10700 ActionCodes.Mealy <> V:118 var
+R10749:10765 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10818:10818 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10717:10717 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10734:10738 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10748:10748 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10718:10720 ActionCodes.Mealy <> del def
+R10722:10722 ActionCodes.Mealy <> M:115 var
+R10724:10724 ActionCodes.Mealy <> q:119 var
+R10728:10731 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10727:10727 ActionCodes.Mealy <> v:116 var
+R10732:10732 ActionCodes.Mealy <> w:117 var
+R10739:10741 ActionCodes.Mealy <> del def
+R10743:10743 ActionCodes.Mealy <> M:115 var
+R10745:10745 ActionCodes.Mealy <> s:120 var
+R10747:10747 ActionCodes.Mealy <> w:117 var
+R10782:10784 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10766:10768 ActionCodes.Mealy <> lam def
+R10770:10770 ActionCodes.Mealy <> M:115 var
+R10772:10772 ActionCodes.Mealy <> q:119 var
+R10776:10779 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R10775:10775 ActionCodes.Mealy <> v:116 var
+R10780:10780 ActionCodes.Mealy <> w:117 var
+R10785:10793 ActionCodes.Mealy <> ol_concat def
+R10808:10810 ActionCodes.Mealy <> lam def
+R10812:10812 ActionCodes.Mealy <> M:115 var
+R10814:10814 ActionCodes.Mealy <> s:120 var
+R10816:10816 ActionCodes.Mealy <> w:117 var
+R10796:10798 ActionCodes.Mealy <> lam def
+R10800:10800 ActionCodes.Mealy <> M:115 var
+R10802:10802 ActionCodes.Mealy <> q:119 var
+R10804:10804 ActionCodes.Mealy <> v:116 var
+R10857:10878 ActionCodes.Mealy <> transition_consistency thm
+R10857:10878 ActionCodes.Mealy <> transition_consistency thm
+R10926:10929 Coq.Init.Datatypes <> prod ind
+R10934:10937 ActionCodes.Mealy <> word def
+R10939:10939 ActionCodes.Mealy <> O indrec
+R10931:10931 ActionCodes.Mealy <> Y def
+R10944:10946 ActionCodes.Mealy <> tra def
+R10910:10918 ActionCodes.Mealy <> option_em defax
+R10926:10929 Coq.Init.Datatypes <> prod ind
+R10934:10937 ActionCodes.Mealy <> word def
+R10939:10939 ActionCodes.Mealy <> O indrec
+R10931:10931 ActionCodes.Mealy <> Y def
+R10944:10946 ActionCodes.Mealy <> tra def
+R10910:10918 ActionCodes.Mealy <> option_em defax
+R11041:11050 ActionCodes.Mealy <> ol_concat2 def
+R11078:11080 ActionCodes.Mealy <> del def
+R11126:11128 ActionCodes.Mealy <> lam def
+R11290:11299 ActionCodes.Mealy <> ol_concat2 def
+R11327:11329 ActionCodes.Mealy <> del def
+R11379:11381 ActionCodes.Mealy <> lam def
+prf 11584:11598 <> lemma_a_1_delta
+R11613:11617 ActionCodes.Mealy <> Mealy rec
+binder 11609:11609 <> M:121
+R11634:11637 ActionCodes.Mealy <> word def
+R11639:11639 ActionCodes.Mealy <> I indrec
+binder 11628:11628 <> v:122
+binder 11630:11630 <> w:123
+R11655:11655 ActionCodes.Mealy <> Y def
+binder 11649:11649 <> q:124
+binder 11651:11651 <> s:125
+R11682:11695 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11673:11675 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11664:11666 ActionCodes.Mealy <> del def
+R11668:11668 ActionCodes.Mealy <> M:121 var
+R11670:11670 ActionCodes.Mealy <> q:124 var
+R11672:11672 ActionCodes.Mealy <> v:122 var
+R11676:11679 Coq.Init.Datatypes <> Some constr
+R11681:11681 ActionCodes.Mealy <> s:125 var
+R11696:11696 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11713:11717 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11727:11727 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11697:11699 ActionCodes.Mealy <> del def
+R11701:11701 ActionCodes.Mealy <> M:121 var
+R11703:11703 ActionCodes.Mealy <> q:124 var
+R11707:11710 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R11706:11706 ActionCodes.Mealy <> v:122 var
+R11711:11711 ActionCodes.Mealy <> w:123 var
+R11718:11720 ActionCodes.Mealy <> del def
+R11722:11722 ActionCodes.Mealy <> M:121 var
+R11724:11724 ActionCodes.Mealy <> s:125 var
+R11726:11726 ActionCodes.Mealy <> w:123 var
+R11771:11774 Coq.Init.Datatypes <> prod ind
+R11779:11782 ActionCodes.Mealy <> word def
+R11784:11784 ActionCodes.Mealy <> O indrec
+R11776:11776 ActionCodes.Mealy <> Y def
+R11789:11791 ActionCodes.Mealy <> tra def
+R11755:11763 ActionCodes.Mealy <> option_em defax
+R11771:11774 Coq.Init.Datatypes <> prod ind
+R11779:11782 ActionCodes.Mealy <> word def
+R11784:11784 ActionCodes.Mealy <> O indrec
+R11776:11776 ActionCodes.Mealy <> Y def
+R11789:11791 ActionCodes.Mealy <> tra def
+R11755:11763 ActionCodes.Mealy <> option_em defax
+R11821:11823 ActionCodes.Mealy <> del def
+R11899:11901 ActionCodes.Mealy <> del def
+R11968:11976 ActionCodes.Mealy <> lemma_a_1 thm
+R11968:11976 ActionCodes.Mealy <> lemma_a_1 thm
+prf 12018:12033 <> list_tl_property
+binder 12044:12044 <> A:126
+R12064:12064 ActionCodes.Mealy <> A:126 var
+binder 12060:12060 <> o:127
+R12082:12085 Coq.Init.Datatypes <> list ind
+R12087:12087 ActionCodes.Mealy <> A:126 var
+binder 12074:12075 <> la:128
+binder 12077:12078 <> lb:129
+R12099:12102 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12092:12095 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R12090:12091 ActionCodes.Mealy <> la:128 var
+R12096:12098 Coq.Init.Datatypes <> nil constr
+R12116:12118 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12103:12103 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12109:12113 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12104:12105 Coq.Lists.List <> tl def
+R12107:12108 ActionCodes.Mealy <> la:128 var
+R12114:12115 ActionCodes.Mealy <> lb:129 var
+R12119:12120 Coq.Lists.List <> tl def
+R12125:12128 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12123:12124 ActionCodes.Mealy <> la:128 var
+R12129:12130 ActionCodes.Mealy <> lb:129 var
+prf 12208:12228 <> lemma_a_1_lambda_part
+R12243:12247 ActionCodes.Mealy <> Mealy rec
+binder 12239:12239 <> M:130
+R12264:12267 ActionCodes.Mealy <> word def
+R12269:12269 ActionCodes.Mealy <> I indrec
+binder 12258:12258 <> v:131
+binder 12260:12260 <> w:132
+R12285:12288 ActionCodes.Mealy <> word def
+R12290:12290 ActionCodes.Mealy <> O indrec
+binder 12279:12279 <> V:133
+binder 12281:12281 <> W:134
+R12306:12306 ActionCodes.Mealy <> Y def
+binder 12300:12300 <> q:135
+binder 12302:12302 <> s:136
+R12338:12351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12324:12326 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12315:12317 ActionCodes.Mealy <> tra def
+R12319:12319 ActionCodes.Mealy <> M:130 var
+R12321:12321 ActionCodes.Mealy <> q:135 var
+R12323:12323 ActionCodes.Mealy <> v:131 var
+R12327:12330 Coq.Init.Datatypes <> Some constr
+R12332:12332 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12334:12335 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12337:12337 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R12333:12333 ActionCodes.Mealy <> s:136 var
+R12336:12336 ActionCodes.Mealy <> V:133 var
+R12384:12399 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12368:12370 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12352:12354 ActionCodes.Mealy <> lam def
+R12356:12356 ActionCodes.Mealy <> M:130 var
+R12358:12358 ActionCodes.Mealy <> q:135 var
+R12362:12365 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12361:12361 ActionCodes.Mealy <> v:131 var
+R12366:12366 ActionCodes.Mealy <> w:132 var
+R12371:12374 Coq.Init.Datatypes <> Some constr
+R12378:12381 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12377:12377 ActionCodes.Mealy <> V:133 var
+R12382:12382 ActionCodes.Mealy <> W:134 var
+R12409:12411 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12400:12402 ActionCodes.Mealy <> lam def
+R12404:12404 ActionCodes.Mealy <> M:130 var
+R12406:12406 ActionCodes.Mealy <> s:136 var
+R12408:12408 ActionCodes.Mealy <> w:132 var
+R12412:12415 Coq.Init.Datatypes <> Some constr
+R12417:12417 ActionCodes.Mealy <> W:134 var
+R12458:12460 ActionCodes.Mealy <> tra def
+R12521:12524 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12518:12520 Coq.Init.Datatypes <> nil constr
+R12521:12524 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12518:12520 Coq.Init.Datatypes <> nil constr
+R12545:12548 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12542:12544 Coq.Init.Datatypes <> nil constr
+R12545:12548 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R12542:12544 Coq.Init.Datatypes <> nil constr
+R12623:12626 Coq.Init.Datatypes <> prod ind
+R12630:12630 ActionCodes.Mealy <> O indrec
+R12628:12628 ActionCodes.Mealy <> Y def
+R12634:12638 ActionCodes.Mealy <> trans proj
+R12607:12615 ActionCodes.Mealy <> option_em defax
+R12623:12626 Coq.Init.Datatypes <> prod ind
+R12630:12630 ActionCodes.Mealy <> O indrec
+R12628:12628 ActionCodes.Mealy <> Y def
+R12634:12638 ActionCodes.Mealy <> trans proj
+R12607:12615 ActionCodes.Mealy <> option_em defax
+R12657:12659 ActionCodes.Mealy <> tra def
+R12758:12761 Coq.Init.Datatypes <> prod ind
+R12766:12769 ActionCodes.Mealy <> word def
+R12771:12771 ActionCodes.Mealy <> O indrec
+R12763:12763 ActionCodes.Mealy <> Y def
+R12776:12778 ActionCodes.Mealy <> tra def
+R12742:12750 ActionCodes.Mealy <> option_em defax
+R12758:12761 Coq.Init.Datatypes <> prod ind
+R12766:12769 ActionCodes.Mealy <> word def
+R12771:12771 ActionCodes.Mealy <> O indrec
+R12763:12763 ActionCodes.Mealy <> Y def
+R12776:12778 ActionCodes.Mealy <> tra def
+R12742:12750 ActionCodes.Mealy <> option_em defax
+R12808:12810 ActionCodes.Mealy <> tra def
+R12845:12847 ActionCodes.Mealy <> tra def
+R12949:12950 Coq.Lists.List <> tl def
+R12949:12950 Coq.Lists.List <> tl def
+R12971:12973 ActionCodes.Mealy <> tra def
+R13027:13029 ActionCodes.Mealy <> tra def
+R13104:13106 ActionCodes.Mealy <> tra def
+R13184:13184 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13191:13195 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13186:13189 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13184:13184 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13191:13195 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13186:13189 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R13234:13237 Coq.Init.Datatypes <> prod ind
+R13242:13245 ActionCodes.Mealy <> word def
+R13247:13247 ActionCodes.Mealy <> O indrec
+R13239:13239 ActionCodes.Mealy <> Y def
+R13252:13254 ActionCodes.Mealy <> tra def
+R13262:13265 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13218:13226 ActionCodes.Mealy <> option_em defax
+R13234:13237 Coq.Init.Datatypes <> prod ind
+R13242:13245 ActionCodes.Mealy <> word def
+R13247:13247 ActionCodes.Mealy <> O indrec
+R13239:13239 ActionCodes.Mealy <> Y def
+R13252:13254 ActionCodes.Mealy <> tra def
+R13262:13265 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13218:13226 ActionCodes.Mealy <> option_em defax
+R13280:13282 ActionCodes.Mealy <> lam def
+R13300:13302 ActionCodes.Mealy <> tra def
+R13363:13365 ActionCodes.Mealy <> tra def
+R13458:13460 ActionCodes.Mealy <> lam def
+R13478:13480 ActionCodes.Mealy <> tra def
+R13540:13542 ActionCodes.Mealy <> tra def
+R13605:13607 ActionCodes.Mealy <> lam def
+R13635:13650 ActionCodes.Mealy <> list_tl_property thm
+R13635:13650 ActionCodes.Mealy <> list_tl_property thm
+R13635:13650 ActionCodes.Mealy <> list_tl_property thm
+R13635:13650 ActionCodes.Mealy <> list_tl_property thm
+R13635:13650 ActionCodes.Mealy <> list_tl_property thm
+prf 13742:13757 <> lemma_a_1_lambda
+R13772:13776 ActionCodes.Mealy <> Mealy rec
+binder 13768:13768 <> M:137
+R13793:13796 ActionCodes.Mealy <> word def
+R13798:13798 ActionCodes.Mealy <> I indrec
+binder 13787:13787 <> v:138
+binder 13789:13789 <> w:139
+R13814:13817 ActionCodes.Mealy <> word def
+R13819:13819 ActionCodes.Mealy <> O indrec
+binder 13808:13808 <> V:140
+binder 13810:13810 <> W:141
+R13835:13835 ActionCodes.Mealy <> Y def
+binder 13829:13829 <> q:142
+binder 13831:13831 <> s:143
+R13867:13881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13951:13951 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13853:13855 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13844:13846 ActionCodes.Mealy <> tra def
+R13848:13848 ActionCodes.Mealy <> M:137 var
+R13850:13850 ActionCodes.Mealy <> q:142 var
+R13852:13852 ActionCodes.Mealy <> v:138 var
+R13856:13859 Coq.Init.Datatypes <> Some constr
+R13861:13861 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13863:13864 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13866:13866 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R13862:13862 ActionCodes.Mealy <> s:143 var
+R13865:13865 ActionCodes.Mealy <> V:140 var
+R13900:13917 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13950:13950 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13891:13893 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13882:13884 ActionCodes.Mealy <> lam def
+R13886:13886 ActionCodes.Mealy <> M:137 var
+R13888:13888 ActionCodes.Mealy <> s:143 var
+R13890:13890 ActionCodes.Mealy <> w:139 var
+R13894:13897 Coq.Init.Datatypes <> Some constr
+R13899:13899 ActionCodes.Mealy <> W:141 var
+R13934:13936 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13918:13920 ActionCodes.Mealy <> lam def
+R13922:13922 ActionCodes.Mealy <> M:137 var
+R13924:13924 ActionCodes.Mealy <> q:142 var
+R13928:13931 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13927:13927 ActionCodes.Mealy <> v:138 var
+R13932:13932 ActionCodes.Mealy <> w:139 var
+R13937:13940 Coq.Init.Datatypes <> Some constr
+R13944:13947 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R13943:13943 ActionCodes.Mealy <> V:140 var
+R13948:13948 ActionCodes.Mealy <> W:141 var
+R13996:14004 ActionCodes.Mealy <> lemma_a_1 thm
+R13996:14004 ActionCodes.Mealy <> lemma_a_1 thm
+R14048:14056 ActionCodes.Mealy <> ol_concat def
+R14066:14068 ActionCodes.Mealy <> lam def
+R14107:14110 Coq.Init.Datatypes <> prod ind
+R14115:14118 ActionCodes.Mealy <> word def
+R14120:14120 ActionCodes.Mealy <> O indrec
+R14112:14112 ActionCodes.Mealy <> Y def
+R14125:14127 ActionCodes.Mealy <> tra def
+R14091:14099 ActionCodes.Mealy <> option_em defax
+R14107:14110 Coq.Init.Datatypes <> prod ind
+R14115:14118 ActionCodes.Mealy <> word def
+R14120:14120 ActionCodes.Mealy <> O indrec
+R14112:14112 ActionCodes.Mealy <> Y def
+R14125:14127 ActionCodes.Mealy <> tra def
+R14091:14099 ActionCodes.Mealy <> option_em defax
+R14144:14146 ActionCodes.Mealy <> lam def
+R14239:14241 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14239:14241 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14254:14256 ActionCodes.Mealy <> lam def
+R14376:14378 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14367:14369 ActionCodes.Mealy <> lam def
+R14379:14382 Coq.Init.Datatypes <> Some constr
+R14358:14359 ActionCodes.Mealy <> em defax
+R14376:14378 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14367:14369 ActionCodes.Mealy <> lam def
+R14379:14382 Coq.Init.Datatypes <> Some constr
+R14358:14359 ActionCodes.Mealy <> em defax
+R14406:14426 ActionCodes.Mealy <> lemma_a_1_lambda_part thm
+R14406:14426 ActionCodes.Mealy <> lemma_a_1_lambda_part thm

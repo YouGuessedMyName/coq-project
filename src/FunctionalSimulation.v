@@ -1,6 +1,7 @@
 Require Import Mealy.
 Require Import Coq.Lists.List.
 
+
 (* Definition 2.4 (Simulation) *)
 (* f : M -> N is a funcitonal simulation from M to N
 r = δ(q, i) *)

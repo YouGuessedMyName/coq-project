@@ -1,6 +1,7 @@
 Require Import Coq.Lists.List.
 Require Import Coq.Sets.Finite_sets_facts.
 
+
 (* Enable classical logic *)
 (* Sorry Freek, I know you love propositional logic*)
 Parameter em: forall p:Prop, p \/ ~p.
@@ -415,6 +416,8 @@ destruct option_em with (prod Y (word O)) (tra M s (w)).
   + unfold lam. rewrite H. rewrite H0. rewrite H1. simpl. reflexivity.
 Qed.
 
+(* In Coq, it's usually easier to have two seperate Lemmas which are more specific. 
+Hence, we provide two versions of Lemma A.1. *)
 Lemma lemma_a_1_delta :
 forall M : Mealy, 
 forall v w : word I,
@@ -429,5 +432,131 @@ destruct option_em with (prod Y (word O)) (tra M q v) as [J | J].
 - unfold del in H. rewrite J in H. discriminate H.
 - destruct J as [(s', V) J]. unfold del in H. rewrite J in H. injection H as H.
   rewrite H in J. apply (lemma_a_1 M v w V q s) in J. apply J.
+Qed.
+
+Lemma list_tl_property :
+forall A : Set,
+forall o : A,
+forall la lb : list A,
+la <> nil ->
+(tl la) ++ lb = tl (la ++ lb).
+Proof.
+intros.
+induction la.
+elim H. trivial.
+simpl. trivial.
+Qed.
+
+Lemma lemma_a_1_lambda_part :
+forall M : Mealy, 
+forall v w : word I,
+forall V W : word O,
+forall q s : Y,
+      tra M q v = Some (s, V)
+  ->
+        lam M q (v ++ w) = Some (V ++ W)
+    ->
+        lam M s w = Some W
+.
+Proof.
+induction v.
+- intros. unfold tra in H. injection H as H H'. rewrite<- H' in H0.
+  simpl (nil ++ w) in H0. simpl (nil ++ W) in H0. rewrite H in H0. apply H0.
+- intros.
+  destruct option_em with (prod Y O) (trans M q a).
+  unfold tra in H. rewrite H1 in H. discriminate H.
+  destruct H1 as [(r, o) H1].
+
+  destruct option_em with (prod Y (word O)) (tra M r v) as [J | J].
+  unfold tra in H. rewrite H1 in H. 
+  unfold tra in J. rewrite J in H. discriminate H.
+  
+  destruct J as [(t, tlV') J].
+  
+  specialize IHv with w (tl V) W r s.
+  unfold tra in H. rewrite H1 in H.
+  assert (J' := J).
+  unfold tra in J. rewrite J in H.
+  injection H as H H'.
+  apply IHv.
+  
+  
+  unfold tra.
+  rewrite J.
+  
+  rewrite H.
+  rewrite<- H'.
+  simpl.
+  trivial.
+
+  simpl ((a :: v) ++ w) in H0.
+
+  destruct option_em with (prod Y (word O)) (tra M r (v ++ w)).
+  unfold lam in H0.
+  unfold tra in H0.
+  rewrite H1 in H0.
+
+  assert (H2' := H2).
+  unfold tra in H2.
+  rewrite H2 in H0.
+  discriminate H0.  
+
+  destruct H2 as [(t', VW') H2].
+  unfold lam in H0.
+  unfold tra in H0.
+  rewrite H1 in H0.
+  assert (H2' := H2).
+  unfold tra in H2.
+  rewrite H2 in H0.
+  
+  injection H0 as H0.
+  unfold lam.
+  rewrite H2'.
+  rewrite list_tl_property.
+  rewrite<- H0.
+  simpl. trivial.
+  apply o.
+  rewrite<- H'.
+  discriminate.
+Qed.
+
+Lemma lemma_a_1_lambda :
+forall M : Mealy, 
+forall v w : word I,
+forall V W : word O,
+forall q s : Y,
+      tra M q v = Some (s, V)
+  ->
+        (lam M s w = Some W
+    <->
+        (lam M q (v ++ w) = Some (V ++ W)))
+.
+Proof.
+intros.
+split.
+intro J.
+destruct (lemma_a_1 M v w V q s). apply H.
+rewrite H1.
+unfold ol_concat.
+unfold lam. rewrite H.
+destruct option_em with (prod Y (word O)) (tra M s w).
+unfold lam in J. rewrite H2 in J. discriminate J. 
+destruct H2 as [(q', W') H2].
+rewrite H2.
+assert (W = W').
+unfold lam in J.
+rewrite H2 in J.
+injection J as J.
+symmetry. apply J.
+rewrite H3.
+trivial.
+
+intro J.
+destruct em with (lam M s w = Some W).
+apply H0.
+
+apply (lemma_a_1_lambda_part M v w V W q s).
+apply H.
+apply J.
 Qed.
 

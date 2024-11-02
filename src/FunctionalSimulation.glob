@@ -1,149 +1,149 @@
-DIGEST 1d9ead116cd85aef3cc21e653c35558d
+DIGEST c488e5659b3f22ef7a8959ddac2782e4
 FActionCodes.FunctionalSimulation
 R15:19 ActionCodes.Mealy <> <> lib
 R37:50 Coq.Lists.List <> <> lib
-def 168:174 <> funcSim
-R183:187 ActionCodes.Mealy <> Mealy rec
-binder 177:177 <> M:1
-binder 179:179 <> N:2
-R195:198 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R194:194 ActionCodes.Mealy <> Y def
-R199:199 ActionCodes.Mealy <> Y def
-binder 191:191 <> f:3
-R228:234 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R221:223 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R214:214 ActionCodes.FunctionalSimulation <> f:3 var
-R216:217 ActionCodes.Mealy <> q0 proj
-R219:219 ActionCodes.FunctionalSimulation <> M:1 var
-R224:225 ActionCodes.Mealy <> q0 proj
-R227:227 ActionCodes.FunctionalSimulation <> N:2 var
-R248:248 ActionCodes.Mealy <> Y def
-binder 242:242 <> q:4
-binder 244:244 <> r:5
-R262:262 ActionCodes.Mealy <> I indrec
-binder 258:258 <> i:6
-R276:276 ActionCodes.Mealy <> O indrec
-binder 272:272 <> o:7
-R290:303 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R285:285 ActionCodes.Mealy <> Q def
-R287:287 ActionCodes.FunctionalSimulation <> M:1 var
-R289:289 ActionCodes.FunctionalSimulation <> q:4 var
-R329:344 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R315:317 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R304:308 ActionCodes.Mealy <> trans proj
-R310:310 ActionCodes.FunctionalSimulation <> M:1 var
-R312:312 ActionCodes.FunctionalSimulation <> q:4 var
-R314:314 ActionCodes.FunctionalSimulation <> i:6 var
-R318:321 Coq.Init.Datatypes <> Some constr
-R323:323 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R325:326 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R328:328 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R324:324 ActionCodes.FunctionalSimulation <> r:5 var
-R327:327 ActionCodes.FunctionalSimulation <> o:7 var
-R359:361 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R345:348 Coq.Init.Datatypes <> Some constr
-R350:350 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R355:356 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R358:358 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R351:351 ActionCodes.FunctionalSimulation <> f:3 var
-R353:353 ActionCodes.FunctionalSimulation <> r:5 var
-R357:357 ActionCodes.FunctionalSimulation <> o:7 var
-R362:366 ActionCodes.Mealy <> trans proj
-R368:368 ActionCodes.FunctionalSimulation <> N:2 var
-R371:371 ActionCodes.FunctionalSimulation <> f:3 var
-R373:373 ActionCodes.FunctionalSimulation <> q:4 var
-R376:376 ActionCodes.FunctionalSimulation <> i:6 var
-prf 404:412 <> lemma_a_4
-R430:434 ActionCodes.Mealy <> Mealy rec
-binder 424:424 <> M:8
-binder 426:426 <> N:9
-R449:452 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R448:448 ActionCodes.Mealy <> Y def
-R453:453 ActionCodes.Mealy <> Y def
-binder 444:444 <> f:10
-R468:471 ActionCodes.Mealy <> word def
-R473:473 ActionCodes.Mealy <> I indrec
-binder 464:464 <> v:11
-R487:490 ActionCodes.Mealy <> word def
-R492:492 ActionCodes.Mealy <> O indrec
-binder 483:483 <> V:12
-R509:509 ActionCodes.Mealy <> Y def
-binder 502:502 <> q:13
-binder 504:505 <> q':14
-R525:529 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R512:518 ActionCodes.FunctionalSimulation <> funcSim def
-R520:520 ActionCodes.FunctionalSimulation <> M:8 var
-R522:522 ActionCodes.FunctionalSimulation <> N:9 var
-R524:524 ActionCodes.FunctionalSimulation <> f:10 var
-R535:538 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R530:530 ActionCodes.Mealy <> Q def
-R532:532 ActionCodes.FunctionalSimulation <> M:8 var
-R534:534 ActionCodes.FunctionalSimulation <> q:13 var
-R563:566 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R548:550 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R539:541 ActionCodes.Mealy <> tra def
-R543:543 ActionCodes.FunctionalSimulation <> M:8 var
-R545:545 ActionCodes.FunctionalSimulation <> q:13 var
-R547:547 ActionCodes.FunctionalSimulation <> v:11 var
-R551:554 Coq.Init.Datatypes <> Some constr
-R556:556 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R559:560 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R562:562 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R557:558 ActionCodes.FunctionalSimulation <> q':14 var
-R561:561 ActionCodes.FunctionalSimulation <> V:12 var
-R580:582 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R567:569 ActionCodes.Mealy <> tra def
-R571:571 ActionCodes.FunctionalSimulation <> N:9 var
-R574:574 ActionCodes.FunctionalSimulation <> f:10 var
-R576:576 ActionCodes.FunctionalSimulation <> q:13 var
-R579:579 ActionCodes.FunctionalSimulation <> v:11 var
-R583:586 Coq.Init.Datatypes <> Some constr
-R588:589 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R594:596 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R598:598 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R590:590 ActionCodes.FunctionalSimulation <> f:10 var
-R592:593 ActionCodes.FunctionalSimulation <> q':14 var
-R597:597 ActionCodes.FunctionalSimulation <> V:12 var
-R658:660 ActionCodes.Mealy <> tra def
-R770:785 ActionCodes.Mealy <> first_letter_exi thm
-R770:785 ActionCodes.Mealy <> first_letter_exi thm
-R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
-R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
-R894:912 ActionCodes.Mealy <> tra_trans_def_known thm
-R945:946 Coq.Lists.List <> tl def
-R945:946 Coq.Lists.List <> tl def
-R1013:1019 ActionCodes.FunctionalSimulation <> funcSim def
-R1217:1217 ActionCodes.Mealy <> Q def
-R1263:1263 ActionCodes.Mealy <> Q def
-R1281:1284 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R1286:1289 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R1290:1292 Coq.Init.Datatypes <> nil constr
-R1281:1284 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
-R1286:1289 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R1290:1292 Coq.Init.Datatypes <> nil constr
-R1325:1328 Coq.Init.Datatypes <> prod ind
-R1333:1336 ActionCodes.Mealy <> word def
-R1338:1338 ActionCodes.Mealy <> O indrec
-R1330:1330 ActionCodes.Mealy <> Y def
-R1343:1345 ActionCodes.Mealy <> tra def
-R1350:1351 ActionCodes.Mealy <> q0 proj
-R1309:1317 ActionCodes.Mealy <> option_em defax
-R1325:1328 Coq.Init.Datatypes <> prod ind
-R1333:1336 ActionCodes.Mealy <> word def
-R1338:1338 ActionCodes.Mealy <> O indrec
-R1330:1330 ActionCodes.Mealy <> Y def
-R1343:1345 ActionCodes.Mealy <> tra def
-R1350:1351 ActionCodes.Mealy <> q0 proj
-R1309:1317 ActionCodes.Mealy <> option_em defax
-R1383:1385 ActionCodes.Mealy <> del def
-R1487:1490 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R1491:1493 Coq.Init.Datatypes <> nil constr
-R1500:1501 ActionCodes.Mealy <> q0 proj
-R1465:1473 ActionCodes.Mealy <> lemma_a_1 thm
-R1487:1490 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
-R1491:1493 Coq.Init.Datatypes <> nil constr
-R1500:1501 ActionCodes.Mealy <> q0 proj
-R1465:1473 ActionCodes.Mealy <> lemma_a_1 thm
-R1518:1520 ActionCodes.Mealy <> del def
-R1607:1609 ActionCodes.Mealy <> del def
-R1619:1621 ActionCodes.Mealy <> tra def
+def 169:175 <> funcSim
+R184:188 ActionCodes.Mealy <> Mealy rec
+binder 178:178 <> M:1
+binder 180:180 <> N:2
+R196:199 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R195:195 ActionCodes.Mealy <> Y def
+R200:200 ActionCodes.Mealy <> Y def
+binder 192:192 <> f:3
+R229:235 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R222:224 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R215:215 ActionCodes.FunctionalSimulation <> f:3 var
+R217:218 ActionCodes.Mealy <> q0 proj
+R220:220 ActionCodes.FunctionalSimulation <> M:1 var
+R225:226 ActionCodes.Mealy <> q0 proj
+R228:228 ActionCodes.FunctionalSimulation <> N:2 var
+R249:249 ActionCodes.Mealy <> Y def
+binder 243:243 <> q:4
+binder 245:245 <> r:5
+R263:263 ActionCodes.Mealy <> I indrec
+binder 259:259 <> i:6
+R277:277 ActionCodes.Mealy <> O indrec
+binder 273:273 <> o:7
+R291:304 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R286:286 ActionCodes.Mealy <> Q def
+R288:288 ActionCodes.FunctionalSimulation <> M:1 var
+R290:290 ActionCodes.FunctionalSimulation <> q:4 var
+R330:345 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R316:318 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R305:309 ActionCodes.Mealy <> trans proj
+R311:311 ActionCodes.FunctionalSimulation <> M:1 var
+R313:313 ActionCodes.FunctionalSimulation <> q:4 var
+R315:315 ActionCodes.FunctionalSimulation <> i:6 var
+R319:322 Coq.Init.Datatypes <> Some constr
+R324:324 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R326:327 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R329:329 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R325:325 ActionCodes.FunctionalSimulation <> r:5 var
+R328:328 ActionCodes.FunctionalSimulation <> o:7 var
+R360:362 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R346:349 Coq.Init.Datatypes <> Some constr
+R351:351 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R356:357 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R359:359 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R352:352 ActionCodes.FunctionalSimulation <> f:3 var
+R354:354 ActionCodes.FunctionalSimulation <> r:5 var
+R358:358 ActionCodes.FunctionalSimulation <> o:7 var
+R363:367 ActionCodes.Mealy <> trans proj
+R369:369 ActionCodes.FunctionalSimulation <> N:2 var
+R372:372 ActionCodes.FunctionalSimulation <> f:3 var
+R374:374 ActionCodes.FunctionalSimulation <> q:4 var
+R377:377 ActionCodes.FunctionalSimulation <> i:6 var
+prf 405:413 <> lemma_a_4
+R431:435 ActionCodes.Mealy <> Mealy rec
+binder 425:425 <> M:8
+binder 427:427 <> N:9
+R450:453 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R449:449 ActionCodes.Mealy <> Y def
+R454:454 ActionCodes.Mealy <> Y def
+binder 445:445 <> f:10
+R469:472 ActionCodes.Mealy <> word def
+R474:474 ActionCodes.Mealy <> I indrec
+binder 465:465 <> v:11
+R488:491 ActionCodes.Mealy <> word def
+R493:493 ActionCodes.Mealy <> O indrec
+binder 484:484 <> V:12
+R510:510 ActionCodes.Mealy <> Y def
+binder 503:503 <> q:13
+binder 505:506 <> q':14
+R526:530 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R513:519 ActionCodes.FunctionalSimulation <> funcSim def
+R521:521 ActionCodes.FunctionalSimulation <> M:8 var
+R523:523 ActionCodes.FunctionalSimulation <> N:9 var
+R525:525 ActionCodes.FunctionalSimulation <> f:10 var
+R536:539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R531:531 ActionCodes.Mealy <> Q def
+R533:533 ActionCodes.FunctionalSimulation <> M:8 var
+R535:535 ActionCodes.FunctionalSimulation <> q:13 var
+R564:567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R549:551 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R540:542 ActionCodes.Mealy <> tra def
+R544:544 ActionCodes.FunctionalSimulation <> M:8 var
+R546:546 ActionCodes.FunctionalSimulation <> q:13 var
+R548:548 ActionCodes.FunctionalSimulation <> v:11 var
+R552:555 Coq.Init.Datatypes <> Some constr
+R557:557 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R560:561 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R563:563 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R558:559 ActionCodes.FunctionalSimulation <> q':14 var
+R562:562 ActionCodes.FunctionalSimulation <> V:12 var
+R581:583 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R568:570 ActionCodes.Mealy <> tra def
+R572:572 ActionCodes.FunctionalSimulation <> N:9 var
+R575:575 ActionCodes.FunctionalSimulation <> f:10 var
+R577:577 ActionCodes.FunctionalSimulation <> q:13 var
+R580:580 ActionCodes.FunctionalSimulation <> v:11 var
+R584:587 Coq.Init.Datatypes <> Some constr
+R589:590 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R595:597 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R599:599 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R591:591 ActionCodes.FunctionalSimulation <> f:10 var
+R593:594 ActionCodes.FunctionalSimulation <> q':14 var
+R598:598 ActionCodes.FunctionalSimulation <> V:12 var
+R659:661 ActionCodes.Mealy <> tra def
+R771:786 ActionCodes.Mealy <> first_letter_exi thm
+R771:786 ActionCodes.Mealy <> first_letter_exi thm
+R895:913 ActionCodes.Mealy <> tra_trans_def_known thm
+R895:913 ActionCodes.Mealy <> tra_trans_def_known thm
+R895:913 ActionCodes.Mealy <> tra_trans_def_known thm
+R946:947 Coq.Lists.List <> tl def
+R946:947 Coq.Lists.List <> tl def
+R1014:1020 ActionCodes.FunctionalSimulation <> funcSim def
+R1218:1218 ActionCodes.Mealy <> Q def
+R1264:1264 ActionCodes.Mealy <> Q def
+R1282:1285 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1287:1290 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1291:1293 Coq.Init.Datatypes <> nil constr
+R1282:1285 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1287:1290 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1291:1293 Coq.Init.Datatypes <> nil constr
+R1326:1329 Coq.Init.Datatypes <> prod ind
+R1334:1337 ActionCodes.Mealy <> word def
+R1339:1339 ActionCodes.Mealy <> O indrec
+R1331:1331 ActionCodes.Mealy <> Y def
+R1344:1346 ActionCodes.Mealy <> tra def
+R1351:1352 ActionCodes.Mealy <> q0 proj
+R1310:1318 ActionCodes.Mealy <> option_em defax
+R1326:1329 Coq.Init.Datatypes <> prod ind
+R1334:1337 ActionCodes.Mealy <> word def
+R1339:1339 ActionCodes.Mealy <> O indrec
+R1331:1331 ActionCodes.Mealy <> Y def
+R1344:1346 ActionCodes.Mealy <> tra def
+R1351:1352 ActionCodes.Mealy <> q0 proj
+R1310:1318 ActionCodes.Mealy <> option_em defax
+R1384:1386 ActionCodes.Mealy <> del def
+R1488:1491 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1492:1494 Coq.Init.Datatypes <> nil constr
+R1501:1502 ActionCodes.Mealy <> q0 proj
+R1466:1474 ActionCodes.Mealy <> lemma_a_1 thm
+R1488:1491 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1492:1494 Coq.Init.Datatypes <> nil constr
+R1501:1502 ActionCodes.Mealy <> q0 proj
+R1466:1474 ActionCodes.Mealy <> lemma_a_1 thm
+R1519:1521 ActionCodes.Mealy <> del def
+R1608:1610 ActionCodes.Mealy <> del def
+R1620:1622 ActionCodes.Mealy <> tra def
