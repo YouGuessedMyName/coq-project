@@ -299,26 +299,44 @@ forall U : word O,
   tra M q u = Some (s, U)
 ->
   tra M s w = None
-->
+<->
   tra M q (u ++ w) = None.
 Proof.
 induction u.
 (* Base case *)
-- intros w q s U J L. simpl. unfold tra in J.
-  injection J as J J'. rewrite J. apply L.
-- intros w q s U J L. simpl.
-  destruct option_em with (prod Y O) (trans M q a) as [K | K].
-  rewrite K. reflexivity.
-destruct K as [(r, a') K].
+- intros w q s U J. split. 
+  + intro L. simpl. unfold tra in J. injection J as J J'. rewrite J. apply L.
+  + intro L. simpl. unfold tra in J. injection J as J J'. rewrite<- J. 
+    simpl (nil ++ w) in L. apply L.
+- intros w q s U J. split. 
++ 
+intro L. simpl.
+destruct option_em with (prod Y O) (trans M q a) as [K | K].
+rewrite K. reflexivity.
+destruct K as [(r, o) K].
 rewrite K.
 specialize IHu with w r s (tl U).
-apply (first_letter M q s r a u U a') in J.
-rewrite IHu.
+apply (first_letter M q s r a u U o) in J.
+rewrite IHu in L. rewrite L.
 reflexivity.
 apply J.
-apply L.
-apply tra_trans_def_known.
-apply K.
+unfold tra. rewrite K. reflexivity.
++
+intro L.
+destruct option_em with (prod Y O) (trans M q a) as [K | K].
+unfold tra in J. rewrite K in J. discriminate J.
+destruct K as [(r, o) K].
+specialize IHu with w r s (tl U).
+apply (first_letter M q s r a u U o) in J.
+rewrite IHu.
+simpl ((a :: u) ++ w) in L.
+destruct option_em with (prod Y (word O)) (tra M r (u ++ w)) as [G|G].
+apply G.
+destruct G as [(t, UV) G].
+unfold tra in G.
+unfold tra in L. rewrite K in L. rewrite G in L. discriminate L.
+apply J.
+unfold tra. rewrite K. reflexivity.
 Qed.
 
 Lemma transition_consistency :
