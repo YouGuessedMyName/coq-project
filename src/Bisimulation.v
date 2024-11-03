@@ -204,6 +204,23 @@ unfold undef in J. rewrite K in J.
 discriminate J.
 Qed.
 
+Lemma reachability :
+forall M : Mealy,
+forall q q' : Y,
+forall i : I,
+Q M q 
+-> del M q (i::nil) = Some q'
+-> Q M q'.
+Proof.
+intros.
+unfold Q in H.
+destruct H as [v H].
+unfold Q.
+exists (v ++ i :: nil).
+rewrite (lemma_a_1_delta M v (i::nil) (q0 M) q).
+apply H0. apply H.
+Qed.
+
 Lemma lemma_a_3 :
 forall M N : Mealy, equivM M N <-> exists R : relation Y, Bisimulation M N R.
 Proof.
@@ -214,16 +231,23 @@ intro H_eqMN.
 eexists. unfold Bisimulation. split.
 + eauto.
 + intros q r H_QMq H_QNr i H_eq_qr. split.
-* split. intro H_Mqi_def.
+* split. 
 --  
-rewrite semantics_lemma in H_eq_qr.
+intro H_Mqi_def. rewrite semantics_lemma in H_eq_qr.
 destruct option_em with (prod Y (word O)) (tra N r (i :: nil)) as [J|J].
 ++ 
 specialize H_eq_qr with (i :: nil). unfold lam in H_eq_qr. rewrite J in H_eq_qr.
 unfold def in H_Mqi_def. destruct H_Mqi_def as [(q', o) H_Mqi_def].
 rewrite H_Mqi_def in H_eq_qr. discriminate H_eq_qr.
 ++ unfold def. apply J.
--- admit.
+--  
+intro H_Nri_def. rewrite semantics_lemma in H_eq_qr.
+destruct option_em with (prod Y (word O)) (tra M q (i :: nil)) as [J|J].
+++ 
+specialize H_eq_qr with (i :: nil). unfold lam in H_eq_qr. rewrite J in H_eq_qr.
+unfold def in H_Nri_def. destruct H_Nri_def as [(q', o) H_Nri_def].
+rewrite H_Nri_def in H_eq_qr. discriminate H_eq_qr.
+++ unfold def. apply J.
 * intros q' r' HqDel HrDel. split.
 (* Obtain the output letter o *)
 destruct double_transition with M N q q' r r' i as [o temp].
@@ -307,11 +331,30 @@ assert (R q' r' /\ lam M q (i :: nil) = lam N r (i :: nil)) as L. {
 }
 destruct option_em with (prod Y (word O)) (tra N r' v) as [Z|Z].
 + apply undef in H_bisDef. assert (tra N r (i :: v) = None). {
-unfold tra.
+Check second_half_undefined2.
+rewrite<- (second_half_undefined2 N (i::nil) v r r' A).
+apply Z. 
+destruct L as [L L']. unfold lam in L'. rewrite K in L'. rewrite G in L'. injection L' as L'.
+rewrite L'. apply G.
 }
-unfold tra. 
-
-apply H_bisDef in Z. (* TODO lemma undef *)
+assert (tra M q' v = None) as H0. {
+assert (Z' := Z).
+rewrite<- (del_lam_tra_undef N r' v) in Z'.
+destruct Z' as [temp Z']. clear temp.
+rewrite<- (IHv q' r') in Z'.
+destruct option_em with (prod Y (word O)) (tra M q' v). apply H0.
+destruct H0 as [(t, V) H0].
+unfold lam in Z'. rewrite H0 in Z'. discriminate Z'.
+apply L.
+apply (reachability M q q' i H_QMq). unfold del. rewrite K. auto.
+apply (reachability N r r' i H_QNr). unfold del. rewrite G. auto.
+apply A.
+}
+Check second_half_undefined2.
+rewrite (second_half_undefined2 M (i::nil) v q q' A) in H0.
+simpl ((i :: nil) ++ v) in H0.
+unfold lam. rewrite H. rewrite H0. auto.
+apply K.
 + destruct Z as [(r'', V) Z].
 rewrite<- del_lam_tra_def in Z.
 destruct Z as [Z0 Z].
@@ -327,7 +370,8 @@ unfold del. rewrite G. auto.
 rewrite<- L'. unfold lam. rewrite K. auto.
 apply K.
 apply L.
-admit. admit. (*TODO LEMMA reachability *)
+apply (reachability M q q' i H_QMq). unfold del. rewrite K. auto.
+apply (reachability N r r' i H_QNr). unfold del. rewrite G. auto.
 }
 intro v. specialize HH with v (q0 M) (q0 N). apply HH. apply H_Rq0. apply initial. apply initial.
 Qed.
