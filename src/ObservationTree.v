@@ -60,6 +60,7 @@ tree TT /\
       lam TT v w = lam S q w
 ).
 
+(* If a state q is in QM, then its successor r also is *)
 Lemma next_state :
 forall M : Mealy,
 forall q r : Y,
@@ -68,14 +69,12 @@ Q M q
 -> del M q (i :: nil) = Some r
 -> Q M r.
 Proof.
-intros M q r i H J.
-unfold Q in H. destruct H as [v H].
-unfold Q. exists (v ++ i :: nil).
-rewrite<- J.
-apply lemma_a_1_delta. apply H.
+intros M q r i H J. unfold Q in H. destruct H as [v H].
+unfold Q. exists (v ++ i :: nil). rewrite<- J. apply lemma_a_1_delta. apply H.
 Qed.
 
-(* r = δ(q, i) *)
+(* The function f that maps each state σ of T = Tree(S, T ) to the
+state r = δS(qS0 , σ) of S is a functional simulation. *)
 Lemma lemma_2_9 : 
 forall S TT : Mealy, 
 forall T : word I -> Prop,
@@ -90,13 +89,11 @@ Proof.
 intros S TT T f Htt Hf.
 unfold testingTree in Htt. destruct Htt as [Htree Hstates]. 
 destruct Hstates as [Hstates HtreeDelta]. destruct HtreeDelta as [HHtreeDelta HtreeLambda].
-unfold tree in Htree. 
-unfold funcSim.
+unfold tree in Htree. unfold funcSim.
 split.
 - specialize Hf with (q0 TT) nil. unfold del in Hf. unfold tra in Hf.
-  injection Hf as Hf'. symmetry in Hf'. apply Hf'. trivial.
-- intros q r i o H_qInTree H_q_io_r.
-  symmetry.
+  injection Hf as Hf'. { symmetry in Hf'. apply Hf'. } trivial.
+- intros q r i o H_qInTree H_q_io_r. symmetry.
   rewrite<- tra_trans_def_known.
   rewrite<- del_lam_tra_def.
   assert (H_q_io_r2 := H_q_io_r).
@@ -107,53 +104,38 @@ split.
   assert (HHtreeDelta_q_i := HHtreeDelta).
   specialize HHtreeDelta_q_i with q i.
   assert (H_r_is_qi := H_q_io_del).
-    destruct option_em with Y (del TT q (i :: nil)). rewrite H in H_q_io_del. discriminate H_q_io_del. 
-
+  destruct option_em with Y (del TT q (i :: nil)).
+  { rewrite H in H_q_io_del. discriminate H_q_io_del. } 
   rewrite HHtreeDelta_q_i in H_r_is_qi.
-  injection H_r_is_qi as H_r_is_qi.
+  + injection H_r_is_qi as H_r_is_qi.
   (* Step 2 *)
-  assert (Hf_r_r := Hf).
-  specialize Hf_r_r with r r. rewrite<- Hf_r_r. rewrite<- H_r_is_qi.
-  (* Step 3 (Using Lemma) *)
+    assert (Hf_r_r := Hf).
+    specialize Hf_r_r with r r. rewrite<- Hf_r_r. rewrite<- H_r_is_qi.
+    (* Step 3 (Using Lemma) *)
     (* Case where tra S (q0 S) q undef *)
-    destruct option_em with (prod Y (word O)) (tra S (q0 S) q) as [J|J].
+    destruct option_em with (prod Y (word O)) (tra S (q0 S) q) as [J|J]. {
     specialize Hf with q q. specialize Htree with q. apply Hf in Htree.
-    unfold del in Htree. rewrite J in Htree. discriminate Htree.
-    apply H_qInTree.
-  destruct J as [(fq, Q') J].
-  destruct lemma_a_1 with S q (i :: nil) Q' (q0 S) (f q) as [Hl_del Hl_lam].
-  + assert (Hf_q_q := Hf).
-    specialize Hf_q_q with q q.
-    assert (Htree_q := Htree).
-    specialize Htree_q with q.
-    apply Hf_q_q in Htree_q.
-    unfold del in Htree_q.
-    rewrite J in Htree_q.
-    injection Htree_q as Htree_q.
-    rewrite<- Htree_q.
-    apply J.
-    apply H_qInTree.
-  + rewrite<- Hl_del. split.
-    * trivial.
-    * assert (HtreeLambda_q_fq_i := HtreeLambda).
+    unfold del in Htree. rewrite J in Htree. discriminate Htree. apply H_qInTree. }
+    destruct J as [(fq, Q') J].
+    destruct lemma_a_1 with S q (i :: nil) Q' (q0 S) (f q) as [Hl_del Hl_lam].
+    * assert (Hf_q_q := Hf). specialize Hf_q_q with q q. assert (Htree_q := Htree).
+      specialize Htree_q with q. apply Hf_q_q in Htree_q.
+      { unfold del in Htree_q.
+      rewrite J in Htree_q. injection Htree_q as Htree_q. rewrite<- Htree_q. apply J. }
+      apply H_qInTree.
+    * rewrite<- Hl_del. split. { trivial. }
+      assert (HtreeLambda_q_fq_i := HtreeLambda).
       specialize HtreeLambda_q_fq_i with q (f q) (i :: nil).
       rewrite<- HtreeLambda_q_fq_i.
-      **  rewrite H_q_io_lam.
-          trivial.
+      **  rewrite H_q_io_lam. trivial.
       **  rewrite H_r_is_qi. apply (next_state TT q r i). apply H_qInTree. apply H_q_io_del.
-      **  assert (Hf_q_q := Hf).
-          specialize Hf_q_q with q q.
-          assert (Htree_q := Htree).
-          specialize Htree_q with q.
-          apply Hf_q_q in Htree_q.
-          apply Hf_q_q.
-          rewrite Htree.
-          trivial.
+      **  assert (Hf_q_q := Hf). specialize Hf_q_q with q q. assert (Htree_q := Htree).
+          specialize Htree_q with q. 
+          apply Hf_q_q in Htree_q. 
+          { apply Hf_q_q. rewrite Htree. trivial. apply H_qInTree. } 
           apply H_qInTree.
-          apply H_qInTree.
-  + rewrite Htree. 
-    * trivial. 
-    * apply (next_state TT q r i). apply H_qInTree. apply H_q_io_del.
+    * rewrite Htree. { trivial. }
+      apply (next_state TT q r i). apply H_qInTree. apply H_q_io_del.
   + apply H_qInTree.
   + destruct H as [q' H]. rewrite H. discriminate.
 Qed.
@@ -309,7 +291,7 @@ symmetry. split.
       (* Finally apply the Lemma *)
       apply (lemma_a_4 TT M f).
       apply H_funcSim.
-      apply initial.
+      unfold Q. exists nil. unfold del. unfold tra. auto.
       apply H_q0_io_q.
     * (* Now apply what we just learned *)
       unfold lam.

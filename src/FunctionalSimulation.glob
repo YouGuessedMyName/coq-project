@@ -127,14 +127,14 @@ R1339:1339 ActionCodes.Mealy <> O indrec
 R1331:1331 ActionCodes.Mealy <> Y def
 R1344:1346 ActionCodes.Mealy <> tra def
 R1351:1352 ActionCodes.Mealy <> q0 proj
-R1310:1318 ActionCodes.Mealy <> option_em defax
+R1310:1318 ActionCodes.Mealy <> option_em thm
 R1326:1329 Coq.Init.Datatypes <> prod ind
 R1334:1337 ActionCodes.Mealy <> word def
 R1339:1339 ActionCodes.Mealy <> O indrec
 R1331:1331 ActionCodes.Mealy <> Y def
 R1344:1346 ActionCodes.Mealy <> tra def
 R1351:1352 ActionCodes.Mealy <> q0 proj
-R1310:1318 ActionCodes.Mealy <> option_em defax
+R1310:1318 ActionCodes.Mealy <> option_em thm
 R1384:1386 ActionCodes.Mealy <> del def
 R1488:1491 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
 R1492:1494 Coq.Init.Datatypes <> nil constr

@@ -289,14 +289,7 @@ rewrite<- (lemma_a_1_lambda N (i::nil) v (o ::nil) V r r') in H_l.
 --- apply HqTra.
 ++
 rewrite semantics_lemma in H_eq_qr. rewrite H_eq_qr. trivial.
-(* - intro temp. destruct temp as [H_rTraDef H_bisim].
-destruct option_em with (prod Y (word O)) (tra M q (i :: nil)) as [J|J].
--- (* Case where tra M q (i :: nil) undef *)
-  rewrite semantics_lemma in H_eq_qr.
-  rewrite lam_tra_undef in J. rewrite H_eq_qr in J. rewrite<- lam_tra_undef in J.
-  unfold def in H_rTraDef. destruct H_rTraDef as [(q', O) H_rTraDef].
-  rewrite H_rTraDef in J. discriminate J.
--- unfold def. apply J. *)
+
 - intro H_bis. destruct H_bis as [R H_bis].
 unfold Bisimulation in H_bis. destruct H_bis as [H_Rq0 H_bis].
 unfold equivM. rewrite semantics_lemma.
@@ -311,8 +304,8 @@ forall q' r' : Y,
          Some q' = del M q (i :: nil) ->
          Some r' = del N r (i :: nil) -> R q' r' 
         /\ lam M q (i :: nil) = lam N r (i :: nil)) as H_bis2.
-apply H_bis. apply H_QMq. apply H_QNr. apply H_Rqr.
-destruct H_bis2 as [H_bisDef H_bisEq]. (* TODO lemma undef *)
+{apply H_bis. apply H_QMq. apply H_QNr. apply H_Rqr. }
+destruct H_bis2 as [H_bisDef H_bisEq].
   destruct option_em with (prod Y (word O)) (tra M q (i :: nil)) as [K | K].
 * destruct option_em with (prod Y (word O)) (tra N r (i :: nil)) as [G | G].
 -- unfold lam. rewrite tra_trans_undef in K. unfold tra. rewrite K.
@@ -323,7 +316,6 @@ apply H_bisDef2 in G. destruct G as [(q', o) G]. rewrite K in G. discriminate G.
 -- destruct H_bisDef as [H_bisDef1 H_bisDef2]. unfold def in H_bisDef1. 
 apply H_bisDef1 in K. destruct K as [(q', o) K]. rewrite K in G. discriminate G.
 -- destruct K as [(q', A) K]. destruct G as [(r', A') G].
-
 assert (R q' r' /\ lam M q (i :: nil) = lam N r (i :: nil)) as L. {
   apply H_bisEq.
   unfold del. rewrite K. auto.
@@ -331,7 +323,6 @@ assert (R q' r' /\ lam M q (i :: nil) = lam N r (i :: nil)) as L. {
 }
 destruct option_em with (prod Y (word O)) (tra N r' v) as [Z|Z].
 + apply undef in H_bisDef. assert (tra N r (i :: v) = None). {
-Check second_half_undefined2.
 rewrite<- (second_half_undefined2 N (i::nil) v r r' A).
 apply Z. 
 destruct L as [L L']. unfold lam in L'. rewrite K in L'. rewrite G in L'. injection L' as L'.
@@ -350,7 +341,6 @@ apply (reachability M q q' i H_QMq). unfold del. rewrite K. auto.
 apply (reachability N r r' i H_QNr). unfold del. rewrite G. auto.
 apply A.
 }
-Check second_half_undefined2.
 rewrite (second_half_undefined2 M (i::nil) v q q' A) in H0.
 simpl ((i :: nil) ++ v) in H0.
 unfold lam. rewrite H. rewrite H0. auto.
