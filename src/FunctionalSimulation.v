@@ -16,7 +16,10 @@ Definition funcSim (M N : Mealy) (f: Y -> Y) : Prop :=
         Some (f(r), o) = trans N (f q) i
 .
 
-(* Lemma A.4. *)
+(* Lemma A.4. 
+
+Suppose f : M → N . Suppose q, q′ ∈ QM, σ ∈ I∗ and ρ ∈ O∗.
+Then q -σ/ρ-> q' implies f(q) -σ/ρ-> f(q') *)
 Lemma lemma_a_4 : 
 forall M N : Mealy,
 forall f : Y -> Y, 

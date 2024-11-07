@@ -354,7 +354,7 @@ split.
   + destruct H0 as [(r, V) H0]. unfold lam in H. rewrite H0 in H. discriminate H.
 Qed.
 
-Lemma undef :
+Lemma undef_lemma :
 forall M N : Mealy,
 forall q r : Y,
 forall v : word I,
@@ -382,18 +382,6 @@ apply H in K.
 destruct K as [(q', V) K].
 unfold undef in J. rewrite K in J.
 discriminate J.
-Qed.
-
-Lemma reachability :
-forall M : Mealy,
-forall q q' : Y,
-forall i : I,
-Q M q 
--> del M q (i::nil) = Some q'
--> Q M q'.
-Proof.
-intros. unfold Q in H. destruct H as [v H]. unfold Q. 
-exists (v ++ i :: nil). rewrite (lemma_a_1_delta M v (i::nil) (q0 M) q). apply H0. apply H.
 Qed.
 
 Lemma transition_consistency :
@@ -568,5 +556,17 @@ split.
   - unfold lam in J. rewrite H2 in J. injection J as J. symmetry. apply J.
   - rewrite H3. trivial. 
 + intro J. apply (lemma_a_1_lambda_part M v w V W q s). apply H. apply J.
+Qed.
+
+Lemma reachability :
+forall M : Mealy,
+forall q q' : Y,
+forall i : I,
+Q M q 
+-> del M q (i::nil) = Some q'
+-> Q M q'.
+Proof.
+intros. unfold Q in H. destruct H as [v H]. unfold Q. 
+exists (v ++ i :: nil). rewrite (lemma_a_1_delta M v (i::nil) (q0 M) q). apply H0. apply H.
 Qed.
 

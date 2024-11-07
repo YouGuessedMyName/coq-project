@@ -10,27 +10,6 @@ Definition tree (M : Mealy) : Prop
     Q M v->    
     del M (q0 M) v = Some v.
 
-Definition access (M : Mealy) (v : word I) : word I := v.
-
-Definition accessSet {M : Mealy} (U: Y -> Prop): (word I -> Prop)
-  := U.
-
-(* q' is the parent of q *)
-Definition parent {M : Mealy} (q q' : Y) : Prop
-  := exists i : I, del M q' (i :: nil) = Some q.
-
-(* T is an observation tree for M *)
-Definition observationTreeFor (T : Mealy) (M : Mealy) : Prop
-  := exists f : (Y -> Y), funcSim T M f.
-
-(* Definition 2.7 (Test suites) *)
-(* v is a test case for S *)
-Definition testCase (v : word I) (S : Mealy) := def (tra S (q0 S) v).
-
-(* T is a test suite for S *)
-Definition testSuite (T : word I -> Prop) (S : Mealy) := 
-    Finite (word I) T /\ forall v : word I, T v -> testCase v S.
-
 (* M passes test v for S *)
 Definition passes1 (S M : Mealy) (v : word I) :=
   lam S (q0 S) v = lam M (q0 M) v.
@@ -237,25 +216,20 @@ symmetry. split.
           rewrite<- del_lam_tra_def in temp. destruct temp as [H_q_i_r H_q_io].
           destruct option_em with (prod Y (word O)) (tra S (q0 S) q) as [J|J].
           *** (* Case where (tra S (q0 S) q) undef (proof by contradiction) *)
-              exfalso.
-              assert (lam S (q0 S) q = None) as J'.
-              unfold lam. rewrite J. trivial.
+              assert (lam S (q0 S) q = None) as J'. {unfold lam. rewrite J. trivial. }
               rewrite<- H_M_S_same_output in J'.
-              assert (tra M (q0 M) q = None).
-              destruct option_em with (prod Y (word O)) (tra M (q0 M) q).
-              apply H.
-              destruct H as [(mq, Qout)].
-              unfold lam in J'. rewrite H in J'. discriminate J'.
-              assert (Hf_q_q := Hf).
-              specialize Hf_q_q with q q.
-              assert (H_tree_q := H_tree).
-              specialize H_tree_q with q.
-              apply Hf_q_q in H_tree_q.
-              unfold del in H_tree_q.
-              rewrite H in H_tree_q.
-              discriminate H_tree_q.
-              apply H_QTTq.
-              apply H_QTTq.
+              --- assert (tra M (q0 M) q = None).
+                  destruct option_em with (prod Y (word O)) (tra M (q0 M) q).
+                  +++ apply H.
+                  +++ destruct H as [(mq, Qout)].
+                      unfold lam in J'. rewrite H in J'. discriminate J'.
+                  +++ assert (Hf_q_q := Hf). specialize Hf_q_q with q q.
+                      assert (H_tree_q := H_tree). specialize H_tree_q with q.
+                      apply Hf_q_q in H_tree_q. {
+                        unfold del in H_tree_q. rewrite H in H_tree_q. discriminate H_tree_q. 
+                      }
+                      apply H_QTTq.
+              --- apply H_QTTq.
           *** destruct J as [(sq, Qout) J].
               rewrite (lemma_a_1_lambda M q (i :: nil) Qout (o :: nil) (q0 M) (f q)).
               ---- rewrite H_M_S_same_output.
@@ -294,8 +268,5 @@ symmetry. split.
       unfold Q. exists nil. unfold del. unfold tra. auto.
       apply H_q0_io_q.
     * (* Now apply what we just learned *)
-      unfold lam.
-      rewrite H_strong.
-      rewrite H_q0_io_q.
-      trivial.
+      unfold lam. rewrite H_strong. rewrite H_q0_io_q. trivial.
 Qed.
