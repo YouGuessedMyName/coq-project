@@ -304,6 +304,98 @@ induction u.
     * unfold tra. rewrite K. auto.
 Qed.
 
+Lemma del_tra :
+forall M : Mealy,
+forall q q' : Y,
+forall v : word I,
+  del M q v = Some q'
+->
+  exists V : word O,
+    tra M q v = Some (q', V) /\ lam M q v = Some V.
+Proof.
+intros.
+destruct option_em with (prod Y (word O)) (tra M q v) as [J|J].
+- unfold del in H. rewrite J in H. discriminate H.
+- destruct J as [(q'', V) J]. unfold del in H. rewrite J in H. 
+  injection H as H. rewrite H in J. exists V. split.
+  + apply J.
+  + unfold lam. rewrite J. auto.
+Qed.
+
+Lemma del_tra_single_letter :
+forall M : Mealy,
+forall q q' : Y,
+forall i : I,
+  del M q (i :: nil) = Some q'
+->
+  exists o : O,
+    tra M q (i :: nil) = Some (q', (o :: nil)) /\ lam M q (i :: nil) = Some (o :: nil).
+Proof.
+intros.
+destruct option_em with (prod Y O) (trans M q i) as [J|J].
+- unfold del in H. unfold tra in H. rewrite J in H. discriminate H.
+- destruct J as [(q'', o) J]. unfold del in H. unfold tra in H. rewrite J in H. 
+  injection H as H. rewrite H in J. exists o. unfold tra. rewrite J. split. 
+  + auto.
+  + unfold lam. unfold tra. rewrite J. auto.
+Qed.
+
+Lemma lam_tra_undef :
+forall M : Mealy,
+forall q : Y,
+forall v : word I,
+tra M q v = None <-> lam M q v = None.
+Proof.
+intros.
+split.
+- intro H. unfold lam. rewrite H. auto.
+- intro H. destruct option_em with (prod Y (word O)) (tra M q v).
+  + apply H0.
+  + destruct H0 as [(r, V) H0]. unfold lam in H. rewrite H0 in H. discriminate H.
+Qed.
+
+Lemma undef :
+forall M N : Mealy,
+forall q r : Y,
+forall v : word I,
+  (def (tra M q v)) <-> (def (tra N r v))
+->
+  (undef (tra M q v)) <-> (undef (tra N r v)).
+Proof.
+intros.
+split.
+destruct H as [H H'].
+intro J.
+destruct option_em with (prod Y (word O)) (tra N r v) as [K | K].
+unfold undef. apply K.
+unfold def in H'.
+apply H' in K.
+destruct K as [(q', V) K].
+unfold undef in J. rewrite K in J.
+discriminate J.
+
+intro J.
+destruct option_em with (prod Y (word O)) (tra M q v) as [K | K].
+unfold undef. apply K.
+unfold def in H.
+apply H in K.
+destruct K as [(q', V) K].
+unfold undef in J. rewrite K in J.
+discriminate J.
+Qed.
+
+Lemma reachability :
+forall M : Mealy,
+forall q q' : Y,
+forall i : I,
+Q M q 
+-> del M q (i::nil) = Some q'
+-> Q M q'.
+Proof.
+intros. unfold Q in H. destruct H as [v H]. unfold Q. 
+exists (v ++ i :: nil). rewrite (lemma_a_1_delta M v (i::nil) (q0 M) q). apply H0. apply H.
+Qed.
+
 Lemma transition_consistency :
 forall M : Mealy,
 forall v w : word I,

@@ -44,105 +44,6 @@ split.
   apply H. destruct H as [v H]. rewrite H_same in H. elim H. trivial.
 Qed.
 
-Lemma del_tra :
-forall M : Mealy,
-forall q q' : Y,
-forall v : word I,
-  del M q v = Some q'
-->
-  exists V : word O,
-    tra M q v = Some (q', V) /\ lam M q v = Some V.
-Proof.
-intros.
-destruct option_em with (prod Y (word O)) (tra M q v) as [J|J].
-- unfold del in H. rewrite J in H. discriminate H.
-- destruct J as [(q'', V) J]. unfold del in H. rewrite J in H. 
-  injection H as H. rewrite H in J. exists V. split.
-  + apply J.
-  + unfold lam. rewrite J. auto.
-Qed.
-
-Lemma del_tra_single_letter :
-forall M : Mealy,
-forall q q' : Y,
-forall i : I,
-  del M q (i :: nil) = Some q'
-->
-  exists o : O,
-    tra M q (i :: nil) = Some (q', (o :: nil)) /\ lam M q (i :: nil) = Some (o :: nil).
-Proof.
-intros.
-destruct option_em with (prod Y O) (trans M q i) as [J|J].
-- unfold del in H. unfold tra in H. rewrite J in H. discriminate H.
-- destruct J as [(q'', o) J]. unfold del in H. unfold tra in H. rewrite J in H. 
-  injection H as H. rewrite H in J. exists o. unfold tra. rewrite J. split. 
-  + auto.
-  + unfold lam. unfold tra. rewrite J. auto.
-Qed.
-
-(* If q -u/U-> s, and s -w-> is undef, then q -uw/?-> is undef *)
-Lemma second_half_undefined2 :
-forall M : Mealy,
-forall u w : word I,
-forall q s : Y,
-forall U : word O,
-  tra M q u = Some (s, U)
-->
-  tra M s w = None
-<->
-  tra M q (u ++ w) = None.
-Proof.
-induction u.
-(* Base case *)
-- intros w q s U J. split. 
-  + intro L. simpl. unfold tra in J. injection J as J J'. rewrite J. apply L.
-  + intro L. simpl. unfold tra in J. injection J as J J'. rewrite<- J. 
-    simpl (nil ++ w) in L. apply L.
-- intros w q s U J. split. 
-+ 
-intro L. simpl.
-destruct option_em with (prod Y O) (trans M q a) as [K | K].
-rewrite K. reflexivity.
-destruct K as [(r, o) K].
-rewrite K.
-specialize IHu with w r s (tl U).
-apply (first_letter M q s r a u U o) in J.
-rewrite IHu in L. rewrite L.
-reflexivity.
-apply J.
-unfold tra. rewrite K. reflexivity.
-+
-intro L.
-destruct option_em with (prod Y O) (trans M q a) as [K | K].
-unfold tra in J. rewrite K in J. discriminate J.
-destruct K as [(r, o) K].
-specialize IHu with w r s (tl U).
-apply (first_letter M q s r a u U o) in J.
-rewrite IHu.
-simpl ((a :: u) ++ w) in L.
-destruct option_em with (prod Y (word O)) (tra M r (u ++ w)) as [G|G].
-apply G.
-destruct G as [(t, UV) G].
-unfold tra in G.
-unfold tra in L. rewrite K in L. rewrite G in L. discriminate L.
-apply J.
-unfold tra. rewrite K. reflexivity.
-Qed.
-
-Lemma lam_tra_undef :
-forall M : Mealy,
-forall q : Y,
-forall v : word I,
-tra M q v = None <-> lam M q v = None.
-Proof.
-intros.
-split.
-- intro H. unfold lam. rewrite H. auto.
-- intro H. destruct option_em with (prod Y (word O)) (tra M q v).
-  + apply H0.
-  + destruct H0 as [(r, V) H0]. unfold lam in H. rewrite H0 in H. discriminate H.
-Qed.
-
 Lemma double_transition :
 forall M N : Mealy,
 forall q q' r r' : Y,
@@ -172,53 +73,6 @@ rewrite<- temp in HrLam.
 clear temp o'.
 exists o.
 split. apply HqTra. split. apply HqLam. split. apply HrTra. apply HrLam.
-Qed.
-
-Lemma undef :
-forall M N : Mealy,
-forall q r : Y,
-forall v : word I,
-  (def (tra M q v)) <-> (def (tra N r v))
-->
-  (undef (tra M q v)) <-> (undef (tra N r v)).
-Proof.
-intros.
-split.
-destruct H as [H H'].
-intro J.
-destruct option_em with (prod Y (word O)) (tra N r v) as [K | K].
-unfold undef. apply K.
-unfold def in H'.
-apply H' in K.
-destruct K as [(q', V) K].
-unfold undef in J. rewrite K in J.
-discriminate J.
-
-intro J.
-destruct option_em with (prod Y (word O)) (tra M q v) as [K | K].
-unfold undef. apply K.
-unfold def in H.
-apply H in K.
-destruct K as [(q', V) K].
-unfold undef in J. rewrite K in J.
-discriminate J.
-Qed.
-
-Lemma reachability :
-forall M : Mealy,
-forall q q' : Y,
-forall i : I,
-Q M q 
--> del M q (i::nil) = Some q'
--> Q M q'.
-Proof.
-intros.
-unfold Q in H.
-destruct H as [v H].
-unfold Q.
-exists (v ++ i :: nil).
-rewrite (lemma_a_1_delta M v (i::nil) (q0 M) q).
-apply H0. apply H.
 Qed.
 
 Lemma lemma_a_3 :
@@ -323,7 +177,7 @@ assert (R q' r' /\ lam M q (i :: nil) = lam N r (i :: nil)) as L. {
 }
 destruct option_em with (prod Y (word O)) (tra N r' v) as [Z|Z].
 + apply undef in H_bisDef. assert (tra N r (i :: v) = None). {
-rewrite<- (second_half_undefined2 N (i::nil) v r r' A).
+rewrite<- (second_half_undefined N (i::nil) v r r' A).
 apply Z. 
 destruct L as [L L']. unfold lam in L'. rewrite K in L'. rewrite G in L'. injection L' as L'.
 rewrite L'. apply G.
@@ -363,6 +217,8 @@ apply L.
 apply (reachability M q q' i H_QMq). unfold del. rewrite K. auto.
 apply (reachability N r r' i H_QNr). unfold del. rewrite G. auto.
 }
-intro v. specialize HH with v (q0 M) (q0 N). apply HH. apply H_Rq0. apply initial. apply initial.
+intro v. specialize HH with v (q0 M) (q0 N). apply HH. apply H_Rq0. 
+unfold Q. exists nil. unfold del. unfold tra. auto.
+unfold Q. exists nil. unfold del. unfold tra. auto.
 Qed.
 
