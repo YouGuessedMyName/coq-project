@@ -3,6 +3,7 @@ Require Import Coq.Lists.List.
 Require Import Coq.Sets.Finite_sets_facts.
 Require Import Coq.Relations.Relation_Definitions.
 
+(* Note: read the definition in the paper first, this one is quite hard to read *)
 Definition Bisimulation (M N : Mealy) (R : relation Y) : Prop
 := R (q0 M) (q0 N)
 /\
@@ -50,6 +51,7 @@ split.
 - split. apply HqLam. split. apply HrTra. apply HrLam.
 Qed.
 
+  (* Two Mealy machines are equivalent, iff there exists a bisimulation between them *)
 Lemma lemma_a_3 :
 forall M N : Mealy, equivM M N <-> exists R : relation Y, Bisimulation M N R.
 Proof.
