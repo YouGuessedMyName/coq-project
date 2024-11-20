@@ -22,8 +22,6 @@ Definition equiv (M N : Mealy) (q : Y) (r : Y) : Prop :=
   forall v : word I, lam M q v = lam N r v.
 Definition equivM (M N : Mealy) : Prop :=
   equiv M N (q0 M)(q0 N).
-Definition minimalM (M : Mealy) : Prop :=
-  forall q r : Y, Q M q -> Q M r -> (equiv M M q r) <-> q <> r.
 
 Lemma double_transition :
 forall M N : Mealy,
